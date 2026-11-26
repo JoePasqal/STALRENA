@@ -5,10 +5,12 @@ extends RefCounted
 
 const BALANCE_PATH := "res://data/balance_v1.json"
 const LAYOUTS_PATH := "res://data/layouts_v1.json"
+const MODIFIERS_PATH := "res://data/arena_modifiers_v1.json"
 
 static var B: Dictionary = {}
 static var layouts: Dictionary = {}          # id -> layout dict
 static var layouts_by_location: Dictionary = {}
+static var modifiers: Dictionary = {}          # steam/electric/toxic: параметры опасностей арены
 static var weapons: Dictionary = {}
 static var weapon_ids: Array = []
 static var armors: Dictionary = {}
@@ -62,6 +64,7 @@ static func reload(path: String = BALANCE_PATH, layouts_path: String = LAYOUTS_P
 		if not layouts_by_location.has(l.location_id):
 			layouts_by_location[l.location_id] = []
 		layouts_by_location[l.location_id].append(l.id)
+	modifiers = _read_json(MODIFIERS_PATH).get("modifiers", {})
 	_ready_flag = true
 
 

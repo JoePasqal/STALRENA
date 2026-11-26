@@ -1,0 +1,10 @@
+{
+ "schema_version": 1,
+ "note": "Опасности арен и модификаторы секторов. Урон умножается на множитель урона глобальной волны. Не часть пакета ChatGPT — стартовые значения, требуют плейтеста.",
+ "modifiers": {
+  "steam":    {"name": "Паровые клапаны", "interval": 5.5, "warning": 1.2, "duration": 2.5, "radius": 75, "player_damage": 6,  "tick": 0.5, "enemy_damage": 4, "max_zones": 2, "palette": "steam"},
+  "electric": {"name": "Электрические зоны", "interval": 5.0, "warning": 1.2, "duration": 1.5, "radius": 80, "player_damage": 9,  "tick": 0.5, "enemy_damage": 0, "max_zones": 2, "palette": "electric"},
+  "toxic":    {"name": "Заражённые лужи", "interval": 7.0, "warning": 1.2, "duration": 6.0, "radius": 70, "player_damage": 4,  "tick": 1.0, "enemy_damage": 0, "max_zones": 2, "palette": "toxic"}
+ },
+ "debug_waves": [24, 60, 120]
+}

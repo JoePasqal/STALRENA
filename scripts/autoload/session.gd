@@ -74,3 +74,22 @@ func go_menu() -> void:
 func go_game() -> void:
 	get_tree().paused = false
 	get_tree().change_scene_to_file("res://scenes/game.tscn")
+
+
+## Локальный баланс-лог (длительность волны, DPS, попадания, закупки, источник смерти).
+## Только на устройстве, без персональных данных, с ротацией по размеру.
+const BALANCE_LOG := "user://balance_log.jsonl"
+const BALANCE_LOG_MAX := 300000
+
+
+func balance_log(entry: Dictionary) -> void:
+	if FileAccess.file_exists(BALANCE_LOG):
+		var f0 := FileAccess.open(BALANCE_LOG, FileAccess.READ)
+		if f0 and f0.get_length() > BALANCE_LOG_MAX:
+			f0.close()
+			DirAccess.copy_absolute(BALANCE_LOG, BALANCE_LOG + ".1")
+			DirAccess.remove_absolute(BALANCE_LOG)
+	var f := FileAccess.open(BALANCE_LOG, FileAccess.READ_WRITE if FileAccess.file_exists(BALANCE_LOG) else FileAccess.WRITE)
+	if f:
+		f.seek_end()
+		f.store_line(JSON.stringify(entry))
