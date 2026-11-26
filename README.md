@@ -97,6 +97,9 @@ godot --headless --path . --script res://tests/test_logic.gd
 # поведение боя на реальной сцене: ИИ, лимиты, пауза, возобновление, боссы, оружие (100 проверок)
 godot --headless --path . --quit-after 300000 res://tests/test_combat.tscn
 
+# полный UI-поток: магазин → бой → награда → пауза → Continue (17 проверок)
+godot --headless --path . --quit-after 100000 res://tests/test_flow.tscn
+
 # автопилот (НЕ человек): N волн подряд, опционально --loadout=24|60|120 --fps=30|60|120 --god
 godot --headless --path . --quit-after 400000 res://tests/sim.tscn -- --waves=12 --seed=7
 
