@@ -36,10 +36,10 @@ func open(rec: Dictionary) -> void:
 	v.add_child(UiKit.label("Пройдено волн: %d (сектор %d)" % [reached, run.sector_of(maxi(reached, 1))], 24, UiKit.TEXT, HORIZONTAL_ALIGNMENT_CENTER))
 	v.add_child(UiKit.label("Погибли от: %s" % src_name, 22, UiKit.MUTED, HORIZONTAL_ALIGNMENT_CENTER))
 	v.add_child(UiKit.label("Время в бою: %d:%02d · убийств %d" % [mins, secs, int(run.stats.get("kills", 0))], 20, UiKit.MUTED, HORIZONTAL_ALIGNMENT_CENTER))
-	v.add_child(UiKit.label("Рекорд: волна %d" % int(rec.best_wave), 22, Color(1.0, 0.9, 0.5), HORIZONTAL_ALIGNMENT_CENTER))
+	v.add_child(UiKit.label("Рекорд: волн пройдено %d" % int(rec.best_wave), 22, Color(1.0, 0.9, 0.5), HORIZONTAL_ALIGNMENT_CENTER))
 	var hist := ""
 	for h in rec.history.slice(0, 5):
-		hist += "волна %d · %d:%02d\n" % [int(h.wave) - 1 if int(h.wave) > 0 else 0, int(float(h.time)) / 60, int(float(h.time)) % 60]
+		hist += "волн пройдено %d · %d:%02d\n" % [int(h.wave), int(float(h.time)) / 60, int(float(h.time)) % 60]
 	v.add_child(UiKit.label("Последние забеги:\n" + hist, 16, UiKit.MUTED, HORIZONTAL_ALIGNMENT_CENTER))
 	var nb := UiKit.button("Новый забег", Vector2(0, 58), 24)
 	nb.pressed.connect(func():

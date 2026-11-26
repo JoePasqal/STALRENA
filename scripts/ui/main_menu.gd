@@ -39,7 +39,7 @@ func _ready() -> void:
 	_notice.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	vb.add_child(_notice)
 	var rec := SaveService.load_records()
-	var rl := UiKit.label("Рекорд: волна %d" % int(rec.best_wave) if int(rec.best_wave) > 0 else "Рекордов пока нет", 20, UiKit.MUTED, HORIZONTAL_ALIGNMENT_CENTER)
+	var rl := UiKit.label("Рекорд: волн пройдено %d" % int(rec.best_wave) if int(rec.best_wave) > 0 else "Рекордов пока нет", 20, UiKit.MUTED, HORIZONTAL_ALIGNMENT_CENTER)
 	vb.add_child(rl)
 	var ver := UiKit.label("Godot %s · v1" % Engine.get_version_info().string, 16, UiKit.MUTED, HORIZONTAL_ALIGNMENT_CENTER)
 	vb.add_child(ver)

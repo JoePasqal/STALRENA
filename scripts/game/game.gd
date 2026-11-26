@@ -34,6 +34,7 @@ var pending_explosions: Array = []
 var buckets := {}
 var bot: BotInput = null
 var auto_open_ui := true              # false — для тестов без UI-воркфлоу
+var suppress_win := false             # тесты: не завершать волну автоматически
 
 var hud: HudView
 var touch: TouchControls
@@ -344,7 +345,7 @@ func sim_step(dt: float) -> void:
 	_update_walls(dt)
 	if player.dead:
 		_on_player_dead()
-	elif queue.is_empty() and enemies.is_empty() and (plan.boss == false or boss != null):
+	elif not suppress_win and queue.is_empty() and enemies.is_empty() and (plan.boss == false or boss != null):
 		_on_wave_won()
 
 
@@ -430,7 +431,10 @@ func _find_spawn_point(min_dist: float, prefer_visible_ok: bool = false, around:
 					continue
 			else:
 				var cell: Vector2i = cells[rng_combat.randi() % cells.size()]
-				c = arena.cell_center(cell) + Vector2(rng_combat.randf_range(-10, 10), rng_combat.randf_range(-10, 10))
+				c = arena.cell_center(cell)
+				var jittered := c + Vector2(rng_combat.randf_range(-10, 10), rng_combat.randf_range(-10, 10))
+				if arena.is_point_free(jittered, ArenaModel.NAV_MARGIN):
+					c = jittered
 			if c.distance_to(player.position) < min_dist:
 				continue
 			if pass_i == 0 and not prefer_visible_ok and view.has_point(c):
@@ -621,7 +625,7 @@ func _on_player_dead() -> void:
 	var src := player.killer if player.killer != "" else _last_hurt_source
 	Economy.mark_defeat(run, src)          # забег помечается завершённым ДО показа результатов
 	Session.save()
-	var rec := SaveService.add_result(run.next_wave(), run.play_time, src)
+	var rec := SaveService.add_result(run.waves_completed, run.play_time, src)
 	Session.balance_log({"death": true, "wave": run.next_wave(), "by": src, "secs": snappedf(wave_time, 0.1)})
 	get_tree().paused = false
 	hud.visible = false
