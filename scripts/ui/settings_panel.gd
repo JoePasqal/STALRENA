@@ -80,3 +80,9 @@ func _option(parent: Control, text: String, key: String, opts: Array) -> void:
 	ob.select(sel)
 	ob.item_selected.connect(func(i): Settings.set_value(key, opts[i][0]))
 	hb.add_child(ob)
+
+
+func _process(_d: float) -> void:
+	if visible:
+		position = Vector2.ZERO
+		size = get_viewport_rect().size

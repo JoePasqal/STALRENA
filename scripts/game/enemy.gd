@@ -60,6 +60,7 @@ var telegraph_total := 0.5
 var sprite: Sprite2D
 var _frame_dir := ""
 var _anim_t := 0.0
+var _dirty := true            # перерисовка _draw только при изменениях (экономия CPU на телефоне)
 
 
 # ---- создание ---------------------------------------------------------------
@@ -140,6 +141,7 @@ func take_damage(amount: float, crit: bool, source: String) -> void:
 	if state == S.SPAWN_WARNING or state == S.DEAD or amount <= 0.0:
 		return
 	hp -= amount
+	_dirty = true
 	flash_t = 0.1
 	game.run.stats["damage"] = float(game.run.stats.get("damage", 0.0)) + amount
 	if source == "player":
@@ -216,6 +218,7 @@ func tick(dt: float) -> void:
 func _set_state(s: int) -> void:
 	state = s
 	t_state = 0.0
+	_dirty = true
 
 
 # ---- движение ---------------------------------------------------------------
@@ -639,7 +642,9 @@ func _update_visual(dt: float) -> void:
 		var sc := AssetRegistry.get_scale(str(def.visual_id))
 		sprite.scale = Vector2(sc * (-1.0 if _frame_dir == "W" else 1.0), sc * squash)
 		sprite.modulate = Color(1.7, 1.4, 1.4) if flash_t > 0.0 else (Color(1.0, 0.8, 0.5) if burn_left > 0.0 else Color(1, 1, 1))
-	queue_redraw()
+	if _dirty or state == S.SPAWN_WARNING or state == S.TELEGRAPH:
+		_dirty = false
+		queue_redraw()
 
 
 func _draw() -> void:

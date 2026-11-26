@@ -46,6 +46,22 @@ func _ready() -> void:
 	game.bot = BotInput.new()
 	game.state = game.St.COMBAT
 	game.intro_t = 0.0
+	if shot == "pause" or shot == "results" or shot == "settings":
+		game.state = game.St.COMBAT
+		for i in 120:
+			game.sim_step(1.0 / 60.0)
+		if shot == "results":
+			game.player.take_damage(1e9, "drifter", false)
+			game.sim_step(1.0 / 60.0)
+		else:
+			game.open_pause()
+			if shot == "settings":
+				game.pause_ui.settings_btn.pressed.emit()
+		await _frames(4)
+		get_tree().paused = false
+		_save(out)
+		get_tree().quit()
+		return
 	var steps := int(args.get("steps", 600))
 	for i in steps:
 		game.sim_step(1.0 / 60.0)

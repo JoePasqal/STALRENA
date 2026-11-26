@@ -4,6 +4,7 @@ extends Control
 var game
 var _build_label: Label
 var _dbg_box: VBoxContainer
+var settings_btn: Button
 
 
 func _ready() -> void:
@@ -31,6 +32,7 @@ func _ready() -> void:
 	rb.pressed.connect(func(): game.close_pause())
 	v.add_child(rb)
 	var sb := UiKit.button("Настройки", Vector2(0, 52))
+	settings_btn = sb
 	sb.pressed.connect(func():
 		var sp: Control = load("res://scripts/ui/settings_panel.gd").new()
 		add_child(sp))
@@ -67,3 +69,9 @@ func open() -> void:
 	visible = true
 	if game.touch != null:
 		game.touch.reset_inputs()
+
+
+func _process(_d: float) -> void:
+	if visible:
+		position = Vector2.ZERO
+		size = get_viewport_rect().size

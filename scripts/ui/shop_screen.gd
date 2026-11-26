@@ -19,7 +19,7 @@ var _level_label: Label
 var _toast: Label
 var _toast_t := 0.0
 var _busy := false
-var _next_label: Label
+var _hint: Label
 var _confirm_menu: ConfirmationDialog
 
 const TAB_NAMES := ["Сборка", "Модули", "Части"]
@@ -48,8 +48,10 @@ func _ready() -> void:
 	var top := HBoxContainer.new()
 	top.add_theme_constant_override("separation", 20)
 	vb.add_child(top)
-	_top_label = UiKit.label("", 26, UiKit.ACCENT)
+	_top_label = UiKit.label("", 24, UiKit.ACCENT)
 	_top_label.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	_top_label.clip_text = true
+	_top_label.custom_minimum_size = Vector2(100, 0)
 	top.add_child(_top_label)
 	_coins_label = UiKit.label("", 28, Color(1.0, 0.9, 0.5))
 	top.add_child(_coins_label)
@@ -71,7 +73,7 @@ func _ready() -> void:
 	_cards_box.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	mid.add_child(_cards_box)
 	var rp := PanelContainer.new()
-	rp.custom_minimum_size = Vector2(400, 0)
+	rp.custom_minimum_size = Vector2(380, 0)
 	mid.add_child(rp)
 	var rv := VBoxContainer.new()
 	rv.add_theme_constant_override("separation", 6)
@@ -97,6 +99,8 @@ func _ready() -> void:
 	_bottom_box = HBoxContainer.new()
 	_bottom_box.add_theme_constant_override("separation", 8)
 	vb.add_child(_bottom_box)
+	_hint = UiKit.label("", 16, UiKit.MUTED)
+	vb.add_child(_hint)
 	_toast = UiKit.label("", 22, UiKit.GOOD, HORIZONTAL_ALIGNMENT_CENTER)
 	_toast.set_anchors_preset(Control.PRESET_CENTER_BOTTOM)
 	_toast.position = Vector2(0, 0)
@@ -120,6 +124,9 @@ func close() -> void:
 
 
 func _process(delta: float) -> void:
+	if visible:
+		position = Vector2.ZERO
+		size = get_viewport_rect().size
 	if _toast_t > 0.0:
 		_toast_t -= delta
 		if _toast_t <= 0.0:
@@ -153,6 +160,7 @@ func refresh() -> void:
 	_build_cards(run)
 	_build_right(run)
 	_build_bottom(run)
+	_update_hint(run)
 
 
 func _clear(node: Node) -> void:
@@ -173,7 +181,7 @@ func _rank_col(rank: int) -> Color:
 
 func _make_card(run: RunState, o: Dictionary) -> Control:
 	var pc := PanelContainer.new()
-	pc.custom_minimum_size = Vector2(240, 210)
+	pc.custom_minimum_size = Vector2(200, 170)
 	pc.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	pc.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	var st := ShopService.offer_status(run, o)
@@ -204,11 +212,20 @@ func _make_card(run: RunState, o: Dictionary) -> Control:
 	var tv := VBoxContainer.new()
 	tv.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	head.add_child(tv)
-	tv.add_child(UiKit.label(_offer_title(o), 22))
+	var title := UiKit.label(_offer_title(o), 22)
+	title.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	title.custom_minimum_size = Vector2(60, 0)
+	tv.add_child(title)
 	var sub := UiKit.label(_offer_subtitle(o), 16, border if o.kind == "part" else UiKit.MUTED)
+	sub.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	sub.custom_minimum_size = Vector2(60, 0)
 	tv.add_child(sub)
 	var desc := _small(_offer_desc(run, o), Color(0.8, 0.84, 0.78))
 	desc.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	desc.max_lines_visible = 4
+	desc.text_overrun_behavior = TextServer.OVERRUN_TRIM_ELLIPSIS
+	desc.tooltip_text = _offer_desc(run, o)
+	desc.mouse_filter = Control.MOUSE_FILTER_PASS
 	v.add_child(desc)
 	var btn := UiKit.button("", Vector2(0, 50), 20)
 	if not st.ok:
@@ -230,7 +247,7 @@ func _make_card(run: RunState, o: Dictionary) -> Control:
 func _small(text: String, col: Color = UiKit.TEXT) -> Label:
 	var l := UiKit.label(text, 16, col)
 	l.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	l.custom_minimum_size = Vector2(0, 44)
+	l.custom_minimum_size = Vector2(0, 40)
 	return l
 
 
@@ -527,3 +544,15 @@ func _mastery(kind: String) -> void:
 	else:
 		toast(str(r.reason), false)
 	refresh()
+
+
+func _update_hint(run: RunState) -> void:
+	var targets := ShopService.pity_targets(run)
+	var parts: Array = []
+	if run.shop_locked:
+		parts.append("Замок включён: набор останется на следующую волну.")
+	if targets.is_empty():
+		parts.append("Нет доступных частей для активного оружия/брони на этом уровне магазина — повысьте магазин или займитесь модулями и мастерством.")
+	else:
+		parts.append("Гарантия части: %d/%d платных обновлений без подходящей части." % [mini(run.pity, int(GameData.B.shop.pity_failed_paid_rerolls_before_guarantee)), int(GameData.B.shop.pity_failed_paid_rerolls_before_guarantee)])
+	_hint.text = "  ".join(parts)

@@ -73,7 +73,7 @@ static func make_actor(id: String, dir: String, frame_px: int = 256) -> Image:
 			"boilermaster": col = Color(0.45, 0.4, 0.38)
 			"broodmother": col = Color(0.35, 0.5, 0.3)
 		head_col = col.lightened(0.15)
-	var s := size * px * (2.4 if is_boss else 1.0)
+	var s := size * px * (1.5 if is_boss else 1.0)
 	# тень (простой ellipse)
 	_ellipse(img, cx, feet_y, 46.0 * s, 14.0 * s, Color(0, 0, 0, 0.35))
 	var shoulder_w := 34.0 * s

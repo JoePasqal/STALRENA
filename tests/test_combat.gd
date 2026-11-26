@@ -38,6 +38,8 @@ func _ready() -> void:
 	await t_caps()
 	await t_resume_combat()
 	await t_wave_won_once()
+	await t_boss_summons()
+	await t_unstable()
 	print("ИТОГО (бой): passed=%d failed=%d" % [passed, failed])
 	SaveService.delete_run()
 	get_tree().quit(1 if failed > 0 else 0)
@@ -557,3 +559,50 @@ func t_weapons() -> void:
 	sg.weapons.shotgun = {"rank": 1, "mastery": 0}
 	var s := StatCalc.weapon_stats(sg, "shotgun")
 	check(s.pellets == 7 and absf(float(s.damage) - 6.0) < 0.01, "дробовик: урон дробины 6, 7 дробин")
+
+
+func t_boss_summons() -> void:
+	await new_game(0, {}, 12)
+	var b: Boss = game.boss
+	var cr: Dictionary = b._attack_def("call_runners")
+	b.cur = cr
+	var spawned := 0
+	var max_alive := 0
+	for i in 8:
+		var before: int = b._summons_alive()
+		b._call_runners()
+		var after: int = b._summons_alive()
+		spawned += maxi(after - before, 0)
+		for e in b.my_summons:
+			e.state = Enemy.S.MOVE
+		max_alive = maxi(max_alive, after)
+	check(max_alive <= 8, "20: подкрепления босса ≤ 8 одновременно", str(max_alive))
+	check(b.my_summons.size() <= 8 and b.summon_budget >= 0, "20: бюджет подкреплений фазы конечен", "budget=%d" % b.summon_budget)
+	var total_cost := 0
+	for e in b.my_summons:
+		total_cost += int(e.def.threat_cost)
+	check(total_cost <= int(b.bdef.summon_total_threat_budget_per_phase), "20: суммарная угроза подкреплений ≤ 16 на фазу", str(total_cost))
+	# вторая фаза даёт новый конечный бюджет
+	b.hp = b.max_hp * 0.4
+	b._check_phase()
+	check(b.phase == 2 and b.summon_budget == int(b.bdef.summon_total_threat_budget_per_phase), "босс: фаза 2 при 50% ХП, бюджет обновлён")
+
+
+func t_unstable() -> void:
+	await new_game(24)
+	var pl: Player = game.player
+	pl.position = Vector2(300, 300)
+	pl.hp = pl.max_hp
+	var e := spawn("drifter", Vector2(310, 300), "unstable", false)
+	e.speed = 0.0
+	e.take_damage(1e9, false, "player")
+	game.sim_step(1.0 / 60.0)
+	check(game.hazards.count_tag("explosion") == 1, "24: нестабильный — взрыв с предупреждением, не мгновенный")
+	var hp0 := pl.hp
+	step(0.9)
+	check(absf(pl.hp - hp0) < 0.01, "24: до конца предупреждения (1 с) урона нет")
+	step(0.3)
+	check(pl.hp < hp0 - 0.1, "24: после предупреждения — однократный урон")
+	var hp1 := pl.hp
+	step(1.0)
+	check(absf(pl.hp - hp1) < 0.01, "24: взрыв наносит урон один раз")

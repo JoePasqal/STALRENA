@@ -50,3 +50,9 @@ func open(rec: Dictionary) -> void:
 	mb.pressed.connect(func(): Session.go_menu())
 	v.add_child(mb)
 	visible = true
+
+
+func _process(_d: float) -> void:
+	if visible:
+		position = Vector2.ZERO
+		size = get_viewport_rect().size

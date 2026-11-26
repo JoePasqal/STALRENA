@@ -77,13 +77,14 @@ func run_wave() -> String:
 	game.bot = BotInput.new()
 	game.state = game.St.COMBAT
 	var steps := 0
-	var max_steps := 60 * 400
+	var max_steps := int(float(args.get("fps", 60)) * 400)
 	var t0 := Time.get_ticks_usec()
 	var peak_alive := 0
 	var peak_proj := 0
 	var god := args.has("god")
+	var dt_step := 1.0 / float(args.get("fps", 60))
 	while game.state == game.St.COMBAT and steps < max_steps:
-		game.sim_step(1.0 / 60.0)
+		game.sim_step(dt_step)
 		if god:
 			game.player.hp = game.player.max_hp
 		steps += 1
@@ -91,7 +92,7 @@ func run_wave() -> String:
 		peak_proj = maxi(peak_proj, game.projectiles.enemy_count)
 	var ms := (Time.get_ticks_usec() - t0) / 1000.0
 	var gw: int = game.gw
-	var info := "w%d %s %s t=%.0fs hp=%d/%d alive_peak=%d eproj_peak=%d sim=%.2fms/step coins=%d" % [gw, game.plan.archetype, GameData.weapons[run.equipped_weapon].id + str(run.weapons[run.equipped_weapon].rank), steps / 60.0, int(game.player.hp), int(game.player.max_hp), peak_alive, peak_proj, ms / maxf(steps, 1), run.coins]
+	var info := "w%d %s %s t=%.1fs hp=%d/%d alive_peak=%d eproj_peak=%d sim=%.2fms/step coins=%d" % [gw, game.plan.archetype, GameData.weapons[run.equipped_weapon].id + str(run.weapons[run.equipped_weapon].rank), steps * dt_step, int(game.player.hp), int(game.player.max_hp), peak_alive, peak_proj, ms / maxf(steps, 1), run.coins]
 	if game.state == game.St.WAVE_COMPLETE:
 		game.state = game.St.SHOP
 		return "WIN  " + info
