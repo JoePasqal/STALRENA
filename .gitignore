@@ -1,0 +1,16 @@
+# Godot
+.godot/
+*.translation
+export_presets.cfg.local
+# Android / signing — never commit
+*.keystore
+*.jks
+*.apk
+*.aab
+android/build/
+.env
+*.key
+# local
+/build/
+/tmp/
+*.log

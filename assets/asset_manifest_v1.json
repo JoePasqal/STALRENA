@@ -1,0 +1,1046 @@
+{
+  "schema_version": 1,
+  "art_contract": "ART_CONTRACT.md",
+  "status_note": "No PNG files are supplied in this archive. All entries are planned, runtime must provide placeholders.",
+  "coordinate_origin": "top_left",
+  "asset_count": 58,
+  "assets": [
+    {
+      "id": "hero.body",
+      "target_path": "res://assets/art/characters/hero/body.png",
+      "kind": "actor_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "frame_px": [
+        256,
+        256
+      ],
+      "atlas_layout": "metadata_required",
+      "directions": [
+        "S",
+        "E",
+        "N"
+      ],
+      "mirror_W_from": "E",
+      "animations": {
+        "idle": 1,
+        "walk": 4,
+        "hit": 1,
+        "death_shared": 4
+      },
+      "source_orientations": 3,
+      "walk_fps": 8
+    },
+    {
+      "id": "armor.light",
+      "target_path": "res://assets/art/armor/light.png",
+      "kind": "armor_overlay",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "directions": [
+        "S",
+        "E",
+        "N"
+      ],
+      "rank_variants_required": false
+    },
+    {
+      "id": "icon.armor.light",
+      "target_path": "res://assets/art/icons/armor/light.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "armor.field",
+      "target_path": "res://assets/art/armor/field.png",
+      "kind": "armor_overlay",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "directions": [
+        "S",
+        "E",
+        "N"
+      ],
+      "rank_variants_required": false
+    },
+    {
+      "id": "icon.armor.field",
+      "target_path": "res://assets/art/icons/armor/field.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "armor.heavy",
+      "target_path": "res://assets/art/armor/heavy.png",
+      "kind": "armor_overlay",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "directions": [
+        "S",
+        "E",
+        "N"
+      ],
+      "rank_variants_required": false
+    },
+    {
+      "id": "icon.armor.heavy",
+      "target_path": "res://assets/art/icons/armor/heavy.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "weapon.pistol",
+      "target_path": "res://assets/art/weapons/pistol.png",
+      "kind": "weapon_sprite",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        128
+      ],
+      "has_alpha": true,
+      "pivot_px": [
+        64,
+        64
+      ],
+      "world_scale": 0.25,
+      "muzzle_px": [
+        224,
+        64
+      ],
+      "source_facing": "right"
+    },
+    {
+      "id": "icon.weapon.pistol",
+      "target_path": "res://assets/art/icons/weapons/pistol.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "weapon.smg",
+      "target_path": "res://assets/art/weapons/smg.png",
+      "kind": "weapon_sprite",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        128
+      ],
+      "has_alpha": true,
+      "pivot_px": [
+        64,
+        64
+      ],
+      "world_scale": 0.25,
+      "muzzle_px": [
+        224,
+        64
+      ],
+      "source_facing": "right"
+    },
+    {
+      "id": "icon.weapon.smg",
+      "target_path": "res://assets/art/icons/weapons/smg.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "weapon.carbine",
+      "target_path": "res://assets/art/weapons/carbine.png",
+      "kind": "weapon_sprite",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        128
+      ],
+      "has_alpha": true,
+      "pivot_px": [
+        64,
+        64
+      ],
+      "world_scale": 0.25,
+      "muzzle_px": [
+        224,
+        64
+      ],
+      "source_facing": "right"
+    },
+    {
+      "id": "icon.weapon.carbine",
+      "target_path": "res://assets/art/icons/weapons/carbine.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "weapon.shotgun",
+      "target_path": "res://assets/art/weapons/shotgun.png",
+      "kind": "weapon_sprite",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        128
+      ],
+      "has_alpha": true,
+      "pivot_px": [
+        64,
+        64
+      ],
+      "world_scale": 0.25,
+      "muzzle_px": [
+        224,
+        64
+      ],
+      "source_facing": "right"
+    },
+    {
+      "id": "icon.weapon.shotgun",
+      "target_path": "res://assets/art/icons/weapons/shotgun.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "weapon.lmg",
+      "target_path": "res://assets/art/weapons/lmg.png",
+      "kind": "weapon_sprite",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        128
+      ],
+      "has_alpha": true,
+      "pivot_px": [
+        64,
+        64
+      ],
+      "world_scale": 0.25,
+      "muzzle_px": [
+        224,
+        64
+      ],
+      "source_facing": "right"
+    },
+    {
+      "id": "icon.weapon.lmg",
+      "target_path": "res://assets/art/icons/weapons/lmg.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "weapon.marksman",
+      "target_path": "res://assets/art/weapons/marksman.png",
+      "kind": "weapon_sprite",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        128
+      ],
+      "has_alpha": true,
+      "pivot_px": [
+        64,
+        64
+      ],
+      "world_scale": 0.25,
+      "muzzle_px": [
+        224,
+        64
+      ],
+      "source_facing": "right"
+    },
+    {
+      "id": "icon.weapon.marksman",
+      "target_path": "res://assets/art/icons/weapons/marksman.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "weapon.flamethrower",
+      "target_path": "res://assets/art/weapons/flamethrower.png",
+      "kind": "weapon_sprite",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        128
+      ],
+      "has_alpha": true,
+      "pivot_px": [
+        64,
+        64
+      ],
+      "world_scale": 0.25,
+      "muzzle_px": [
+        224,
+        64
+      ],
+      "source_facing": "right"
+    },
+    {
+      "id": "icon.weapon.flamethrower",
+      "target_path": "res://assets/art/icons/weapons/flamethrower.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "icon.module.amplifier",
+      "target_path": "res://assets/art/icons/modules/amplifier.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "icon.module.feeder",
+      "target_path": "res://assets/art/icons/modules/feeder.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "icon.module.bolt_drive",
+      "target_path": "res://assets/art/icons/modules/bolt_drive.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "icon.module.target_sensor",
+      "target_path": "res://assets/art/icons/modules/target_sensor.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "icon.module.precision_core",
+      "target_path": "res://assets/art/icons/modules/precision_core.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "icon.module.accelerator",
+      "target_path": "res://assets/art/icons/modules/accelerator.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "icon.module.reserve_cells",
+      "target_path": "res://assets/art/icons/modules/reserve_cells.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "icon.module.shock_lining",
+      "target_path": "res://assets/art/icons/modules/shock_lining.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "icon.module.cell_matrix",
+      "target_path": "res://assets/art/icons/modules/cell_matrix.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "icon.module.servos",
+      "target_path": "res://assets/art/icons/modules/servos.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "icon.module.rangefinder",
+      "target_path": "res://assets/art/icons/modules/rangefinder.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "icon.module.extended_mag",
+      "target_path": "res://assets/art/icons/modules/extended_mag.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "enemy.drifter",
+      "target_path": "res://assets/art/enemies/drifter.png",
+      "kind": "actor_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "frame_px": [
+        256,
+        256
+      ],
+      "atlas_layout": "metadata_required",
+      "animations": [
+        "idle",
+        "move",
+        "attack",
+        "death"
+      ]
+    },
+    {
+      "id": "enemy.runner",
+      "target_path": "res://assets/art/enemies/runner.png",
+      "kind": "actor_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "frame_px": [
+        256,
+        256
+      ],
+      "atlas_layout": "metadata_required",
+      "animations": [
+        "idle",
+        "move",
+        "attack",
+        "death"
+      ]
+    },
+    {
+      "id": "enemy.charger",
+      "target_path": "res://assets/art/enemies/charger.png",
+      "kind": "actor_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "frame_px": [
+        256,
+        256
+      ],
+      "atlas_layout": "metadata_required",
+      "animations": [
+        "idle",
+        "move",
+        "attack",
+        "death"
+      ]
+    },
+    {
+      "id": "enemy.spitter",
+      "target_path": "res://assets/art/enemies/spitter.png",
+      "kind": "actor_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "frame_px": [
+        256,
+        256
+      ],
+      "atlas_layout": "metadata_required",
+      "animations": [
+        "idle",
+        "move",
+        "attack",
+        "death"
+      ]
+    },
+    {
+      "id": "enemy.gunner",
+      "target_path": "res://assets/art/enemies/gunner.png",
+      "kind": "actor_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "frame_px": [
+        256,
+        256
+      ],
+      "atlas_layout": "metadata_required",
+      "animations": [
+        "idle",
+        "move",
+        "attack",
+        "death"
+      ]
+    },
+    {
+      "id": "enemy.brute",
+      "target_path": "res://assets/art/enemies/brute.png",
+      "kind": "actor_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "frame_px": [
+        256,
+        256
+      ],
+      "atlas_layout": "metadata_required",
+      "animations": [
+        "idle",
+        "move",
+        "attack",
+        "death"
+      ]
+    },
+    {
+      "id": "enemy.flanker",
+      "target_path": "res://assets/art/enemies/flanker.png",
+      "kind": "actor_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "frame_px": [
+        256,
+        256
+      ],
+      "atlas_layout": "metadata_required",
+      "animations": [
+        "idle",
+        "move",
+        "attack",
+        "death"
+      ]
+    },
+    {
+      "id": "enemy.carrier",
+      "target_path": "res://assets/art/enemies/carrier.png",
+      "kind": "actor_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "frame_px": [
+        256,
+        256
+      ],
+      "atlas_layout": "metadata_required",
+      "animations": [
+        "idle",
+        "move",
+        "attack",
+        "death"
+      ]
+    },
+    {
+      "id": "boss.cleaver",
+      "target_path": "res://assets/art/bosses/cleaver.png",
+      "kind": "boss_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        512,
+        512
+      ],
+      "has_alpha": true,
+      "pivot_px": [
+        256,
+        416
+      ],
+      "world_scale": 0.5,
+      "frame_px": [
+        512,
+        512
+      ],
+      "atlas_layout": "metadata_required"
+    },
+    {
+      "id": "boss.boilermaster",
+      "target_path": "res://assets/art/bosses/boilermaster.png",
+      "kind": "boss_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        512,
+        512
+      ],
+      "has_alpha": true,
+      "pivot_px": [
+        256,
+        416
+      ],
+      "world_scale": 0.5,
+      "frame_px": [
+        512,
+        512
+      ],
+      "atlas_layout": "metadata_required"
+    },
+    {
+      "id": "boss.broodmother",
+      "target_path": "res://assets/art/bosses/broodmother.png",
+      "kind": "boss_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        512,
+        512
+      ],
+      "has_alpha": true,
+      "pivot_px": [
+        256,
+        416
+      ],
+      "world_scale": 0.5,
+      "frame_px": [
+        512,
+        512
+      ],
+      "atlas_layout": "metadata_required"
+    },
+    {
+      "id": "floor.sawmill",
+      "target_path": "res://assets/art/floors/sawmill.png",
+      "kind": "floor_texture",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        512,
+        512
+      ],
+      "has_alpha": false,
+      "seamless": true
+    },
+    {
+      "id": "floor.pumping",
+      "target_path": "res://assets/art/floors/pumping.png",
+      "kind": "floor_texture",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        512,
+        512
+      ],
+      "has_alpha": false,
+      "seamless": true
+    },
+    {
+      "id": "floor.flooded",
+      "target_path": "res://assets/art/floors/flooded.png",
+      "kind": "floor_texture",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        512,
+        512
+      ],
+      "has_alpha": false,
+      "seamless": true
+    },
+    {
+      "id": "prop.crate",
+      "target_path": "res://assets/art/props/crate.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": true
+    },
+    {
+      "id": "prop.log_stack",
+      "target_path": "res://assets/art/props/log_stack.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        512,
+        512
+      ],
+      "has_alpha": true,
+      "pivot_px": [
+        256,
+        435
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": true
+    },
+    {
+      "id": "prop.concrete_block",
+      "target_path": "res://assets/art/props/concrete_block.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": true
+    },
+    {
+      "id": "prop.fence",
+      "target_path": "res://assets/art/props/fence.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": true
+    },
+    {
+      "id": "prop.pipe",
+      "target_path": "res://assets/art/props/pipe.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": true
+    },
+    {
+      "id": "prop.steam_valve",
+      "target_path": "res://assets/art/props/steam_valve.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": true
+    },
+    {
+      "id": "prop.wrecked_car",
+      "target_path": "res://assets/art/props/wrecked_car.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        512,
+        512
+      ],
+      "has_alpha": true,
+      "pivot_px": [
+        256,
+        435
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": true
+    },
+    {
+      "id": "prop.reeds",
+      "target_path": "res://assets/art/props/reeds.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": true
+    },
+    {
+      "id": "icon.medkit",
+      "target_path": "res://assets/art/icons/medkit.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "icon.parts",
+      "target_path": "res://assets/art/icons/parts.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "fx.muzzle",
+      "target_path": "res://assets/art/fx/muzzle.png",
+      "kind": "fx_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        128,
+        128
+      ],
+      "has_alpha": true,
+      "frame_px": [
+        128,
+        128
+      ],
+      "atlas_layout": "metadata_required"
+    }
+  ]
+}

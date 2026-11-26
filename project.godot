@@ -1,0 +1,46 @@
+; Engine configuration file. STALRENA — Godot 4.4.1 (GL Compatibility)
+config_version=5
+
+[application]
+
+config/name="STALRENA"
+config/description="Одиночная мобильная 2D-игра на выживание: магазин между волнами, сборка экипировки из частей, бесконечный забег."
+run/main_scene="res://scenes/main_menu.tscn"
+config/features=PackedStringArray("4.4", "GL Compatibility")
+run/max_fps=0
+boot_splash/show_image=false
+config/icon="res://icon.svg"
+
+[autoload]
+
+Settings="*res://scripts/autoload/settings.gd"
+AssetRegistry="*res://scripts/autoload/asset_registry.gd"
+Session="*res://scripts/autoload/session.gd"
+Sfx="*res://scripts/autoload/sfx.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/handheld/orientation=4
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=false
+pointing/emulate_mouse_from_touch=true
+
+[physics]
+
+common/physics_ticks_per_second=60
+common/max_physics_steps_per_frame=4
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/canvas_textures/default_texture_filter=1
+environment/defaults/default_clear_color=Color(0.09, 0.1, 0.09, 1)

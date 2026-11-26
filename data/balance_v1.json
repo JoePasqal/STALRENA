@@ -1,0 +1,1023 @@
+{
+  "schema_version": 1,
+  "game": "STALRENA",
+  "balance_status": "untested_starting_values",
+  "units": {
+    "world": "logical_scene_units",
+    "time": "seconds",
+    "fraction": "0.05 means 5 percent",
+    "rank_arrays": "index 0 is rank I"
+  },
+  "rules": {
+    "offline": true,
+    "pvp": false,
+    "defend_target": "player",
+    "shops_between_waves_only": true,
+    "extra_medkits_enabled": false,
+    "heal_to_full_before_each_wave": true,
+    "sell_base_equipment_enabled": false,
+    "ammo_reserve_infinite": true
+  },
+  "player": {
+    "base_hp": 100,
+    "base_move_speed": 180,
+    "hit_radius": 12,
+    "base_crit_chance": 0.05,
+    "base_crit_multiplier": 1.5,
+    "contact_invulnerability_seconds": 0.35,
+    "regen_delay_after_damage_seconds": 8,
+    "starting_weapon": "pistol",
+    "starting_rank": 1,
+    "starting_armor": null,
+    "starting_coins": 100
+  },
+  "medkit": {
+    "stock_at_wave_start": 1,
+    "carry_over": false,
+    "heal_max_hp_fraction": 0.2,
+    "duration_seconds": 4,
+    "heal_max_hp_fraction_per_second": 0.05,
+    "snapshot_max_hp_on_use": true,
+    "damage_interrupts": false,
+    "can_use_at_full_hp": false,
+    "can_stack_effect": false,
+    "pause_freezes_effect": true
+  },
+  "ranks": [
+    {
+      "rank": 1,
+      "name": "Кустарный",
+      "damage_multiplier": 1,
+      "parts_required": 0,
+      "part_price": 0
+    },
+    {
+      "rank": 2,
+      "name": "Полевой",
+      "damage_multiplier": 1.45,
+      "parts_required": 3,
+      "part_price": 10
+    },
+    {
+      "rank": 3,
+      "name": "Усиленный",
+      "damage_multiplier": 2.1,
+      "parts_required": 3,
+      "part_price": 16
+    },
+    {
+      "rank": 4,
+      "name": "Профессиональный",
+      "damage_multiplier": 3.0,
+      "parts_required": 3,
+      "part_price": 24
+    },
+    {
+      "rank": 5,
+      "name": "Экспериментальный",
+      "damage_multiplier": 4.2,
+      "parts_required": 3,
+      "part_price": 34
+    }
+  ],
+  "weapons": [
+    {
+      "id": "pistol",
+      "name": "Искра",
+      "base_price": 20,
+      "base_rank": 1,
+      "base_damage": 13,
+      "shots_per_second": 2.8,
+      "magazine": 12,
+      "reload_seconds": 1.2,
+      "range_units": 560,
+      "projectile_speed": 800,
+      "spread_degrees": 3,
+      "projectiles_per_shot": 1,
+      "additional_pierce_targets": 0,
+      "fire_mode": "projectile",
+      "unlocks_at_shop_level": 1,
+      "spread_semantics": "uniform_plus_minus",
+      "ammo_per_shot": 1,
+      "world_sprite_id": "weapon.pistol",
+      "icon_id": "icon.weapon.pistol"
+    },
+    {
+      "id": "smg",
+      "name": "Шершень",
+      "base_price": 28,
+      "base_rank": 1,
+      "base_damage": 6,
+      "shots_per_second": 10,
+      "magazine": 30,
+      "reload_seconds": 1.6,
+      "range_units": 480,
+      "projectile_speed": 780,
+      "spread_degrees": 8,
+      "projectiles_per_shot": 1,
+      "additional_pierce_targets": 0,
+      "fire_mode": "projectile",
+      "unlocks_at_shop_level": 1,
+      "spread_semantics": "uniform_plus_minus",
+      "ammo_per_shot": 1,
+      "world_sprite_id": "weapon.smg",
+      "icon_id": "icon.weapon.smg"
+    },
+    {
+      "id": "carbine",
+      "name": "Рубеж",
+      "base_price": 36,
+      "base_rank": 1,
+      "base_damage": 16,
+      "shots_per_second": 5,
+      "magazine": 24,
+      "reload_seconds": 1.6,
+      "range_units": 680,
+      "projectile_speed": 950,
+      "spread_degrees": 4,
+      "projectiles_per_shot": 1,
+      "additional_pierce_targets": 0,
+      "fire_mode": "projectile",
+      "unlocks_at_shop_level": 1,
+      "spread_semantics": "uniform_plus_minus",
+      "ammo_per_shot": 1,
+      "world_sprite_id": "weapon.carbine",
+      "icon_id": "icon.weapon.carbine"
+    },
+    {
+      "id": "shotgun",
+      "name": "Дуплет",
+      "base_price": 34,
+      "base_rank": 1,
+      "base_damage": 6,
+      "shots_per_second": 1.15,
+      "magazine": 6,
+      "reload_seconds": 2.0,
+      "range_units": 360,
+      "projectile_speed": 720,
+      "spread_degrees": 28,
+      "projectiles_per_shot": 7,
+      "additional_pierce_targets": 0,
+      "fire_mode": "projectile",
+      "unlocks_at_shop_level": 1,
+      "spread_semantics": "full_cone",
+      "ammo_per_shot": 1,
+      "world_sprite_id": "weapon.shotgun",
+      "icon_id": "icon.weapon.shotgun"
+    },
+    {
+      "id": "lmg",
+      "name": "Грохот",
+      "base_price": 48,
+      "base_rank": 1,
+      "base_damage": 12,
+      "shots_per_second": 8,
+      "magazine": 70,
+      "reload_seconds": 3.0,
+      "range_units": 620,
+      "projectile_speed": 850,
+      "spread_degrees": 9,
+      "projectiles_per_shot": 1,
+      "additional_pierce_targets": 0,
+      "fire_mode": "projectile",
+      "unlocks_at_shop_level": 1,
+      "spread_semantics": "uniform_plus_minus",
+      "ammo_per_shot": 1,
+      "world_sprite_id": "weapon.lmg",
+      "icon_id": "icon.weapon.lmg"
+    },
+    {
+      "id": "marksman",
+      "name": "Игла",
+      "base_price": 45,
+      "base_rank": 1,
+      "base_damage": 65,
+      "shots_per_second": 1.1,
+      "magazine": 6,
+      "reload_seconds": 2.0,
+      "range_units": 850,
+      "projectile_speed": 1200,
+      "spread_degrees": 1,
+      "projectiles_per_shot": 1,
+      "additional_pierce_targets": 1,
+      "fire_mode": "projectile",
+      "unlocks_at_shop_level": 1,
+      "spread_semantics": "uniform_plus_minus",
+      "ammo_per_shot": 1,
+      "world_sprite_id": "weapon.marksman",
+      "icon_id": "icon.weapon.marksman"
+    },
+    {
+      "id": "flamethrower",
+      "name": "Горн",
+      "base_price": 45,
+      "base_rank": 1,
+      "base_damage": 5,
+      "shots_per_second": 10,
+      "magazine": 80,
+      "reload_seconds": 2.8,
+      "range_units": 190,
+      "projectile_speed": 0,
+      "spread_degrees": 40,
+      "projectiles_per_shot": 1,
+      "additional_pierce_targets": 0,
+      "fire_mode": "cone_ticks",
+      "unlocks_at_shop_level": 1,
+      "spread_semantics": "full_cone",
+      "ammo_per_shot": 1,
+      "world_sprite_id": "weapon.flamethrower",
+      "icon_id": "icon.weapon.flamethrower",
+      "tick_seconds": 0.1,
+      "fuel_per_second": 10,
+      "burn_base_damage_per_second": 4,
+      "burn_duration_seconds": 2,
+      "burn_stacking": "refresh_duration_one_instance",
+      "burn_can_crit": false
+    }
+  ],
+  "armors": [
+    {
+      "id": "light",
+      "name": "Дозор",
+      "base_price": 22,
+      "hp_by_rank": [
+        25,
+        55,
+        95,
+        150,
+        225
+      ],
+      "move_speed_bonus": 0.08,
+      "damage_reduction": 0,
+      "icon_id": "icon.armor.light",
+      "visual_id": "armor.light"
+    },
+    {
+      "id": "field",
+      "name": "Оплот",
+      "base_price": 26,
+      "hp_by_rank": [
+        40,
+        80,
+        130,
+        195,
+        285
+      ],
+      "move_speed_bonus": 0,
+      "damage_reduction": 0,
+      "icon_id": "icon.armor.field",
+      "visual_id": "armor.field"
+    },
+    {
+      "id": "heavy",
+      "name": "Бастион",
+      "base_price": 32,
+      "hp_by_rank": [
+        55,
+        105,
+        170,
+        250,
+        350
+      ],
+      "move_speed_bonus": -0.1,
+      "damage_reduction": 0,
+      "icon_id": "icon.armor.heavy",
+      "visual_id": "armor.heavy"
+    }
+  ],
+  "modules": [
+    {
+      "id": "amplifier",
+      "name": "Усилитель",
+      "set_id": "assault",
+      "stat": "damage_percent",
+      "per_level": 0.08,
+      "price_per_copy": 18,
+      "max_level": 3,
+      "icon_id": "icon.module.amplifier"
+    },
+    {
+      "id": "feeder",
+      "name": "Подаватель",
+      "set_id": "assault",
+      "stat": "fire_rate_percent",
+      "per_level": 0.08,
+      "price_per_copy": 18,
+      "max_level": 3,
+      "icon_id": "icon.module.feeder"
+    },
+    {
+      "id": "bolt_drive",
+      "name": "Привод затвора",
+      "set_id": "assault",
+      "stat": "reload_speed_percent",
+      "per_level": 0.1,
+      "price_per_copy": 18,
+      "max_level": 3,
+      "icon_id": "icon.module.bolt_drive"
+    },
+    {
+      "id": "target_sensor",
+      "name": "Целеуказатель",
+      "set_id": "hunter",
+      "stat": "crit_chance_add",
+      "per_level": 0.04,
+      "price_per_copy": 20,
+      "max_level": 3,
+      "icon_id": "icon.module.target_sensor"
+    },
+    {
+      "id": "precision_core",
+      "name": "Точный сердечник",
+      "set_id": "hunter",
+      "stat": "crit_multiplier_add",
+      "per_level": 0.15,
+      "price_per_copy": 20,
+      "max_level": 3,
+      "icon_id": "icon.module.precision_core"
+    },
+    {
+      "id": "accelerator",
+      "name": "Ускоритель",
+      "set_id": "hunter",
+      "stat": "projectile_speed_percent",
+      "per_level": 0.1,
+      "price_per_copy": 16,
+      "max_level": 3,
+      "icon_id": "icon.module.accelerator"
+    },
+    {
+      "id": "reserve_cells",
+      "name": "Резервные ячейки",
+      "set_id": "survival",
+      "stat": "max_hp_percent",
+      "per_level": 0.08,
+      "price_per_copy": 20,
+      "max_level": 3,
+      "icon_id": "icon.module.reserve_cells"
+    },
+    {
+      "id": "shock_lining",
+      "name": "Демпфер",
+      "set_id": "survival",
+      "stat": "contact_invulnerability_seconds_add",
+      "per_level": 0.04,
+      "price_per_copy": 18,
+      "max_level": 3,
+      "icon_id": "icon.module.shock_lining"
+    },
+    {
+      "id": "cell_matrix",
+      "name": "Клеточная матрица",
+      "set_id": "survival",
+      "stat": "out_of_damage_regen_max_hp_fraction_per_second",
+      "per_level": 0.0025,
+      "price_per_copy": 24,
+      "max_level": 3,
+      "icon_id": "icon.module.cell_matrix"
+    },
+    {
+      "id": "servos",
+      "name": "Сервопривод",
+      "set_id": "maneuver",
+      "stat": "move_speed_percent",
+      "per_level": 0.04,
+      "price_per_copy": 18,
+      "max_level": 3,
+      "icon_id": "icon.module.servos"
+    },
+    {
+      "id": "rangefinder",
+      "name": "Дальномер",
+      "set_id": "maneuver",
+      "stat": "range_percent",
+      "per_level": 0.1,
+      "price_per_copy": 16,
+      "max_level": 3,
+      "icon_id": "icon.module.rangefinder"
+    },
+    {
+      "id": "extended_mag",
+      "name": "Расширенный магазин",
+      "set_id": "maneuver",
+      "stat": "magazine_percent",
+      "per_level": 0.15,
+      "price_per_copy": 18,
+      "max_level": 3,
+      "icon_id": "icon.module.extended_mag"
+    }
+  ],
+  "module_sets": [
+    {
+      "id": "assault",
+      "name": "Штурм",
+      "requires": [
+        "amplifier",
+        "feeder",
+        "bolt_drive"
+      ],
+      "bonus": {
+        "damage_percent": 0.12
+      }
+    },
+    {
+      "id": "hunter",
+      "name": "Охотник",
+      "requires": [
+        "target_sensor",
+        "precision_core",
+        "accelerator"
+      ],
+      "bonus": {
+        "crit_chance_add": 0.06
+      }
+    },
+    {
+      "id": "survival",
+      "name": "Живучесть",
+      "requires": [
+        "reserve_cells",
+        "shock_lining",
+        "cell_matrix"
+      ],
+      "bonus": {
+        "max_hp_percent": 0.12
+      }
+    },
+    {
+      "id": "maneuver",
+      "name": "Манёвр",
+      "requires": [
+        "servos",
+        "rangefinder",
+        "extended_mag"
+      ],
+      "bonus": {
+        "move_speed_percent": 0.06
+      }
+    }
+  ],
+  "shop": {
+    "offer_count": 6,
+    "refresh_cost": 10,
+    "category_weights": {
+      "base_equipment": 20,
+      "parts": 55,
+      "modules": 25
+    },
+    "module_max_level": 3,
+    "sell_refund_fraction": 0.5,
+    "reroll_whole_pool_only": true,
+    "lock_preserves_empty_slots": true,
+    "manual_reroll_clears_lock": true,
+    "pity_failed_paid_rerolls_before_guarantee": 3,
+    "parts_only_next_rank_owned_family": true,
+    "mastery": {
+      "unlock_equipment_rank": 5,
+      "cost": 80,
+      "increment_fraction_of_rank_v_base": 0.05,
+      "total_purchases_per_shop_visit": 1,
+      "separate_weapon_family_counters": true,
+      "separate_armor_family_counters": true
+    },
+    "levels": [
+      {
+        "level": 1,
+        "upgrade_cost_from_previous": 0,
+        "minimum_completed_wave": 0,
+        "module_slots": 2,
+        "rank_weights": {
+          "1": 65,
+          "2": 35,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        }
+      },
+      {
+        "level": 2,
+        "upgrade_cost_from_previous": 40,
+        "minimum_completed_wave": 3,
+        "module_slots": 3,
+        "rank_weights": {
+          "1": 40,
+          "2": 45,
+          "3": 15,
+          "4": 0,
+          "5": 0
+        }
+      },
+      {
+        "level": 3,
+        "upgrade_cost_from_previous": 70,
+        "minimum_completed_wave": 8,
+        "module_slots": 4,
+        "rank_weights": {
+          "1": 20,
+          "2": 40,
+          "3": 30,
+          "4": 10,
+          "5": 0
+        }
+      },
+      {
+        "level": 4,
+        "upgrade_cost_from_previous": 110,
+        "minimum_completed_wave": 16,
+        "module_slots": 5,
+        "rank_weights": {
+          "1": 10,
+          "2": 20,
+          "3": 40,
+          "4": 25,
+          "5": 5
+        }
+      },
+      {
+        "level": 5,
+        "upgrade_cost_from_previous": 160,
+        "minimum_completed_wave": 28,
+        "module_slots": 6,
+        "rank_weights": {
+          "1": 5,
+          "2": 10,
+          "3": 25,
+          "4": 35,
+          "5": 25
+        }
+      }
+    ]
+  },
+  "economy": {
+    "wave_base_reward": 26,
+    "reward_growth_per_wave_after_first": 2,
+    "max_growth_reward": 64,
+    "interest_per_saved_coins": 10,
+    "interest_per_step": 1,
+    "interest_cap": 10,
+    "interest_snapshot": "after_shop_before_wave",
+    "boss_bonus": 30,
+    "kill_rewards": 0,
+    "defeat_reward": 0
+  },
+  "waves": {
+    "sector_length": 12,
+    "threat_start": 10,
+    "threat_growth_per_wave": 3,
+    "threat_cap": 140,
+    "alive_cap": 36,
+    "ranged_alive_cap": 8,
+    "spawn_warning_seconds": 1,
+    "external_spawn_min_distance": 260,
+    "summoned_spawn_min_distance": 120,
+    "summoned_warning_seconds": 1,
+    "attack_grace_after_summoned_enter_seconds": 0.5,
+    "max_same_archetype_streak": 2,
+    "breather_budget_multiplier": 0.75,
+    "archetypes": {
+      "swarm": {
+        "drifter": 6,
+        "runner": 4,
+        "charger": 1,
+        "spitter": 1
+      },
+      "breakthrough": {
+        "drifter": 3,
+        "charger": 4,
+        "brute": 3,
+        "spitter": 1
+      },
+      "hunt": {
+        "runner": 4,
+        "flanker": 4,
+        "drifter": 2,
+        "carrier": 1
+      },
+      "crossfire": {
+        "gunner": 3,
+        "spitter": 3,
+        "drifter": 4,
+        "brute": 1
+      },
+      "breather": {
+        "drifter": 6,
+        "runner": 2,
+        "spitter": 1
+      }
+    },
+    "archetype_weights": {
+      "swarm": 30,
+      "breakthrough": 20,
+      "hunt": 20,
+      "crossfire": 20,
+      "breather": 10
+    }
+  },
+  "scaling": {
+    "enemy_hp_linear_per_wave": 0.055,
+    "enemy_damage_linear_per_wave": 0.025,
+    "enemy_speed_linear_per_wave": 0.004,
+    "enemy_speed_multiplier_cap": 1.25,
+    "projectile_speed_multiplier_cap": 1.2,
+    "projectile_speed_linear_per_wave": 0.002,
+    "late_predictive_aim_after_wave": 24,
+    "late_predictive_aim_max_seconds": 0.25,
+    "telegraph_times_scale": false
+  },
+  "elites": {
+    "first_wave": 18,
+    "initial_probability": 0.08,
+    "probability_growth_per_wave": 0.002,
+    "probability_cap": 0.25,
+    "max_traits_per_enemy": 1,
+    "threat_cost_multiplier": 2,
+    "traits": [
+      {
+        "id": "swift",
+        "name": "Проворный",
+        "speed_multiplier": 1.12,
+        "hp_multiplier": 0.85,
+        "final_speed_multiplier_cap": 1.45
+      },
+      {
+        "id": "sturdy",
+        "name": "Живучий",
+        "hp_multiplier": 1.7,
+        "speed_multiplier": 0.9
+      },
+      {
+        "id": "unstable",
+        "name": "Нестабильный",
+        "death_explosion_warning_seconds": 1,
+        "death_explosion_radius": 90,
+        "death_explosion_base_damage": 15
+      }
+    ]
+  },
+  "enemies": [
+    {
+      "id": "drifter",
+      "name": "Бродяга",
+      "first_wave": 1,
+      "threat_cost": 1,
+      "base_hp": 32,
+      "base_damage": 10,
+      "base_move_speed": 55,
+      "hit_radius": 12,
+      "telegraph_seconds": 0.65,
+      "attack_cycle_min_seconds": 1.2,
+      "recovery_seconds": 0.5,
+      "role": "melee",
+      "visual_id": "enemy.drifter",
+      "attack_cycle_semantics": "minimum_interval_between_attack_starts_including_telegraph_and_recovery",
+      "melee_range": 32
+    },
+    {
+      "id": "runner",
+      "name": "Бегун",
+      "first_wave": 3,
+      "threat_cost": 2,
+      "base_hp": 22,
+      "base_damage": 7,
+      "base_move_speed": 120,
+      "hit_radius": 10,
+      "telegraph_seconds": 0.4,
+      "attack_cycle_min_seconds": 1.1,
+      "recovery_seconds": 0.45,
+      "role": "melee",
+      "visual_id": "enemy.runner",
+      "attack_cycle_semantics": "minimum_interval_between_attack_starts_including_telegraph_and_recovery",
+      "melee_range": 32
+    },
+    {
+      "id": "charger",
+      "name": "Таран",
+      "first_wave": 5,
+      "threat_cost": 4,
+      "base_hp": 90,
+      "base_damage": 22,
+      "base_move_speed": 80,
+      "hit_radius": 15,
+      "telegraph_seconds": 0.85,
+      "attack_cycle_min_seconds": 4.0,
+      "recovery_seconds": 1.25,
+      "role": "charge",
+      "visual_id": "enemy.charger",
+      "attack_cycle_semantics": "minimum_interval_between_attack_starts_including_telegraph_and_recovery",
+      "charge_speed": 360,
+      "charge_speed_cap": 420,
+      "charge_max_distance": 500,
+      "aim_lock_lead_seconds": 0.3,
+      "attack_range_min": 140,
+      "attack_range_max": 480
+    },
+    {
+      "id": "spitter",
+      "name": "Плевун",
+      "first_wave": 7,
+      "threat_cost": 3,
+      "base_hp": 42,
+      "base_damage": 10,
+      "base_move_speed": 65,
+      "hit_radius": 12,
+      "telegraph_seconds": 0.85,
+      "attack_cycle_min_seconds": 2.7,
+      "recovery_seconds": 0.65,
+      "role": "ranged",
+      "visual_id": "enemy.spitter",
+      "attack_cycle_semantics": "minimum_interval_between_attack_starts_including_telegraph_and_recovery",
+      "preferred_distance_min": 260,
+      "preferred_distance_max": 360,
+      "projectile_speed": 260,
+      "spread_degrees_plus_minus": 7,
+      "aim_lock_lead_seconds": 0.25,
+      "burst_count": 1
+    },
+    {
+      "id": "gunner",
+      "name": "Стрелок",
+      "first_wave": 9,
+      "threat_cost": 4,
+      "base_hp": 55,
+      "base_damage": 7,
+      "base_move_speed": 65,
+      "hit_radius": 12,
+      "telegraph_seconds": 0.85,
+      "attack_cycle_min_seconds": 3.6,
+      "recovery_seconds": 1.8,
+      "role": "ranged",
+      "visual_id": "enemy.gunner",
+      "attack_cycle_semantics": "minimum_interval_between_attack_starts_including_telegraph_and_recovery",
+      "preferred_distance_min": 320,
+      "preferred_distance_max": 480,
+      "projectile_speed": 420,
+      "spread_degrees_plus_minus": 8,
+      "late_min_spread_degrees_plus_minus": 4,
+      "aim_lock_lead_seconds": 0.25,
+      "burst_count": 3,
+      "burst_interval_seconds": 0.16,
+      "reload_seconds": 1.8
+    },
+    {
+      "id": "brute",
+      "name": "Громила",
+      "first_wave": 11,
+      "threat_cost": 6,
+      "base_hp": 220,
+      "base_damage": 28,
+      "base_move_speed": 40,
+      "hit_radius": 22,
+      "telegraph_seconds": 1.15,
+      "attack_cycle_min_seconds": 3.1,
+      "recovery_seconds": 0.95,
+      "role": "area_melee",
+      "visual_id": "enemy.brute",
+      "attack_cycle_semantics": "minimum_interval_between_attack_starts_including_telegraph_and_recovery",
+      "area_radius": 90
+    },
+    {
+      "id": "flanker",
+      "name": "Загонщик",
+      "first_wave": 15,
+      "threat_cost": 4,
+      "base_hp": 65,
+      "base_damage": 12,
+      "base_move_speed": 135,
+      "hit_radius": 12,
+      "telegraph_seconds": 0.55,
+      "attack_cycle_min_seconds": 1.6,
+      "recovery_seconds": 0.65,
+      "role": "melee",
+      "visual_id": "enemy.flanker",
+      "attack_cycle_semantics": "minimum_interval_between_attack_starts_including_telegraph_and_recovery",
+      "melee_range": 32,
+      "flank_offset": 180,
+      "retarget_seconds": 0.6
+    },
+    {
+      "id": "carrier",
+      "name": "Носитель",
+      "first_wave": 19,
+      "threat_cost": 8,
+      "base_hp": 110,
+      "base_damage": 10,
+      "base_move_speed": 50,
+      "hit_radius": 16,
+      "telegraph_seconds": 0.8,
+      "attack_cycle_min_seconds": 1.8,
+      "recovery_seconds": 0.8,
+      "role": "carrier",
+      "visual_id": "enemy.carrier",
+      "attack_cycle_semantics": "minimum_interval_between_attack_starts_including_telegraph_and_recovery",
+      "melee_range": 40,
+      "children_id": "runner",
+      "children_count": 2,
+      "threat_cost_includes_children": true,
+      "children_grant_reward": false,
+      "children_spawn_warning_seconds": 1.0
+    }
+  ],
+  "bosses": [
+    {
+      "id": "cleaver",
+      "name": "Секач",
+      "location_id": "sawmill",
+      "base_hp": 1100,
+      "base_damage": 25,
+      "move_speed": 65,
+      "hit_radius": 38,
+      "phase_two_hp_fraction": 0.5,
+      "attacks": [
+        {
+          "id": "charge",
+          "telegraph_seconds": 1.2,
+          "recovery_seconds": 1.5,
+          "speed": 340,
+          "max_distance": 650,
+          "damage_multiplier": 1.2
+        },
+        {
+          "id": "sweep",
+          "telegraph_seconds": 1.0,
+          "recovery_seconds": 1.0,
+          "radius": 150,
+          "cone_degrees": 110,
+          "damage_multiplier": 1
+        },
+        {
+          "id": "call_runners",
+          "telegraph_seconds": 1.0,
+          "recovery_seconds": 1.0,
+          "count": 3,
+          "enemy_id": "runner"
+        }
+      ],
+      "visual_id": "boss.cleaver",
+      "summon_alive_cap": 8,
+      "summon_total_threat_budget_per_phase": 16,
+      "attack_selection": "weighted_nonrepeating_with_safe_pattern_validation",
+      "minimum_gap_between_actions_seconds": 0.8
+    },
+    {
+      "id": "boilermaster",
+      "name": "Котельщик",
+      "location_id": "pumping",
+      "base_hp": 1250,
+      "base_damage": 23,
+      "move_speed": 50,
+      "hit_radius": 42,
+      "phase_two_hp_fraction": 0.5,
+      "attacks": [
+        {
+          "id": "fan",
+          "telegraph_seconds": 1.2,
+          "recovery_seconds": 1.5,
+          "projectiles": 7,
+          "cone_degrees": 100,
+          "projectile_speed": 250,
+          "damage_multiplier": 0.65
+        },
+        {
+          "id": "triple_marks",
+          "telegraph_seconds": 1.3,
+          "recovery_seconds": 1.3,
+          "count": 3,
+          "radius": 65,
+          "damage_multiplier": 1
+        },
+        {
+          "id": "steam",
+          "telegraph_seconds": 1.5,
+          "recovery_seconds": 2.0,
+          "max_active_zones": 2,
+          "zone_duration_seconds": 3,
+          "damage_multiplier": 0.5
+        }
+      ],
+      "visual_id": "boss.boilermaster",
+      "summon_alive_cap": 8,
+      "summon_total_threat_budget_per_phase": 16,
+      "attack_selection": "weighted_nonrepeating_with_safe_pattern_validation",
+      "minimum_gap_between_actions_seconds": 0.8
+    },
+    {
+      "id": "broodmother",
+      "name": "Матка",
+      "location_id": "flooded",
+      "base_hp": 1350,
+      "base_damage": 22,
+      "move_speed": 45,
+      "hit_radius": 44,
+      "phase_two_hp_fraction": 0.5,
+      "attacks": [
+        {
+          "id": "acid",
+          "telegraph_seconds": 1.2,
+          "recovery_seconds": 1.3,
+          "radius": 70,
+          "duration_seconds": 5,
+          "max_active_pools": 4,
+          "tick_seconds": 1,
+          "damage_multiplier": 0.35
+        },
+        {
+          "id": "call_runners",
+          "telegraph_seconds": 1.2,
+          "recovery_seconds": 1.5,
+          "count": 3,
+          "enemy_id": "runner"
+        },
+        {
+          "id": "repulse",
+          "telegraph_seconds": 1.1,
+          "recovery_seconds": 1.2,
+          "radius": 150,
+          "damage_multiplier": 1
+        }
+      ],
+      "visual_id": "boss.broodmother",
+      "summon_alive_cap": 8,
+      "summon_total_threat_budget_per_phase": 16,
+      "attack_selection": "weighted_nonrepeating_with_safe_pattern_validation",
+      "minimum_gap_between_actions_seconds": 0.8
+    }
+  ],
+  "combat_coordinator": {
+    "early_ranged_attack_tokens": 2,
+    "late_ranged_attack_tokens": 4,
+    "late_tokens_first_wave": 25,
+    "boss_pattern_tokens": 1,
+    "waiting_attack_jitter_seconds_min": 0.15,
+    "waiting_attack_jitter_seconds_max": 0.45,
+    "enemy_projectile_cap": 120,
+    "player_projectile_cap": 180,
+    "hazard_cap": 8
+  },
+  "stat_caps": {
+    "move_speed_multiplier_min": 0.75,
+    "move_speed_multiplier_max": 1.35,
+    "crit_chance_max": 0.6,
+    "crit_multiplier_max": 2.5,
+    "fire_rate_bonus_max": 0.8,
+    "contact_invulnerability_seconds_max": 0.6,
+    "range_bonus_max": 0.6,
+    "projectile_speed_bonus_max": 0.6,
+    "magazine_bonus_max": 1.0
+  },
+  "locations": [
+    {
+      "id": "sawmill",
+      "name": "Лесопилка",
+      "size": [
+        1600,
+        1000
+      ],
+      "boss_id": "cleaver",
+      "first_visit_environment_hazards": false,
+      "minimum_layout_variants": 2
+    },
+    {
+      "id": "pumping",
+      "name": "Насосная станция",
+      "size": [
+        1600,
+        1000
+      ],
+      "boss_id": "boilermaster",
+      "steam_warning_seconds": 1.2,
+      "minimum_layout_variants": 2
+    },
+    {
+      "id": "flooded",
+      "name": "Затопленный двор",
+      "size": [
+        1600,
+        1000
+      ],
+      "boss_id": "broodmother",
+      "water_ground_move_speed_multiplier": 0.85,
+      "minimum_layout_variants": 2
+    }
+  ],
+  "save": {
+    "schema_version": 1,
+    "active_slots": 1,
+    "atomic_write": true,
+    "backup_copies": 1,
+    "save_every_shop_transaction": true,
+    "resume_mid_combat": "restart_current_wave_from_pre_wave_checkpoint",
+    "mark_run_over_on_defeat": true,
+    "recent_results_count": 10
+  },
+  "presentation": {
+    "logical_viewport": [
+      1280,
+      720
+    ],
+    "orientation": "landscape",
+    "art_style": "detailed_2d_painted_volume",
+    "screen_shake_default": false,
+    "auto_aim_default": true,
+    "renderer_preference": "gl_compatibility"
+  }
+}
