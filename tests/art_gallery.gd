@@ -30,6 +30,8 @@ func _ready() -> void:
 	if mode in ["enemies", "all"]: await enemies_shot()
 	if mode in ["walk", "all"]: await walk_frames()
 	if mode in ["death", "all"]: await death_frames()
+	if mode in ["walkn", "all"]: await walk_n_weapons()
+	if mode in ["floors", "all"]: await floors_shot()
 	if mode in ["props", "all"]:
 		await props_shot()
 	get_tree().quit()
@@ -100,12 +102,12 @@ func _sheet(rows: Array, cols: int, name: String) -> void:
 
 func hero_sheet() -> void:
 	var crops: Array = []
-	for weapon in ["pistol", "carbine"]:
+	for weapon in GameData.weapon_ids:
 		for dir in [Vector2.DOWN, Vector2.RIGHT, Vector2.UP, Vector2.LEFT]:
 			_setup_player(weapon, "", dir)
 			await _f(3)
 			crops.append(_crop())
-	_sheet(crops, 4, "hero_weapons_SENW_pistol_carbine")
+	_sheet(crops, 4, "hero_weapons_SENW_all7")
 
 
 func armor_sheet() -> void:
@@ -139,7 +141,7 @@ func armor_sheet() -> void:
 
 func enemies_shot() -> void:
 	game.player.visible = false
-	var ids := ["drifter", "runner", "spitter"]
+	var ids: Array = GameData.enemies.keys()
 	var dirs := [Vector2.DOWN, Vector2.RIGHT, Vector2.UP, Vector2.LEFT]
 	var crops: Array = []
 	for id in ids:
@@ -154,7 +156,7 @@ func enemies_shot() -> void:
 			crops.append(_crop())
 			game.enemies.erase(e)
 			e.queue_free()
-	_sheet(crops, 4, "enemies_on_floor_SENW")
+	_sheet(crops, 4, "enemies_all8_SENW")
 	game.player.visible = true
 
 
@@ -206,3 +208,54 @@ func death_frames() -> void:
 		pl.tick(0.1)
 		await _f(2)
 		_crop().save_png("%s/death_%02d.png" % [out, i])
+
+
+## Ходьба/hit на N с каждым оружием: проверка видимой перчатки и покадровых сокетов.
+func walk_n_weapons() -> void:
+	for weapon in GameData.weapon_ids:
+		var crops: Array = []
+		_setup_player(weapon, "field", Vector2.UP)
+		for k in 4:
+			game.player.vel = Vector2(0, -150)
+			game.player.walk_t = (k + 0.1) / 8.0
+			game.player._frame_key = ""
+			game.player._update_visuals(0.0)
+			await _f(3)
+			crops.append(_crop())
+		game.player.vel = Vector2.ZERO
+		game.player.hit_flash = 0.1
+		game.player._frame_key = ""
+		game.player._update_visuals(0.0)
+		await _f(3)
+		crops.append(_crop())
+		game.player.hit_flash = 0.0
+		game.player._frame_key = ""
+		game.player._update_visuals(0.0)
+		await _f(3)
+		crops.append(_crop())
+		_sheet(crops, 6, "N_walk_hit_idle_" + weapon)
+
+
+func floors_shot() -> void:
+	for loc in ["sawmill", "pumping", "flooded"]:
+		var tex := AssetRegistry.get_texture("floor." + loc)
+		var img := tex.get_image()
+		if img.is_compressed():
+			img.decompress()
+		img.convert(Image.FORMAT_RGBA8)
+		var big := Image.create(1536, 1536, false, Image.FORMAT_RGBA8)
+		for x in 3:
+			for y in 3:
+				big.blit_rect(img, Rect2i(0, 0, 512, 512), Vector2i(x * 512, y * 512))
+		big.resize(900, 900)
+		big.save_png("%s/floor_3x3_%s.png" % [out, loc])
+	# реальные арены трёх локаций
+	for pair in [["sawmill_a", "sawmill"], ["pumping_a", "pumping"], ["flooded_a", "flooded"]]:
+		await _begin({}, 0)
+		game._build_arena({"layout_id": pair[0], "location_id": pair[1], "tint_index": 0, "sector": 1})
+		game.cam.zoom = Vector2(0.8, 0.8)
+		game.cam.position = Vector2(800, 500)
+		game.player.position = Vector2(800, 500)
+		game.player.visible = true
+		await _f(4)
+		get_viewport().get_texture().get_image().save_png("%s/arena_%s.png" % [out, pair[1]])

@@ -42,6 +42,8 @@ const HAND_MASK_RADIUS := 17.0
 var weapon_sprite: Sprite2D
 var _frame_key := ""
 var _facing := "S"
+var _anim := "idle"
+var _anim_idx := 0
 var _muzzle_vec := Vector2(40, 0)   # хват→дуло в мировых единицах для вправо-направленного спрайта
 var death_t := 0.0
 var debug_muzzle := false      # крестик в точке выхода пули (проверка хвата/дула)
@@ -341,6 +343,8 @@ func _update_visuals(dt: float) -> void:
 	var idx := int(walk_t * 8.0) % 4 if (moving and not dead) else 0
 	if dead:
 		idx = mini(int(death_t * DEATH_FPS), 3)           # последовательность смерти: 4 кадра, затем остаётся лежать
+	_anim = anim
+	_anim_idx = idx
 	var key := "%s|%s|%d" % [anim, _facing, idx]
 	var placeholder := true
 	if key != _frame_key:
@@ -356,7 +360,7 @@ func _update_visuals(dt: float) -> void:
 		hands_sprite.visible = armor_sprite.visible and not placeholder
 		if hands_sprite.visible:
 			_apply_frame(hands_sprite, fr, "hero.body")
-			var sk := AssetRegistry.get_weapon_socket("E" if _facing == "W" else _facing)
+			var sk := AssetRegistry.get_weapon_socket(_facing, anim, idx)
 			_hand_mat.set_shader_parameter("center_px", fr.region.position + sk)
 	var bob := (sin(walk_t * TAU) * 1.5 if (moving and _frame_is_placeholder()) else 0.0)
 	body.position.y = bob
@@ -397,7 +401,7 @@ func _apply_frame(spr: Sprite2D, fr: Dictionary, id: String) -> void:
 
 func _hand_offset() -> Vector2:
 	var f := _facing_name()
-	var sock := AssetRegistry.get_weapon_socket(f)
+	var sock := AssetRegistry.get_weapon_socket(f, _anim, _anim_idx)
 	var piv := AssetRegistry.get_pivot("hero.body")
 	var off := (sock - piv) * AssetRegistry.get_scale("hero.body")
 	if f == "W":

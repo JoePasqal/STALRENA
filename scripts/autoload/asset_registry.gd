@@ -180,8 +180,16 @@ func get_scale(id: String) -> float:
 
 
 ## Сокет оружия героя (в px клетки) по направлению. Из метаданных, если есть настоящий файл героя.
-func get_weapon_socket(dir: String) -> Vector2:
+## anim/idx — покадровые координаты (hero.weapon_socket_frames_px[dir][anim] — точка или список точек по кадрам).
+func get_weapon_socket(dir: String, anim: String = "idle", idx: int = 0) -> Vector2:
 	var d := "E" if dir == "W" else dir
+	if file_exists("hero.body") and meta.has("hero") and meta.hero.has("weapon_socket_frames_px") and meta.hero.weapon_socket_frames_px.has(d):
+		var fr: Dictionary = meta.hero.weapon_socket_frames_px[d]
+		if fr.has(anim):
+			var v = fr[anim]
+			if v.size() > 0 and typeof(v[0]) == TYPE_ARRAY:
+				v = v[idx % v.size()]
+			return Vector2(v[0], v[1])
 	if file_exists("hero.body") and meta.has("hero") and meta.hero.has("weapon_socket_px") and meta.hero.weapon_socket_px.has(d):
 		var v: Array = meta.hero.weapon_socket_px[d]
 		return Vector2(v[0], v[1])
