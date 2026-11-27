@@ -10290,6 +10290,1185 @@
         177.5,
         85.0
       ]
+    },
+    "armor.light.anim": {
+      "target_path": "res://assets/art/armor/light_anim.png",
+      "priority": 6,
+      "status": "prepared",
+      "canvas_px": [
+        1536,
+        768
+      ],
+      "bbox_px": [
+        105,
+        88,
+        1174,
+        666
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": [
+        0.262802839209245,
+        0.2975609756097561,
+        0.32
+      ],
+      "upscaled": false,
+      "sha256": "e33dc8f19fd31ff5043fd4b25b429bd6045e7ef3a99c2a3dc75679d734be2b98",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        256,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "direction": "S",
+          "pose": "walk0",
+          "bbox_px": [
+            110,
+            89,
+            150,
+            142
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 1,
+          "source_to_png_scale": 0.262802839209245,
+          "registration_offset_px": [
+            1.129,
+            -0.126
+          ],
+          "rgba_sha256": "64b4c0741798596eb0044c05b182dc102f135cc32f00d63a03276c24d009cdbe"
+        },
+        {
+          "index": 1,
+          "direction": "S",
+          "pose": "walk1",
+          "bbox_px": [
+            111,
+            89,
+            150,
+            143
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 2,
+          "source_to_png_scale": 0.262802839209245,
+          "registration_offset_px": [
+            1.623,
+            -0.291
+          ],
+          "rgba_sha256": "d4f969fc0133a96448dcc710e3119e0fabebb4e2936db3c760c9d7d586edba5a"
+        },
+        {
+          "index": 2,
+          "direction": "S",
+          "pose": "walk2",
+          "bbox_px": [
+            110,
+            89,
+            150,
+            143
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 3,
+          "source_to_png_scale": 0.262802839209245,
+          "registration_offset_px": [
+            1.463,
+            -0.418
+          ],
+          "rgba_sha256": "8c463bd284272a22067434420f2bf34b7790dba1ef3bf4da9af2b64eca995ec6"
+        },
+        {
+          "index": 3,
+          "direction": "S",
+          "pose": "walk3",
+          "bbox_px": [
+            109,
+            89,
+            148,
+            142
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 4,
+          "source_to_png_scale": 0.262802839209245,
+          "registration_offset_px": [
+            -0.45,
+            -0.353
+          ],
+          "rgba_sha256": "5fd2e697785e49c6c02c66621f6dbdceaefca5319476eb48ec1a67b0eaf21fdb"
+        },
+        {
+          "index": 4,
+          "direction": "S",
+          "pose": "hit",
+          "bbox_px": [
+            109,
+            88,
+            150,
+            137
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 5,
+          "source_to_png_scale": 0.262802839209245,
+          "registration_offset_px": [
+            0.927,
+            -0.512
+          ],
+          "rgba_sha256": "a27b4956bc84785c79d85af3a77070a445a11a5ada9623f5b5a890a95e517213"
+        },
+        {
+          "index": 6,
+          "direction": "E",
+          "pose": "walk0",
+          "bbox_px": [
+            116,
+            92,
+            152,
+            153
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 1,
+          "source_to_png_scale": 0.2975609756097561,
+          "registration_offset_px": [
+            5.543,
+            -0.115
+          ],
+          "rgba_sha256": "ce01761576969e4a41a2db64c312f05843b876e66a1e1a41c4b5355ffe77d036"
+        },
+        {
+          "index": 7,
+          "direction": "E",
+          "pose": "walk1",
+          "bbox_px": [
+            122,
+            92,
+            159,
+            153
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 2,
+          "source_to_png_scale": 0.2975609756097561,
+          "registration_offset_px": [
+            12.525,
+            0.181
+          ],
+          "rgba_sha256": "0e5b59cd07b9f287a29cab01269e0a081dfa0ec2bb2e57f3d1c8c072822ebe0e"
+        },
+        {
+          "index": 8,
+          "direction": "E",
+          "pose": "walk2",
+          "bbox_px": [
+            113,
+            91,
+            152,
+            155
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 3,
+          "source_to_png_scale": 0.2975609756097561,
+          "registration_offset_px": [
+            4.504,
+            0.319
+          ],
+          "rgba_sha256": "52ba95bb3e46d59eb93565f4b02f674b3c1b154f0d364d7d50204e1fc05cdb30"
+        },
+        {
+          "index": 9,
+          "direction": "E",
+          "pose": "walk3",
+          "bbox_px": [
+            122,
+            92,
+            160,
+            153
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 4,
+          "source_to_png_scale": 0.2975609756097561,
+          "registration_offset_px": [
+            12.658,
+            0.399
+          ],
+          "rgba_sha256": "1b4aff516a8014f72f424e264be2036621e507cc1281328ff95f503dde4537fd"
+        },
+        {
+          "index": 10,
+          "direction": "E",
+          "pose": "hit",
+          "bbox_px": [
+            112,
+            94,
+            150,
+            151
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 5,
+          "source_to_png_scale": 0.2975609756097561,
+          "registration_offset_px": [
+            3.228,
+            0.224
+          ],
+          "rgba_sha256": "d7dccff5bc0da1ec1595496ef93f3df6a36d2dce1286d3a6d08b65010a3e98f7"
+        },
+        {
+          "index": 12,
+          "direction": "N",
+          "pose": "walk0",
+          "bbox_px": [
+            105,
+            88,
+            155,
+            153
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 1,
+          "source_to_png_scale": 0.32,
+          "registration_offset_px": [
+            2.299,
+            -0.189
+          ],
+          "rgba_sha256": "645aa38c0dc082f01452de1702bda2bc515c390b6b6199e1f234111ae84eee55"
+        },
+        {
+          "index": 13,
+          "direction": "N",
+          "pose": "walk1",
+          "bbox_px": [
+            104,
+            88,
+            153,
+            153
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 2,
+          "source_to_png_scale": 0.32,
+          "registration_offset_px": [
+            0.794,
+            -0.154
+          ],
+          "rgba_sha256": "0d704cb6052b9e7b450fdd308eb411110490cb07ed1f0ae3b7047e29d298c689"
+        },
+        {
+          "index": 14,
+          "direction": "N",
+          "pose": "walk2",
+          "bbox_px": [
+            109,
+            89,
+            159,
+            153
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 3,
+          "source_to_png_scale": 0.32,
+          "registration_offset_px": [
+            5.864,
+            -0.303
+          ],
+          "rgba_sha256": "4776c5561b2c997d4e74dbd9bd80dda392a88e44048eda9bd17594693a5040b4"
+        },
+        {
+          "index": 15,
+          "direction": "N",
+          "pose": "walk3",
+          "bbox_px": [
+            106,
+            89,
+            155,
+            152
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 4,
+          "source_to_png_scale": 0.32,
+          "registration_offset_px": [
+            2.739,
+            -0.812
+          ],
+          "rgba_sha256": "0ece245f20c854a8a4300dd8bd5f396cb39530c9ff92707b2b224ad77dd30323"
+        },
+        {
+          "index": 16,
+          "direction": "N",
+          "pose": "hit",
+          "bbox_px": [
+            98,
+            92,
+            149,
+            154
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 5,
+          "source_to_png_scale": 0.32,
+          "registration_offset_px": [
+            -4.646,
+            1.517
+          ],
+          "rgba_sha256": "f49fc6ec74595055ea956dcfc69d8da9af184f5e3baf9c161a9619ea51971ce8"
+        }
+      ],
+      "layout": "6x3_S_E_N",
+      "columns": [
+        "walk0",
+        "walk1",
+        "walk2",
+        "walk3",
+        "hit",
+        "empty"
+      ],
+      "frame_count": 15,
+      "empty_column": 5,
+      "reference_body": "hero.body",
+      "normalization": "uniform scale per direction matched to accepted vest and front hand clearance; registration follows hero head displacement",
+      "source_size_px": [
+        1402,
+        1122
+      ],
+      "visible_extent_world_px": [
+        534.5,
+        289.0
+      ],
+      "max_frame_extent_world_px": [
+        25.5,
+        32.5
+      ]
+    },
+    "armor.field.anim": {
+      "target_path": "res://assets/art/armor/field_anim.png",
+      "priority": 6,
+      "status": "prepared",
+      "canvas_px": [
+        1536,
+        768
+      ],
+      "bbox_px": [
+        104,
+        88,
+        1178,
+        667
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": [
+        0.28933037053610017,
+        0.22580645161290322,
+        0.3033175355450237
+      ],
+      "upscaled": false,
+      "sha256": "f3523bf858b5e6a5b83e0c4ad139b0ac9098bbba2d64d0e381073846ade412b1",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        256,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "direction": "S",
+          "pose": "walk0",
+          "bbox_px": [
+            104,
+            89,
+            155,
+            153
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 1,
+          "source_to_png_scale": 0.28933037053610017,
+          "registration_offset_px": [
+            1.129,
+            -0.126
+          ],
+          "rgba_sha256": "91320502372500a25898f8181b86b714f7bc3956bc4e96416c3e9f282f5ca340"
+        },
+        {
+          "index": 1,
+          "direction": "S",
+          "pose": "walk1",
+          "bbox_px": [
+            105,
+            89,
+            155,
+            153
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 2,
+          "source_to_png_scale": 0.28933037053610017,
+          "registration_offset_px": [
+            1.623,
+            -0.291
+          ],
+          "rgba_sha256": "93a537e172ce4bf3e6bb3c90e7678cdfa8eea3ed564a96320ebe41921a178020"
+        },
+        {
+          "index": 2,
+          "direction": "S",
+          "pose": "walk2",
+          "bbox_px": [
+            105,
+            89,
+            154,
+            156
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 3,
+          "source_to_png_scale": 0.28933037053610017,
+          "registration_offset_px": [
+            1.463,
+            -0.418
+          ],
+          "rgba_sha256": "7421980e41b47803361f4cf4f4047f6e6efd06999c3f5e3cf574e37e4a043cc4"
+        },
+        {
+          "index": 3,
+          "direction": "S",
+          "pose": "walk3",
+          "bbox_px": [
+            103,
+            89,
+            152,
+            152
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 4,
+          "source_to_png_scale": 0.28933037053610017,
+          "registration_offset_px": [
+            -0.45,
+            -0.353
+          ],
+          "rgba_sha256": "883f3c81e39b2df130845eef26c59d27c6bfcca55b0b7b93787e714e06fa2ecc"
+        },
+        {
+          "index": 4,
+          "direction": "S",
+          "pose": "hit",
+          "bbox_px": [
+            104,
+            88,
+            154,
+            151
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 5,
+          "source_to_png_scale": 0.28933037053610017,
+          "registration_offset_px": [
+            0.927,
+            -0.512
+          ],
+          "rgba_sha256": "c0754173d546830e5fcc681c7442139284ec230cc757a5e33068132d426e6eed"
+        },
+        {
+          "index": 6,
+          "direction": "E",
+          "pose": "walk0",
+          "bbox_px": [
+            116,
+            104,
+            151,
+            152
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 1,
+          "source_to_png_scale": 0.22580645161290322,
+          "registration_offset_px": [
+            5.543,
+            -0.115
+          ],
+          "rgba_sha256": "c24281ec77e1ca6e11008b66130745aa6d2264e954e7fb40b1f2567fc75b01cb"
+        },
+        {
+          "index": 7,
+          "direction": "E",
+          "pose": "walk1",
+          "bbox_px": [
+            123,
+            104,
+            158,
+            153
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 2,
+          "source_to_png_scale": 0.22580645161290322,
+          "registration_offset_px": [
+            12.525,
+            0.181
+          ],
+          "rgba_sha256": "f94b31b420f6acfaa30e63a6bda68e53e5b2fe6367d57e61f2a5b38204822f70"
+        },
+        {
+          "index": 8,
+          "direction": "E",
+          "pose": "walk2",
+          "bbox_px": [
+            115,
+            104,
+            150,
+            153
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 3,
+          "source_to_png_scale": 0.22580645161290322,
+          "registration_offset_px": [
+            4.504,
+            0.319
+          ],
+          "rgba_sha256": "8a199f14edefbecff757a12ebc24d0186d277531b04432505d3a5c52e739f621"
+        },
+        {
+          "index": 9,
+          "direction": "E",
+          "pose": "walk3",
+          "bbox_px": [
+            123,
+            105,
+            159,
+            153
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 4,
+          "source_to_png_scale": 0.22580645161290322,
+          "registration_offset_px": [
+            12.658,
+            0.399
+          ],
+          "rgba_sha256": "3220b1523604c092393873f07f687459251b2044d6439c0a5091530a3f6ed1ba"
+        },
+        {
+          "index": 10,
+          "direction": "E",
+          "pose": "hit",
+          "bbox_px": [
+            114,
+            104,
+            148,
+            153
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 5,
+          "source_to_png_scale": 0.22580645161290322,
+          "registration_offset_px": [
+            3.228,
+            0.224
+          ],
+          "rgba_sha256": "13f12f692ed0ba87943e4059279d1ca4f39f4b2726c33d4d5f0d0ed1e47e4746"
+        },
+        {
+          "index": 12,
+          "direction": "N",
+          "pose": "walk0",
+          "bbox_px": [
+            104,
+            89,
+            158,
+            153
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 1,
+          "source_to_png_scale": 0.3033175355450237,
+          "registration_offset_px": [
+            2.299,
+            -0.189
+          ],
+          "rgba_sha256": "3f8f9a2f36d0488fb6c12bbacfdd49c24ee6797bf432a9863aab738a02ed1adc"
+        },
+        {
+          "index": 13,
+          "direction": "N",
+          "pose": "walk1",
+          "bbox_px": [
+            102,
+            89,
+            156,
+            153
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 2,
+          "source_to_png_scale": 0.3033175355450237,
+          "registration_offset_px": [
+            0.794,
+            -0.154
+          ],
+          "rgba_sha256": "126f84ceeb0a0e0b071f16f71e46d09577fcfd17749055c5e410c52f2c5a2eca"
+        },
+        {
+          "index": 14,
+          "direction": "N",
+          "pose": "walk2",
+          "bbox_px": [
+            107,
+            88,
+            161,
+            154
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 3,
+          "source_to_png_scale": 0.3033175355450237,
+          "registration_offset_px": [
+            5.864,
+            -0.303
+          ],
+          "rgba_sha256": "f2ca2d8737d4fad47c2595994a1f091b07035cf5d4fdcff49b78bdd0497d9067"
+        },
+        {
+          "index": 15,
+          "direction": "N",
+          "pose": "walk3",
+          "bbox_px": [
+            105,
+            88,
+            158,
+            152
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 4,
+          "source_to_png_scale": 0.3033175355450237,
+          "registration_offset_px": [
+            2.739,
+            -0.812
+          ],
+          "rgba_sha256": "810c510891effa8e9e6e541cf035a6143b759e9da5c86ed92f2d2eda482a6795"
+        },
+        {
+          "index": 16,
+          "direction": "N",
+          "pose": "hit",
+          "bbox_px": [
+            96,
+            91,
+            152,
+            155
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 5,
+          "source_to_png_scale": 0.3033175355450237,
+          "registration_offset_px": [
+            -4.646,
+            1.517
+          ],
+          "rgba_sha256": "050f119ae5998fcaead7ecdb09812d32ea2907c052dabd3415e7679dc6baa4f2"
+        }
+      ],
+      "layout": "6x3_S_E_N",
+      "columns": [
+        "walk0",
+        "walk1",
+        "walk2",
+        "walk3",
+        "hit",
+        "empty"
+      ],
+      "frame_count": 15,
+      "empty_column": 5,
+      "reference_body": "hero.body",
+      "normalization": "uniform scale per direction matched to accepted vest and front hand clearance; registration follows hero head displacement",
+      "source_size_px": [
+        1402,
+        1122
+      ],
+      "visible_extent_world_px": [
+        537.0,
+        289.5
+      ],
+      "max_frame_extent_world_px": [
+        28.0,
+        33.5
+      ]
+    },
+    "armor.heavy.anim": {
+      "target_path": "res://assets/art/armor/heavy_anim.png",
+      "priority": 6,
+      "status": "prepared",
+      "canvas_px": [
+        1536,
+        768
+      ],
+      "bbox_px": [
+        102,
+        88,
+        1179,
+        667
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": [
+        0.3004694835680751,
+        0.3033175355450237,
+        0.3137254901960784
+      ],
+      "upscaled": false,
+      "sha256": "d63dcdb9839f0ce732467e190b154f9e3040035e305747aea65cb9b7172aa394",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        256,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "direction": "S",
+          "pose": "walk0",
+          "bbox_px": [
+            103,
+            89,
+            156,
+            154
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 1,
+          "source_to_png_scale": 0.3004694835680751,
+          "registration_offset_px": [
+            1.129,
+            -0.126
+          ],
+          "rgba_sha256": "48561bd11eb97c571220a7fcfde5899a842e7733ebb452244b06284513519c02"
+        },
+        {
+          "index": 1,
+          "direction": "S",
+          "pose": "walk1",
+          "bbox_px": [
+            105,
+            89,
+            156,
+            153
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 2,
+          "source_to_png_scale": 0.3004694835680751,
+          "registration_offset_px": [
+            1.623,
+            -0.291
+          ],
+          "rgba_sha256": "93aa27db3ea594fbc2753f60c3c314375ef635dc211b5060926118342f619189"
+        },
+        {
+          "index": 2,
+          "direction": "S",
+          "pose": "walk2",
+          "bbox_px": [
+            104,
+            89,
+            156,
+            154
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 3,
+          "source_to_png_scale": 0.3004694835680751,
+          "registration_offset_px": [
+            1.463,
+            -0.418
+          ],
+          "rgba_sha256": "8e1cbe976dae3061017ee125fcf74469f31e56cfe565ac861e5060c6aefb514f"
+        },
+        {
+          "index": 3,
+          "direction": "S",
+          "pose": "walk3",
+          "bbox_px": [
+            102,
+            89,
+            154,
+            153
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 4,
+          "source_to_png_scale": 0.3004694835680751,
+          "registration_offset_px": [
+            -0.45,
+            -0.353
+          ],
+          "rgba_sha256": "6638dc275ceeb316fac9b033f7bd45a51ddfbdf12dd0dc8076c4d937b673de4e"
+        },
+        {
+          "index": 4,
+          "direction": "S",
+          "pose": "hit",
+          "bbox_px": [
+            103,
+            88,
+            155,
+            150
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 5,
+          "source_to_png_scale": 0.3004694835680751,
+          "registration_offset_px": [
+            0.927,
+            -0.512
+          ],
+          "rgba_sha256": "50264f28f210c5abcbaccecf7842a1841565d69d18764851b1199f712d2ca2a2"
+        },
+        {
+          "index": 6,
+          "direction": "E",
+          "pose": "walk0",
+          "bbox_px": [
+            113,
+            89,
+            153,
+            153
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 1,
+          "source_to_png_scale": 0.3033175355450237,
+          "registration_offset_px": [
+            5.543,
+            -0.115
+          ],
+          "rgba_sha256": "90c9534f3506f1a5c54403397271dde25631289ecd63c25ef555e21dcbf3eeb5"
+        },
+        {
+          "index": 7,
+          "direction": "E",
+          "pose": "walk1",
+          "bbox_px": [
+            121,
+            89,
+            160,
+            154
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 2,
+          "source_to_png_scale": 0.3033175355450237,
+          "registration_offset_px": [
+            12.525,
+            0.181
+          ],
+          "rgba_sha256": "d0b1e13ff69fae9c1747385844010169946af9d0f3b5be25052311cd316f6aaf"
+        },
+        {
+          "index": 8,
+          "direction": "E",
+          "pose": "walk2",
+          "bbox_px": [
+            112,
+            88,
+            152,
+            154
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 3,
+          "source_to_png_scale": 0.3033175355450237,
+          "registration_offset_px": [
+            4.504,
+            0.319
+          ],
+          "rgba_sha256": "9b956d506638d43c9a21d5ee8b2c286408a850bbb94fe3977941936ee0657368"
+        },
+        {
+          "index": 9,
+          "direction": "E",
+          "pose": "walk3",
+          "bbox_px": [
+            121,
+            90,
+            160,
+            153
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 4,
+          "source_to_png_scale": 0.3033175355450237,
+          "registration_offset_px": [
+            12.658,
+            0.399
+          ],
+          "rgba_sha256": "82f88976b5c879ab8ef15a56a037811f5d9fc1bc59de269688dcf038cbbb0ed3"
+        },
+        {
+          "index": 10,
+          "direction": "E",
+          "pose": "hit",
+          "bbox_px": [
+            109,
+            90,
+            153,
+            153
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 5,
+          "source_to_png_scale": 0.3033175355450237,
+          "registration_offset_px": [
+            3.228,
+            0.224
+          ],
+          "rgba_sha256": "1d59ee5b20d7967347aa9683db34f5f08d53cd4000a9f72816de21596c2d2069"
+        },
+        {
+          "index": 12,
+          "direction": "N",
+          "pose": "walk0",
+          "bbox_px": [
+            102,
+            88,
+            159,
+            153
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 1,
+          "source_to_png_scale": 0.3137254901960784,
+          "registration_offset_px": [
+            2.299,
+            -0.189
+          ],
+          "rgba_sha256": "1bfa8a993b6e48c60855d5f8e4aebf652fc5f5f4b9cea78fde36ffbeb495d16f"
+        },
+        {
+          "index": 13,
+          "direction": "N",
+          "pose": "walk1",
+          "bbox_px": [
+            101,
+            89,
+            157,
+            153
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 2,
+          "source_to_png_scale": 0.3137254901960784,
+          "registration_offset_px": [
+            0.794,
+            -0.154
+          ],
+          "rgba_sha256": "86606f36cd47f4986b9680dd7c625271bd8375408935c65882274141eb8b8469"
+        },
+        {
+          "index": 14,
+          "direction": "N",
+          "pose": "walk2",
+          "bbox_px": [
+            106,
+            89,
+            162,
+            153
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 3,
+          "source_to_png_scale": 0.3137254901960784,
+          "registration_offset_px": [
+            5.864,
+            -0.303
+          ],
+          "rgba_sha256": "e5d0165d6d0ee9380792369f95c053652ba5acec01ddb35c93523ec5023d5393"
+        },
+        {
+          "index": 15,
+          "direction": "N",
+          "pose": "walk3",
+          "bbox_px": [
+            103,
+            88,
+            159,
+            153
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 4,
+          "source_to_png_scale": 0.3137254901960784,
+          "registration_offset_px": [
+            2.739,
+            -0.812
+          ],
+          "rgba_sha256": "7507a7fe9ef6f8afe3a2e511e2204d2fb7f27eea1b3b330103bf9bc0ffaa3ee8"
+        },
+        {
+          "index": 16,
+          "direction": "N",
+          "pose": "hit",
+          "bbox_px": [
+            96,
+            91,
+            152,
+            155
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "body_pose_column": 5,
+          "source_to_png_scale": 0.3137254901960784,
+          "registration_offset_px": [
+            -4.646,
+            1.517
+          ],
+          "rgba_sha256": "eb54d27dbbeb6204f68f395a0cb4587978761feaed6f0a3f1db8d8b8b79d34f5"
+        }
+      ],
+      "layout": "6x3_S_E_N",
+      "columns": [
+        "walk0",
+        "walk1",
+        "walk2",
+        "walk3",
+        "hit",
+        "empty"
+      ],
+      "frame_count": 15,
+      "empty_column": 5,
+      "reference_body": "hero.body",
+      "normalization": "uniform scale per direction matched to accepted vest and front hand clearance; registration follows hero head displacement",
+      "source_size_px": [
+        1402,
+        1122
+      ],
+      "visible_extent_world_px": [
+        538.5,
+        289.5
+      ],
+      "max_frame_extent_world_px": [
+        28.5,
+        33.0
+      ]
     }
   },
   "priorities": {
@@ -10440,12 +11619,23 @@
         "corpse.boss.broodmother"
       ],
       "runtime_verified": false
+    },
+    "6": {
+      "status": "prepared",
+      "asset_ids": [
+        "armor.light.anim",
+        "armor.field.anim",
+        "armor.heavy.anim"
+      ],
+      "runtime_verified": false
     }
   },
   "disputed": [
     "water.flooded_edge указан в заказе, но отсутствовал в manifest. Добавлена planned-запись с явным target_path assets/art/floors/water_flooded_edge.png, холстом 512×256 и pivot (256,217). Это отдельная полоса берега без коллизии; проверить стыковку при размещении.",
     "tools/art_audit.py распознаёт только старые single/strip3/6-column actor layouts; новые walk/attack/death форматы из текущего заказа могут давать «неизвестная раскладка». Размеры и каждую клетку дополнительно проверяет batch_05 metadata validation. Код аудитора не менялся.",
-    "Все 11 corpse.* имеют kind=prop, но pivot по заказу находится в центре лежащего тела (128,160)/(256,320), а не на нижней границе. Аудитор сравнивает низ bbox с pivot как у стоячего укрытия и выдаёт 11 ложных замечаний; pivot и рисунок не сдвигались ради обхода этой проверки."
+    "Все 11 corpse.* имеют kind=prop, но pivot по заказу находится в центре лежащего тела (128,160)/(256,320), а не на нижней границе. Аудитор сравнивает низ bbox с pivot как у стоячего укрытия и выдаёт 11 ложных замечаний; pivot и рисунок не сдвигались ради обхода этой проверки.",
+    "Холст 1536×768 имеет 6 колонок, но заказ перечисляет 5 поз: walk0..walk3 и hit. Колонки 0..4 содержат эти позы, колонка 5 прозрачная.",
+    "Аудитор ожидает у armor_overlay старые размеры 768×256/256×256 и сообщает замечание на новый заказанный лист 1536×768. Код не изменялся."
   ],
   "baked_attack_fx": {
     "enemy.gunner.attack": {
