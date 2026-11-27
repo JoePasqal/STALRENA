@@ -3,7 +3,7 @@
   "art_contract": "ART_CONTRACT.md",
   "status_note": "No PNG files are supplied in this archive. All entries are planned, runtime must provide placeholders.",
   "coordinate_origin": "top_left",
-  "asset_count": 183,
+  "asset_count": 184,
   "assets": [
     {
       "id": "hero.body",
@@ -3306,6 +3306,19 @@
       ],
       "world_scale": 0.5,
       "note": "Дополнение П2 из CHAT_PROMPT_ART_FULL: неровная кромка берега. В исходном manifest записи не было; путь и холст явно добавлены в партии 5. Декор без коллизии."
+    },
+    {
+      "id": "app.icon.foreground",
+      "target_path": "res://assets/art/ui/app_icon_foreground.png",
+      "kind": "ui",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        432,
+        432
+      ],
+      "has_alpha": true,
+      "note": "Дополнительный foreground Android adaptive icon из note app.icon: 432×432 RGBA, прозрачный фон, главный портрет в центральной зоне 288×288. Запись явно добавлена в партии 5."
     }
   ]
 }

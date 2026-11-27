@@ -11469,6 +11469,188 @@
         28.5,
         33.0
       ]
+    },
+    "ui.logo": {
+      "target_path": "res://assets/art/ui/logo.png",
+      "priority": 7,
+      "status": "prepared",
+      "canvas_px": [
+        1024,
+        320
+      ],
+      "bbox_px": [
+        8,
+        34,
+        1016,
+        285
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 0.48554913294797686,
+      "upscaled": false,
+      "sha256": "d1f80bf75e7d98c741b1a8e9b7552238587913b2950914af9dabbd0c0e82c621",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        2172,
+        724
+      ],
+      "visible_extent_world_px": [
+        1008.0,
+        251.0
+      ]
+    },
+    "ui.menu_bg": {
+      "target_path": "res://assets/art/ui/menu_bg.png",
+      "priority": 7,
+      "status": "prepared",
+      "canvas_px": [
+        1920,
+        1080
+      ],
+      "bbox_px": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": [
+        0.8881578947368421,
+        0.8878576952822892
+      ],
+      "upscaled": false,
+      "sha256": "43ba290d9a744ccb9b0df293493938c01670be78c6517da7f1c52f9587d9f10c",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "runtime_verified": false,
+      "source_panel_sizes_px": [
+        [
+          1293,
+          1216
+        ],
+        [
+          1293,
+          1217
+        ]
+      ],
+      "composition": "two separately repainted overlapping native-resolution panels, uniformly downsampled and joined",
+      "panel_final_size_px": [
+        1148,
+        1080
+      ],
+      "overlap_px": 376,
+      "opaque": true,
+      "visible_extent_world_px": [
+        1920.0,
+        1080.0
+      ]
+    },
+    "app.icon": {
+      "target_path": "res://assets/art/ui/app_icon.png",
+      "priority": 7,
+      "status": "prepared",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "bbox_px": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 0.4082934609250399,
+      "upscaled": false,
+      "sha256": "973530432a2b54625c6d8212c0f9ab8dd13c0cad36b7a6d22eeb2595d04f1f5f",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "runtime_verified": false,
+      "opaque_corners": true,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        512.0,
+        512.0
+      ]
+    },
+    "ui.coin": {
+      "target_path": "res://assets/art/ui/coin.png",
+      "priority": 7,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        21,
+        20,
+        234,
+        236
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 0.2109375,
+      "upscaled": false,
+      "sha256": "5cddc782f281d512586d81fd29df3c173494431b0b746679eef9e26be010c388",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1263,
+        1246
+      ],
+      "visible_extent_world_px": [
+        213.0,
+        216.0
+      ]
+    },
+    "app.icon.foreground": {
+      "target_path": "res://assets/art/ui/app_icon_foreground.png",
+      "priority": 7,
+      "status": "prepared",
+      "canvas_px": [
+        432,
+        432
+      ],
+      "bbox_px": [
+        89,
+        72,
+        343,
+        360
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 0.29660144181256437,
+      "upscaled": false,
+      "sha256": "391408b5a48ec06dca3fc3607413c3857157cfaa0f2df3d7ea96ef307abf5866",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        254.0,
+        288.0
+      ]
     }
   },
   "priorities": {
@@ -11628,6 +11810,17 @@
         "armor.heavy.anim"
       ],
       "runtime_verified": false
+    },
+    "7": {
+      "status": "prepared",
+      "asset_ids": [
+        "ui.logo",
+        "ui.menu_bg",
+        "app.icon",
+        "ui.coin",
+        "app.icon.foreground"
+      ],
+      "runtime_verified": false
     }
   },
   "disputed": [
@@ -11635,7 +11828,8 @@
     "tools/art_audit.py распознаёт только старые single/strip3/6-column actor layouts; новые walk/attack/death форматы из текущего заказа могут давать «неизвестная раскладка». Размеры и каждую клетку дополнительно проверяет batch_05 metadata validation. Код аудитора не менялся.",
     "Все 11 corpse.* имеют kind=prop, но pivot по заказу находится в центре лежащего тела (128,160)/(256,320), а не на нижней границе. Аудитор сравнивает низ bbox с pivot как у стоячего укрытия и выдаёт 11 ложных замечаний; pivot и рисунок не сдвигались ради обхода этой проверки.",
     "Холст 1536×768 имеет 6 колонок, но заказ перечисляет 5 поз: walk0..walk3 и hit. Колонки 0..4 содержат эти позы, колонка 5 прозрачная.",
-    "Аудитор ожидает у armor_overlay старые размеры 768×256/256×256 и сообщает замечание на новый заказанный лист 1536×768. Код не изменялся."
+    "Аудитор ожидает у armor_overlay старые размеры 768×256/256×256 и сообщает замечание на новый заказанный лист 1536×768. Код не изменялся.",
+    "Android foreground указан в note app.icon, но не имел отдельной записи. Добавлен самостоятельный PNG 432×432 и planned-запись app.icon.foreground."
   ],
   "baked_attack_fx": {
     "enemy.gunner.attack": {
@@ -11646,5 +11840,11 @@
       "pose": 1,
       "effect": "small spit droplet"
     }
+  },
+  "technical_validation": {
+    "report": "docs/art_review/batch_05/batch_05_validation.json",
+    "passed": true,
+    "runtime_verified": false,
+    "legacy_audit_warning_count": 44
   }
 }

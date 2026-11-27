@@ -1,0 +1,39 @@
+{
+  "batch": 5,
+  "new_png_count": 126,
+  "manifest_count": 184,
+  "manifest_files_found": 184,
+  "priorities": {
+    "1": 27,
+    "2": 11,
+    "3": 32,
+    "4": 7,
+    "5": 41,
+    "6": 3,
+    "7": 5
+  },
+  "frames_validated": 363,
+  "checks": {
+    "png_decode_and_crc": "passed",
+    "exact_manifest_canvas": "passed_for_new_deliveries",
+    "rgba": "passed",
+    "bbox_and_sha256": "passed",
+    "pivot_and_world_scale": "match_manifest",
+    "frame_padding_4px": "passed",
+    "icon_safe_margin_16px": "passed",
+    "no_upscaling": "passed",
+    "armor_empty_column_5": "passed",
+    "app_icon_opaque": "passed",
+    "accepted_assets_unchanged": 58,
+    "code_balance_collision_files_changed": []
+  },
+  "legacy_audit_warnings": {
+    "total": 44,
+    "new_actor_layouts": 30,
+    "corpse_center_pivot_vs_prop_bottom_assumption": 11,
+    "new_armor_sheet_size": 3
+  },
+  "runtime_verified": false,
+  "errors": [],
+  "missing": []
+}

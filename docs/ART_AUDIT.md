@@ -62,129 +62,135 @@
 | `icon.medkit` | icon | 256x256 | RGBA | ок |
 | `icon.parts` | icon | 256x256 | RGBA | ок |
 | `fx.muzzle` | fx_atlas | 128x128 | RGBA | ок |
-| `icon.bonus.double_damage` | нет файла |  |  | заглушка |
-| `icon.bonus.sturdy_body` | нет файла |  |  | заглушка |
-| `icon.bonus.gold_vein` | нет файла |  |  | заглушка |
-| `icon.bonus.rapid_fire` | нет файла |  |  | заглушка |
-| `icon.bonus.quick_legs` | нет файла |  |  | заглушка |
-| `icon.bonus.sharp_eye` | нет файла |  |  | заглушка |
-| `icon.bonus.fast_hands` | нет файла |  |  | заглушка |
-| `ui.bonus_card_back` | нет файла |  |  | заглушка |
-| `ui.bonus_case_closed` | нет файла |  |  | заглушка |
-| `ui.bonus_case_open` | нет файла |  |  | заглушка |
-| `icon.debuff.slow_legs` | нет файла |  |  | заглушка |
-| `icon.debuff.weak_medkit` | нет файла |  |  | заглушка |
-| `icon.debuff.molotov` | нет файла |  |  | заглушка |
-| `icon.debuff.dull_ammo` | нет файла |  |  | заглушка |
-| `icon.debuff.frail` | нет файла |  |  | заглушка |
-| `icon.debuff.stiff_bolt` | нет файла |  |  | заглушка |
-| `icon.debuff.poor_loot` | нет файла |  |  | заглушка |
-| `ui.curse_card_back` | нет файла |  |  | заглушка |
-| `ui.curse_case_closed` | нет файла |  |  | заглушка |
-| `ui.curse_case_open` | нет файла |  |  | заглушка |
-| `prop.concrete_block_b` | нет файла |  |  | заглушка |
-| `prop.concrete_block_c` | нет файла |  |  | заглушка |
-| `prop.pipe_long` | нет файла |  |  | заглушка |
-| `prop.pipe_tee` | нет файла |  |  | заглушка |
-| `prop.wrecked_car_b` | нет файла |  |  | заглушка |
-| `prop.wrecked_car_c` | нет файла |  |  | заглушка |
-| `prop.machine_a` | нет файла |  |  | заглушка |
-| `prop.machine_b` | нет файла |  |  | заглушка |
-| `prop.pillar` | нет файла |  |  | заглушка |
-| `water.flooded` | нет файла |  |  | заглушка |
-| `decor.sawmill.sawdust_pile` | нет файла |  |  | заглушка |
-| `decor.sawmill.stump` | нет файла |  |  | заглушка |
-| `decor.sawmill.planks` | нет файла |  |  | заглушка |
-| `decor.sawmill.barrel` | нет файла |  |  | заглушка |
-| `decor.sawmill.chain` | нет файла |  |  | заглушка |
-| `decor.sawmill.tire` | нет файла |  |  | заглушка |
-| `decor.sawmill.forklift` | нет файла |  |  | заглушка |
-| `decor.sawmill.saw_machine` | нет файла |  |  | заглушка |
-| `decor.sawmill.fire_barrel` | нет файла |  |  | заглушка |
-| `decor.sawmill.oil_stain` | нет файла |  |  | заглушка |
-| `decor.pumping.cable_reel` | нет файла |  |  | заглушка |
-| `decor.pumping.rust_barrel` | нет файла |  |  | заглушка |
-| `decor.pumping.oil_puddle` | нет файла |  |  | заглушка |
-| `decor.pumping.panel_a` | нет файла |  |  | заглушка |
-| `decor.pumping.panel_b` | нет файла |  |  | заглушка |
-| `decor.pumping.barrier` | нет файла |  |  | заглушка |
-| `decor.pumping.grate` | нет файла |  |  | заглушка |
-| `decor.pumping.lamp_post` | нет файла |  |  | заглушка |
-| `decor.flooded.driftwood` | нет файла |  |  | заглушка |
-| `decor.flooded.dead_tree` | нет файла |  |  | заглушка |
-| `decor.flooded.sandbags` | нет файла |  |  | заглушка |
-| `decor.flooded.rocks` | нет файла |  |  | заглушка |
-| `decor.flooded.algae` | нет файла |  |  | заглушка |
-| `decor.flooded.float_debris` | нет файла |  |  | заглушка |
-| `decor.flooded.fence_broken` | нет файла |  |  | заглушка |
-| `decor.flooded.grass_island` | нет файла |  |  | заглушка |
-| `decor.common.bones` | нет файла |  |  | заглушка |
-| `decor.common.blood_stain` | нет файла |  |  | заглушка |
-| `decor.common.shells` | нет файла |  |  | заглушка |
-| `decor.common.rags` | нет файла |  |  | заглушка |
-| `decor.common.weeds` | нет файла |  |  | заглушка |
-| `decor.common.backpack` | нет файла |  |  | заглушка |
-| `corpse.drifter` | нет файла |  |  | заглушка |
-| `corpse.runner` | нет файла |  |  | заглушка |
-| `corpse.charger` | нет файла |  |  | заглушка |
-| `corpse.spitter` | нет файла |  |  | заглушка |
-| `corpse.gunner` | нет файла |  |  | заглушка |
-| `corpse.brute` | нет файла |  |  | заглушка |
-| `corpse.flanker` | нет файла |  |  | заглушка |
-| `corpse.carrier` | нет файла |  |  | заглушка |
-| `corpse.boss.cleaver` | нет файла |  |  | заглушка |
-| `corpse.boss.boilermaster` | нет файла |  |  | заглушка |
-| `corpse.boss.broodmother` | нет файла |  |  | заглушка |
-| `enemy.drifter.walk` | нет файла |  |  | заглушка |
-| `enemy.drifter.attack` | нет файла |  |  | заглушка |
-| `enemy.drifter.death` | нет файла |  |  | заглушка |
-| `enemy.runner.walk` | нет файла |  |  | заглушка |
-| `enemy.runner.attack` | нет файла |  |  | заглушка |
-| `enemy.runner.death` | нет файла |  |  | заглушка |
-| `enemy.charger.walk` | нет файла |  |  | заглушка |
-| `enemy.charger.attack` | нет файла |  |  | заглушка |
-| `enemy.charger.death` | нет файла |  |  | заглушка |
-| `enemy.spitter.walk` | нет файла |  |  | заглушка |
-| `enemy.spitter.attack` | нет файла |  |  | заглушка |
-| `enemy.spitter.death` | нет файла |  |  | заглушка |
-| `enemy.gunner.walk` | нет файла |  |  | заглушка |
-| `enemy.gunner.attack` | нет файла |  |  | заглушка |
-| `enemy.gunner.death` | нет файла |  |  | заглушка |
-| `enemy.brute.walk` | нет файла |  |  | заглушка |
-| `enemy.brute.attack` | нет файла |  |  | заглушка |
-| `enemy.brute.death` | нет файла |  |  | заглушка |
-| `enemy.flanker.walk` | нет файла |  |  | заглушка |
-| `enemy.flanker.attack` | нет файла |  |  | заглушка |
-| `enemy.flanker.death` | нет файла |  |  | заглушка |
-| `enemy.carrier.walk` | нет файла |  |  | заглушка |
-| `enemy.carrier.attack` | нет файла |  |  | заглушка |
-| `enemy.carrier.death` | нет файла |  |  | заглушка |
-| `boss.cleaver.walk` | нет файла |  |  | заглушка |
-| `boss.cleaver.death` | нет файла |  |  | заглушка |
-| `boss.boilermaster.walk` | нет файла |  |  | заглушка |
-| `boss.boilermaster.death` | нет файла |  |  | заглушка |
-| `boss.broodmother.walk` | нет файла |  |  | заглушка |
-| `boss.broodmother.death` | нет файла |  |  | заглушка |
-| `armor.light.anim` | нет файла |  |  | заглушка |
-| `armor.field.anim` | нет файла |  |  | заглушка |
-| `armor.heavy.anim` | нет файла |  |  | заглушка |
-| `ui.card_flip_buff` | нет файла |  |  | заглушка |
-| `ui.card_flip_curse` | нет файла |  |  | заглушка |
-| `ui.card_face_buff` | нет файла |  |  | заглушка |
-| `ui.card_face_curse` | нет файла |  |  | заглушка |
-| `ui.card_glow` | нет файла |  |  | заглушка |
-| `ui.bonus_case_anim` | нет файла |  |  | заглушка |
-| `ui.curse_case_anim` | нет файла |  |  | заглушка |
-| `fx.fire_loop` | нет файла |  |  | заглушка |
-| `fx.fire_burst` | нет файла |  |  | заглушка |
-| `fx.steam_puff` | нет файла |  |  | заглушка |
-| `fx.explosion` | нет файла |  |  | заглушка |
-| `fx.hit_spark` | нет файла |  |  | заглушка |
-| `fx.heal` | нет файла |  |  | заглушка |
-| `fx.spawn_ring` | нет файла |  |  | заглушка |
-| `ui.logo` | нет файла |  |  | заглушка |
-| `ui.menu_bg` | нет файла |  |  | заглушка |
-| `app.icon` | нет файла |  |  | заглушка |
-| `ui.coin` | нет файла |  |  | заглушка |
+| `icon.bonus.double_damage` | icon | 256x256 | RGBA | ок |
+| `icon.bonus.sturdy_body` | icon | 256x256 | RGBA | ок |
+| `icon.bonus.gold_vein` | icon | 256x256 | RGBA | ок |
+| `icon.bonus.rapid_fire` | icon | 256x256 | RGBA | ок |
+| `icon.bonus.quick_legs` | icon | 256x256 | RGBA | ок |
+| `icon.bonus.sharp_eye` | icon | 256x256 | RGBA | ок |
+| `icon.bonus.fast_hands` | icon | 256x256 | RGBA | ок |
+| `ui.bonus_card_back` | ui | 256x384 | RGBA | ок |
+| `ui.bonus_case_closed` | ui | 512x384 | RGBA | ок |
+| `ui.bonus_case_open` | ui | 512x384 | RGBA | ок |
+| `icon.debuff.slow_legs` | icon | 256x256 | RGBA | ок |
+| `icon.debuff.weak_medkit` | icon | 256x256 | RGBA | ок |
+| `icon.debuff.molotov` | icon | 256x256 | RGBA | ок |
+| `icon.debuff.dull_ammo` | icon | 256x256 | RGBA | ок |
+| `icon.debuff.frail` | icon | 256x256 | RGBA | ок |
+| `icon.debuff.stiff_bolt` | icon | 256x256 | RGBA | ок |
+| `icon.debuff.poor_loot` | icon | 256x256 | RGBA | ок |
+| `ui.curse_card_back` | ui | 256x384 | RGBA | ок |
+| `ui.curse_case_closed` | ui | 512x384 | RGBA | ок |
+| `ui.curse_case_open` | ui | 512x384 | RGBA | ок |
+| `prop.concrete_block_b` | prop | 256x256 | RGBA | ок |
+| `prop.concrete_block_c` | prop | 256x256 | RGBA | ок |
+| `prop.pipe_long` | prop | 512x128 | RGBA | ок |
+| `prop.pipe_tee` | prop | 256x256 | RGBA | ок |
+| `prop.wrecked_car_b` | prop | 256x256 | RGBA | ок |
+| `prop.wrecked_car_c` | prop | 256x256 | RGBA | ок |
+| `prop.machine_a` | prop | 256x256 | RGBA | ок |
+| `prop.machine_b` | prop | 256x256 | RGBA | ок |
+| `prop.pillar` | prop | 256x256 | RGBA | ок |
+| `water.flooded` | floor_texture | 512x512 | RGBA | ок |
+| `decor.sawmill.sawdust_pile` | prop | 256x256 | RGBA | ок |
+| `decor.sawmill.stump` | prop | 256x256 | RGBA | ок |
+| `decor.sawmill.planks` | prop | 256x256 | RGBA | ок |
+| `decor.sawmill.barrel` | prop | 256x256 | RGBA | ок |
+| `decor.sawmill.chain` | prop | 256x256 | RGBA | ок |
+| `decor.sawmill.tire` | prop | 256x256 | RGBA | ок |
+| `decor.sawmill.forklift` | prop | 256x256 | RGBA | ок |
+| `decor.sawmill.saw_machine` | prop | 256x256 | RGBA | ок |
+| `decor.sawmill.fire_barrel` | prop | 256x256 | RGBA | ок |
+| `decor.sawmill.oil_stain` | prop | 256x256 | RGBA | ок |
+| `decor.pumping.cable_reel` | prop | 256x256 | RGBA | ок |
+| `decor.pumping.rust_barrel` | prop | 256x256 | RGBA | ок |
+| `decor.pumping.oil_puddle` | prop | 256x256 | RGBA | ок |
+| `decor.pumping.panel_a` | prop | 256x256 | RGBA | ок |
+| `decor.pumping.panel_b` | prop | 256x256 | RGBA | ок |
+| `decor.pumping.barrier` | prop | 256x256 | RGBA | ок |
+| `decor.pumping.grate` | prop | 256x256 | RGBA | ок |
+| `decor.pumping.lamp_post` | prop | 256x256 | RGBA | ок |
+| `decor.flooded.driftwood` | prop | 256x256 | RGBA | ок |
+| `decor.flooded.dead_tree` | prop | 256x256 | RGBA | ок |
+| `decor.flooded.sandbags` | prop | 256x256 | RGBA | ок |
+| `decor.flooded.rocks` | prop | 256x256 | RGBA | ок |
+| `decor.flooded.algae` | prop | 256x256 | RGBA | ок |
+| `decor.flooded.float_debris` | prop | 256x256 | RGBA | ок |
+| `decor.flooded.fence_broken` | prop | 256x256 | RGBA | ок |
+| `decor.flooded.grass_island` | prop | 256x256 | RGBA | ок |
+| `decor.common.bones` | prop | 256x256 | RGBA | ок |
+| `decor.common.blood_stain` | prop | 256x256 | RGBA | ок |
+| `decor.common.shells` | prop | 256x256 | RGBA | ок |
+| `decor.common.rags` | prop | 256x256 | RGBA | ок |
+| `decor.common.weeds` | prop | 256x256 | RGBA | ок |
+| `decor.common.backpack` | prop | 256x256 | RGBA | ок |
+| `corpse.drifter` | prop | 256x256 | RGBA | низ y=194, pivot 160 |
+| `corpse.runner` | prop | 256x256 | RGBA | низ y=204, pivot 160 |
+| `corpse.charger` | prop | 256x256 | RGBA | низ y=206, pivot 160 |
+| `corpse.spitter` | prop | 256x256 | RGBA | низ y=201, pivot 160 |
+| `corpse.gunner` | prop | 256x256 | RGBA | низ y=198, pivot 160 |
+| `corpse.brute` | prop | 256x256 | RGBA | низ y=205, pivot 160 |
+| `corpse.flanker` | prop | 256x256 | RGBA | низ y=187, pivot 160 |
+| `corpse.carrier` | prop | 256x256 | RGBA | низ y=203, pivot 160 |
+| `corpse.boss.cleaver` | prop | 512x512 | RGBA | низ y=415, pivot 320 |
+| `corpse.boss.boilermaster` | prop | 512x512 | RGBA | низ y=402, pivot 320 |
+| `corpse.boss.broodmother` | prop | 512x512 | RGBA | низ y=405, pivot 320 |
+| `enemy.drifter.walk` | actor_atlas | ? 1024x768 | RGBA | неизвестная раскладка |
+| `enemy.drifter.attack` | actor_atlas | ? 768x768 | RGBA | неизвестная раскладка |
+| `enemy.drifter.death` | actor_atlas | ? 1024x256 | RGBA | неизвестная раскладка |
+| `enemy.runner.walk` | actor_atlas | ? 1024x768 | RGBA | неизвестная раскладка |
+| `enemy.runner.attack` | actor_atlas | ? 768x768 | RGBA | неизвестная раскладка |
+| `enemy.runner.death` | actor_atlas | ? 1024x256 | RGBA | неизвестная раскладка |
+| `enemy.charger.walk` | actor_atlas | ? 1024x768 | RGBA | неизвестная раскладка |
+| `enemy.charger.attack` | actor_atlas | ? 768x768 | RGBA | неизвестная раскладка |
+| `enemy.charger.death` | actor_atlas | ? 1024x256 | RGBA | неизвестная раскладка |
+| `enemy.spitter.walk` | actor_atlas | ? 1024x768 | RGBA | неизвестная раскладка |
+| `enemy.spitter.attack` | actor_atlas | ? 768x768 | RGBA | неизвестная раскладка |
+| `enemy.spitter.death` | actor_atlas | ? 1024x256 | RGBA | неизвестная раскладка |
+| `enemy.gunner.walk` | actor_atlas | ? 1024x768 | RGBA | неизвестная раскладка |
+| `enemy.gunner.attack` | actor_atlas | ? 768x768 | RGBA | неизвестная раскладка |
+| `enemy.gunner.death` | actor_atlas | ? 1024x256 | RGBA | неизвестная раскладка |
+| `enemy.brute.walk` | actor_atlas | ? 1024x768 | RGBA | неизвестная раскладка |
+| `enemy.brute.attack` | actor_atlas | ? 768x768 | RGBA | неизвестная раскладка |
+| `enemy.brute.death` | actor_atlas | ? 1024x256 | RGBA | неизвестная раскладка |
+| `enemy.flanker.walk` | actor_atlas | ? 1024x768 | RGBA | неизвестная раскладка |
+| `enemy.flanker.attack` | actor_atlas | ? 768x768 | RGBA | неизвестная раскладка |
+| `enemy.flanker.death` | actor_atlas | ? 1024x256 | RGBA | неизвестная раскладка |
+| `enemy.carrier.walk` | actor_atlas | ? 1024x768 | RGBA | неизвестная раскладка |
+| `enemy.carrier.attack` | actor_atlas | ? 768x768 | RGBA | неизвестная раскладка |
+| `enemy.carrier.death` | actor_atlas | ? 1024x256 | RGBA | неизвестная раскладка |
+| `boss.cleaver.walk` | boss_atlas | ? 2048x1536 | RGBA | неизвестная раскладка |
+| `boss.cleaver.death` | boss_atlas | ? 2048x512 | RGBA | неизвестная раскладка |
+| `boss.boilermaster.walk` | boss_atlas | ? 2048x1536 | RGBA | неизвестная раскладка |
+| `boss.boilermaster.death` | boss_atlas | ? 2048x512 | RGBA | неизвестная раскладка |
+| `boss.broodmother.walk` | boss_atlas | ? 2048x1536 | RGBA | неизвестная раскладка |
+| `boss.broodmother.death` | boss_atlas | ? 2048x512 | RGBA | неизвестная раскладка |
+| `armor.light.anim` | armor_overlay | 1536x768 | RGBA | ожидалось 768x256 |
+| `armor.field.anim` | armor_overlay | 1536x768 | RGBA | ожидалось 768x256 |
+| `armor.heavy.anim` | armor_overlay | 1536x768 | RGBA | ожидалось 768x256 |
+| `ui.card_flip_buff` | ui | 2048x384 | RGBA | ок |
+| `ui.card_flip_curse` | ui | 2048x384 | RGBA | ок |
+| `ui.card_face_buff` | ui | 256x384 | RGBA | ок |
+| `ui.card_face_curse` | ui | 256x384 | RGBA | ок |
+| `ui.card_glow` | ui | 320x448 | RGBA | ок |
+| `ui.bonus_case_anim` | ui | 4096x384 | RGBA | ок |
+| `ui.curse_case_anim` | ui | 4096x384 | RGBA | ок |
+| `fx.fire_loop` | fx_atlas | 768x128 | RGBA | ок |
+| `fx.fire_burst` | fx_atlas | 1024x256 | RGBA | ок |
+| `fx.steam_puff` | fx_atlas | 768x128 | RGBA | ок |
+| `fx.explosion` | fx_atlas | 2048x256 | RGBA | ок |
+| `fx.hit_spark` | fx_atlas | 512x128 | RGBA | ок |
+| `fx.heal` | fx_atlas | 768x128 | RGBA | ок |
+| `fx.spawn_ring` | fx_atlas | 512x128 | RGBA | ок |
+| `ui.logo` | ui | 1024x320 | RGBA | ок |
+| `ui.menu_bg` | ui | 1920x1080 | RGBA | ок |
+| `app.icon` | ui | 512x512 | RGBA | ок |
+| `ui.coin` | icon | 256x256 | RGBA | ок |
+| `water.flooded_edge` | water_edge | 512x256 | RGBA | ок |
+| `app.icon.foreground` | ui | 432x432 | RGBA | ок |
 
-Итого записей: 182; файлов найдено: 58; с замечаниями: 0.
+Итого записей: 184; файлов найдено: 184; с замечаниями: 44.
+
+## Партия 5: разбор 44 замечаний
+
+30 — новые walk/attack/death раскладки, не распознаваемые старой эвристикой; 11 — трупы с pivot в центре тела, которые аудитор проверяет как стоячие props; 3 — заказанные накладки 1536×768 вместо старого формата. Код аудитора не менялся. Дополнительная проверка фактических размеров, каждой клетки, padding, bbox, pivot и scale выполнена: docs/art_review/batch_05/batch_05_validation.json. Это не проверка в игре.

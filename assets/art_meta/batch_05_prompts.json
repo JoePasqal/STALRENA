@@ -2,112 +2,134 @@
   "icon.bonus.double_damage": {
     "prompt": "Use case: stylized-concept. Production game inventory icon for STALRENA, detailed hand-painted 2D with painted volume, weathered gray steel, dirty olive and rusty brown, soft upper-left light. ONE isolated crossed pair of heavy brass-jacketed bullet projectiles with a small vivid red-orange impact accent symbolizing DOUBLE DAMAGE. Recognizable compact silhouette at 64px. Genuine transparent RGBA background, no floor, no text, numbers, lettering, frames, card, UI or watermark. Large square source, centered subject with generous clear padding all around, intended final256x256 safe margin16px. Render crisp material detail, not pixel art.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "icon.bonus.sturdy_body": {
     "prompt": "Use case: stylized-concept. STALRENA production game icon, detailed hand-painted 2D volume, weathered steel/brass, olive and rusty brown palette, soft upper-left light, readable silhouette at64px. ONE compact centered symbolic item cluster: A rugged steel breastplate with a small blue-white protective glow, symbol of sturdy constitution. Truly transparent RGBA background, no scene or floor, no text, numbers, letters, frames, panels, watermark. Large square source, generous padding all around for final256x256 with16px safe margins. Crisp painterly material detail, not pixel art.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "icon.bonus.gold_vein": {
     "prompt": "Use case: stylized-concept. STALRENA production game icon, detailed hand-painted 2D volume, weathered steel/brass, olive and rusty brown palette, soft upper-left light, readable silhouette at64px. ONE compact centered symbolic item cluster: A cluster of raw gold ore nuggets and brass coins with no inscriptions, rich mineral veins. Truly transparent RGBA background, no scene or floor, no text, numbers, letters, frames, panels, watermark. Large square source, generous padding all around for final256x256 with16px safe margins. Crisp painterly material detail, not pixel art.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "icon.bonus.rapid_fire": {
     "prompt": "Use case: stylized-concept. STALRENA production game icon, detailed hand-painted 2D volume, weathered steel/brass, olive and rusty brown palette, soft upper-left light, readable silhouette at64px. ONE compact centered symbolic item cluster: A short diagonal row of three brass cartridges and quick orange motion streaks, rapid firing. Truly transparent RGBA background, no scene or floor, no text, numbers, letters, frames, panels, watermark. Large square source, generous padding all around for final256x256 with16px safe margins. Crisp painterly material detail, not pixel art.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "icon.bonus.quick_legs": {
     "prompt": "Use case: stylized-concept. STALRENA production game icon, detailed hand-painted 2D volume, weathered steel/brass, olive and rusty brown palette, soft upper-left light, readable silhouette at64px. ONE compact centered symbolic item cluster: A pair of olive rugged survivor running boots with light blue trailing speed accents. Truly transparent RGBA background, no scene or floor, no text, numbers, letters, frames, panels, watermark. Large square source, generous padding all around for final256x256 with16px safe margins. Crisp painterly material detail, not pixel art.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "icon.bonus.sharp_eye": {
     "prompt": "Use case: stylized-concept. STALRENA production game icon, detailed hand-painted 2D volume, weathered steel/brass, olive and rusty brown palette, soft upper-left light, readable silhouette at64px. ONE compact centered symbolic item cluster: A weathered brass optical scope lens with a bright blue focused eye-like reflection. Truly transparent RGBA background, no scene or floor, no text, numbers, letters, frames, panels, watermark. Large square source, generous padding all around for final256x256 with16px safe margins. Crisp painterly material detail, not pixel art.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "icon.bonus.fast_hands": {
     "prompt": "Use case: stylized-concept. STALRENA production game icon, detailed hand-painted 2D volume, weathered steel/brass, olive and rusty brown palette, soft upper-left light, readable silhouette at64px. ONE compact centered symbolic item cluster: Two olive tactical gloves holding a steel magazine with subtle blue movement arcs. Truly transparent RGBA background, no scene or floor, no text, numbers, letters, frames, panels, watermark. Large square source, generous padding all around for final256x256 with16px safe margins. Crisp painterly material detail, not pixel art.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "ui.bonus_card_back": {
     "prompt": "Use case: stylized-concept. Production painted2D UI asset STALRENA postapocalyptic industrial game. BACK of a single vertical reward card, bronze-gold beveled steel border, worn dark olive leather panel, centered abstract embossed radial sun seal, no letters, no numbers. Rounded clipped corners. Closed flat card facing viewer straight on.. Single 2:3 portrait card centered on genuine TRANSPARENT background with clear margin; detailed painted volume and worn material, soft upper-left light, no long shadow, no extra objects, no typography, no labels, no watermark. Render source at least768x1152; final card canvas256x384. Card's interior panel is opaque, outside transparent.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "icon.debuff.slow_legs": {
     "prompt": "Use case: stylized-concept. STALRENA production game icon, detailed hand-painted 2D volume, weathered steel/brass, olive and rusty brown palette, soft upper-left light, readable silhouette at64px. ONE compact centered symbolic item cluster: One heavy worn military boot entangled in rusty iron chain, dark muted palette, small red embers. Truly transparent RGBA background, no scene or floor, no text, numbers, letters, frames, panels, watermark. Large square source, generous padding all around for final256x256 with16px safe margins. Crisp painterly material detail, not pixel art.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "icon.debuff.weak_medkit": {
     "prompt": "Use case: stylized-concept. STALRENA production game icon, detailed hand-painted 2D volume, weathered steel/brass, olive and rusty brown palette, soft upper-left light, readable silhouette at64px. ONE compact centered symbolic item cluster: A torn dirty medical pouch with a dim blue cracked vial and loose bandage, faded blue cross shape without lettering, dark palette. Truly transparent RGBA background, no scene or floor, no text, numbers, letters, frames, panels, watermark. Large square source, generous padding all around for final256x256 with16px safe margins. Crisp painterly material detail, not pixel art.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "icon.debuff.molotov": {
     "prompt": "Use case: stylized-concept. STALRENA production game icon, detailed hand-painted 2D volume, weathered steel/brass, olive and rusty brown palette, soft upper-left light, readable silhouette at64px. ONE compact centered symbolic item cluster: A stylized fantasy videogame fire-debuff emblem: a small closed amber glass bottle silhouetted inside a painted red-orange flame-shaped aura. Symbolic UI art, no realistic construction detail. Truly transparent RGBA background, no scene or floor, no text, numbers, letters, frames, panels, watermark. Large square source, generous padding all around for final256x256 with16px safe margins. Crisp painterly material detail, not pixel art.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "icon.debuff.dull_ammo": {
     "prompt": "Use case: stylized-concept. STALRENA production game icon, detailed hand-painted 2D volume, weathered steel/brass, olive and rusty brown palette, soft upper-left light, readable silhouette at64px. ONE compact centered symbolic item cluster: Two corroded dented brass cartridges with blunt damaged tips, dark desaturated steel rust, red crack accent. Truly transparent RGBA background, no scene or floor, no text, numbers, letters, frames, panels, watermark. Large square source, generous padding all around for final256x256 with16px safe margins. Crisp painterly material detail, not pixel art.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "icon.debuff.frail": {
     "prompt": "Use case: stylized-concept. STALRENA production game icon, detailed hand-painted 2D volume, weathered steel/brass, olive and rusty brown palette, soft upper-left light, readable silhouette at64px. ONE compact centered symbolic item cluster: A thin cracked steel breastplate with a broken fastening strap, dark desaturated gray with small red crack glow. Truly transparent RGBA background, no scene or floor, no text, numbers, letters, frames, panels, watermark. Large square source, generous padding all around for final256x256 with16px safe margins. Crisp painterly material detail, not pixel art.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "icon.debuff.stiff_bolt": {
     "prompt": "Use case: stylized-concept. STALRENA production game icon, detailed hand-painted 2D volume, weathered steel/brass, olive and rusty brown palette, soft upper-left light, readable silhouette at64px. ONE compact centered symbolic item cluster: A rusty stuck bolt mechanism and jammed spring, dark industrial steel, slight red warning glint. Truly transparent RGBA background, no scene or floor, no text, numbers, letters, frames, panels, watermark. Large square source, generous padding all around for final256x256 with16px safe margins. Crisp painterly material detail, not pixel art.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "icon.debuff.poor_loot": {
     "prompt": "Use case: stylized-concept. STALRENA production game icon, detailed hand-painted 2D volume, weathered steel/brass, olive and rusty brown palette, soft upper-left light, readable silhouette at64px. ONE compact centered symbolic item cluster: A frayed nearly empty cloth coin pouch with one dull coin, torn seam, dim rust and gray palette. Truly transparent RGBA background, no scene or floor, no text, numbers, letters, frames, panels, watermark. Large square source, generous padding all around for final256x256 with16px safe margins. Crisp painterly material detail, not pixel art.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "ui.curse_card_back": {
     "prompt": "Use case: stylized-concept. Production painted2D UI asset STALRENA postapocalyptic industrial game. BACK of a single vertical curse card, rusty iron border with dark crimson inlays, charcoal worn leather panel, centered angular ominous eye seal, no letters, no numbers. Rounded clipped corners. Closed flat card facing viewer straight on.. Single 2:3 portrait card centered on genuine TRANSPARENT background with clear margin; detailed painted volume and worn material, soft upper-left light, no long shadow, no extra objects, no typography, no labels, no watermark. Render source at least768x1152; final card canvas256x384. Card's interior panel is opaque, outside transparent.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "ui.card_face_buff": {
     "prompt": "Use case: stylized-concept. Production painted2D UI asset STALRENA postapocalyptic industrial game. FRONT of a single vertical reward card. Thin bronze-gold steel decorative perimeter with corner rivets. Large completely BLANK dark olive parchment central field to hold code-rendered icon and text. No symbols in center. Rounded clipped corners. Flat straight-on.. Single 2:3 portrait card centered on genuine TRANSPARENT background with clear margin; detailed painted volume and worn material, soft upper-left light, no long shadow, no extra objects, no typography, no labels, no watermark. Render source at least768x1152; final card canvas256x384. Card's interior panel is opaque, outside transparent.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "ui.card_face_curse": {
     "prompt": "Use case: stylized-concept. Production painted2D UI asset STALRENA postapocalyptic industrial game. FRONT of a single vertical curse card. Thin rusted dark iron perimeter with crimson corner inlays. Large completely BLANK dark charcoal parchment central field to hold code-rendered icon and text. No symbols in center. Rounded clipped corners. Flat straight-on.. Single 2:3 portrait card centered on genuine TRANSPARENT background with clear margin; detailed painted volume and worn material, soft upper-left light, no long shadow, no extra objects, no typography, no labels, no watermark. Render source at least768x1152; final card canvas256x384. Card's interior panel is opaque, outside transparent.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "ui.bonus_case_closed": {
     "prompt": "Use case: stylized-concept. STALRENA production hand-painted detailed2D game sprite with painted volume, worn metal/wood materials, upper-left soft light, muted gray olive rust palette. One CLOSED rectangular rugged GOLDEN reward case with bronze clasps, dark olive metal inset panels, hinges at back, worn but valuable. Elevated top-down three-quarter game camera, lid fully shut. Single isolated case, no floor, no labels. Genuine transparent RGBA background, no long cast shadow, no text, numbers, watermark or scene. Render at high resolution with generous margin around entire subject. Intended final512x384 case canvas or320x448 glow.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "ui.bonus_case_open": {
     "prompt": "Use case: stylized-concept. STALRENA production hand-painted detailed2D game sprite with painted volume, worn metal/wood materials, upper-left soft light, muted gray olive rust palette. One OPEN rectangular rugged GOLDEN reward case with bronze clasps, dark olive metal inset panels, hinges at back. Elevated top-down three-quarter game camera. Rear hinged lid raised about95degrees, empty inner compartment emits soft warm gold light. Single isolated case, no floor, no loot items or labels. Genuine transparent RGBA background, no long cast shadow, no text, numbers, watermark or scene. Render at high resolution with generous margin around entire subject. Intended final512x384 case canvas or320x448 glow.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "ui.curse_case_closed": {
     "prompt": "Use case: stylized-concept. STALRENA production hand-painted detailed2D game sprite with painted volume, worn metal/wood materials, upper-left soft light, muted gray olive rust palette. One CLOSED weathered wooden curse crate, rugged rectangular timber construction with dark iron straps and RED edging, hinges at back. Elevated top-down three-quarter game camera, lid fully shut. Single isolated box, no floor, no labels. Genuine transparent RGBA background, no long cast shadow, no text, numbers, watermark or scene. Render at high resolution with generous margin around entire subject. Intended final512x384 case canvas or320x448 glow.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "ui.curse_case_open": {
     "prompt": "Use case: stylized-concept. STALRENA production hand-painted detailed2D game sprite with painted volume, worn metal/wood materials, upper-left soft light, muted gray olive rust palette. One OPEN weathered wooden curse crate, rugged rectangular timber construction with dark iron straps and RED edging, hinges at back. Elevated top-down three-quarter game camera, rear lid raised95degrees, empty compartment glows dim crimson. Single isolated box, no floor, no loot items or labels. Genuine transparent RGBA background, no long cast shadow, no text, numbers, watermark or scene. Render at high resolution with generous margin around entire subject. Intended final512x384 case canvas or320x448 glow.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "ui.card_flip_buff": {
     "prompt": "Use case: stylized-concept. Produce ONE transparent RGBA animation keyframe sheet for STALRENA. Input is a REFERENCE for exact object design/material, not a separate frame. gold bronze steel perimeter, dark olive panel, sun seal on BACK, blank olive FRONT. A vertical card rotates around its vertical center axis: frames 0 full BACK,1 back three-quarter,2 back narrow,3 almost edge-on,4 thin front edge,5 front narrow,6 front three-quarter,7 full BLANK FRONT. Each card same height and center; only apparent width changes; front contains no icons/text. Layout EXACTLY 4 columns by2 rows, EIGHT distinct frames in row-major order. Each cell with generous transparent gutters, identical camera and scale, fully isolated, no touching neighboring frames. Detailed painted2D volume, soft upper-left light, gray olive rust industrial aesthetic. No typography, labels, numbers, grid lines, arrows, baked UI. High-resolution wide source ideally2048x1536; every object sufficiently large to downsample into final256x384 frame. Actual alpha outside objects.",
@@ -115,7 +137,8 @@
     "layout": [
       4,
       2
-    ]
+    ],
+    "subprompts": null
   },
   "ui.card_flip_curse": {
     "prompt": "Use case: stylized-concept. Produce ONE transparent RGBA animation keyframe sheet for STALRENA. Input is a REFERENCE for exact object design/material, not a separate frame. dark rusty iron perimeter, crimson inlays, ominous eye seal on BACK, blank charcoal FRONT. A vertical card rotates around its vertical center axis: frames 0 full BACK,1 back three-quarter,2 back narrow,3 almost edge-on,4 thin front edge,5 front narrow,6 front three-quarter,7 full BLANK FRONT. Each card same height and center; only apparent width changes; front contains no icons/text. Layout EXACTLY 4 columns by2 rows, EIGHT distinct frames in row-major order. Each cell with generous transparent gutters, identical camera and scale, fully isolated, no touching neighboring frames. Detailed painted2D volume, soft upper-left light, gray olive rust industrial aesthetic. No typography, labels, numbers, grid lines, arrows, baked UI. High-resolution wide source ideally2048x1536; every object sufficiently large to downsample into final256x384 frame. Actual alpha outside objects.",
@@ -123,12 +146,14 @@
     "layout": [
       4,
       2
-    ]
+    ],
+    "subprompts": null
   },
   "ui.card_glow": {
     "prompt": "Use case: stylized-concept. STALRENA production hand-painted detailed2D game sprite with painted volume, worn metal/wood materials, upper-left soft light, muted gray olive rust palette. A soft rectangular GOLDEN selection aura for a vertical card with rounded corners. Hollow fully transparent center and outside, only diffuse luminous perimeter, no card, no solid panel, no text. Aspect5:7, large source. Glow fades smoothly, keep transparent margins. Genuine transparent RGBA background, no long cast shadow, no text, numbers, watermark or scene. Render at high resolution with generous margin around entire subject. Intended final512x384 case canvas or320x448 glow.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "ui.bonus_case_anim": {
     "prompt": "Use case: stylized-concept. Produce ONE transparent RGBA animation keyframe sheet for STALRENA. Input is a REFERENCE for exact object design/material, not a separate frame. golden bronze reward case with dark olive inset panels, warm GOLD light. The SAME case in 8 stages of opening: 0 closed,1 latch releases lid5degrees,2 lid20degrees,3 lid40degrees,4 lid65degrees,5 lid90degrees and bright light bloom,6 open light settles,7 fully open lid95degrees. Fixed camera and fixed case base position/size, ONLY lid angle/light changes. Layout EXACTLY 4 columns by2 rows, EIGHT distinct frames in row-major order. Each cell with generous transparent gutters, identical camera and scale, fully isolated, no touching neighboring frames. Detailed painted2D volume, soft upper-left light, gray olive rust industrial aesthetic. No typography, labels, numbers, grid lines, arrows, baked UI. High-resolution wide source ideally2048x1536; every object sufficiently large to downsample into final512x384 frame. Actual alpha outside objects.",
@@ -136,7 +161,8 @@
     "layout": [
       4,
       2
-    ]
+    ],
+    "subprompts": null
   },
   "ui.curse_case_anim": {
     "prompt": "Use case: stylized-concept. Produce ONE transparent RGBA animation keyframe sheet for STALRENA. Input is a REFERENCE for exact object design/material, not a separate frame. wooden timber crate with red edging and dark iron straps, dim CRIMSON light. The SAME case in 8 stages of opening: 0 closed,1 latch releases lid5degrees,2 lid20degrees,3 lid40degrees,4 lid65degrees,5 lid90degrees and bright light bloom,6 open light settles,7 fully open lid95degrees. Fixed camera and fixed case base position/size, ONLY lid angle/light changes. Layout EXACTLY 4 columns by2 rows, EIGHT distinct frames in row-major order. Each cell with generous transparent gutters, identical camera and scale, fully isolated, no touching neighboring frames. Detailed painted2D volume, soft upper-left light, gray olive rust industrial aesthetic. No typography, labels, numbers, grid lines, arrows, baked UI. High-resolution wide source ideally2048x1536; every object sufficiently large to downsample into final512x384 frame. Actual alpha outside objects.",
@@ -144,222 +170,266 @@
     "layout": [
       4,
       2
-    ]
+    ],
+    "subprompts": null
   },
   "prop.concrete_block_b": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One tall cracked reinforced-concrete road barrier, angular asymmetric broken corner, weathered gray with moss patches; substantial readable mass, broad base resting on ground. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "prop.concrete_block_c": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One battered reinforced-concrete barricade with protruding rusty bent rebar at one broken end, different silhouette from standard barrier, pale gray and moss; broad grounded base. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "prop.pipe_long": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One LONG continuous horizontal industrial pipeline segment, very wide aspect4:1. Single rusty gray-green pipe spans nearly full width, bolted flanges at both ends, THREE sturdy steel saddle supports bolted into low concrete footings, short soft contact shadows only directly under feet. One central small valve wheel attached to pipe. Pipe is clearly supported above ground by these integral stands. No disjoint elbows, no repeated tiny pipes. Elevated view, source wide at least1600px across, final canvas512x128. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "prop.pipe_tee": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One grounded industrial T-junction pipeline segment with two bolted flanges and third branch, rusty gray-green steel, connected to a low concrete footing by visible bolted saddle supports, small valve. No floating disconnected pipes. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "prop.wrecked_car_b": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One wrecked old compact industrial station wagon, corroded olive-gray body, missing hood exposing rusted engine, collapsed tires, asymmetric broken doors, full car lying normally on wheels, THREE-QUARTER TOP-DOWN view, distinct from sedan. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "prop.wrecked_car_c": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One wrecked rusty ochre-gray van tipped onto its SIDE, underside chassis and two upper wheels visible, smashed windows, isolated entire vehicle, elevated three-quarter view, grounded on side with short contact shadow. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "prop.machine_a": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One abandoned industrial SAWMILL BANDSAW machine: bulky faded olive cast-metal pedestal, vertical saw frame, work table with a short weathered timber offcut, rusty mechanical wheel and motor, grounded heavy bolted base. No guard signage. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "prop.machine_b": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One abandoned industrial SAWMILL PLANER machine: long squat cast-iron workbench with rollers, electric motor and belt guard, weathered gray olive paint and rust, visible sturdy four feet bolted to concrete pads. Different silhouette from bandsaw. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "prop.pillar": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One cracked old square concrete support pillar with rusty steel mounting bracket near top and chunky exposed foundation foot, short broken wire near cap, gray concrete moss olive, tall single object fully shown. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "water.flooded": {
     "prompt": "TOP-DOWN FLAT SEAMLESS TILEABLE WATER TEXTURE, fills whole square canvas opaque. Shallow dirty olive-gray flooded industrial yard water, gentle uneven small ripples, soft broken cloudy sky reflections, faint brown submerged mud and silt, a few tiny floating leaves. NO banks, land, rocks, reeds or large objects, no perspective horizon. Natural irregular non-mirrored distribution, no bilateral or kaleidoscopic symmetry. Opposite edges must tile continuously. Detailed hand-painted game surface, low contrast, no text. At least1024x1024 source, final512x512.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "water.flooded_edge": {
     "prompt": "One modular long irregular SHORELINE STRIP for a shallow dirty olive-gray industrial puddle. Top-down flat texture. Winding asymmetrical muddy brown gravel bank with small olive reeds and wet stones, thin broken ripple line, shallow gray-green water fades away into TRUE TRANSPARENCY on water side. Both sides outside narrow bank transparent, no solid rectangular background. Horizontal extent like512x256, entire irregular strip has free organic ends, not a closed oval, no water rectangle. Painterly detailed2D, soft upper-left light, no long shadows or text.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "decor.sawmill.sawdust_pile": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. A low irregular mound of golden-brown sawdust and wood chips, scattered frayed splinters, no logs, shallow grounded mound Small non-colliding scenery object, no surrounding diorama. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "decor.sawmill.stump": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One low weathered tree stump, uneven cut with visible growth rings and chopped notches, two exposed roots, moss patches Small non-colliding scenery object, no surrounding diorama. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "decor.sawmill.planks": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. A small loosely scattered stack of five weathered broken timber planks, rusty nails and rough chipped ends, ground lying Small non-colliding scenery object, no surrounding diorama. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "decor.sawmill.barrel": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One dented old olive painted steel oil drum standing upright, rusty hoops, blank surface without markings Small non-colliding scenery object, no surrounding diorama. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "decor.sawmill.chain": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. A short loose coiled heavy rusty iron chain lying on ground, irregular figure-eight pile, a broken link at end Small non-colliding scenery object, no surrounding diorama. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "decor.sawmill.tire": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One worn abandoned rubber truck tire lying partly tilted, muddy tread, little moss in hollow Small non-colliding scenery object, no surrounding diorama. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "decor.sawmill.forklift": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One abandoned compact forklift, weathered dirty olive metal, rusted forks lowered on ground, small wheels, open empty driver cage, whole vehicle Small non-colliding scenery object, no surrounding diorama. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "decor.sawmill.saw_machine": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One small abandoned circular saw bench, cast iron olive work table, visible toothed circular steel blade, rusty crank and sturdy feet Small non-colliding scenery object, no surrounding diorama. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "decor.sawmill.fire_barrel": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One old rusty steel barrel upright with a small warm orange controlled fire visible inside its open top, perforated lower vents, glowing embers, no surrounding flames Small non-colliding scenery object, no surrounding diorama. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "decor.sawmill.oil_stain": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. A low irregular dark brown-black greasy oil stain on ground with a subtle oily muted rainbow sheen, flat decal, organic lobed outline, no ground background Small non-colliding scenery object, no surrounding diorama. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "decor.pumping.cable_reel": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One large battered wooden industrial cable spool with dark thick cable wound around core, lying upright on circular flange, rusty central hub, damp wood Isolated small scenery prop, no surrounding floor or diorama. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "decor.pumping.rust_barrel": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One badly rusted red-brown metal barrel lying on its side with a dented endcap and peeling gray paint, no markings Isolated small scenery prop, no surrounding floor or diorama. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "decor.pumping.oil_puddle": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One irregular small dark petroleum puddle decal with subdued oily blue-violet sheen and a few separated drops, flat on ground, no soil background Isolated small scenery prop, no surrounding floor or diorama. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "decor.pumping.panel_a": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One old squat olive electrical control cabinet on short legs with a half-open hinged door, visible ceramic breakers and blank unlabeled round gauges, heavily weathered Isolated small scenery prop, no surrounding floor or diorama. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "decor.pumping.panel_b": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One damaged gray steel switchboard cabinet with dented twin doors, exposed disconnected wire bundle below, small blank glass gauge, different shape from olive control cabinet Isolated small scenery prop, no surrounding floor or diorama. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "decor.pumping.barrier": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One portable metal industrial safety barrier on two weighted feet, faded diagonal yellow-black stripes across steel beam, rusty frame, no text Isolated small scenery prop, no surrounding floor or diorama. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "decor.pumping.grate": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One rectangular rusted drainage grate with dark gaps between thick slats, lying flat, chipped concrete rim only narrowly around metal, no surrounding floor Isolated small scenery prop, no surrounding floor or diorama. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "decor.pumping.lamp_post": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One old short industrial lamp post with weathered steel upright bolted to a concrete foot, crooked hooded lamp at top, weak warm white light, entire object including foot Isolated small scenery prop, no surrounding floor or diorama. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "decor.flooded.driftwood": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One crooked waterlogged fallen driftwood trunk with two short root branches, slick dark bark and pale exposed wood, horizontally lying Small non-colliding scenery sprite, no surrounding scene. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "decor.flooded.dead_tree": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One small dead leafless tree with twisted bare branches and exposed root base, broken crown, entire isolated silhouette Small non-colliding scenery sprite, no surrounding scene. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "decor.flooded.sandbags": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One low uneven pile of five damp faded canvas sandbags, moss along seams, sagging stacked shapes Small non-colliding scenery sprite, no surrounding scene. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "decor.flooded.rocks": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. A small asymmetrical cluster of three wet gray stones with olive moss and chipped pale edges, low grounded Small non-colliding scenery sprite, no surrounding scene. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "decor.flooded.algae": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. A flat irregular tufted mat of stringy dirty green algae and wet pond weed, no water background, organic decal silhouette Small non-colliding scenery sprite, no surrounding scene. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "decor.flooded.float_debris": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. A sparse cluster of floating broken wooden scraps, one crushed rusty tin and leaf fragments, grouped as one small scenery sprite without water background Small non-colliding scenery sprite, no surrounding scene. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "decor.flooded.fence_broken": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One short collapsed rotten wooden fence section with two broken posts and three crooked slats, partly lying on ground, corroded wire Small non-colliding scenery sprite, no surrounding scene. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "decor.flooded.grass_island": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One small uneven clump of olive marsh grass on a tiny muddy root island, a few dry reeds, entirely isolated organic footprint Small non-colliding scenery sprite, no surrounding scene. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "decor.common.bones": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. A small scattered cluster of old bleached animal bones and one weathered small animal skull, dry abandoned ground debris, non-graphic no flesh Small non-colliding environmental sprite, no scene. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "decor.common.blood_stain": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One small faded dark maroon dried blood stain decal, irregular splatter with separated small drops, flat graphic environmental mark, no bodies or wounds, no ground background Small non-colliding environmental sprite, no scene. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "decor.common.shells": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. A sparse small cluster of several spent brass cartridge casings lying at different angles, tarnished brass, empty casings only, isolated ground debris Small non-colliding environmental sprite, no scene. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "decor.common.rags": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. A small rumpled pile of dirty olive and gray torn fabric scraps with frayed hems, one short leather strap, discarded ground debris Small non-colliding environmental sprite, no scene. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "decor.common.weeds": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One clump of hardy dusty olive weeds with a few dry stems, small tangled exposed roots, entire isolated plant tuft Small non-colliding environmental sprite, no scene. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "decor.common.backpack": {
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One abandoned faded olive canvas survivor backpack lying on its side with sagging pockets, worn leather straps, dirt and rusted buckles, no badges or lettering Small non-colliding environmental sprite, no scene. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
-    "layout": null
+    "layout": null,
+    "subprompts": null
   },
   "fx.fire_loop": {
     "prompt": "Use case: stylized-concept. Production 2D painted game VFX animation sheet for STALRENA. A LOOPING pool of stylized red-orange ground fire seen from elevated camera, six complementary flame flicker poses at same fire footprint, no beginning/end fade, first-to-last transition continuous, some glowing embers, NO bottle or ground. EXACTLY 6 frames arranged 3 columns by 2 rows in reading order. Each frame isolated in equal cells with wide transparent gutters, no contact with cell edges. Genuine alpha transparency, especially smoke and glow; no black/white/colored background, no floor or baked shadow. Consistent scale/origin across all frames. Painterly detailed volume, elevated top-down camera, no text, labels, numerals, grid lines, border, watermark. Large source so individual frames can downsample to 128x128 without enlargement.",
@@ -367,7 +437,8 @@
     "layout": [
       3,
       2
-    ]
+    ],
+    "subprompts": null
   },
   "fx.fire_burst": {
     "prompt": "Use case: stylized-concept. A production videogame sprite sheet of FOUR tiny isolated hand-painted orange flame impact bursts, 2x2 grid. Frame0 a small amber-glass SHARD cluster with two tiny orange sparks. Frame1 compact jagged orange/yellow flame bloom with a few glass fragments. Frame2 wider low orange flame splash. Frame3 fading small red embers and two tiny dark gray wisps. CRITICAL each sprite is a clean isolated CUTOUT surrounded by completely transparent EMPTY space, at least25percent margin INSIDE EACH CELL. NO broad ambient light, NO global glow, NO fog, NO white haze, NO drop shadow, NO backdrop of any color. Flames have crisp painted organic contours, warm orange body with bright yellow core. No text, labels, grid lines, floor, bottle or device. Painterly volume as top-down 2D game effect. Large source1024x1024 or larger, genuine RGBA transparent background.",
@@ -375,7 +446,8 @@
     "layout": [
       2,
       2
-    ]
+    ],
+    "subprompts": null
   },
   "fx.steam_puff": {
     "prompt": "Use case: stylized-concept. Production 2D painted game VFX animation sheet for STALRENA. A LOOPING low industrial white-gray steam puff from ground vent, six overlapping billowing swirls shifting upward and dissipating, first-to-last cycle continuous, semi-transparent feathered vapor, no vent hardware or ground. EXACTLY 6 frames arranged 3 columns by 2 rows in reading order. Each frame isolated in equal cells with wide transparent gutters, no contact with cell edges. Genuine alpha transparency, especially smoke and glow; no black/white/colored background, no floor or baked shadow. Consistent scale/origin across all frames. Painterly detailed volume, elevated top-down camera, no text, labels, numerals, grid lines, border, watermark. Large source so individual frames can downsample to 128x128 without enlargement.",
@@ -383,7 +455,8 @@
     "layout": [
       3,
       2
-    ]
+    ],
+    "subprompts": null
   },
   "fx.explosion": {
     "prompt": "Use case: stylized-concept. Production 2D painted game VFX animation sheet for STALRENA. Eight sequential game EXPLOSION frames: tiny bright ignition, expanding orange fireball, peak yellow-white bloom, orange rolling flames, darkening gray smoke, spreading smoke, thin wisps, almost dissipated small wisps. Fixed explosion origin and camera, no weapon or environment. EXACTLY 8 frames arranged 4 columns by 2 rows in reading order. Each frame isolated in equal cells with wide transparent gutters, no contact with cell edges. Genuine alpha transparency, especially smoke and glow; no black/white/colored background, no floor or baked shadow. Consistent scale/origin across all frames. Painterly detailed volume, elevated top-down camera, no text, labels, numerals, grid lines, border, watermark. Large source so individual frames can downsample to 256x256 without enlargement.\nRefinement: Use case: precise-object-edit. Edit this fx.explosion game VFX animation sheet. Preserve EXACT 8 frames and layout 4 columns by2 rows, preserve core subject, progression and colors. FIX ONLY TRANSPARENCY AND FRAME ISOLATION: REMOVE all broad white ambient haze, white background matte and global glow between frames. Each effect must be a compact isolated cutout with localized sparks/flame/smoke only. Every cell needs a wide EMPTY fully transparent band on all FOUR edges, at least15percent cell width/height. Smoke forms small defined organic wisps, never a big rectangular luminous patch. No shared haze bridging cells. Genuine RGBA, outside silhouettes alpha zero, no black backdrop. Keep painterly material and muted smoke, bright sparks only local. All frames fit intact with no clipping. No text, no grid, no labels.",
@@ -391,7 +464,8 @@
     "layout": [
       4,
       2
-    ]
+    ],
+    "subprompts": null
   },
   "fx.hit_spark": {
     "prompt": "Use case: stylized-concept. Production 2D painted game VFX animation sheet for STALRENA. Four sequential compact metal HIT SPARK frames: bright white-orange impact star, outward yellow sparks, smaller red-orange streaks, faint final embers; fixed impact center, no bullet or target. EXACTLY 4 frames arranged 2 columns by 2 rows in reading order. Each frame isolated in equal cells with wide transparent gutters, no contact with cell edges. Genuine alpha transparency, especially smoke and glow; no black/white/colored background, no floor or baked shadow. Consistent scale/origin across all frames. Painterly detailed volume, elevated top-down camera, no text, labels, numerals, grid lines, border, watermark. Large source so individual frames can downsample to 128x128 without enlargement.\nRefinement: Use case: precise-object-edit. Edit this fx.hit_spark game VFX animation sheet. Preserve EXACT 4 frames and layout 2 columns by2 rows, preserve core subject, progression and colors. FIX ONLY TRANSPARENCY AND FRAME ISOLATION: REMOVE all broad white ambient haze, white background matte and global glow between frames. Each effect must be a compact isolated cutout with localized sparks/flame/smoke only. Every cell needs a wide EMPTY fully transparent band on all FOUR edges, at least15percent cell width/height. Smoke forms small defined organic wisps, never a big rectangular luminous patch. No shared haze bridging cells. Genuine RGBA, outside silhouettes alpha zero, no black backdrop. Keep painterly material and muted smoke, bright sparks only local. All frames fit intact with no clipping. No text, no grid, no labels.",
@@ -399,7 +473,8 @@
     "layout": [
       2,
       2
-    ]
+    ],
+    "subprompts": null
   },
   "fx.heal": {
     "prompt": "Use case: stylized-concept. Production 2D painted game VFX animation sheet for STALRENA. A LOOPING friendly HEALING aura, six subtly different glowing SKY-BLUE translucent elliptical rings with rising cyan motes and soft curved wisps, no medical symbols, no numbers, no character, same ground center and size, coherent cyclic shimmer. EXACTLY 6 frames arranged 3 columns by 2 rows in reading order. Each frame isolated in equal cells with wide transparent gutters, no contact with cell edges. Genuine alpha transparency, especially smoke and glow; no black/white/colored background, no floor or baked shadow. Consistent scale/origin across all frames. Painterly detailed volume, elevated top-down camera, no text, labels, numerals, grid lines, border, watermark. Large source so individual frames can downsample to 128x128 without enlargement.",
@@ -407,7 +482,8 @@
     "layout": [
       3,
       2
-    ]
+    ],
+    "subprompts": null
   },
   "fx.spawn_ring": {
     "prompt": "Use case: stylized-concept. Production 2D painted game VFX animation sheet for STALRENA. Four stages of an ENEMY SPAWN ring on ground, red-orange glowing low elliptical energy rim, 0 thin dim small ring,1 bright expanding rim,2 peak fiery ring with sparse embers,3 thinning fading ring. Clear readable perimeter, no character, no symbols. EXACTLY 4 frames arranged 2 columns by 2 rows in reading order. Each frame isolated in equal cells with wide transparent gutters, no contact with cell edges. Genuine alpha transparency, especially smoke and glow; no black/white/colored background, no floor or baked shadow. Consistent scale/origin across all frames. Painterly detailed volume, elevated top-down camera, no text, labels, numerals, grid lines, border, watermark. Large source so individual frames can downsample to 128x128 without enlargement.",
@@ -415,7 +491,8 @@
     "layout": [
       2,
       2
-    ]
+    ],
+    "subprompts": null
   },
   "enemy.drifter.walk": {
     "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.drifter.walk animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY FOUR columns by THREE rows (12 poses). Rows S front-facing walking toward viewer, E right-facing side walking right, N back-facing walking away. Columns 0 left foot forward/right back,1 passing step feet near center,2 right foot forward/left back,3 opposite passing. Clear alternating limb articulation and subtle torso bounce, not four identical idle copies. Quadrupeds use natural four-limb gait, alternating front/hind limbs. Fixed camera and character scale in all frames. Each row keeps its direction. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 3072x2304. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
@@ -423,7 +500,8 @@
     "layout": [
       4,
       3
-    ]
+    ],
+    "subprompts": null
   },
   "enemy.drifter.attack": {
     "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.drifter.attack animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY THREE columns by THREE rows (9 poses). Rows S facing viewer, E facing RIGHT, N back-facing. Columns 0 anticipatory windup,1 peak attack lunge/strike,2 recovery. Keep feet/ground origin fixed, lean shoulders/torso visibly. Humanoid drifter swipes, wolf bites, frog spitter swells throat and spits a small orange spit droplet, gunner raises and fires rifle then recoils, boar lowers head to charge, brute winds up fist and slams, flanker makes claw swipe, carrier heaves abdomen. Use ONLY appropriate action for this reference creature, no unrelated new weapons. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2304x2304. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
@@ -431,7 +509,8 @@
     "layout": [
       3,
       3
-    ]
+    ],
+    "subprompts": null
   },
   "enemy.drifter.death": {
     "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.drifter.death animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY TWO columns by TWO rows, FOUR chronological death/fall frames in reading order. Frame0 unmistakably staggered, knees buckling/head pitching downward;1 collapsing onto knees or forelimbs;2 tipping onto side toward ground;3 fully prone motionless body lying on its side with limbs relaxed. Same body size and anatomy across all four. Final frame MUST be a flat lying corpse, whole body visible. NON-GRAPHIC no blood, guts or dismemberment. One common three-quarter/front direction; no direction rows. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2048x2048. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
@@ -439,7 +518,8 @@
     "layout": [
       2,
       2
-    ]
+    ],
+    "subprompts": null
   },
   "enemy.runner.walk": {
     "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.runner.walk animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY FOUR columns by THREE rows (12 poses). Rows S front-facing walking toward viewer, E right-facing side walking right, N back-facing walking away. Columns 0 left foot forward/right back,1 passing step feet near center,2 right foot forward/left back,3 opposite passing. Clear alternating limb articulation and subtle torso bounce, not four identical idle copies. Quadrupeds use natural four-limb gait, alternating front/hind limbs. Fixed camera and character scale in all frames. Each row keeps its direction. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 3072x2304. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
@@ -447,7 +527,8 @@
     "layout": [
       4,
       3
-    ]
+    ],
+    "subprompts": null
   },
   "enemy.runner.attack": {
     "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.runner.attack animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY THREE columns by THREE rows (9 poses). Rows S facing viewer, E facing RIGHT, N back-facing. Columns 0 anticipatory windup,1 peak attack lunge/strike,2 recovery. Keep feet/ground origin fixed, lean shoulders/torso visibly. Humanoid drifter swipes, wolf bites, frog spitter swells throat and spits a small orange spit droplet, gunner raises and fires rifle then recoils, boar lowers head to charge, brute winds up fist and slams, flanker makes claw swipe, carrier heaves abdomen. Use ONLY appropriate action for this reference creature, no unrelated new weapons. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2304x2304. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
@@ -455,7 +536,8 @@
     "layout": [
       3,
       3
-    ]
+    ],
+    "subprompts": null
   },
   "enemy.runner.death": {
     "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.runner.death animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY TWO columns by TWO rows, FOUR chronological death/fall frames in reading order. Frame0 unmistakably staggered, knees buckling/head pitching downward;1 collapsing onto knees or forelimbs;2 tipping onto side toward ground;3 fully prone motionless body lying on its side with limbs relaxed. Same body size and anatomy across all four. Final frame MUST be a flat lying corpse, whole body visible. NON-GRAPHIC no blood, guts or dismemberment. One common three-quarter/front direction; no direction rows. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2048x2048. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
@@ -463,7 +545,8 @@
     "layout": [
       2,
       2
-    ]
+    ],
+    "subprompts": null
   },
   "enemy.spitter.walk": {
     "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.spitter.walk animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY FOUR columns by THREE rows (12 poses). Rows S front-facing walking toward viewer, E right-facing side walking right, N back-facing walking away. Columns 0 left foot forward/right back,1 passing step feet near center,2 right foot forward/left back,3 opposite passing. Clear alternating limb articulation and subtle torso bounce, not four identical idle copies. Quadrupeds use natural four-limb gait, alternating front/hind limbs. Fixed camera and character scale in all frames. Each row keeps its direction. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 3072x2304. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
@@ -471,7 +554,8 @@
     "layout": [
       4,
       3
-    ]
+    ],
+    "subprompts": null
   },
   "enemy.spitter.attack": {
     "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.spitter.attack animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY THREE columns by THREE rows (9 poses). Rows S facing viewer, E facing RIGHT, N back-facing. Columns 0 anticipatory windup,1 peak attack lunge/strike,2 recovery. Keep feet/ground origin fixed, lean shoulders/torso visibly. Humanoid drifter swipes, wolf bites, frog spitter swells throat and spits a small orange spit droplet, gunner raises and fires rifle then recoils, boar lowers head to charge, brute winds up fist and slams, flanker makes claw swipe, carrier heaves abdomen. Use ONLY appropriate action for this reference creature, no unrelated new weapons. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2304x2304. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
@@ -479,7 +563,8 @@
     "layout": [
       3,
       3
-    ]
+    ],
+    "subprompts": null
   },
   "enemy.spitter.death": {
     "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.spitter.death animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY TWO columns by TWO rows, FOUR chronological death/fall frames in reading order. Frame0 unmistakably staggered, knees buckling/head pitching downward;1 collapsing onto knees or forelimbs;2 tipping onto side toward ground;3 fully prone motionless body lying on its side with limbs relaxed. Same body size and anatomy across all four. Final frame MUST be a flat lying corpse, whole body visible. NON-GRAPHIC no blood, guts or dismemberment. One common three-quarter/front direction; no direction rows. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2048x2048. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
@@ -487,7 +572,8 @@
     "layout": [
       2,
       2
-    ]
+    ],
+    "subprompts": null
   },
   "enemy.gunner.walk": {
     "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.gunner.walk animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY FOUR columns by THREE rows (12 poses). Rows S front-facing walking toward viewer, E right-facing side walking right, N back-facing walking away. Columns 0 left foot forward/right back,1 passing step feet near center,2 right foot forward/left back,3 opposite passing. Clear alternating limb articulation and subtle torso bounce, not four identical idle copies. Quadrupeds use natural four-limb gait, alternating front/hind limbs. Fixed camera and character scale in all frames. Each row keeps its direction. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 3072x2304. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
@@ -495,7 +581,8 @@
     "layout": [
       4,
       3
-    ]
+    ],
+    "subprompts": null
   },
   "enemy.gunner.attack": {
     "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.gunner.attack animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY THREE columns by THREE rows (9 poses). Rows S facing viewer, E facing RIGHT, N back-facing. Columns 0 anticipatory windup,1 peak attack lunge/strike,2 recovery. Keep feet/ground origin fixed, lean shoulders/torso visibly. Humanoid drifter swipes, wolf bites, frog spitter swells throat and spits a small orange spit droplet, gunner raises and fires rifle then recoils, boar lowers head to charge, brute winds up fist and slams, flanker makes claw swipe, carrier heaves abdomen. Use ONLY appropriate action for this reference creature, no unrelated new weapons. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2304x2304. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
@@ -503,7 +590,8 @@
     "layout": [
       3,
       3
-    ]
+    ],
+    "subprompts": null
   },
   "enemy.gunner.death": {
     "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.gunner.death animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY TWO columns by TWO rows, FOUR chronological death/fall frames in reading order. Frame0 unmistakably staggered, knees buckling/head pitching downward;1 collapsing onto knees or forelimbs;2 tipping onto side toward ground;3 fully prone motionless body lying on its side with limbs relaxed. Same body size and anatomy across all four. Final frame MUST be a flat lying corpse, whole body visible. NON-GRAPHIC no blood, guts or dismemberment. One common three-quarter/front direction; no direction rows. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2048x2048. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
@@ -511,7 +599,8 @@
     "layout": [
       2,
       2
-    ]
+    ],
+    "subprompts": null
   },
   "enemy.charger.walk": {
     "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.charger.walk animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY FOUR columns by THREE rows (12 poses). Rows S front-facing walking toward viewer, E right-facing side walking right, N back-facing walking away. Columns 0 left foot forward/right back,1 passing step feet near center,2 right foot forward/left back,3 opposite passing. Clear alternating limb articulation and subtle torso bounce, not four identical idle copies. Quadrupeds use natural four-limb gait, alternating front/hind limbs. Fixed camera and character scale in all frames. Each row keeps its direction. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 3072x2304. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
@@ -519,7 +608,8 @@
     "layout": [
       4,
       3
-    ]
+    ],
+    "subprompts": null
   },
   "enemy.charger.attack": {
     "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.charger.attack animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY THREE columns by THREE rows (9 poses). Rows S facing viewer, E facing RIGHT, N back-facing. Columns 0 anticipatory windup,1 peak attack lunge/strike,2 recovery. Keep feet/ground origin fixed, lean shoulders/torso visibly. Humanoid drifter swipes, wolf bites, frog spitter swells throat and spits a small orange spit droplet, gunner raises and fires rifle then recoils, boar lowers head to charge, brute winds up fist and slams, flanker makes claw swipe, carrier heaves abdomen. Use ONLY appropriate action for this reference creature, no unrelated new weapons. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2304x2304. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
@@ -527,7 +617,8 @@
     "layout": [
       3,
       3
-    ]
+    ],
+    "subprompts": null
   },
   "enemy.charger.death": {
     "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.charger.death animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY TWO columns by TWO rows, FOUR chronological death/fall frames in reading order. Frame0 unmistakably staggered, knees buckling/head pitching downward;1 collapsing onto knees or forelimbs;2 tipping onto side toward ground;3 fully prone motionless body lying on its side with limbs relaxed. Same body size and anatomy across all four. Final frame MUST be a flat lying corpse, whole body visible. NON-GRAPHIC no blood, guts or dismemberment. One common three-quarter/front direction; no direction rows. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2048x2048. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
@@ -535,7 +626,8 @@
     "layout": [
       2,
       2
-    ]
+    ],
+    "subprompts": null
   },
   "enemy.brute.walk": {
     "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.brute.walk animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY FOUR columns by THREE rows (12 poses). Rows S front-facing walking toward viewer, E right-facing side walking right, N back-facing walking away. Columns 0 left foot forward/right back,1 passing step feet near center,2 right foot forward/left back,3 opposite passing. Clear alternating limb articulation and subtle torso bounce, not four identical idle copies. Quadrupeds use natural four-limb gait, alternating front/hind limbs. Fixed camera and character scale in all frames. Each row keeps its direction. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 3072x2304. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
@@ -543,7 +635,8 @@
     "layout": [
       4,
       3
-    ]
+    ],
+    "subprompts": null
   },
   "enemy.brute.attack": {
     "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.brute.attack animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY THREE columns by THREE rows (9 poses). Rows S facing viewer, E facing RIGHT, N back-facing. Columns 0 anticipatory windup,1 peak attack lunge/strike,2 recovery. Keep feet/ground origin fixed, lean shoulders/torso visibly. Humanoid drifter swipes, wolf bites, frog spitter swells throat and spits a small orange spit droplet, gunner raises and fires rifle then recoils, boar lowers head to charge, brute winds up fist and slams, flanker makes claw swipe, carrier heaves abdomen. Use ONLY appropriate action for this reference creature, no unrelated new weapons. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2304x2304. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
@@ -551,7 +644,8 @@
     "layout": [
       3,
       3
-    ]
+    ],
+    "subprompts": null
   },
   "enemy.brute.death": {
     "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.brute.death animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY TWO columns by TWO rows, FOUR chronological death/fall frames in reading order. Frame0 unmistakably staggered, knees buckling/head pitching downward;1 collapsing onto knees or forelimbs;2 tipping onto side toward ground;3 fully prone motionless body lying on its side with limbs relaxed. Same body size and anatomy across all four. Final frame MUST be a flat lying corpse, whole body visible. NON-GRAPHIC no blood, guts or dismemberment. One common three-quarter/front direction; no direction rows. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2048x2048. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
@@ -559,7 +653,8 @@
     "layout": [
       2,
       2
-    ]
+    ],
+    "subprompts": null
   },
   "enemy.flanker.walk": {
     "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.flanker.walk animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY FOUR columns by THREE rows (12 poses). Rows S front-facing walking toward viewer, E right-facing side walking right, N back-facing walking away. Columns 0 left foot forward/right back,1 passing step feet near center,2 right foot forward/left back,3 opposite passing. Clear alternating limb articulation and subtle torso bounce, not four identical idle copies. Quadrupeds use natural four-limb gait, alternating front/hind limbs. Fixed camera and character scale in all frames. Each row keeps its direction. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 3072x2304. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
@@ -567,7 +662,8 @@
     "layout": [
       4,
       3
-    ]
+    ],
+    "subprompts": null
   },
   "enemy.flanker.attack": {
     "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.flanker.attack animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY THREE columns by THREE rows (9 poses). Rows S facing viewer, E facing RIGHT, N back-facing. Columns 0 anticipatory windup,1 peak attack lunge/strike,2 recovery. Keep feet/ground origin fixed, lean shoulders/torso visibly. Humanoid drifter swipes, wolf bites, frog spitter swells throat and spits a small orange spit droplet, gunner raises and fires rifle then recoils, boar lowers head to charge, brute winds up fist and slams, flanker makes claw swipe, carrier heaves abdomen. Use ONLY appropriate action for this reference creature, no unrelated new weapons. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2304x2304. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
@@ -575,7 +671,8 @@
     "layout": [
       3,
       3
-    ]
+    ],
+    "subprompts": null
   },
   "enemy.flanker.death": {
     "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.flanker.death animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY TWO columns by TWO rows, FOUR chronological death/fall frames in reading order. Frame0 unmistakably staggered, knees buckling/head pitching downward;1 collapsing onto knees or forelimbs;2 tipping onto side toward ground;3 fully prone motionless body lying on its side with limbs relaxed. Same body size and anatomy across all four. Final frame MUST be a flat lying corpse, whole body visible. NON-GRAPHIC no blood, guts or dismemberment. One common three-quarter/front direction; no direction rows. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2048x2048. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
@@ -583,7 +680,8 @@
     "layout": [
       2,
       2
-    ]
+    ],
+    "subprompts": null
   },
   "enemy.carrier.walk": {
     "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.carrier.walk animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY FOUR columns by THREE rows (12 poses). Rows S front-facing walking toward viewer, E right-facing side walking right, N back-facing walking away. Columns 0 left foot forward/right back,1 passing step feet near center,2 right foot forward/left back,3 opposite passing. Clear alternating limb articulation and subtle torso bounce, not four identical idle copies. Quadrupeds use natural four-limb gait, alternating front/hind limbs. Fixed camera and character scale in all frames. Each row keeps its direction. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 3072x2304. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
@@ -591,7 +689,8 @@
     "layout": [
       4,
       3
-    ]
+    ],
+    "subprompts": null
   },
   "enemy.carrier.attack": {
     "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.carrier.attack animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY THREE columns by THREE rows (9 poses). Rows S facing viewer, E facing RIGHT, N back-facing. Columns 0 anticipatory windup,1 peak attack lunge/strike,2 recovery. Keep feet/ground origin fixed, lean shoulders/torso visibly. Humanoid drifter swipes, wolf bites, frog spitter swells throat and spits a small orange spit droplet, gunner raises and fires rifle then recoils, boar lowers head to charge, brute winds up fist and slams, flanker makes claw swipe, carrier heaves abdomen. Use ONLY appropriate action for this reference creature, no unrelated new weapons. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2304x2304. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
@@ -599,7 +698,8 @@
     "layout": [
       3,
       3
-    ]
+    ],
+    "subprompts": null
   },
   "enemy.carrier.death": {
     "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.carrier.death animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY TWO columns by TWO rows, FOUR chronological death/fall frames in reading order. Frame0 unmistakably staggered, knees buckling/head pitching downward;1 collapsing onto knees or forelimbs;2 tipping onto side toward ground;3 fully prone motionless body lying on its side with limbs relaxed. Same body size and anatomy across all four. Final frame MUST be a flat lying corpse, whole body visible. NON-GRAPHIC no blood, guts or dismemberment. One common three-quarter/front direction; no direction rows. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2048x2048. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
@@ -607,7 +707,8 @@
     "layout": [
       2,
       2
-    ]
+    ],
+    "subprompts": null
   },
   "boss.cleaver.walk": {
     "prompt": "Use case: stylized-concept. Create ONE production STALRENA boss.cleaver.walk animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY FOUR columns by THREE rows (12 poses). Rows S front-facing walking toward viewer, E right-facing side walking right, N back-facing walking away. Columns 0 left foot forward/right back,1 passing step feet near center,2 right foot forward/left back,3 opposite passing. Clear alternating limb articulation and subtle torso bounce, not four identical idle copies. Quadrupeds use natural four-limb gait, alternating front/hind limbs. Fixed camera and character scale in all frames. Each row keeps its direction. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 3072x2304. Each character should be several hundred pixels high in source. Final frame 512 square, grounded at pivot 256,416.",
@@ -615,7 +716,8 @@
     "layout": [
       4,
       3
-    ]
+    ],
+    "subprompts": null
   },
   "boss.cleaver.death": {
     "prompt": "Use case: stylized-concept. Create ONE production STALRENA boss.cleaver.death animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY TWO columns by TWO rows, FOUR chronological death/fall frames in reading order. Frame0 unmistakably staggered, knees buckling/head pitching downward;1 collapsing onto knees or forelimbs;2 tipping onto side toward ground;3 fully prone motionless body lying on its side with limbs relaxed. Same body size and anatomy across all four. Final frame MUST be a flat lying corpse, whole body visible. NON-GRAPHIC no blood, guts or dismemberment. One common three-quarter/front direction; no direction rows. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2048x2048. Each character should be several hundred pixels high in source. Final frame 512 square, grounded at pivot 256,416.",
@@ -623,7 +725,8 @@
     "layout": [
       2,
       2
-    ]
+    ],
+    "subprompts": null
   },
   "boss.boilermaster.walk": {
     "prompt": "Use case: stylized-concept. Create ONE production STALRENA boss.boilermaster.walk animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY FOUR columns by THREE rows (12 poses). Rows S front-facing walking toward viewer, E right-facing side walking right, N back-facing walking away. Columns 0 left foot forward/right back,1 passing step feet near center,2 right foot forward/left back,3 opposite passing. Clear alternating limb articulation and subtle torso bounce, not four identical idle copies. Quadrupeds use natural four-limb gait, alternating front/hind limbs. Fixed camera and character scale in all frames. Each row keeps its direction. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 3072x2304. Each character should be several hundred pixels high in source. Final frame 512 square, grounded at pivot 256,416.",
@@ -631,7 +734,8 @@
     "layout": [
       4,
       3
-    ]
+    ],
+    "subprompts": null
   },
   "boss.boilermaster.death": {
     "prompt": "Use case: stylized-concept. Create ONE production STALRENA boss.boilermaster.death animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY TWO columns by TWO rows, FOUR chronological death/fall frames in reading order. Frame0 unmistakably staggered, knees buckling/head pitching downward;1 collapsing onto knees or forelimbs;2 tipping onto side toward ground;3 fully prone motionless body lying on its side with limbs relaxed. Same body size and anatomy across all four. Final frame MUST be a flat lying corpse, whole body visible. NON-GRAPHIC no blood, guts or dismemberment. One common three-quarter/front direction; no direction rows. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2048x2048. Each character should be several hundred pixels high in source. Final frame 512 square, grounded at pivot 256,416.",
@@ -639,7 +743,8 @@
     "layout": [
       2,
       2
-    ]
+    ],
+    "subprompts": null
   },
   "boss.broodmother.walk": {
     "prompt": "Use case: stylized-concept. Create ONE production STALRENA boss.broodmother.walk animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY FOUR columns by THREE rows (12 poses). Rows S front-facing walking toward viewer, E right-facing side walking right, N back-facing walking away. Columns 0 left foot forward/right back,1 passing step feet near center,2 right foot forward/left back,3 opposite passing. Clear alternating limb articulation and subtle torso bounce, not four identical idle copies. Quadrupeds use natural four-limb gait, alternating front/hind limbs. Fixed camera and character scale in all frames. Each row keeps its direction. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 3072x2304. Each character should be several hundred pixels high in source. Final frame 512 square, grounded at pivot 256,416.",
@@ -647,7 +752,8 @@
     "layout": [
       4,
       3
-    ]
+    ],
+    "subprompts": null
   },
   "boss.broodmother.death": {
     "prompt": "Use case: stylized-concept. Create ONE production STALRENA boss.broodmother.death animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY TWO columns by TWO rows, FOUR chronological death/fall frames in reading order. Frame0 unmistakably staggered, knees buckling/head pitching downward;1 collapsing onto knees or forelimbs;2 tipping onto side toward ground;3 fully prone motionless body lying on its side with limbs relaxed. Same body size and anatomy across all four. Final frame MUST be a flat lying corpse, whole body visible. NON-GRAPHIC no blood, guts or dismemberment. One common three-quarter/front direction; no direction rows. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2048x2048. Each character should be several hundred pixels high in source. Final frame 512 square, grounded at pivot 256,416.",
@@ -655,7 +761,8 @@
     "layout": [
       2,
       2
-    ]
+    ],
+    "subprompts": null
   },
   "armor.light.anim": {
     "prompt": "Use case: precise-object-edit. Create STALRENA animated ARMOR-ONLY OVERLAY atlas. Input1: existing light armor in S/E/N, DESIGN REFERENCE to preserve EXACT materials, armor coverage, relative proportions and genuine open armholes. Input2: actual hero body atlas, POSE/REGISTRATION GUIDE ONLY; rows S/E/N, columns idle,walk0,walk1,walk2,walk3,hit, bottom death row ignore. Output EXACTLY FIVE columns by THREE rows of isolated light VESTS ONLY, row S then E facing RIGHT then N back. Columns correspond to HERO columns1,2,3,4,5: walk0,walk1,walk2,walk3,hit. Each vest subtly leans/bobs with its matching body, hit vest visibly hunches/tilts. NO human, mannequin, head, neck, skin, arms, sleeves, hands, gloves, legs or weapon may appear. Empty interiors and armholes are TRUE ALPHA not painted dark patches. S front needs transparent clearance where the hero's forearms and clasped gloves cross the lower front; E leaves the entire near upper arm/sleeve and forearm clear, no solid dark cutout. Preserve source vest design, shoulder straps, pouches, panels only. High-resolution equal cells with wide transparent gutters and all vest parts within cells. Detailed hand-painted2D volume, upper-left soft light, olive/gray/rust, no long shadow, no text/labels/grid/watermark. Large source at least2000x1200. Final delivery will place these five columns in a six-column1536x768 sheet with last column EMPTY; draw ONLY the five requested columns now.\nUse case: precise-object-edit. Production alpha-overlay fix. Keep this armor-only sheet EXACTLY five columns by three rows, keep same design, materials, poses, camera and all lower two rows UNCHANGED. Modify ONLY the FIVE FRONT VESTS in the TOP ROW: erase a small smooth lobed horizontal oval opening in the lower-middle front for the hero's clasped hands/forearms to show through from the underlying body. This is an OCCLUSION MASK and must be genuine alpha=0 transparent, NOT a dark painted hole, NO hand or skin painted into it. Place opening centered at about62percent of each vest's height down from its top, about60percent of vest width wide and25percent of vest height tall; retain collar/chest above and belt/hem below. Tilt opening with hit pose. Front armor around opening stays unchanged. Keep E-row armholes fully alpha-transparent, no body/sleeve/hand inside. No text, grid, frames or background; every empty area genuinely transparent.",
@@ -663,7 +770,8 @@
     "layout": [
       5,
       3
-    ]
+    ],
+    "subprompts": null
   },
   "armor.field.anim": {
     "prompt": "Use case: precise-object-edit. Create STALRENA animated ARMOR-ONLY OVERLAY atlas. Input1: existing field armor in S/E/N, DESIGN REFERENCE to preserve EXACT materials, armor coverage, relative proportions and genuine open armholes. Input2: actual hero body atlas, POSE/REGISTRATION GUIDE ONLY; rows S/E/N, columns idle,walk0,walk1,walk2,walk3,hit, bottom death row ignore. Output EXACTLY FIVE columns by THREE rows of isolated field VESTS ONLY, row S then E facing RIGHT then N back. Columns correspond to HERO columns1,2,3,4,5: walk0,walk1,walk2,walk3,hit. Each vest subtly leans/bobs with its matching body, hit vest visibly hunches/tilts. NO human, mannequin, head, neck, skin, arms, sleeves, hands, gloves, legs or weapon may appear. Empty interiors and armholes are TRUE ALPHA not painted dark patches. S front needs transparent clearance where the hero's forearms and clasped gloves cross the lower front; E leaves the entire near upper arm/sleeve and forearm clear, no solid dark cutout. Preserve source vest design, shoulder straps, pouches, panels only. High-resolution equal cells with wide transparent gutters and all vest parts within cells. Detailed hand-painted2D volume, upper-left soft light, olive/gray/rust, no long shadow, no text/labels/grid/watermark. Large source at least2000x1200. Final delivery will place these five columns in a six-column1536x768 sheet with last column EMPTY; draw ONLY the five requested columns now.\nUse case: precise-object-edit. Production alpha-overlay fix. Keep this armor-only sheet EXACTLY five columns by three rows, keep same design, materials, poses, camera and all lower two rows UNCHANGED. Modify ONLY the FIVE FRONT VESTS in the TOP ROW: erase a small smooth lobed horizontal oval opening in the lower-middle front for the hero's clasped hands/forearms to show through from the underlying body. This is an OCCLUSION MASK and must be genuine alpha=0 transparent, NOT a dark painted hole, NO hand or skin painted into it. Place opening centered at about62percent of each vest's height down from its top, about60percent of vest width wide and25percent of vest height tall; retain collar/chest above and belt/hem below. Tilt opening with hit pose. Front armor around opening stays unchanged. Keep E-row armholes fully alpha-transparent, no body/sleeve/hand inside. No text, grid, frames or background; every empty area genuinely transparent.",
@@ -671,7 +779,8 @@
     "layout": [
       5,
       3
-    ]
+    ],
+    "subprompts": null
   },
   "armor.heavy.anim": {
     "prompt": "Use case: precise-object-edit. Create STALRENA animated ARMOR-ONLY OVERLAY atlas. Input1: existing heavy armor in S/E/N, DESIGN REFERENCE to preserve EXACT materials, armor coverage, relative proportions and genuine open armholes. Input2: actual hero body atlas, POSE/REGISTRATION GUIDE ONLY; rows S/E/N, columns idle,walk0,walk1,walk2,walk3,hit, bottom death row ignore. Output EXACTLY FIVE columns by THREE rows of isolated heavy VESTS ONLY, row S then E facing RIGHT then N back. Columns correspond to HERO columns1,2,3,4,5: walk0,walk1,walk2,walk3,hit. Each vest subtly leans/bobs with its matching body, hit vest visibly hunches/tilts. NO human, mannequin, head, neck, skin, arms, sleeves, hands, gloves, legs or weapon may appear. Empty interiors and armholes are TRUE ALPHA not painted dark patches. S front needs transparent clearance where the hero's forearms and clasped gloves cross the lower front; E leaves the entire near upper arm/sleeve and forearm clear, no solid dark cutout. Preserve source vest design, shoulder straps, pouches, panels only. High-resolution equal cells with wide transparent gutters and all vest parts within cells. Detailed hand-painted2D volume, upper-left soft light, olive/gray/rust, no long shadow, no text/labels/grid/watermark. Large source at least2000x1200. Final delivery will place these five columns in a six-column1536x768 sheet with last column EMPTY; draw ONLY the five requested columns now.\nUse case: precise-object-edit. Production alpha-overlay fix. Keep this armor-only sheet EXACTLY five columns by three rows, keep same design, materials, poses, camera and all lower two rows UNCHANGED. Modify ONLY the FIVE FRONT VESTS in the TOP ROW: erase a small smooth lobed horizontal oval opening in the lower-middle front for the hero's clasped hands/forearms to show through from the underlying body. This is an OCCLUSION MASK and must be genuine alpha=0 transparent, NOT a dark painted hole, NO hand or skin painted into it. Place opening centered at about62percent of each vest's height down from its top, about60percent of vest width wide and25percent of vest height tall; retain collar/chest above and belt/hem below. Tilt opening with hit pose. Front armor around opening stays unchanged. Keep E-row armholes fully alpha-transparent, no body/sleeve/hand inside. No text, grid, frames or background; every empty area genuinely transparent.",
@@ -679,6 +788,40 @@
     "layout": [
       5,
       3
+    ],
+    "subprompts": null
+  },
+  "ui.logo": {
+    "prompt": "Use case: logo-brand. Create a polished production title logo for the original postapocalyptic game STALRENA. Exact text ONLY: \"STALRENA\" (S T A L R E N A, 8 letters, one word). Massive condensed industrial uppercase lettering in worn pale steel with subtle chipped paint and rust crevices, restrained dirty olive dark extruded volume, narrow warm orange edge highlights. Perfectly legible, horizontal wordmark, no subtitle, no tiny print, no extra letters, no copyrighted emblems. Detailed hand-painted2D volume, soft upper-left light. Genuine transparent RGBA background, generous empty margin around full title, source very wide at least2500px so final1024x320 can be downsampled. No enclosing frame.",
+    "mode": "built_in_imagegen",
+    "layout": null,
+    "subprompts": null
+  },
+  "ui.menu_bg": {
+    "prompt": "Use case: stylized-concept. STALRENA GAME MAIN MENU BACKGROUND. Render at NATIVE 3840x2160 pixels, high-resolution4K landscape16:9, detailed hand-painted2D environmental key art with painted volume. A deserted postapocalyptic industrial sawmill courtyard at dusk, elevated top-down oblique camera like tactical2D game. Muted concrete-gray, dirty olive weeds, rust brown steel. Weathered concrete barriers, timber stacks, supported industrial pipes, muddy shallow puddles reflecting pale cloudy sky. One small survivor hero at right foreground: light gray-green jacket, olive trousers, short brown hair, protective respirator and gloves, his body lighter than environment, holding a compact carbine. Keep left third and central upper field dark calm uncluttered for UI that code will draw. Soft upper-left light, moody but readable material detail, no long graphic shadow cutting scene. Opaque full bleed art all the way to every edge. No text, logos, numerals, signs, buttons, frames, HUD, borders or watermark. Must be a full painted high-resolution original, NOT a small image upscaled. Requested final delivery1920x1080, so native source must be at least that large.\nFinal assembled from two separately repainted overlapping high-resolution panels, each downsampled to1148x1080; original master used only as composition reference.",
+    "mode": "built_in_imagegen",
+    "layout": null,
+    "subprompts": [
+      "Use case: precise-object-edit. FAITHFUL HIGH-RESOLUTION REPAINT of this exact STALRENA menu background PANEL. Keep the EXACT framing, pixel-relative locations and sizes of ALL objects, horizon, pipeline, silo, logs, ground cracks and puddles. Preserve camera/perspective, evening colors, brightness and lighting. Do not pan, zoom, add or delete objects, do not reinterpret geometry. This panel has NO hero; keep calm dark empty foreground and left-side trees. Redraw fine painterly material detail at native high resolution: final panel is1148x1080, so source must be at least1200x1130. Canvas aspect1000:941, nearly square landscape. Entire canvas opaque full bleed scene, no border, typography, frame, labels or watermark. This panel overlaps an adjacent panel from the same reference scene, so precise preservation of composition and colors is critical. NOT an upscaled small raster; regenerate genuine fine painted texture.",
+      "Use case: precise-object-edit. FAITHFUL HIGH-RESOLUTION REPAINT of this exact STALRENA menu background PANEL. Keep the EXACT framing, pixel-relative locations and sizes of ALL objects, horizon, pipeline, silo, logs, ground cracks and puddles. Preserve camera/perspective, evening colors, brightness and lighting. Do not pan, zoom, add or delete objects, do not reinterpret geometry. Preserve survivor hero's face, light jacket, respirator, gloves and carbine precisely. Redraw fine painterly material detail at native high resolution: final panel is1148x1080, so source must be at least1200x1130. Canvas aspect1000:941, nearly square landscape. Entire canvas opaque full bleed scene, no border, typography, frame, labels or watermark. This panel overlaps an adjacent panel from the same reference scene, so precise preservation of composition and colors is critical. NOT an upscaled small raster; regenerate genuine fine painted texture."
     ]
+  },
+  "app.icon": {
+    "prompt": "Use case: stylized-concept. A production ANDROID APP ICON for original game STALRENA. Square512x512 final, render large native source at least1024x1024. Single compelling centered portrait/emblem of a survivor with short brown hair, rugged protective respirator, dark goggles with muted amber reflections, pale olive jacket collar, weathered steel and rust textures, original painted2D game volume, soft upper-left light. Dark charcoal-olive industrial background filled to all four corners, warm orange back rim for readability. Full SQUARE image with opaque corners, no rounded app mockup border. Strong silhouette readable at48px. No text, initials, numerals, logo letters, labels, badge frames, watermark.",
+    "mode": "built_in_imagegen",
+    "layout": null,
+    "subprompts": null
+  },
+  "ui.coin": {
+    "prompt": "Use case: stylized-concept. STALRENA HUD item icon: ONE isolated chunky worn brass coin with a simple embossed cog-like geometric emblem, scratches and tarnished edges, no letters or numbers. Slight top-down three-quarter view with painted metallic volume, warm gold highlight upper-left, dirty olive oxidation and dark rust crevices. Detailed hand-painted2D, readable at64px, centered on genuinely transparent RGBA background with generous padding, no floor, shadow plane, frames, card or UI. Large source for final256x256 with16px clear safety field.",
+    "mode": "built_in_imagegen",
+    "layout": null,
+    "subprompts": null
+  },
+  "app.icon.foreground": {
+    "prompt": "Use case: background-extraction. Extract ONLY the survivor portrait from this Android app icon as a clean transparent RGBA FOREGROUND cutout. Keep exactly same hair, face, goggles, respirator, jacket and painted materials. Remove EVERY pixel of factory/sky/dark background, leave true alpha. Keep entire head and collar silhouette comfortably inside canvas with wide transparent padding all around; lower bust can end under collar, do not draw an enclosing circle/square/frame. No text, no new symbols. Large native source at least1024square, final foreground432x432 with portrait fitting central288x288 safe zone. This is not the opaque main icon; only its separate adaptive foreground.",
+    "mode": "built_in_imagegen",
+    "layout": null,
+    "subprompts": null
   }
 }
