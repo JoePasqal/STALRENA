@@ -1,0 +1,115 @@
+{
+  "png_count": 12,
+  "checks": "passed",
+  "runtime_verified": false,
+  "files": [
+    {
+      "path": "assets/art/armor/field.png",
+      "size": [
+        768,
+        256
+      ],
+      "mode": "RGBA",
+      "sha256": "f7d9a07f9648e4e09b0c238c042fca03cc1235f49b7980c0a771e6b22f92f535"
+    },
+    {
+      "path": "assets/art/armor/heavy.png",
+      "size": [
+        768,
+        256
+      ],
+      "mode": "RGBA",
+      "sha256": "718373a09dabac1044fb583386e1bcf1a5e47c3881099c5a1a4402d887a02b7e"
+    },
+    {
+      "path": "assets/art/armor/light.png",
+      "size": [
+        768,
+        256
+      ],
+      "mode": "RGBA",
+      "sha256": "960fcba7a31a64f199f6e46d753a53c2ffde0193600316f006d1e0421126e8da"
+    },
+    {
+      "path": "assets/art/characters/hero/body.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "sha256": "7d51ee40ee7a085040c07de9a87eefcce5bd0faae7fbd497cab496b4a16264f8"
+    },
+    {
+      "path": "assets/art/enemies/drifter.png",
+      "size": [
+        768,
+        256
+      ],
+      "mode": "RGBA",
+      "sha256": "aedfc20cb4ae657148a4148c832b7b3c4801acd21325100501252678a5b074a6"
+    },
+    {
+      "path": "assets/art/enemies/runner.png",
+      "size": [
+        768,
+        256
+      ],
+      "mode": "RGBA",
+      "sha256": "7f915bf25815b99737cb21c9ce2c6ccb624acf6a04c8d7f50f1323ce76d93c69"
+    },
+    {
+      "path": "assets/art/enemies/spitter.png",
+      "size": [
+        768,
+        256
+      ],
+      "mode": "RGBA",
+      "sha256": "e68d748a33d8c91751e92d434acd602e9b31ebef140ff3946188c3fea4ebe94f"
+    },
+    {
+      "path": "assets/art/floors/sawmill.png",
+      "size": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "sha256": "1d9c20f17ce31574fc27325a48e23e5160456015a82e81e6fddeca31dc38c830"
+    },
+    {
+      "path": "assets/art/icons/medkit.png",
+      "size": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "sha256": "b90eb2b7fe0a52d792bc8c59b5955667d9d5025b02fa2b73d0ea46863512a70e"
+    },
+    {
+      "path": "assets/art/props/crate.png",
+      "size": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "sha256": "03e22d1d9c58400bf61c5d10c5d2c774abced4091e5f7a0e9b00dda386a56aee"
+    },
+    {
+      "path": "assets/art/props/fence.png",
+      "size": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "sha256": "b1067363d20743ce6db10b91788a2bcabba1950ab63909f0cc3b373b99950484"
+    },
+    {
+      "path": "assets/art/props/log_stack.png",
+      "size": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "sha256": "3bbc6ed6c0d33c541c63bb2a9ef061405de870f5caa6beef30c37e787994dc7d"
+    }
+  ]
+}

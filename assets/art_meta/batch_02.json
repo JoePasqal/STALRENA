@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "status": "prepared_for_in_game_review",
+  "coordinate_origin": "top_left",
+  "hero": {
+    "path": "res://assets/art/characters/hero/body.png",
+    "sheet_px": [
+      1536,
+      1024
+    ],
+    "frame_px": [
+      256,
+      256
+    ],
+    "pivot_px": [
+      128,
+      208
+    ],
+    "world_scale": 0.5,
+    "rows": {
+      "S": 0,
+      "E": 1,
+      "N": 2,
+      "death": 3
+    },
+    "columns": {
+      "idle": [
+        0
+      ],
+      "walk": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "hit": [
+        5
+      ],
+      "death": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "walk_fps": 8,
+    "mirror_W_from": "E",
+    "weapon_socket_px": {
+      "S": [
+        128,
+        129
+      ],
+      "E": [
+        146,
+        125
+      ],
+      "N": [
+        142,
+        125
+      ]
+    },
+    "socket_notes": "S/E visually located on gloves in idle frame. N is projected hidden-hand attachment. Walking/hit may need per-frame adjustments; not verified in engine."
+  },
+  "armor": {
+    "sheet_px": [
+      768,
+      256
+    ],
+    "frame_px": [
+      256,
+      256
+    ],
+    "columns": [
+      "S",
+      "E",
+      "N"
+    ],
+    "pivot_px": [
+      128,
+      208
+    ],
+    "world_scale": 0.5,
+    "notes": "Static torso overlays. Check arm/hand occlusion and fit on walk/hit; suppress on death."
+  },
+  "enemies": {
+    "sheet_px": [
+      768,
+      256
+    ],
+    "frame_px": [
+      256,
+      256
+    ],
+    "columns": [
+      "S",
+      "E",
+      "N"
+    ],
+    "pivot_px": [
+      128,
+      208
+    ],
+    "world_scale": 0.5,
+    "animations": "static directional poses only",
+    "mirror_W_from": "E"
+  },
+  "props": {
+    "canvas_px": [
+      256,
+      256
+    ],
+    "pivot_px": [
+      128,
+      217
+    ],
+    "log_stack_override": {
+      "canvas_px": [
+        256,
+        256
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 1.0,
+      "reason": "Latest request overrides 512px manifest; scale 1.0 retains approximately previous 512px-at-0.5 logical footprint. Check visual fit without changing scene collision."
+    }
+  },
+  "weapons_unchanged": true,
+  "weapon_grip_notes": "Body socket alone will not correct grip in old weapon PNGs; visually measure each weapon pivot independently and compute muzzle using full 2D grip-to-muzzle vector."
+}
