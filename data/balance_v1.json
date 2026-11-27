@@ -13,7 +13,7 @@
     "pvp": false,
     "defend_target": "player",
     "shops_between_waves_only": true,
-    "extra_medkits_enabled": false,
+    "extra_medkits_enabled": true,
     "heal_to_full_before_each_wave": true,
     "sell_base_equipment_enabled": false,
     "ammo_reserve_infinite": true
@@ -33,7 +33,7 @@
   },
   "medkit": {
     "stock_at_wave_start": 1,
-    "carry_over": false,
+    "carry_over": true,
     "heal_max_hp_fraction": 0.2,
     "duration_seconds": 4,
     "heal_max_hp_fraction_per_second": 0.05,
@@ -41,7 +41,12 @@
     "damage_interrupts": false,
     "can_use_at_full_hp": false,
     "can_stack_effect": false,
-    "pause_freezes_effect": true
+    "pause_freezes_effect": true,
+    "price": 18,
+    "max_stock": 99,
+    "minimum_stock_at_wave_start": 1,
+    "purchasable": true,
+    "note_owner_change": "Изменено владельцем 27.11.2026: аптечек может быть сколько угодно (покупаются в магазине), неиспользованные сохраняются между раундами; каждый раунд гарантированно начинается минимум с одной. Эффект прежний: 20% максимума за 4 с, не складывается."
   },
   "ranks": [
     {
@@ -611,7 +616,12 @@
       "hunt": 20,
       "crossfire": 20,
       "breather": 10
-    }
+    },
+    "round_seconds": 120,
+    "boss_round_seconds": 120,
+    "spawn_window_fraction": 0.85,
+    "round_budget_scale": 2.2,
+    "round_note": "Изменено владельцем 27.11.2026: раунд длится ровно 2 минуты (босс — 2 минуты или смерть босса, что раньше). Бюджет угрозы умножается на round_budget_scale, спавн растянут на spawn_window_fraction от времени раунда. Значения — стартовая гипотеза."
   },
   "scaling": {
     "enemy_hp_linear_per_wave": 0.055,
@@ -969,8 +979,8 @@
       "id": "sawmill",
       "name": "Лесопилка",
       "size": [
-        1600,
-        1000
+        2400,
+        1250
       ],
       "boss_id": "cleaver",
       "first_visit_environment_hazards": false,
@@ -980,8 +990,8 @@
       "id": "pumping",
       "name": "Насосная станция",
       "size": [
-        1600,
-        1000
+        2400,
+        1250
       ],
       "boss_id": "boilermaster",
       "steam_warning_seconds": 1.2,
@@ -991,8 +1001,8 @@
       "id": "flooded",
       "name": "Затопленный двор",
       "size": [
-        1600,
-        1000
+        2400,
+        1250
       ],
       "boss_id": "broodmother",
       "water_ground_move_speed_multiplier": 0.85,

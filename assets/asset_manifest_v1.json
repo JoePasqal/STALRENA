@@ -3,7 +3,7 @@
   "art_contract": "ART_CONTRACT.md",
   "status_note": "No PNG files are supplied in this archive. All entries are planned, runtime must provide placeholders.",
   "coordinate_origin": "top_left",
-  "asset_count": 68,
+  "asset_count": 164,
   "assets": [
     {
       "id": "hero.body",
@@ -1163,6 +1163,1842 @@
         384
       ],
       "has_alpha": true
+    },
+    {
+      "id": "icon.debuff.slow_legs",
+      "target_path": "res://assets/art/icons/debuffs/slow_legs.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "icon.debuff.weak_medkit",
+      "target_path": "res://assets/art/icons/debuffs/weak_medkit.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "icon.debuff.molotov",
+      "target_path": "res://assets/art/icons/debuffs/molotov.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "icon.debuff.dull_ammo",
+      "target_path": "res://assets/art/icons/debuffs/dull_ammo.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "icon.debuff.frail",
+      "target_path": "res://assets/art/icons/debuffs/frail.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "icon.debuff.stiff_bolt",
+      "target_path": "res://assets/art/icons/debuffs/stiff_bolt.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "icon.debuff.poor_loot",
+      "target_path": "res://assets/art/icons/debuffs/poor_loot.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "ui.curse_card_back",
+      "target_path": "res://assets/art/ui/curse_card_back.png",
+      "kind": "ui",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        384
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "ui.curse_case_closed",
+      "target_path": "res://assets/art/ui/curse_case_closed.png",
+      "kind": "ui",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        512,
+        384
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "ui.curse_case_open",
+      "target_path": "res://assets/art/ui/curse_case_open.png",
+      "kind": "ui",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        512,
+        384
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "prop.concrete_block_b",
+      "target_path": "res://assets/art/props/concrete_block_b.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "треснувший блок",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "prop.concrete_block_c",
+      "target_path": "res://assets/art/props/concrete_block_c.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "блок с арматурой",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "prop.pipe_long",
+      "target_path": "res://assets/art/props/pipe_long.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        512,
+        128
+      ],
+      "has_alpha": true,
+      "note": "длинный горизонтальный сегмент трубы",
+      "pivot_px": [
+        256,
+        100
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "prop.pipe_tee",
+      "target_path": "res://assets/art/props/pipe_tee.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "труба с тройником",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "prop.wrecked_car_b",
+      "target_path": "res://assets/art/props/wrecked_car_b.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "второй остов",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "prop.wrecked_car_c",
+      "target_path": "res://assets/art/props/wrecked_car_c.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "машина на боку",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "prop.machine_a",
+      "target_path": "res://assets/art/props/machine_a.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "станок Лесопилки (замена зелёных заглушек)",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "prop.machine_b",
+      "target_path": "res://assets/art/props/machine_b.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "второй станок/столб",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "prop.pillar",
+      "target_path": "res://assets/art/props/pillar.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "бетонный/деревянный столб",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "water.flooded",
+      "target_path": "res://assets/art/floors/water_flooded.png",
+      "kind": "floor_texture",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        512,
+        512
+      ],
+      "has_alpha": false,
+      "note": "бесшовная вода для луж Затопленного двора, без зеркальной симметрии",
+      "seamless": true
+    },
+    {
+      "id": "decor.sawmill.sawdust_pile",
+      "target_path": "res://assets/art/decor/sawmill/sawdust_pile.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "мелкий декор без коллизии",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": false
+    },
+    {
+      "id": "decor.sawmill.stump",
+      "target_path": "res://assets/art/decor/sawmill/stump.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "мелкий декор без коллизии",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": false
+    },
+    {
+      "id": "decor.sawmill.planks",
+      "target_path": "res://assets/art/decor/sawmill/planks.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "мелкий декор без коллизии",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": false
+    },
+    {
+      "id": "decor.sawmill.barrel",
+      "target_path": "res://assets/art/decor/sawmill/barrel.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "мелкий декор без коллизии",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": false
+    },
+    {
+      "id": "decor.sawmill.chain",
+      "target_path": "res://assets/art/decor/sawmill/chain.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "мелкий декор без коллизии",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": false
+    },
+    {
+      "id": "decor.sawmill.tire",
+      "target_path": "res://assets/art/decor/sawmill/tire.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "мелкий декор без коллизии",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": false
+    },
+    {
+      "id": "decor.sawmill.forklift",
+      "target_path": "res://assets/art/decor/sawmill/forklift.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "мелкий декор без коллизии",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": false
+    },
+    {
+      "id": "decor.sawmill.saw_machine",
+      "target_path": "res://assets/art/decor/sawmill/saw_machine.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "мелкий декор без коллизии",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": false
+    },
+    {
+      "id": "decor.sawmill.fire_barrel",
+      "target_path": "res://assets/art/decor/sawmill/fire_barrel.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "мелкий декор без коллизии",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": false
+    },
+    {
+      "id": "decor.sawmill.oil_stain",
+      "target_path": "res://assets/art/decor/sawmill/oil_stain.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "мелкий декор без коллизии",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": false
+    },
+    {
+      "id": "decor.pumping.cable_reel",
+      "target_path": "res://assets/art/decor/pumping/cable_reel.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "мелкий декор без коллизии",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": false
+    },
+    {
+      "id": "decor.pumping.rust_barrel",
+      "target_path": "res://assets/art/decor/pumping/rust_barrel.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "мелкий декор без коллизии",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": false
+    },
+    {
+      "id": "decor.pumping.oil_puddle",
+      "target_path": "res://assets/art/decor/pumping/oil_puddle.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "мелкий декор без коллизии",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": false
+    },
+    {
+      "id": "decor.pumping.panel_a",
+      "target_path": "res://assets/art/decor/pumping/panel_a.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "мелкий декор без коллизии",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": false
+    },
+    {
+      "id": "decor.pumping.panel_b",
+      "target_path": "res://assets/art/decor/pumping/panel_b.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "мелкий декор без коллизии",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": false
+    },
+    {
+      "id": "decor.pumping.barrier",
+      "target_path": "res://assets/art/decor/pumping/barrier.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "мелкий декор без коллизии",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": false
+    },
+    {
+      "id": "decor.pumping.grate",
+      "target_path": "res://assets/art/decor/pumping/grate.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "мелкий декор без коллизии",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": false
+    },
+    {
+      "id": "decor.pumping.lamp_post",
+      "target_path": "res://assets/art/decor/pumping/lamp_post.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "мелкий декор без коллизии",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": false
+    },
+    {
+      "id": "decor.flooded.driftwood",
+      "target_path": "res://assets/art/decor/flooded/driftwood.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "мелкий декор без коллизии",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": false
+    },
+    {
+      "id": "decor.flooded.dead_tree",
+      "target_path": "res://assets/art/decor/flooded/dead_tree.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "мелкий декор без коллизии",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": false
+    },
+    {
+      "id": "decor.flooded.sandbags",
+      "target_path": "res://assets/art/decor/flooded/sandbags.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "мелкий декор без коллизии",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": false
+    },
+    {
+      "id": "decor.flooded.rocks",
+      "target_path": "res://assets/art/decor/flooded/rocks.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "мелкий декор без коллизии",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": false
+    },
+    {
+      "id": "decor.flooded.algae",
+      "target_path": "res://assets/art/decor/flooded/algae.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "мелкий декор без коллизии",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": false
+    },
+    {
+      "id": "decor.flooded.float_debris",
+      "target_path": "res://assets/art/decor/flooded/float_debris.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "мелкий декор без коллизии",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": false
+    },
+    {
+      "id": "decor.flooded.fence_broken",
+      "target_path": "res://assets/art/decor/flooded/fence_broken.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "мелкий декор без коллизии",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": false
+    },
+    {
+      "id": "decor.flooded.grass_island",
+      "target_path": "res://assets/art/decor/flooded/grass_island.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "мелкий декор без коллизии",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": false
+    },
+    {
+      "id": "decor.common.bones",
+      "target_path": "res://assets/art/decor/common/bones.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "мелкий декор без коллизии",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": false
+    },
+    {
+      "id": "decor.common.blood_stain",
+      "target_path": "res://assets/art/decor/common/blood_stain.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "мелкий декор без коллизии",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": false
+    },
+    {
+      "id": "decor.common.shells",
+      "target_path": "res://assets/art/decor/common/shells.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "мелкий декор без коллизии",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": false
+    },
+    {
+      "id": "decor.common.rags",
+      "target_path": "res://assets/art/decor/common/rags.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "мелкий декор без коллизии",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": false
+    },
+    {
+      "id": "decor.common.weeds",
+      "target_path": "res://assets/art/decor/common/weeds.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "мелкий декор без коллизии",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": false
+    },
+    {
+      "id": "decor.common.backpack",
+      "target_path": "res://assets/art/decor/common/backpack.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "мелкий декор без коллизии",
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "collision_from_scene": false
+    },
+    {
+      "id": "corpse.drifter",
+      "target_path": "res://assets/art/corpses/drifter.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "лежащий труп, опора по центру тела; один ракурс (при необходимости зеркалится)",
+      "pivot_px": [
+        128,
+        160
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "corpse.runner",
+      "target_path": "res://assets/art/corpses/runner.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "лежащий труп, опора по центру тела; один ракурс (при необходимости зеркалится)",
+      "pivot_px": [
+        128,
+        160
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "corpse.charger",
+      "target_path": "res://assets/art/corpses/charger.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "лежащий труп, опора по центру тела; один ракурс (при необходимости зеркалится)",
+      "pivot_px": [
+        128,
+        160
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "corpse.spitter",
+      "target_path": "res://assets/art/corpses/spitter.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "лежащий труп, опора по центру тела; один ракурс (при необходимости зеркалится)",
+      "pivot_px": [
+        128,
+        160
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "corpse.gunner",
+      "target_path": "res://assets/art/corpses/gunner.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "лежащий труп, опора по центру тела; один ракурс (при необходимости зеркалится)",
+      "pivot_px": [
+        128,
+        160
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "corpse.brute",
+      "target_path": "res://assets/art/corpses/brute.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "лежащий труп, опора по центру тела; один ракурс (при необходимости зеркалится)",
+      "pivot_px": [
+        128,
+        160
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "corpse.flanker",
+      "target_path": "res://assets/art/corpses/flanker.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "лежащий труп, опора по центру тела; один ракурс (при необходимости зеркалится)",
+      "pivot_px": [
+        128,
+        160
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "corpse.carrier",
+      "target_path": "res://assets/art/corpses/carrier.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "лежащий труп, опора по центру тела; один ракурс (при необходимости зеркалится)",
+      "pivot_px": [
+        128,
+        160
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "corpse.boss.cleaver",
+      "target_path": "res://assets/art/corpses/boss_cleaver.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        512,
+        512
+      ],
+      "has_alpha": true,
+      "note": "лежащий босс",
+      "pivot_px": [
+        256,
+        320
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "corpse.boss.boilermaster",
+      "target_path": "res://assets/art/corpses/boss_boilermaster.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        512,
+        512
+      ],
+      "has_alpha": true,
+      "note": "лежащий босс",
+      "pivot_px": [
+        256,
+        320
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "corpse.boss.broodmother",
+      "target_path": "res://assets/art/corpses/boss_broodmother.png",
+      "kind": "prop",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        512,
+        512
+      ],
+      "has_alpha": true,
+      "note": "лежащий босс",
+      "pivot_px": [
+        256,
+        320
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "enemy.drifter.walk",
+      "target_path": "res://assets/art/enemies/drifter_walk.png",
+      "kind": "actor_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        1024,
+        768
+      ],
+      "has_alpha": true,
+      "note": "ходьба: 4 кадра по строкам S,E,N; клетка 256, pivot (128,208)",
+      "frame_px": [
+        256,
+        256
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "walk_fps": 8
+    },
+    {
+      "id": "enemy.drifter.attack",
+      "target_path": "res://assets/art/enemies/drifter_attack.png",
+      "kind": "actor_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        768,
+        768
+      ],
+      "has_alpha": true,
+      "note": "замах: 3 кадра (подготовка, пик, возврат) по строкам S,E,N",
+      "frame_px": [
+        256,
+        256
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "enemy.drifter.death",
+      "target_path": "res://assets/art/enemies/drifter_death.png",
+      "kind": "actor_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        1024,
+        256
+      ],
+      "has_alpha": true,
+      "note": "смерть: 4 кадра в одной строке, направление не важно",
+      "frame_px": [
+        256,
+        256
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "enemy.runner.walk",
+      "target_path": "res://assets/art/enemies/runner_walk.png",
+      "kind": "actor_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        1024,
+        768
+      ],
+      "has_alpha": true,
+      "note": "ходьба: 4 кадра по строкам S,E,N; клетка 256, pivot (128,208)",
+      "frame_px": [
+        256,
+        256
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "walk_fps": 8
+    },
+    {
+      "id": "enemy.runner.attack",
+      "target_path": "res://assets/art/enemies/runner_attack.png",
+      "kind": "actor_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        768,
+        768
+      ],
+      "has_alpha": true,
+      "note": "замах: 3 кадра (подготовка, пик, возврат) по строкам S,E,N",
+      "frame_px": [
+        256,
+        256
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "enemy.runner.death",
+      "target_path": "res://assets/art/enemies/runner_death.png",
+      "kind": "actor_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        1024,
+        256
+      ],
+      "has_alpha": true,
+      "note": "смерть: 4 кадра в одной строке, направление не важно",
+      "frame_px": [
+        256,
+        256
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "enemy.charger.walk",
+      "target_path": "res://assets/art/enemies/charger_walk.png",
+      "kind": "actor_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        1024,
+        768
+      ],
+      "has_alpha": true,
+      "note": "ходьба: 4 кадра по строкам S,E,N; клетка 256, pivot (128,208)",
+      "frame_px": [
+        256,
+        256
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "walk_fps": 8
+    },
+    {
+      "id": "enemy.charger.attack",
+      "target_path": "res://assets/art/enemies/charger_attack.png",
+      "kind": "actor_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        768,
+        768
+      ],
+      "has_alpha": true,
+      "note": "замах: 3 кадра (подготовка, пик, возврат) по строкам S,E,N",
+      "frame_px": [
+        256,
+        256
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "enemy.charger.death",
+      "target_path": "res://assets/art/enemies/charger_death.png",
+      "kind": "actor_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        1024,
+        256
+      ],
+      "has_alpha": true,
+      "note": "смерть: 4 кадра в одной строке, направление не важно",
+      "frame_px": [
+        256,
+        256
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "enemy.spitter.walk",
+      "target_path": "res://assets/art/enemies/spitter_walk.png",
+      "kind": "actor_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        1024,
+        768
+      ],
+      "has_alpha": true,
+      "note": "ходьба: 4 кадра по строкам S,E,N; клетка 256, pivot (128,208)",
+      "frame_px": [
+        256,
+        256
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "walk_fps": 8
+    },
+    {
+      "id": "enemy.spitter.attack",
+      "target_path": "res://assets/art/enemies/spitter_attack.png",
+      "kind": "actor_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        768,
+        768
+      ],
+      "has_alpha": true,
+      "note": "замах: 3 кадра (подготовка, пик, возврат) по строкам S,E,N",
+      "frame_px": [
+        256,
+        256
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "enemy.spitter.death",
+      "target_path": "res://assets/art/enemies/spitter_death.png",
+      "kind": "actor_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        1024,
+        256
+      ],
+      "has_alpha": true,
+      "note": "смерть: 4 кадра в одной строке, направление не важно",
+      "frame_px": [
+        256,
+        256
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "enemy.gunner.walk",
+      "target_path": "res://assets/art/enemies/gunner_walk.png",
+      "kind": "actor_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        1024,
+        768
+      ],
+      "has_alpha": true,
+      "note": "ходьба: 4 кадра по строкам S,E,N; клетка 256, pivot (128,208)",
+      "frame_px": [
+        256,
+        256
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "walk_fps": 8
+    },
+    {
+      "id": "enemy.gunner.attack",
+      "target_path": "res://assets/art/enemies/gunner_attack.png",
+      "kind": "actor_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        768,
+        768
+      ],
+      "has_alpha": true,
+      "note": "замах: 3 кадра (подготовка, пик, возврат) по строкам S,E,N",
+      "frame_px": [
+        256,
+        256
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "enemy.gunner.death",
+      "target_path": "res://assets/art/enemies/gunner_death.png",
+      "kind": "actor_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        1024,
+        256
+      ],
+      "has_alpha": true,
+      "note": "смерть: 4 кадра в одной строке, направление не важно",
+      "frame_px": [
+        256,
+        256
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "enemy.brute.walk",
+      "target_path": "res://assets/art/enemies/brute_walk.png",
+      "kind": "actor_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        1024,
+        768
+      ],
+      "has_alpha": true,
+      "note": "ходьба: 4 кадра по строкам S,E,N; клетка 256, pivot (128,208)",
+      "frame_px": [
+        256,
+        256
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "walk_fps": 8
+    },
+    {
+      "id": "enemy.brute.attack",
+      "target_path": "res://assets/art/enemies/brute_attack.png",
+      "kind": "actor_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        768,
+        768
+      ],
+      "has_alpha": true,
+      "note": "замах: 3 кадра (подготовка, пик, возврат) по строкам S,E,N",
+      "frame_px": [
+        256,
+        256
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "enemy.brute.death",
+      "target_path": "res://assets/art/enemies/brute_death.png",
+      "kind": "actor_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        1024,
+        256
+      ],
+      "has_alpha": true,
+      "note": "смерть: 4 кадра в одной строке, направление не важно",
+      "frame_px": [
+        256,
+        256
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "enemy.flanker.walk",
+      "target_path": "res://assets/art/enemies/flanker_walk.png",
+      "kind": "actor_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        1024,
+        768
+      ],
+      "has_alpha": true,
+      "note": "ходьба: 4 кадра по строкам S,E,N; клетка 256, pivot (128,208)",
+      "frame_px": [
+        256,
+        256
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "walk_fps": 8
+    },
+    {
+      "id": "enemy.flanker.attack",
+      "target_path": "res://assets/art/enemies/flanker_attack.png",
+      "kind": "actor_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        768,
+        768
+      ],
+      "has_alpha": true,
+      "note": "замах: 3 кадра (подготовка, пик, возврат) по строкам S,E,N",
+      "frame_px": [
+        256,
+        256
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "enemy.flanker.death",
+      "target_path": "res://assets/art/enemies/flanker_death.png",
+      "kind": "actor_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        1024,
+        256
+      ],
+      "has_alpha": true,
+      "note": "смерть: 4 кадра в одной строке, направление не важно",
+      "frame_px": [
+        256,
+        256
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "enemy.carrier.walk",
+      "target_path": "res://assets/art/enemies/carrier_walk.png",
+      "kind": "actor_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        1024,
+        768
+      ],
+      "has_alpha": true,
+      "note": "ходьба: 4 кадра по строкам S,E,N; клетка 256, pivot (128,208)",
+      "frame_px": [
+        256,
+        256
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "walk_fps": 8
+    },
+    {
+      "id": "enemy.carrier.attack",
+      "target_path": "res://assets/art/enemies/carrier_attack.png",
+      "kind": "actor_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        768,
+        768
+      ],
+      "has_alpha": true,
+      "note": "замах: 3 кадра (подготовка, пик, возврат) по строкам S,E,N",
+      "frame_px": [
+        256,
+        256
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "enemy.carrier.death",
+      "target_path": "res://assets/art/enemies/carrier_death.png",
+      "kind": "actor_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        1024,
+        256
+      ],
+      "has_alpha": true,
+      "note": "смерть: 4 кадра в одной строке, направление не важно",
+      "frame_px": [
+        256,
+        256
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "boss.cleaver.walk",
+      "target_path": "res://assets/art/bosses/cleaver_walk.png",
+      "kind": "boss_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        2048,
+        1536
+      ],
+      "has_alpha": true,
+      "note": "ходьба: 4 кадра по строкам S,E,N; клетка 512, pivot (256,416)",
+      "frame_px": [
+        512,
+        512
+      ],
+      "pivot_px": [
+        256,
+        416
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "boss.cleaver.death",
+      "target_path": "res://assets/art/bosses/cleaver_death.png",
+      "kind": "boss_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        2048,
+        512
+      ],
+      "has_alpha": true,
+      "note": "смерть: 4 кадра в одной строке",
+      "frame_px": [
+        512,
+        512
+      ],
+      "pivot_px": [
+        256,
+        416
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "boss.boilermaster.walk",
+      "target_path": "res://assets/art/bosses/boilermaster_walk.png",
+      "kind": "boss_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        2048,
+        1536
+      ],
+      "has_alpha": true,
+      "note": "ходьба: 4 кадра по строкам S,E,N; клетка 512, pivot (256,416)",
+      "frame_px": [
+        512,
+        512
+      ],
+      "pivot_px": [
+        256,
+        416
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "boss.boilermaster.death",
+      "target_path": "res://assets/art/bosses/boilermaster_death.png",
+      "kind": "boss_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        2048,
+        512
+      ],
+      "has_alpha": true,
+      "note": "смерть: 4 кадра в одной строке",
+      "frame_px": [
+        512,
+        512
+      ],
+      "pivot_px": [
+        256,
+        416
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "boss.broodmother.walk",
+      "target_path": "res://assets/art/bosses/broodmother_walk.png",
+      "kind": "boss_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        2048,
+        1536
+      ],
+      "has_alpha": true,
+      "note": "ходьба: 4 кадра по строкам S,E,N; клетка 512, pivot (256,416)",
+      "frame_px": [
+        512,
+        512
+      ],
+      "pivot_px": [
+        256,
+        416
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "boss.broodmother.death",
+      "target_path": "res://assets/art/bosses/broodmother_death.png",
+      "kind": "boss_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        2048,
+        512
+      ],
+      "has_alpha": true,
+      "note": "смерть: 4 кадра в одной строке",
+      "frame_px": [
+        512,
+        512
+      ],
+      "pivot_px": [
+        256,
+        416
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "armor.light.anim",
+      "target_path": "res://assets/art/armor/light_anim.png",
+      "kind": "armor_overlay",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        1536,
+        768
+      ],
+      "has_alpha": true,
+      "note": "накладка на кадры героя: колонки walk0..walk3, hit; строки S,E,N",
+      "frame_px": [
+        256,
+        256
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "armor.field.anim",
+      "target_path": "res://assets/art/armor/field_anim.png",
+      "kind": "armor_overlay",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        1536,
+        768
+      ],
+      "has_alpha": true,
+      "note": "накладка на кадры героя: колонки walk0..walk3, hit; строки S,E,N",
+      "frame_px": [
+        256,
+        256
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5
+    },
+    {
+      "id": "armor.heavy.anim",
+      "target_path": "res://assets/art/armor/heavy_anim.png",
+      "kind": "armor_overlay",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        1536,
+        768
+      ],
+      "has_alpha": true,
+      "note": "накладка на кадры героя: колонки walk0..walk3, hit; строки S,E,N",
+      "frame_px": [
+        256,
+        256
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5
     }
   ]
 }

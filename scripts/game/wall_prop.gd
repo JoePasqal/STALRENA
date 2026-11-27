@@ -74,7 +74,21 @@ func _draw_tiled(pid: String) -> void:
 	draw_set_transform(Vector2.ZERO, 0.0, Vector2.ONE)
 
 
+## Мягкая контактная тень под основанием (несколько слоёв эллипса), без длинных запечённых теней.
+func _draw_shadow() -> void:
+	var w := rect.size.x
+	var h := rect.size.y
+	for i in 4:
+		var k := 1.0 + i * 0.12
+		var pts := PackedVector2Array()
+		for a in 28:
+			var t := TAU * a / 28.0
+			pts.append(Vector2(cos(t) * (w * 0.5 + 14.0) * k, -h * 0.5 + sin(t) * (h * 0.5 + 12.0) * k + 6.0))
+		draw_colored_polygon(pts, Color(0, 0, 0, 0.10))
+
+
 func _draw() -> void:
+	_draw_shadow()
 	var pid: String = PROP_FOR_KIND.get(kind, "")
 	if pid != "" and AssetRegistry.file_exists(pid):
 		if kind in ["concrete", "pipe", "debris"]:

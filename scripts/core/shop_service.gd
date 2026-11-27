@@ -344,3 +344,24 @@ static func begin_wave(run: RunState) -> Dictionary:
 	run.hp = StatCalc.max_hp(run)
 	run.phase = "combat"
 	return {"ok": true, "wave": run.next_wave()}
+
+
+## Покупка аптечки (кнопка магазина, вне карточек). Цена и лимит — из данных; запас сохраняется между раундами.
+static func medkit_status(run: RunState) -> Dictionary:
+	if not Inventory.in_shop(run):
+		return fail("Только в магазине")
+	var cfg: Dictionary = GameData.B.medkit
+	if run.medkits >= int(cfg.max_stock):
+		return fail("Максимум аптечек")
+	if run.coins < int(cfg.price):
+		return {"ok": false, "reason": "Не хватает монет", "cost": int(cfg.price)}
+	return {"ok": true, "cost": int(cfg.price)}
+
+
+static func buy_medkit(run: RunState) -> Dictionary:
+	var st := medkit_status(run)
+	if not st.ok:
+		return st
+	run.coins -= int(st.cost)
+	run.medkits += 1
+	return {"ok": true, "stock": run.medkits, "price": int(st.cost)}

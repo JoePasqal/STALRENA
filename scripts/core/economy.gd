@@ -16,12 +16,12 @@ static func reward_for(global_wave: int, coins_at_start: int, is_boss: bool, coi
 
 
 ## Победа в волне: ровно одно начисление и один вход в магазин. Возвращает {} при повторе.
-static func complete_wave(run: RunState) -> Dictionary:
+static func complete_wave(run: RunState, boss_killed: bool = true) -> Dictionary:
 	if run.phase != "combat" or run.over:
 		return {}
 	var gw := run.next_wave()
 	var boss := run.is_boss_wave(gw)
-	var rw := reward_for(gw, run.coins_at_wave_start, boss, BonusService.coin_bonus(run))
+	var rw := reward_for(gw, run.coins_at_wave_start, boss and boss_killed, BonusService.coin_bonus(run))
 	run.coins += int(rw.total)
 	run.waves_completed = gw
 	run.phase = "shop"
@@ -31,7 +31,7 @@ static func complete_wave(run: RunState) -> Dictionary:
 	BonusService.on_wave_completed(run, gw)
 	run.hp = StatCalc.max_hp(run)          # после снятия бонуса максимум мог измениться
 	ShopService.on_enter_shop(run)
-	return {"wave": gw, "reward": rw, "boss": boss}
+	return {"wave": gw, "reward": rw, "boss": boss, "boss_killed": boss and boss_killed}
 
 
 ## Поражение: забег помечается завершённым до показа результатов, выплаты нет.

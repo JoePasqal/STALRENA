@@ -12,8 +12,10 @@ var total: float = 0.0
 var given: float = 0.0
 
 
-func reset_for_wave() -> void:
-	stock = int(GameData.B.medkit.stock_at_wave_start)   # устанавливается в 1, не += 1
+## carry — запас из забега (покупки и неиспользованные). Раунд всегда начинается минимум с одной аптечки;
+## сверх минимума накапливаются только те, что игрок купил и не потратил.
+func reset_for_wave(carry: int = 0) -> void:
+	stock = clampi(maxi(carry, int(GameData.B.medkit.minimum_stock_at_wave_start)), 0, int(GameData.B.medkit.max_stock))
 	clear_effect()
 
 
@@ -28,7 +30,7 @@ func can_use(hp: float, max_hp: float) -> bool:
 	return stock > 0 and not active and hp > 0.0 and hp < max_hp - 0.0001
 
 
-func try_use(hp: float, max_hp: float) -> bool:
+func try_use(hp: float, max_hp: float, heal_mult: float = 1.0) -> bool:
 	if not can_use(hp, max_hp):
 		return false
 	stock -= 1
@@ -36,7 +38,7 @@ func try_use(hp: float, max_hp: float) -> bool:
 	elapsed = 0.0
 	given = 0.0
 	duration = float(GameData.B.medkit.duration_seconds)
-	total = max_hp * float(GameData.B.medkit.heal_max_hp_fraction)
+	total = max_hp * float(GameData.B.medkit.heal_max_hp_fraction) * heal_mult      # дебафф «Слабая аптечка» умножает лечение
 	return true
 
 

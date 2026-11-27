@@ -12,6 +12,7 @@ const PALETTES := {
 	"steam": {"fill": Color(0.85, 0.9, 0.92), "edge": Color(1.0, 0.55, 0.15)},
 	"acid": {"fill": Color(0.55, 0.9, 0.2), "edge": Color(1.0, 0.55, 0.15)},
 	"electric": {"fill": Color(0.55, 0.65, 1.0), "edge": Color(1.0, 0.55, 0.15)},
+	"fire": {"fill": Color(1.0, 0.45, 0.1), "edge": Color(1.0, 0.8, 0.2)},
 	"toxic": {"fill": Color(0.5, 0.75, 0.25), "edge": Color(1.0, 0.55, 0.15)},
 }
 

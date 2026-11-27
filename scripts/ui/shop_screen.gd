@@ -157,10 +157,13 @@ func refresh() -> void:
 	var sec := run.sector_of(gw)
 	var boss := run.is_boss_wave(gw)
 	_top_label.text = "МАГАЗИН · Следующая: волна %d (сектор %d, %d/%d)%s" % [gw, sec, run.local_wave_of(gw), int(GameData.B.waves.sector_length), "  · БОСС" if boss else ""]
-	_coins_label.text = "Монеты: %d" % run.coins
+	_coins_label.text = "Монеты: %d · Аптечек: %d" % [run.coins, run.medkits]
 	var ab := BonusService.active_def(run)
 	if not ab.is_empty():
 		_top_label.text += "  · Бонус: %s (%d вол.)" % [ab.name, int(run.active_bonus.waves_left)]
+	var dbf := BonusService.active_debuff_def(run)
+	if not dbf.is_empty():
+		_top_label.text += "  · Дебафф: %s (1 раунд)" % dbf.name
 	_level_label.text = "Магазин %d/%d · ячеек %d" % [run.shop_level, GameData.max_shop_level(), GameData.module_slots(run.shop_level)]
 	_build_cards(run)
 	_build_right(run)
@@ -522,6 +525,20 @@ func _build_bottom(run: RunState) -> void:
 	for c in _bottom_box.get_children():
 		c.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	_clear(_start_box)
+	var mst := ShopService.medkit_status(run)
+	var mk := UiKit.button("Аптечка · %d  (в запасе %d)" % [int(GameData.B.medkit.price), run.medkits], Vector2(0, 50), 19)
+	mk.disabled = not mst.ok
+	mk.pressed.connect(func():
+		var r := ShopService.buy_medkit(_run())
+		if r.ok:
+			Sfx.play("buy")
+			Session.save()
+			toast("Аптечка куплена. В запасе: %d (неиспользованные сохраняются)" % int(r.stock), true)
+		else:
+			Sfx.play("deny")
+			toast(str(r.reason), false)
+		refresh())
+	_start_box.add_child(mk)
 	var go := UiKit.button("Начать волну %d  ▶" % run.next_wave(), Vector2(0, 64), 26)
 	go.add_theme_color_override("font_color", Color(1.0, 0.85, 0.6))
 	go.pressed.connect(func():

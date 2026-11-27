@@ -25,13 +25,16 @@ func _ready() -> void:
 	DirAccess.make_dir_recursive_absolute("user://test_saves")
 	Settings.data.tutorial_done = true
 	Settings.data.tutorial_shop_done = true
-	GameData.reload()
+	GameData.load_all()
 	check(GameData.validate().is_empty(), "balance + bonuses валидны", str(GameData.validate()))
 	# кейс только после кратных 10
 	var run := RunState.new_run(31)
 	for w in range(1, 31):
 		finish_wave(run, w)
 		var expect := (w % 10 == 0)
+		if BonusService.has_case(run) and BonusService.case_kind(run) == "debuff":
+			BonusService.pick(run, 0)               # ящики с проклятием проверяет test_debuff; здесь только кейсы бонуса
+			run.phase = "shop"
 		check(BonusService.has_case(run) == expect, "кейс после волны %d: %s" % [w, expect], str(run.bonus_case))
 		if expect:
 			var o: Array = run.bonus_case.options

@@ -11,7 +11,9 @@ var sparks: Array = []            # {pos, t}
 var flames: Array = []            # {pos, vel, t, life}
 var flashes: Array = []           # {pos, t, color, r}
 var heals: Array = []
-var muzzles: Array = []           # {pos, ang, flip, t}
+var motes: Array = []            # пыль/туман у камеры: {pos, vel, r, a, kind}
+var muzzles: Array = []
+var ambient_kind := "sawmill"           # {pos, ang, flip, t}
 const MUZZLE_ANCHOR_DEFAULT := Vector2(29, 69)
 const MUZZLE_SCALE := 0.3
 const MUZZLE_LIFE := 0.07
@@ -71,6 +73,7 @@ func flame_puff(pos: Vector2, dir: Vector2) -> void:
 
 
 func step(dt: float) -> void:
+	_ambient_step(dt)
 	for n in numbers:
 		n.t += dt
 		n.pos.y -= 28.0 * dt
@@ -92,6 +95,7 @@ func step(dt: float) -> void:
 
 
 func _draw() -> void:
+	_draw_ambient()
 	for f in flames:
 		var k: float = f.t / f.life
 		var col := Color(1.0, 0.75 - 0.5 * k, 0.2, 0.75 * (1.0 - k))
@@ -119,3 +123,25 @@ func _draw() -> void:
 		var sz := 24 if n.crit else 18
 		draw_string(font, n.pos + Vector2(1, 1), txt, HORIZONTAL_ALIGNMENT_CENTER, -1, sz, Color(0, 0, 0, a))
 		draw_string(font, n.pos, txt, HORIZONTAL_ALIGNMENT_CENTER, -1, sz, col2)
+
+
+## Лёгкая атмосфера: пылинки вокруг камеры; на Затопленном дворе — медленный туман, в Насосной — редкие клубы пара.
+func _ambient_step(dt: float) -> void:
+	if game == null or game.cam == null:
+		return
+	var cap := 0 if low_quality else 45
+	var view: Rect2 = game.camera_rect().grow(120.0)
+	while motes.size() < cap:
+		var fog := ambient_kind == "flooded" and motes.size() % 6 == 0
+		var steam := ambient_kind == "pumping" and motes.size() % 9 == 0
+		var p := Vector2(randf_range(view.position.x, view.end.x), randf_range(view.position.y, view.end.y))
+		motes.append({"pos": p, "vel": Vector2(randf_range(4, 14), randf_range(-6, 4)) * (0.4 if fog else 1.0), "r": randf_range(2, 4) if not (fog or steam) else randf_range(60, 110), "a": randf_range(0.10, 0.28) if not (fog or steam) else randf_range(0.03, 0.06), "fog": fog or steam})
+	for m in motes:
+		m.pos += m.vel * dt
+	motes = motes.filter(func(m): return view.has_point(m.pos))
+
+
+func _draw_ambient() -> void:
+	var col := Color(1.0, 0.95, 0.8) if ambient_kind == "sawmill" else (Color(0.85, 0.92, 1.0) if ambient_kind == "pumping" else Color(0.75, 0.9, 0.75))
+	for m in motes:
+		draw_circle(m.pos, m.r, Color(col.r, col.g, col.b, m.a))

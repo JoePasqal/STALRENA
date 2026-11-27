@@ -15,6 +15,7 @@ var _lid := 0.0
 var _chosen := -1
 var _result := {}
 var _anim_speed := 1.0
+var _kind := "buff"
 
 
 func _ready() -> void:
@@ -39,9 +40,17 @@ func open() -> void:
 	_chosen = -1
 	visible = true
 	_clear_cards()
-	_title.text = "Кейс бонуса!"
-	_sub.text = "Пройдена %d-я волна. Откройте кейс и выберите одну карточку: бонус действует следующие %d волны." % [int(game.run.bonus_case.wave), BonusService.duration()]
-	_btn.text = "Открыть кейс"
+	_kind = BonusService.case_kind(game.run)
+	if _kind == "debuff":
+		_title.text = "Ящик с проклятием!"
+		_title.add_theme_color_override("font_color", Color(0.95, 0.3, 0.25))
+		_sub.text = "Пройдена %d-я волна. Откройте ящик и выберите одну карточку: дебафф ОБЯЗАТЕЛЕН, действует только следующий раунд." % int(game.run.bonus_case.wave)
+		_btn.text = "Открыть ящик"
+	else:
+		_title.text = "Кейс бонуса!"
+		_title.add_theme_color_override("font_color", UiKit.ACCENT)
+		_sub.text = "Пройдена %d-я волна. Откройте кейс и выберите одну карточку: бонус действует следующие %d волны." % [int(game.run.bonus_case.wave), BonusService.duration()]
+		_btn.text = "Открыть кейс"
 	_btn.visible = true
 	Sfx.play("reveal")
 	_layout()
@@ -88,24 +97,27 @@ func _draw() -> void:
 func _draw_case() -> void:
 	var c := Vector2(size.x * 0.5, size.y * 0.5 + 10)
 	var pulse := 0.5 + 0.5 * sin(Time.get_ticks_msec() / 300.0)
-	draw_circle(c, 150.0 + 14.0 * pulse, Color(1.0, 0.8, 0.3, 0.10 + 0.08 * pulse))
-	var key := "ui.bonus_case_open" if _lid > 0.5 else "ui.bonus_case_closed"
+	draw_circle(c, 150.0 + 14.0 * pulse, Color(1.0, 0.25, 0.15, 0.10 + 0.08 * pulse) if _kind == "debuff" else Color(1.0, 0.8, 0.3, 0.10 + 0.08 * pulse))
+	var pre := "ui.curse_case_" if _kind == "debuff" else "ui.bonus_case_"
+	var key := pre + ("open" if _lid > 0.5 else "closed")
 	if AssetRegistry.file_exists(key):
 		var tex := AssetRegistry.get_texture(key)
 		draw_texture_rect(tex, Rect2(c - Vector2(256, 192), Vector2(512, 384)), false)
 		return
-	# процедурный кейс (заглушка): корпус, крышка с подъёмом, металлические полосы, замок
+	# процедурный кейс (заглушка): корпус, крышка с подъёмом, полосы, замок; ящик проклятия — дерево с красной окантовкой
+	var curse := _kind == "debuff"
+	var band := Color(0.75, 0.15, 0.12) if curse else Color(0.55, 0.55, 0.52)
 	var body := Rect2(c.x - 130, c.y - 10, 260, 110)
-	draw_rect(body, Color(0.42, 0.28, 0.16))
+	draw_rect(body, Color(0.36, 0.23, 0.13) if curse else Color(0.42, 0.28, 0.16))
 	draw_rect(body, Color(0.08, 0.06, 0.04), false, 4.0)
 	for bx in [-90.0, 90.0]:
-		draw_rect(Rect2(c.x + bx - 10, body.position.y, 20, body.size.y), Color(0.55, 0.55, 0.52))
+		draw_rect(Rect2(c.x + bx - 10, body.position.y, 20, body.size.y), band)
 	var lid_y := body.position.y - 55.0 - 70.0 * _lid
 	var lid := Rect2(c.x - 134, lid_y, 268, 56)
 	draw_rect(lid, Color(0.5, 0.34, 0.2))
 	draw_rect(lid, Color(0.08, 0.06, 0.04), false, 4.0)
 	for bx in [-90.0, 90.0]:
-		draw_rect(Rect2(c.x + bx - 10, lid.position.y, 20, lid.size.y), Color(0.55, 0.55, 0.52))
+		draw_rect(Rect2(c.x + bx - 10, lid.position.y, 20, lid.size.y), band)
 	if _lid < 0.2:
 		draw_circle(Vector2(c.x, body.position.y), 16.0, Color(1.0, 0.85, 0.3))
 		draw_rect(Rect2(c.x - 5, body.position.y - 2, 10, 20), Color(0.2, 0.15, 0.05))
@@ -131,11 +143,11 @@ func _on_btn() -> void:
 func _spawn_cards() -> void:
 	state = "choosing"
 	_title.text = "Выберите одну карточку"
-	_sub.text = "Что внутри — неизвестно. Остальные две будут показаны после выбора."
+	_sub.text = "Что внутри — неизвестно. Остальные две будут показаны после выбора." + (" Отказаться нельзя." if _kind == "debuff" else "")
 	var opts: Array = game.run.bonus_case.options
 	for i in opts.size():
 		var c := BonusCard.new()
-		c.setup(i, str(opts[i]))
+		c.setup(i, str(opts[i]), _kind)
 		c.size = Vector2(200, 300)
 		c.tapped.connect(_on_card)
 		add_child(c)
@@ -185,9 +197,13 @@ func _on_card(card: BonusCard) -> void:
 func _finish() -> void:
 	state = "done"
 	Sfx.play("levelup")
-	var def: Dictionary = GameData.bonuses[str(_result.id)]
-	_title.text = "Бонус: %s" % def.name
-	_sub.text = "%s. Действует на следующие %d волны." % [def.desc, BonusService.duration()]
+	var def: Dictionary = BonusService.def_of(_kind, str(_result.id))
+	if _kind == "debuff":
+		_title.text = "Дебафф: %s" % def.name
+		_sub.text = "%s. Действует только следующий раунд." % def.desc
+	else:
+		_title.text = "Бонус: %s" % def.name
+		_sub.text = "%s. Действует на следующие %d волны." % [def.desc, BonusService.duration()]
 	_btn.text = "Забрать"
 	_btn.visible = true
 

@@ -53,9 +53,11 @@ func show_wave_intro(run: RunState, gw: int, plan: Dictionary) -> void:
 func show_wave_complete(res: Dictionary) -> void:
 	var rw: Dictionary = res.reward
 	_banner_title = "Волна %d пройдена" % int(res.wave)
+	if bool(res.get("timeout", false)):
+		_banner_title = "Время раунда вышло — волна %d засчитана" % int(res.wave)
 	_banner_sub = "+%d монет (база %d, рост %d, процент %d%s%s)" % [int(rw.total), int(rw.base), int(rw.growth), int(rw.interest), (", босс %d" % int(rw.boss)) if int(rw.boss) > 0 else "", (", бонус %d" % int(rw.bonus)) if int(rw.get("bonus", 0)) > 0 else ""]
 	if BonusService.has_case(game.run):
-		_banner_sub += "\nВ магазине вас ждёт кейс бонуса!"
+		_banner_sub += "\nВ магазине вас ждёт %s!" % ("ящик с проклятием (выбор обязателен)" if BonusService.case_kind(game.run) == "debuff" else "кейс бонуса")
 	_banner_total = 2.4
 	_banner_t = _banner_total
 
@@ -136,12 +138,20 @@ func _draw() -> void:
 	var gwv: int = game.gw
 	var top := "Сектор %d · Волна %d/%d  (№%d)" % [run.sector_of(gwv), run.local_wave_of(gwv), int(GameData.B.waves.sector_length), gwv]
 	draw_string(f, Vector2(0, m.y + 24), top, HORIZONTAL_ALIGNMENT_CENTER, size.x, 22, Color.WHITE)
-	draw_string(f, Vector2(0, m.y + 50), "Монеты: %d" % run.coins, HORIZONTAL_ALIGNMENT_CENTER, size.x, 18, Color(1.0, 0.9, 0.5))
+	draw_string(f, Vector2(0, m.y + 50), "Монеты: %d" % run.coins, HORIZONTAL_ALIGNMENT_RIGHT, size.x * 0.5 - 14.0, 18, Color(1.0, 0.9, 0.5))
+	var left_s: float = maxf(float(game.round_limit) - float(game.wave_time), 0.0)
+	if game.state == game.St.WAVE_INTRO:
+		left_s = float(game.round_limit)
+	var tcol := Color(1.0, 0.45, 0.35) if left_s < 15.0 else Color(0.85, 0.95, 1.0)
+	draw_string(f, Vector2(size.x * 0.5 + 14.0, m.y + 50), "Осталось %d:%02d" % [int(left_s) / 60, int(left_s) % 60], HORIZONTAL_ALIGNMENT_LEFT, -1, 20, tcol)
 	var ab := BonusService.active_def(run)
 	if not ab.is_empty():
 		draw_string(f, Vector2(0, m.y + 72), "Бонус: %s · осталось волн: %d" % [ab.name, int(run.active_bonus.waves_left)], HORIZONTAL_ALIGNMENT_CENTER, size.x, 18, Color(0.6, 1.0, 0.6))
+	var dbf := BonusService.active_debuff_def(run)
+	if not dbf.is_empty():
+		draw_string(f, Vector2(0, m.y + (72 if ab.is_empty() else 94)), "Дебафф: %s · только этот раунд" % dbf.name, HORIZONTAL_ALIGNMENT_CENTER, size.x, 18, Color(1.0, 0.5, 0.4))
 	# ---- аптечка
-	var mk := "Аптечка %d/1" % pl.medkit.stock
+	var mk := "Аптечек: %d" % pl.medkit.stock
 	if not touch_on:
 		draw_rect(Rect2(m + Vector2(0, 74), Vector2(150, 30)), Color(0, 0, 0, 0.5))
 		draw_string(f, m + Vector2(8, 96), mk + "  [F]", HORIZONTAL_ALIGNMENT_LEFT, -1, 18, Color(0.7, 0.9, 1.0) if pl.medkit.stock > 0 else Color(0.5, 0.5, 0.5))
@@ -154,9 +164,9 @@ func _draw() -> void:
 		var b: Boss = game.boss
 		var bwid := 520.0
 		var bx := (size.x - bwid) * 0.5
-		draw_rect(Rect2(bx, m.y + 62, bwid, 18), Color(0, 0, 0, 0.65))
-		draw_rect(Rect2(bx + 2, m.y + 64, (bwid - 4) * clampf(b.hp / b.max_hp, 0.0, 1.0), 14), Color(0.88, 0.3, 0.18))
-		draw_string(f, Vector2(bx, m.y + 96), str(b.bdef.name), HORIZONTAL_ALIGNMENT_CENTER, bwid, 18, Color.WHITE)
+		draw_rect(Rect2(bx, m.y + 90, bwid, 18), Color(0, 0, 0, 0.65))
+		draw_rect(Rect2(bx + 2, m.y + 92, (bwid - 4) * clampf(b.hp / b.max_hp, 0.0, 1.0), 14), Color(0.88, 0.3, 0.18))
+		draw_string(f, Vector2(bx, m.y + 124), str(b.bdef.name), HORIZONTAL_ALIGNMENT_CENTER, bwid, 18, Color.WHITE)
 	# ---- указатели атак за пределами экрана
 	_draw_indicators(f)
 	# ---- баннер

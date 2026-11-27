@@ -73,6 +73,7 @@ static func build_plan(run_seed: int, gw: int) -> Dictionary:
 			new_types.append(id)
 	if not new_types.is_empty() and gw > 1:
 		budget_f *= 0.85
+	budget_f *= float(cfg.get("round_budget_scale", 1.0))      # раунд на 2 минуты — больше угрозы, растянутой по времени
 	var budget := maxi(int(floor(budget_f)), 1)
 
 	var weights: Dictionary = {}

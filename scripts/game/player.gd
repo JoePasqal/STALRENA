@@ -63,7 +63,7 @@ func setup(g, run: RunState) -> void:
 	reload_left = 0.0
 	cooldown = 0.0
 	medkit = Medkit.new()
-	medkit.reset_for_wave()          # ровно одна аптечка
+	medkit.reset_for_wave(run.medkits)   # минимум одна; купленные и сохранённые переносятся
 	contact_guard_left = 0.0
 	since_damage = 99.0
 	dead = false
@@ -127,7 +127,7 @@ func push(dir: Vector2, strength: float) -> void:
 func use_medkit() -> bool:
 	if dead:
 		return false
-	var ok := medkit.try_use(hp, max_hp)
+	var ok := medkit.try_use(hp, max_hp, BonusService.medkit_heal_mult(game.run))
 	if ok:
 		Sfx.play("heal")
 		game.fx.flash(position, Color(0.55, 0.85, 1.0), 26.0)

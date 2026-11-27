@@ -164,7 +164,7 @@ func _draw() -> void:
 			"medkit":
 				var tex := AssetRegistry.get_texture("icon.medkit")
 				draw_texture_rect(tex, Rect2(c - Vector2(r, r) * 0.62, Vector2(r, r) * 1.24), false, Color(1, 1, 1, 1.0 if enabled else 0.4))
-				draw_string(f, c + Vector2(-r, r + 22.0), "Аптечка %d/1" % pl.medkit.stock, HORIZONTAL_ALIGNMENT_CENTER, r * 2.0, 16, Color(1, 1, 1, 0.85))
+				draw_string(f, c + Vector2(-r, r + 22.0), "Аптечек: %d" % pl.medkit.stock, HORIZONTAL_ALIGNMENT_CENTER, r * 2.0, 16, Color(1, 1, 1, 0.85))
 				if pl.medkit.active:
 					draw_arc(c, r + 6.0, -PI * 0.5, -PI * 0.5 + TAU * pl.medkit.progress(), 28, Color(0.55, 0.9, 1.0), 5.0)
 			"reload":

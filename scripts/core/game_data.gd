@@ -14,6 +14,8 @@ static var layouts_by_location: Dictionary = {}
 static var bonus_cfg: Dictionary = {}              # data/bonuses_v1.json
 static var bonuses: Dictionary = {}
 static var bonus_ids: Array = []
+static var debuffs: Dictionary = {}
+static var debuff_ids: Array = []
 static var modifiers: Dictionary = {}          # steam/electric/toxic: параметры опасностей арены
 static var weapons: Dictionary = {}
 static var weapon_ids: Array = []
@@ -31,10 +33,10 @@ static var _ready_flag := false
 
 static func ensure() -> void:
 	if not _ready_flag:
-		reload()
+		load_all()
 
 
-static func reload(path: String = BALANCE_PATH, layouts_path: String = LAYOUTS_PATH) -> void:
+static func load_all(path: String = BALANCE_PATH, layouts_path: String = LAYOUTS_PATH) -> void:
 	B = _read_json(path)
 	weapons.clear(); weapon_ids.clear()
 	for w in B.get("weapons", []):
@@ -74,6 +76,10 @@ static func reload(path: String = BALANCE_PATH, layouts_path: String = LAYOUTS_P
 	for b in bonus_cfg.get("bonuses", []):
 		bonuses[b.id] = b
 		bonus_ids.append(b.id)
+	debuffs.clear(); debuff_ids.clear()
+	for b in bonus_cfg.get("debuffs", []):
+		debuffs[b.id] = b
+		debuff_ids.append(b.id)
 	_ready_flag = true
 
 

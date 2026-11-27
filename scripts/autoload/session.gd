@@ -12,7 +12,7 @@ const LOG_MAX_BYTES := 200000
 
 
 func _ready() -> void:
-	GameData.reload()
+	GameData.load_all()
 	var errs := GameData.validate()
 	for e in errs:
 		push_error("balance: " + str(e))

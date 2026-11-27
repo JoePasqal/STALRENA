@@ -19,7 +19,7 @@ func check(c: bool, name: String, extra: String = "") -> void:
 
 
 func _ready() -> void:
-	GameData.reload()
+	GameData.load_all()
 	SaveService.base_dir = "user://test_saves"
 	DirAccess.make_dir_recursive_absolute("user://test_saves")
 	Settings.data.autoaim = true

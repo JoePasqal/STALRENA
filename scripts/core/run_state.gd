@@ -31,7 +31,9 @@ var archetype_history: Array = []
 var play_time: float = 0.0                       # секунды боя
 var stats: Dictionary = {}                       # kills, damage, shots, hits, purchases...
 var last_reward: Dictionary = {}                 # последняя выплата (для UI)
+var medkits: int = 1                             # запас аптечек: покупаются, неиспользованные переносятся
 var bonus_case: Dictionary = {}                  # {wave, options:[id,id,id]} — неоткрытый кейс; не перебрасывается при перезагрузке
+var active_debuff: Dictionary = {}               # {id, waves_left} — обязательный дебафф из ящика с проклятием
 var active_bonus: Dictionary = {}                # {id, waves_left}
 
 
@@ -50,6 +52,7 @@ static func new_run(p_seed: int = -1) -> RunState:
 	r.weapons[p.starting_weapon] = {"rank": int(p.starting_rank), "mastery": 0}
 	r.equipped_weapon = p.starting_weapon
 	r.shop_level = 1
+	r.medkits = int(GameData.B.medkit.stock_at_wave_start)
 	r.stats = {"kills": 0, "damage": 0.0, "shots": 0, "hits": 0, "purchases": 0, "deaths_by": "", "wave_log": []}
 	r.hp = StatCalc.max_hp(r)
 	ShopService.generate_offers(r, false)
@@ -131,8 +134,10 @@ func to_dict() -> Dictionary:
 		"play_time": play_time,
 		"stats": stats.duplicate(true),
 		"last_reward": last_reward.duplicate(true),
+		"medkits": medkits,
 		"bonus_case": bonus_case.duplicate(true),
 		"active_bonus": active_bonus.duplicate(true),
+		"active_debuff": active_debuff.duplicate(true),
 	}
 
 
@@ -189,9 +194,13 @@ static func from_dict(d: Dictionary) -> RunState:
 	r.play_time = float(d.get("play_time", 0.0))
 	r.stats = d.get("stats", {})
 	r.last_reward = d.get("last_reward", {})
+	r.medkits = clampi(int(d.get("medkits", 1)), 0, int(GameData.B.medkit.max_stock))
 	r.bonus_case = d.get("bonus_case", {})
 	if r.bonus_case.has("wave"):
 		r.bonus_case["wave"] = int(r.bonus_case.wave)
+	r.active_debuff = d.get("active_debuff", {})
+	if r.active_debuff.has("waves_left"):
+		r.active_debuff["waves_left"] = int(r.active_debuff.waves_left)
 	r.active_bonus = d.get("active_bonus", {})
 	if r.active_bonus.has("waves_left"):
 		r.active_bonus["waves_left"] = int(r.active_bonus.waves_left)

@@ -19,7 +19,7 @@ func approx(a: float, b: float, eps: float = 0.001) -> bool:
 
 
 func _init() -> void:
-	GameData.reload()
+	GameData.load_all()
 	var errs := GameData.validate()
 	check(errs.is_empty(), "balance валиден", str(errs))
 	t_new_run()
@@ -580,7 +580,7 @@ func t_waves() -> void:
 			continue
 		check(p.threat_total <= p.budget + 0, "волна %d: сумма угрозы ≤ бюджета" % gw, "%d/%d" % [p.threat_total, p.budget])
 		check(WaveDirector.queue_cost(p.queue) == p.threat_total, "стоимость очереди совпадает (с элитой)")
-		check(p.queue.size() <= 140, "очередь конечна")
+		check(p.queue.size() <= 260, "очередь конечна")
 		for e in p.queue:
 			check(int(GameData.enemies[e.id].first_wave) <= gw, "тип %s не раньше волны %d" % [e.id, gw])
 			if e.trait != "":
@@ -647,7 +647,7 @@ func t_layouts() -> void:
 		var m2 := ArenaModel.from_layout(id)
 		m2.build_nav(m2.hazard_slots)
 		check(m2.connectivity_ratio(m2.start) > 0.999, "%s: при закрытых слотах опасностей карта связна" % id, str(m2.connectivity_ratio(m2.start)))
-		var path := m.find_path(Vector2(60, 60), Vector2(1540, 940))
+		var path := m.find_path(Vector2(60, 60), m.size - Vector2(60, 60))
 		check(path.size() > 2, "%s: путь по углам" % id)
 		# стены не сильно загромождают
 		var free_ratio := float(m.free_cell_count()) / float(m.grid_w * m.grid_h)

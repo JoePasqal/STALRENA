@@ -26,6 +26,9 @@ var rng_combat := RandomNumberGenerator.new()
 var time_now := 0.0
 var wave_time := 0.0
 var spawn_timer := 0.0
+var spawn_interval := 3.2
+var molotov_t := 20.0
+var round_limit := 120.0              # длительность раунда (из данных): 2 минуты; для босса — 2 минуты или его смерть
 var batch_size := 3
 var boss = null
 var intro_t := 0.0
@@ -43,6 +46,9 @@ var pause_ui: Control
 var results_ui: Control
 var tutorial: Tutorial
 var bonus_ui: BonusCaseScreen
+var grade: CanvasModulate
+var vignette: ColorRect
+const GRADES := {"sawmill": Color(1.0, 0.96, 0.88), "pumping": Color(0.88, 0.95, 1.0), "flooded": Color(0.88, 1.0, 0.9)}
 var _kill_count_wave := 0
 var _damage_at_wave_start := 0.0
 var _hits_at_wave_start := 0
@@ -87,6 +93,8 @@ func _build_world() -> void:
 	player = Player.new()
 	cam = Camera2D.new()
 	arena_view = ArenaView.new()
+	grade = CanvasModulate.new()
+	add_child(grade)
 	add_child(arena_view)
 	add_child(hazards)
 	add_child(entities)
@@ -103,6 +111,17 @@ func _build_world() -> void:
 
 
 func _build_ui() -> void:
+	var vig_layer := CanvasLayer.new()
+	vig_layer.layer = 3
+	add_child(vig_layer)
+	vignette = ColorRect.new()
+	vignette.set_anchors_preset(Control.PRESET_FULL_RECT)
+	vignette.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	var vm := ShaderMaterial.new()
+	vm.shader = load("res://assets/shaders_vignette.gdshader")
+	vignette.material = vm
+	vig_layer.add_child(vignette)
+	vignette.visible = false
 	var hud_layer := CanvasLayer.new()
 	hud_layer.layer = 5
 	add_child(hud_layer)
@@ -166,6 +185,9 @@ func _build_arena(info: Dictionary) -> void:
 		wp.setup(arena.walls[i], arena.wall_kinds[i], tint)
 		entities.add_child(wp)
 		walls_nodes.append(wp)
+	grade.color = GRADES.get(str(info.location_id), Color(1, 1, 1))
+	fx.ambient_kind = str(info.location_id)
+	fx.motes.clear()
 	cam.limit_left = 0
 	cam.limit_top = 0
 	cam.limit_right = int(arena.size.x)
@@ -181,6 +203,8 @@ func _enter_shop() -> void:
 	hazards.clear()
 	fx.clear()
 	player.visible = false
+	vignette.visible = false
+	grade.color = Color(1, 1, 1)
 	run.hp = StatCalc.max_hp(run)
 	Session.save()
 	Sfx.music("shop")
@@ -221,9 +245,14 @@ func _launch_wave() -> void:
 	pending_explosions.clear()
 	queue = plan.queue.duplicate(true)
 	var sz := queue.size()
-	batch_size = clampi(int(ceil(sz / 6.0)), 2, 8)
+	batch_size = clampi(int(ceil(sz / 28.0)), 1, 8)           # ~одна порция каждые 3–4 с на протяжении раунда
+	var wcfg: Dictionary = GameData.B.waves
+	round_limit = float(wcfg.get("boss_round_seconds", 120.0)) if plan.boss else float(wcfg.get("round_seconds", 120.0))
+	var n_batches := maxi(int(ceil(sz / float(batch_size))), 1)
+	spawn_interval = clampf(round_limit * float(wcfg.get("spawn_window_fraction", 0.85)) / n_batches, 1.0, 8.0)   # спавн растянут по времени раунда
 	spawn_timer = 1.2
 	wave_time = 0.0
+	molotov_t = float(BonusService.molotov(run).get("interval", 20.0))
 	boss = null
 	_kill_count_wave = 0
 	_damage_at_wave_start = float(run.stats.get("damage", 0.0))
@@ -241,6 +270,7 @@ func _launch_wave() -> void:
 	state = St.WAVE_INTRO
 	intro_t = 2.4
 	hud.visible = true
+	vignette.visible = true
 	touch.visible = Settings.touch_ui_enabled()
 	shop_ui.close()
 	hud.show_wave_intro(run, gw, plan)
@@ -366,13 +396,17 @@ func sim_step(dt: float) -> void:
 	projectiles.step(dt)
 	hazards.step(dt)
 	modifier.tick(dt)
+	_molotov_tick(dt)
 	fx.step(dt)
 	_update_camera()
 	_update_walls(dt)
 	if player.dead:
 		_on_player_dead()
-	elif not suppress_win and queue.is_empty() and enemies.is_empty() and (plan.boss == false or boss != null):
-		_on_wave_won()
+	elif not suppress_win:
+		if wave_time >= round_limit:
+			_on_round_timeout()                    # время раунда вышло: волна засчитана
+		elif queue.is_empty() and enemies.is_empty() and (plan.boss == false or boss != null):
+			_on_wave_won()
 
 
 func _update_camera() -> void:
@@ -482,10 +516,11 @@ func _spawner_tick(dt: float) -> void:
 	if queue.is_empty():
 		return
 	spawn_timer -= dt
-	if spawn_timer <= 0.0 or enemies.size() <= 2:
+	if enemies.is_empty():
+		spawn_timer = minf(spawn_timer, 2.0)       # без «мёртвого воздуха», если арена пуста
+	if spawn_timer <= 0.0:
+		spawn_timer = spawn_interval
 		_spawn_batch()
-		if spawn_timer <= 0.0:
-			spawn_timer = 3.2
 
 
 func _spawn_batch() -> void:
@@ -581,6 +616,34 @@ func _queue_explosion(e: Enemy) -> void:
 	})
 
 
+## Дебафф «Коктейли Молотова»: каждые 20 с рядом с героем загорается участок (предупреждение 1,2 с, горит 6 с).
+func _molotov_tick(dt: float) -> void:
+	var cfg: Dictionary = BonusService.molotov(run)
+	if cfg.is_empty():
+		return
+	molotov_t -= dt
+	if molotov_t > 0.0:
+		return
+	var pos := Vector2.ZERO
+	var found := false
+	for i in 20:
+		var a := rng_combat.randf() * TAU
+		var d := rng_combat.randf_range(float(cfg.min_dist), float(cfg.max_dist))
+		var c := player.position + Vector2.from_angle(a) * d
+		if arena.is_point_free(c, 30.0):
+			pos = c
+			found = true
+			break
+	if not found or not hazards.add({
+		"shape": "circle", "pos": pos, "radius": float(cfg.radius), "delay": float(cfg.warning), "life": float(cfg.duration),
+		"damage": float(cfg.damage) * WaveMath.damage_mult(gw), "tick": float(cfg.tick), "palette": "fire", "source": "molotov",
+		"hits_enemies": true, "enemy_damage": float(cfg.enemy_damage), "tag": "molotov"}):
+		molotov_t = 1.0                         # нет места/лимит полей — повтор через секунду
+		return
+	molotov_t = float(cfg.interval)
+	Sfx.play("tele")
+
+
 func _explosion_tick(_dt: float) -> void:
 	if pending_explosions.is_empty():
 		return
@@ -608,7 +671,23 @@ func _on_boss_killed(b: Enemy) -> void:
 	call_deferred("_on_wave_won")
 
 
-func _on_wave_won() -> void:
+## Раунд закончился по таймеру: оставшиеся враги, поля и снаряды убираются; босс, оставшийся жить, бонус не даёт.
+func _on_round_timeout() -> void:
+	if state != St.COMBAT:
+		return
+	var boss_alive: bool = boss != null and is_instance_valid(boss) and boss.state != Enemy.S.DEAD
+	for e in enemies.duplicate():
+		if is_instance_valid(e):
+			e.state = Enemy.S.DEAD
+			e.release_token()
+			e.queue_free()
+	enemies.clear()
+	queue.clear()
+	coord.reset()
+	_on_wave_won(not boss_alive, true)
+
+
+func _on_wave_won(boss_killed: bool = true, timed_out: bool = false) -> void:
 	if state != St.COMBAT:
 		return                   # идемпотентность: двойное событие не начисляет награду дважды
 	state = St.WAVE_COMPLETE
@@ -618,9 +697,11 @@ func _on_wave_won() -> void:
 	get_tree().paused = false
 	var was_boss := run.is_boss_wave(run.next_wave())
 	var shots := int(run.stats.get("shots", 0))
-	var res := Economy.complete_wave(run)
+	run.medkits = clampi(player.medkit.stock, 0, int(GameData.B.medkit.max_stock))     # неиспользованные аптечки сохраняются
+	var res := Economy.complete_wave(run, boss_killed)
 	if res.is_empty():
 		return
+	res["timeout"] = timed_out
 	wave_result = res
 	_log_wave(res)
 	Session.save()

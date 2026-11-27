@@ -7,6 +7,7 @@ var floor_id := "floor.sawmill"
 var tint := Color(1, 1, 1)
 var _tex: Texture2D
 var _marks: Array = []
+var _decals: Array = []
 
 
 func setup(m: ArenaModel, location_id: String, p_tint: Color, seed_v: int) -> void:
@@ -16,10 +17,24 @@ func setup(m: ArenaModel, location_id: String, p_tint: Color, seed_v: int) -> vo
 	_tex = AssetRegistry.get_texture(floor_id)
 	z_index = -20
 	_marks.clear()
+	_decals.clear()
 	var rng := RandomNumberGenerator.new()
 	rng.seed = seed_v
-	for i in 70:
+	var area_k := m.size.x * m.size.y / 1600000.0
+	for i in int(70 * area_k):
 		_marks.append([Vector2(rng.randf_range(20, m.size.x - 20), rng.randf_range(20, m.size.y - 20)), rng.randf_range(10, 40), rng.randf_range(0, TAU)])
+	# декали по локации (код, без файлов): пятна, трещины, камешки; опилки / масло / ил
+	for i in int(95 * area_k):
+		var p := Vector2(rng.randf_range(30, m.size.x - 30), rng.randf_range(30, m.size.y - 30))
+		if not m.is_point_free(p, 10.0):
+			continue
+		var kind := rng.randi() % 4
+		var col := Color(0, 0, 0, 0.14)
+		match location_id:
+			"sawmill": col = [Color(0.85, 0.72, 0.5, 0.20), Color(0.1, 0.07, 0.04, 0.16), Color(0.7, 0.55, 0.35, 0.16), Color(0, 0, 0, 0.12)][kind]
+			"pumping": col = [Color(0.05, 0.05, 0.07, 0.25), Color(0.4, 0.3, 0.2, 0.14), Color(0.02, 0.02, 0.03, 0.22), Color(0.55, 0.55, 0.55, 0.12)][kind]
+			"flooded": col = [Color(0.12, 0.16, 0.08, 0.28), Color(0.2, 0.25, 0.12, 0.2), Color(0.05, 0.08, 0.05, 0.25), Color(0.3, 0.32, 0.2, 0.14)][kind]
+		_decals.append({"p": p, "rx": rng.randf_range(14, 60), "ry": rng.randf_range(8, 34), "a": rng.randf() * PI, "col": col, "crack": kind == 3 and rng.randf() < 0.6, "seed": rng.randi()})
 	queue_redraw()
 
 
@@ -43,6 +58,21 @@ func _draw() -> void:
 		var l: float = m[1]
 		var a: float = m[2]
 		draw_line(p, p + Vector2(cos(a), sin(a)) * l, Color(0, 0, 0, 0.12), 2.0)
+	for d in _decals:
+		var pts := PackedVector2Array()
+		for i in 18:
+			var t := TAU * i / 18.0
+			var q := Vector2(cos(t) * d.rx, sin(t) * d.ry).rotated(d.a)
+			pts.append(d.p + q)
+		draw_colored_polygon(pts, d.col)
+		if d.crack:
+			var cr := RandomNumberGenerator.new()
+			cr.seed = d.seed
+			var pos: Vector2 = d.p
+			for s in 6:
+				var np: Vector2 = pos + Vector2.from_angle(cr.randf() * TAU) * cr.randf_range(10, 26)
+				draw_line(pos, np, Color(0, 0, 0, 0.3), 1.5)
+				pos = np
 	for w in model.water:
 		draw_rect(w, Color(0.16, 0.3, 0.34, 0.62))
 		draw_rect(w, Color(0.45, 0.65, 0.7, 0.55), false, 3.0)

@@ -313,15 +313,16 @@ func locations_shots() -> void:
 		await _begin({}, 0)
 		game._build_arena({"layout_id": it[0], "location_id": it[1], "tint_index": 0, "sector": 1})
 		game.arena = ArenaModel.from_layout(it[0])
-		game.cam.zoom = Vector2(0.72, 0.72)
-		game.cam.position = Vector2(800, 500)
+		game.cam.zoom = Vector2(0.52, 0.52)
+		game.cam.position = game.arena.size * 0.5
 		game.player.position = game.arena.start
 		game.player.visible = true
 		game.player.aim_dir = Vector2.RIGHT
 		game.player._frame_key = ""
 		game.player._update_visuals(0.0)
-		var spots := [Vector2(520, 380), Vector2(1120, 360), Vector2(560, 640), Vector2(1080, 650), Vector2(800, 280)]
-		var ids := ["drifter", "runner", "spitter", "gunner", "brute"]
+		var cs: Vector2 = game.arena.start
+		var spots := [cs + Vector2(-420, -240), cs + Vector2(380, -250), cs + Vector2(-480, 260), cs + Vector2(420, 280), cs + Vector2(40, -420), cs + Vector2(-760, 20), cs + Vector2(760, 40)]
+		var ids := ["drifter", "runner", "spitter", "gunner", "brute", "charger", "flanker"]
 		for i in spots.size():
 			if game.arena.is_point_free(spots[i], 24.0):
 				var e: Enemy = game._spawn_enemy(ids[i], "", spots[i], false)
