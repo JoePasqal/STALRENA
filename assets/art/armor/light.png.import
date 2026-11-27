@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hylxd5i7gw7t"
-path="res://.godot/imported/boss_cleaver.png-4ea02937674bff475b7c24bb05f3883e.ctex"
+uid="uid://kc5lo1elubq0"
+path="res://.godot/imported/light.png-951526ef6af24eacd0b41f81ded13057.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://docs/screenshots/boss_cleaver.png"
-dest_files=["res://.godot/imported/boss_cleaver.png-4ea02937674bff475b7c24bb05f3883e.ctex"]
+source_file="res://assets/art/armor/light.png"
+dest_files=["res://.godot/imported/light.png-951526ef6af24eacd0b41f81ded13057.ctex"]
 
 [params]
 

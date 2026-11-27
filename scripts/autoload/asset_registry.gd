@@ -23,6 +23,7 @@ func _ready() -> void:
 	if typeof(parsed) == TYPE_DICTIONARY:
 		for a in parsed.get("assets", []):
 			entries[a.id] = a
+	_load_meta()
 	if FileAccess.file_exists(STATUS_OVERRIDE):
 		var so = JSON.parse_string(FileAccess.get_file_as_string(STATUS_OVERRIDE))
 		if typeof(so) == TYPE_DICTIONARY:
@@ -95,12 +96,32 @@ func _placeholder_image(id: String, variant: String) -> Image:
 	return PlaceholderArt.make_prop(id)
 
 
-## Кадр актёра: {texture, region: Rect2, flip_h, pivot (в px кадра)}. Для placeholder — по текстуре на направление.
+## Раскладки листов определяются по размеру текстуры и размеру кадра:
+##  * 1×1 — один статичный кадр на все позы/направления;
+##  * 3×1 — полоса S, E, N (враги, броня): позы одинаковы, W зеркалится из E;
+##  * ≥6×≥4 — атлас героя: строки S, E, N, death; колонки idle, walk0..3, hit.
+func sheet_kind(tex: Texture2D, frame_px: Vector2) -> String:
+	var cols := int(round(tex.get_size().x / frame_px.x))
+	var rows := int(round(tex.get_size().y / frame_px.y))
+	if cols <= 1 and rows <= 1:
+		return "single"
+	if cols == 3 and rows == 1:
+		return "strip3"
+	return "atlas"
+
+
+func _frame_px(id: String) -> Vector2:
+	var e := entry(id)
+	if e.has("frame_px"):
+		return Vector2(e.frame_px[0], e.frame_px[1])
+	var cp: Array = e.get("canvas_px", [256, 256])
+	return Vector2(cp[0], cp[1])
+
+
+## Кадр актёра: {texture, region: Rect2, flip_h, pivot (px кадра), placeholder}.
 func get_actor_frame(id: String, anim: String, dir: String, idx: int = 0) -> Dictionary:
 	var e := entry(id)
-	var frame_px: Vector2 = Vector2(256, 256)
-	if e.has("frame_px"):
-		frame_px = Vector2(e.frame_px[0], e.frame_px[1])
+	var frame_px := _frame_px(id)
 	var flip := false
 	var d := dir
 	if d == "W":
@@ -110,16 +131,40 @@ func get_actor_frame(id: String, anim: String, dir: String, idx: int = 0) -> Dic
 	if tex == null:
 		_note_placeholder(id)
 		return {"texture": get_texture(id, d), "region": Rect2(Vector2.ZERO, frame_px), "flip_h": flip, "pivot": get_pivot(id), "placeholder": true}
-	if tex.get_size().x <= frame_px.x + 0.5 and tex.get_size().y <= frame_px.y + 0.5:
-		# одиночный статичный кадр (первая поставка): используем его для всех поз и направлений
-		return {"texture": tex, "region": Rect2(Vector2.ZERO, tex.get_size()), "flip_h": flip, "pivot": get_pivot(id), "placeholder": false}
-	var row := ACTOR_DIRS.find(d)
-	var cols: Array = ATLAS_COLUMNS.get(anim, [0])
-	var col: int = cols[idx % cols.size()]
-	if anim == "death":
-		row = 3
-		col = clampi(idx, 0, 3)
-	return {"texture": tex, "region": Rect2(Vector2(col, maxi(row, 0)) * frame_px, frame_px), "flip_h": flip, "pivot": get_pivot(id), "placeholder": false}
+	var row := maxi(ACTOR_DIRS.find(d), 0)
+	var col := 0
+	match sheet_kind(tex, frame_px):
+		"single":
+			row = 0
+		"strip3":
+			col = row
+			row = 0
+		_:
+			var cols: Array = ATLAS_COLUMNS.get(anim, [0])
+			col = cols[idx % cols.size()]
+			if anim == "death":
+				row = 3
+				col = clampi(idx, 0, 3)
+	return {"texture": tex, "region": Rect2(Vector2(col, row) * frame_px, frame_px), "flip_h": flip, "pivot": get_pivot(id), "placeholder": false}
+
+
+## Накладка брони: клетка направления из полосы 3×1 (или placeholder).
+func get_armor_frame(id: String, dir: String) -> Dictionary:
+	return get_actor_frame(id, "idle", dir, 0)
+
+
+## Метаданные поставок арта (assets/art_meta/*.json): сокеты героя, хват/дуло оружия.
+var meta := {}
+const META_FILES := ["res://assets/art_meta/batch_02.json", "res://assets/art_meta/weapons.json"]
+
+
+func _load_meta() -> void:
+	for f in META_FILES:
+		if FileAccess.file_exists(f):
+			var m = JSON.parse_string(FileAccess.get_file_as_string(f))
+			if typeof(m) == TYPE_DICTIONARY:
+				for k in m:
+					meta[k] = m[k]
 
 
 func get_pivot(id: String) -> Vector2:
@@ -134,19 +179,35 @@ func get_scale(id: String) -> float:
 	return float(entry(id).get("world_scale", 1.0))
 
 
-## Сокет оружия героя (в px кадра) по направлению; корректируется в assets/art_meta при финальном арте.
+## Сокет оружия героя (в px клетки) по направлению. Из метаданных, если есть настоящий файл героя.
 func get_weapon_socket(dir: String) -> Vector2:
-	match dir:
-		"E", "W": return Vector2(155, 145)
+	var d := "E" if dir == "W" else dir
+	if file_exists("hero.body") and meta.has("hero") and meta.hero.has("weapon_socket_px") and meta.hero.weapon_socket_px.has(d):
+		var v: Array = meta.hero.weapon_socket_px[d]
+		return Vector2(v[0], v[1])
+	match d:
+		"E": return Vector2(155, 145)
 		"N": return Vector2(150, 138)
 		_: return Vector2(148, 150)
 
 
-func get_muzzle_offset(weapon_sprite_id: String) -> float:
+## Хват оружия и дуло в px исходного спрайта (измерены по реальным PNG; иначе контракт (64,64)/(224,64)).
+func get_weapon_points(weapon_sprite_id: String) -> Dictionary:
+	var grip := get_pivot(weapon_sprite_id)
+	var muzzle := Vector2(224, 64)
 	var e := entry(weapon_sprite_id)
-	if e.has("muzzle_px") and e.has("pivot_px"):
-		return (float(e.muzzle_px[0]) - float(e.pivot_px[0])) * get_scale(weapon_sprite_id)
-	return 40.0
+	if e.has("muzzle_px"):
+		muzzle = Vector2(e.muzzle_px[0], e.muzzle_px[1])
+	if file_exists(weapon_sprite_id) and meta.has("weapons") and meta.weapons.has(weapon_sprite_id):
+		var w: Dictionary = meta.weapons[weapon_sprite_id]
+		grip = Vector2(w.grip_px[0], w.grip_px[1])
+		muzzle = Vector2(w.muzzle_px[0], w.muzzle_px[1])
+	return {"grip": grip, "muzzle": muzzle}
+
+
+func get_muzzle_offset(weapon_sprite_id: String) -> float:
+	var p := get_weapon_points(weapon_sprite_id)
+	return (p.muzzle - p.grip).length() * get_scale(weapon_sprite_id)
 
 
 func report() -> Dictionary:

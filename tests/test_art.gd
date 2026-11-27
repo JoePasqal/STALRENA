@@ -10,6 +10,6 @@ func _ready() -> void:
 	var run := RunState.new_run(1)
 	var s1 := StatCalc.weapon_stats(run, "pistol")
 	print("ART balance unchanged: damage=%s range=%s pivot=%s scale=%s" % [s1.damage, s1.range, AssetRegistry.get_pivot("weapon.pistol"), AssetRegistry.get_scale("weapon.pistol")])
-	var ok := (present and AssetRegistry.status("weapon.pistol") == "source_received" and AssetRegistry.status("weapon.smg") == "placeholder" and absf(s1.damage - 13.0) < 0.001)
+	var ok := (present and AssetRegistry.status("weapon.pistol") != "placeholder" and AssetRegistry.status("weapon.smg") == "placeholder" and absf(s1.damage - 13.0) < 0.001)
 	print("ART RESULT ", "OK" if ok else "FAIL")
 	get_tree().quit(0 if ok else 1)

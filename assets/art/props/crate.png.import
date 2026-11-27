@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ipnxvp1nrdvs"
-path="res://.godot/imported/boss_boilermaster.png-bb9ec67617581cec12188155c1114b9d.ctex"
+uid="uid://47jsseiy1cml"
+path="res://.godot/imported/crate.png-a287597ca84966d3921060e712e9e586.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://docs/screenshots/boss_boilermaster.png"
-dest_files=["res://.godot/imported/boss_boilermaster.png-bb9ec67617581cec12188155c1114b9d.ctex"]
+source_file="res://assets/art/props/crate.png"
+dest_files=["res://.godot/imported/crate.png-a287597ca84966d3921060e712e9e586.ctex"]
 
 [params]
 

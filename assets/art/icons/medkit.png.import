@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cennfpoqng0h5"
-path="res://.godot/imported/elites_flooded.png-9498815169345603bd14d90dc9bcb38b.ctex"
+uid="uid://cqwoyti5mwou6"
+path="res://.godot/imported/medkit.png-39b9a3d2c6013e8f06ab874274301494.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://docs/screenshots/elites_flooded.png"
-dest_files=["res://.godot/imported/elites_flooded.png-9498815169345603bd14d90dc9bcb38b.ctex"]
+source_file="res://assets/art/icons/medkit.png"
+dest_files=["res://.godot/imported/medkit.png-39b9a3d2c6013e8f06ab874274301494.ctex"]
 
 [params]
 

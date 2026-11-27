@@ -36,10 +36,16 @@ var damage_done := 0.0
 
 var body: Sprite2D
 var armor_sprite: Sprite2D
+var hands_sprite: Sprite2D      # тело поверх брони только вокруг руки/перчаток
+var _hand_mat: ShaderMaterial
+const HAND_MASK_RADIUS := 17.0
 var weapon_sprite: Sprite2D
 var _frame_key := ""
 var _facing := "S"
-var _muzzle_len := 40.0
+var _muzzle_vec := Vector2(40, 0)   # хват→дуло в мировых единицах для вправо-направленного спрайта
+var death_t := 0.0
+var debug_muzzle := false      # крестик в точке выхода пули (проверка хвата/дула)
+const DEATH_FPS := 5.0
 
 
 func setup(g, run: RunState) -> void:
@@ -59,7 +65,9 @@ func setup(g, run: RunState) -> void:
 	contact_guard_left = 0.0
 	since_damage = 99.0
 	dead = false
-	_muzzle_len = AssetRegistry.get_muzzle_offset(str(weapon_def.world_sprite_id))
+	death_t = 0.0
+	var wp := AssetRegistry.get_weapon_points(str(weapon_def.world_sprite_id))
+	_muzzle_vec = (wp.muzzle - wp.grip) * AssetRegistry.get_scale(str(weapon_def.world_sprite_id))
 	_build_visuals(run)
 
 
@@ -72,12 +80,19 @@ func _build_visuals(run: RunState) -> void:
 	armor_sprite = Sprite2D.new()
 	armor_sprite.centered = false
 	add_child(armor_sprite)
+	hands_sprite = Sprite2D.new()
+	hands_sprite.centered = false
+	_hand_mat = ShaderMaterial.new()
+	_hand_mat.shader = load("res://assets/shaders_hand_mask.gdshader")
+	_hand_mat.set_shader_parameter("radius_px", HAND_MASK_RADIUS)
+	hands_sprite.material = _hand_mat
+	add_child(hands_sprite)
 	weapon_sprite = Sprite2D.new()
 	weapon_sprite.centered = false
 	add_child(weapon_sprite)
 	var wid := str(weapon_def.world_sprite_id)
 	weapon_sprite.texture = AssetRegistry.get_texture(wid)
-	weapon_sprite.offset = -AssetRegistry.get_pivot(wid)
+	weapon_sprite.offset = -AssetRegistry.get_weapon_points(wid).grip
 	var ws := AssetRegistry.get_scale(wid)
 	weapon_sprite.scale = Vector2(ws, ws)
 	armor_sprite.visible = run.equipped_armor != ""
@@ -129,6 +144,7 @@ func start_reload() -> void:
 # ---- симуляция ------------------------------------------------------------
 func tick(dt: float) -> void:
 	if dead:
+		death_t += dt
 		_update_visuals(dt)
 		return
 	contact_guard_left = maxf(contact_guard_left - dt, 0.0)
@@ -241,8 +257,12 @@ func _update_target(dt: float) -> void:
 		target_hold = 0.25
 
 
+## Дуло: вектор хват→дуло поворачивается вместе с оружием; слева спрайт отражён по вертикали.
 func muzzle_point() -> Vector2:
-	return position + aim_dir * _muzzle_len
+	var v := _muzzle_vec
+	if aim_dir.x < 0.0:
+		v.y = -v.y
+	return position + _hand_offset() + v.rotated(aim_dir.angle()) + Vector2(0, ProjectileManager.HEIGHT)
 
 
 func _fire() -> void:
@@ -317,30 +337,37 @@ func _update_visuals(dt: float) -> void:
 		return
 	_facing = _facing_name()
 	var moving := vel.length() > 5.0 and not dead
-	var anim := "death" if dead else ("walk" if moving else "idle")
-	var idx := int(walk_t * 8.0) if moving else 0
+	var anim := "death" if dead else ("hit" if hit_flash > 0.0 else ("walk" if moving else "idle"))
+	var idx := int(walk_t * 8.0) % 4 if (moving and not dead) else 0
 	if dead:
-		idx = 3
-	var key := "%s|%s|%d" % [anim, _facing, idx % 4]
+		idx = mini(int(death_t * DEATH_FPS), 3)           # последовательность смерти: 4 кадра, затем остаётся лежать
+	var key := "%s|%s|%d" % [anim, _facing, idx]
+	var placeholder := true
 	if key != _frame_key:
 		_frame_key = key
 		var fr := AssetRegistry.get_actor_frame("hero.body", anim, _facing, idx)
+		placeholder = fr.placeholder
 		_apply_frame(body, fr, "hero.body")
+		armor_sprite.visible = game.run.equipped_armor != "" and not dead      # при смерти броню скрываем
 		if armor_sprite.visible:
 			var armor_id: String = "armor." + str(game.run.equipped_armor)
-			var base_dir: String = "E" if _facing == "W" else _facing
-			armor_sprite.texture = AssetRegistry.get_texture(armor_id, base_dir)
-			armor_sprite.offset = -AssetRegistry.get_pivot(armor_id)
-			var asc := AssetRegistry.get_scale(armor_id)
-			armor_sprite.scale = Vector2(asc * (-1.0 if _facing == "W" else 1.0), asc)
-	var bob := (sin(walk_t * TAU) * 1.5 if moving else 0.0)
+			var af := AssetRegistry.get_armor_frame(armor_id, _facing)
+			_apply_frame(armor_sprite, af, armor_id)
+		hands_sprite.visible = armor_sprite.visible and not placeholder
+		if hands_sprite.visible:
+			_apply_frame(hands_sprite, fr, "hero.body")
+			var sk := AssetRegistry.get_weapon_socket("E" if _facing == "W" else _facing)
+			_hand_mat.set_shader_parameter("center_px", fr.region.position + sk)
+	var bob := (sin(walk_t * TAU) * 1.5 if (moving and _frame_is_placeholder()) else 0.0)
 	body.position.y = bob
 	armor_sprite.position.y = bob
+	hands_sprite.position.y = bob
 	var tint := Color(1, 1, 1)
 	if hit_flash > 0.0:
 		tint = Color(1.6, 0.8, 0.8)
 	body.modulate = tint
 	armor_sprite.modulate = tint
+	hands_sprite.modulate = tint
 	# оружие: поворот непрерывный, тело не вращается; слой зависит от направления
 	var hand := _hand_offset()
 	weapon_sprite.position = hand + Vector2(0, bob)
@@ -350,6 +377,10 @@ func _update_visuals(dt: float) -> void:
 	weapon_sprite.z_index = -1 if _facing == "N" else 0
 	weapon_sprite.visible = not dead
 	queue_redraw()
+
+
+func _frame_is_placeholder() -> bool:
+	return not AssetRegistry.file_exists("hero.body")
 
 
 func _apply_frame(spr: Sprite2D, fr: Dictionary, id: String) -> void:
@@ -383,6 +414,10 @@ func _draw() -> void:
 	draw_colored_polygon(pts, Color(0, 0, 0, 0.3))
 	if contact_guard_left > 0.0 and not dead:
 		draw_arc(Vector2.ZERO, radius + 4.0, 0.0, TAU, 20, Color(0.7, 0.9, 1.0, 0.5), 2.0)
+	if debug_muzzle and not dead:
+		var mp := muzzle_point() - position + Vector2(0, -ProjectileManager.HEIGHT)
+		draw_line(mp + Vector2(-6, 0), mp + Vector2(6, 0), Color(1, 0, 1), 2.0)
+		draw_line(mp + Vector2(0, -6), mp + Vector2(0, 6), Color(1, 0, 1), 2.0)
 	# маркер цели автонаведения
 	if target != null and is_instance_valid(target) and not manual_fire:
 		var tp: Vector2 = target.position - position

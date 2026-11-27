@@ -882,16 +882,17 @@
       "status": "planned",
       "required_for_code_to_run": false,
       "canvas_px": [
-        512,
-        512
+        256,
+        256
       ],
       "has_alpha": true,
       "pivot_px": [
-        256,
-        435
+        128,
+        217
       ],
-      "world_scale": 0.5,
-      "collision_from_scene": true
+      "world_scale": 1.0,
+      "collision_from_scene": true,
+      "note": "Обновлено по поставке партии 2: 256x256 вместо 512x512, scale 1.0 (тот же логический размер)."
     },
     {
       "id": "prop.concrete_block",

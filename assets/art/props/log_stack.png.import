@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dgpcs5727gm2m"
-path="res://.godot/imported/combat_20x9_touch.png-3759f6cd4b03d9a1f9e2e13536aff31c.ctex"
+uid="uid://yg1gr2nr7pmu"
+path="res://.godot/imported/log_stack.png-a20ebafd20f85893919066e7a9a022a9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://docs/screenshots/combat_20x9_touch.png"
-dest_files=["res://.godot/imported/combat_20x9_touch.png-3759f6cd4b03d9a1f9e2e13536aff31c.ctex"]
+source_file="res://assets/art/props/log_stack.png"
+dest_files=["res://.godot/imported/log_stack.png-a20ebafd20f85893919066e7a9a022a9.ctex"]
 
 [params]
 

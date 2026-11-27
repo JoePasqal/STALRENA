@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://n0ywo8mkuqd3"
-path="res://.godot/imported/combat_touch.png-0367d478096659f512525ea9db8ed66d.ctex"
+uid="uid://bblk654kjlqa7"
+path="res://.godot/imported/spitter.png-a28f912f20b0cb335e585a6b440089b2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://docs/screenshots/combat_touch.png"
-dest_files=["res://.godot/imported/combat_touch.png-0367d478096659f512525ea9db8ed66d.ctex"]
+source_file="res://assets/art/enemies/spitter.png"
+dest_files=["res://.godot/imported/spitter.png-a28f912f20b0cb335e585a6b440089b2.ctex"]
 
 [params]
 

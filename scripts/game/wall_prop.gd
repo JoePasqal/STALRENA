@@ -32,7 +32,31 @@ func _colors() -> Array:
 	return [Color(0.52, 0.52, 0.5), Color(0.34, 0.34, 0.33)]
 
 
+const PROP_FOR_KIND := {"logs": "prop.log_stack", "crate": "prop.crate", "fence": "prop.fence"}
+
+
+## Настоящий спрайт препятствия (если файл есть): только вид; коллизия остаётся прямоугольником данных.
+func _draw_sprite(pid: String) -> void:
+	var tex := AssetRegistry.get_texture(pid)
+	var piv := AssetRegistry.get_pivot(pid)
+	var base_scale := AssetRegistry.get_scale(pid)
+	# видимая ширина по manifest-холсту ~ 0.8 клетки; подгоняем по ширине прямоугольника, не увеличивая сверх масштаба manifest
+	var cell := float(tex.get_size().x)
+	var vis := cell * 0.8 * base_scale
+	var n := maxi(int(ceil(rect.size.x / maxf(vis, 1.0))), 1)
+	var s := minf(rect.size.x / n / (cell * 0.8), base_scale * 1.25)
+	for i in n:
+		var cx := -rect.size.x * 0.5 + (i + 0.5) * rect.size.x / n
+		draw_set_transform(Vector2(cx, -rect.size.y * 0.35), 0.0, Vector2(s, s))
+		draw_texture(tex, -piv)
+	draw_set_transform(Vector2.ZERO, 0.0, Vector2.ONE)
+
+
 func _draw() -> void:
+	var pid: String = PROP_FOR_KIND.get(kind, "")
+	if pid != "" and AssetRegistry.file_exists(pid):
+		_draw_sprite(pid)
+		return
 	var cols := _colors()
 	var top_c: Color = (cols[0] as Color) * tint
 	var front_c: Color = (cols[1] as Color) * tint

@@ -1,24 +1,24 @@
 
 # Статус графики (генерируется tools/art_report.gd)
 
-Записей в manifest: 58. Файлы найдены: 0. Остальные заменяются процедурными заглушками того же логического размера (AssetRegistry).
+Записей в manifest: 58. Файлы найдены: 14. Остальные заменяются процедурными заглушками того же логического размера (AssetRegistry).
 
 Статусы интеграции: planned → source_received → prepared → integrated → verified. Здесь реально используются только `placeholder` и `source_received`; повышение статуса — ручная проверка размера, прозрачности, pivot и ракурсов (assets/art_status.json).
 
 | ID | Вид | Ожидаемый путь | Холст, px | Статус |
 |---|---|---|---|---|
-| `hero.body` | actor_atlas | `assets/art/characters/hero/body.png` | 256x256 | placeholder (файла нет, процедурная заглушка) |
-| `armor.light` | armor_overlay | `assets/art/armor/light.png` | 256x256 | placeholder (файла нет, процедурная заглушка) |
+| `hero.body` | actor_atlas | `assets/art/characters/hero/body.png` | 256x256 | integrated |
+| `armor.light` | armor_overlay | `assets/art/armor/light.png` | 256x256 | prepared |
 | `icon.armor.light` | icon | `assets/art/icons/armor/light.png` | 256x256 | placeholder (файла нет, процедурная заглушка) |
-| `armor.field` | armor_overlay | `assets/art/armor/field.png` | 256x256 | placeholder (файла нет, процедурная заглушка) |
+| `armor.field` | armor_overlay | `assets/art/armor/field.png` | 256x256 | prepared |
 | `icon.armor.field` | icon | `assets/art/icons/armor/field.png` | 256x256 | placeholder (файла нет, процедурная заглушка) |
-| `armor.heavy` | armor_overlay | `assets/art/armor/heavy.png` | 256x256 | placeholder (файла нет, процедурная заглушка) |
+| `armor.heavy` | armor_overlay | `assets/art/armor/heavy.png` | 256x256 | prepared |
 | `icon.armor.heavy` | icon | `assets/art/icons/armor/heavy.png` | 256x256 | placeholder (файла нет, процедурная заглушка) |
-| `weapon.pistol` | weapon_sprite | `assets/art/weapons/pistol.png` | 256x128 | placeholder (файла нет, процедурная заглушка) |
+| `weapon.pistol` | weapon_sprite | `assets/art/weapons/pistol.png` | 256x128 | integrated |
 | `icon.weapon.pistol` | icon | `assets/art/icons/weapons/pistol.png` | 256x256 | placeholder (файла нет, процедурная заглушка) |
 | `weapon.smg` | weapon_sprite | `assets/art/weapons/smg.png` | 256x128 | placeholder (файла нет, процедурная заглушка) |
 | `icon.weapon.smg` | icon | `assets/art/icons/weapons/smg.png` | 256x256 | placeholder (файла нет, процедурная заглушка) |
-| `weapon.carbine` | weapon_sprite | `assets/art/weapons/carbine.png` | 256x128 | placeholder (файла нет, процедурная заглушка) |
+| `weapon.carbine` | weapon_sprite | `assets/art/weapons/carbine.png` | 256x128 | integrated |
 | `icon.weapon.carbine` | icon | `assets/art/icons/weapons/carbine.png` | 256x256 | placeholder (файла нет, процедурная заглушка) |
 | `weapon.shotgun` | weapon_sprite | `assets/art/weapons/shotgun.png` | 256x128 | placeholder (файла нет, процедурная заглушка) |
 | `icon.weapon.shotgun` | icon | `assets/art/icons/weapons/shotgun.png` | 256x256 | placeholder (файла нет, процедурная заглушка) |
@@ -40,10 +40,10 @@
 | `icon.module.servos` | icon | `assets/art/icons/modules/servos.png` | 256x256 | placeholder (файла нет, процедурная заглушка) |
 | `icon.module.rangefinder` | icon | `assets/art/icons/modules/rangefinder.png` | 256x256 | placeholder (файла нет, процедурная заглушка) |
 | `icon.module.extended_mag` | icon | `assets/art/icons/modules/extended_mag.png` | 256x256 | placeholder (файла нет, процедурная заглушка) |
-| `enemy.drifter` | actor_atlas | `assets/art/enemies/drifter.png` | 256x256 | placeholder (файла нет, процедурная заглушка) |
-| `enemy.runner` | actor_atlas | `assets/art/enemies/runner.png` | 256x256 | placeholder (файла нет, процедурная заглушка) |
+| `enemy.drifter` | actor_atlas | `assets/art/enemies/drifter.png` | 256x256 | integrated |
+| `enemy.runner` | actor_atlas | `assets/art/enemies/runner.png` | 256x256 | integrated |
 | `enemy.charger` | actor_atlas | `assets/art/enemies/charger.png` | 256x256 | placeholder (файла нет, процедурная заглушка) |
-| `enemy.spitter` | actor_atlas | `assets/art/enemies/spitter.png` | 256x256 | placeholder (файла нет, процедурная заглушка) |
+| `enemy.spitter` | actor_atlas | `assets/art/enemies/spitter.png` | 256x256 | integrated |
 | `enemy.gunner` | actor_atlas | `assets/art/enemies/gunner.png` | 256x256 | placeholder (файла нет, процедурная заглушка) |
 | `enemy.brute` | actor_atlas | `assets/art/enemies/brute.png` | 256x256 | placeholder (файла нет, процедурная заглушка) |
 | `enemy.flanker` | actor_atlas | `assets/art/enemies/flanker.png` | 256x256 | placeholder (файла нет, процедурная заглушка) |
@@ -51,17 +51,17 @@
 | `boss.cleaver` | boss_atlas | `assets/art/bosses/cleaver.png` | 512x512 | placeholder (файла нет, процедурная заглушка) |
 | `boss.boilermaster` | boss_atlas | `assets/art/bosses/boilermaster.png` | 512x512 | placeholder (файла нет, процедурная заглушка) |
 | `boss.broodmother` | boss_atlas | `assets/art/bosses/broodmother.png` | 512x512 | placeholder (файла нет, процедурная заглушка) |
-| `floor.sawmill` | floor_texture | `assets/art/floors/sawmill.png` | 512x512 | placeholder (файла нет, процедурная заглушка) |
+| `floor.sawmill` | floor_texture | `assets/art/floors/sawmill.png` | 512x512 | prepared |
 | `floor.pumping` | floor_texture | `assets/art/floors/pumping.png` | 512x512 | placeholder (файла нет, процедурная заглушка) |
 | `floor.flooded` | floor_texture | `assets/art/floors/flooded.png` | 512x512 | placeholder (файла нет, процедурная заглушка) |
-| `prop.crate` | prop | `assets/art/props/crate.png` | 256x256 | placeholder (файла нет, процедурная заглушка) |
-| `prop.log_stack` | prop | `assets/art/props/log_stack.png` | 512x512 | placeholder (файла нет, процедурная заглушка) |
+| `prop.crate` | prop | `assets/art/props/crate.png` | 256x256 | integrated |
+| `prop.log_stack` | prop | `assets/art/props/log_stack.png` | 256x256 | integrated |
 | `prop.concrete_block` | prop | `assets/art/props/concrete_block.png` | 256x256 | placeholder (файла нет, процедурная заглушка) |
-| `prop.fence` | prop | `assets/art/props/fence.png` | 256x256 | placeholder (файла нет, процедурная заглушка) |
+| `prop.fence` | prop | `assets/art/props/fence.png` | 256x256 | prepared |
 | `prop.pipe` | prop | `assets/art/props/pipe.png` | 256x256 | placeholder (файла нет, процедурная заглушка) |
 | `prop.steam_valve` | prop | `assets/art/props/steam_valve.png` | 256x256 | placeholder (файла нет, процедурная заглушка) |
 | `prop.wrecked_car` | prop | `assets/art/props/wrecked_car.png` | 512x512 | placeholder (файла нет, процедурная заглушка) |
 | `prop.reeds` | prop | `assets/art/props/reeds.png` | 256x256 | placeholder (файла нет, процедурная заглушка) |
-| `icon.medkit` | icon | `assets/art/icons/medkit.png` | 256x256 | placeholder (файла нет, процедурная заглушка) |
+| `icon.medkit` | icon | `assets/art/icons/medkit.png` | 256x256 | integrated |
 | `icon.parts` | icon | `assets/art/icons/parts.png` | 256x256 | placeholder (файла нет, процедурная заглушка) |
 | `fx.muzzle` | fx_atlas | `assets/art/fx/muzzle.png` | 128x128 | placeholder (файла нет, процедурная заглушка) |

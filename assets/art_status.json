@@ -1,1 +1,16 @@
-{}
+{
+  "hero.body": "integrated",
+  "weapon.pistol": "integrated",
+  "weapon.carbine": "integrated",
+  "enemy.drifter": "integrated",
+  "enemy.runner": "integrated",
+  "enemy.spitter": "integrated",
+  "prop.crate": "integrated",
+  "prop.log_stack": "integrated",
+  "prop.fence": "prepared",
+  "icon.medkit": "integrated",
+  "armor.light": "prepared",
+  "armor.field": "prepared",
+  "armor.heavy": "prepared",
+  "floor.sawmill": "prepared"
+}
