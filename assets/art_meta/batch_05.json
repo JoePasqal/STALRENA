@@ -1,0 +1,1302 @@
+{
+  "schema_version": 1,
+  "batch": 5,
+  "status": "prepared",
+  "runtime_verified": false,
+  "base_commit": "562aee27bb31e3f4bd86c058c3af88115cac21a9",
+  "coordinate_origin": "top_left",
+  "bbox_format": "[left,top,right_exclusive,bottom_exclusive]",
+  "assets": {
+    "icon.bonus.double_damage": {
+      "target_path": "res://assets/art/icons/bonuses/double_damage.png",
+      "priority": 1,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        25,
+        20,
+        231,
+        236
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 0.232508073196986,
+      "upscaled": false,
+      "sha256": "32d0ab1c888be3c4336a88ac3548e3960ff1e15276ac9440b8969004df60ad9d",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ]
+    },
+    "icon.bonus.sturdy_body": {
+      "target_path": "res://assets/art/icons/bonuses/sturdy_body.png",
+      "priority": 1,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        20,
+        27,
+        236,
+        228
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 0.19963031423290203,
+      "upscaled": false,
+      "sha256": "6901769e0d91597db0cb8bca1a85cc3b88962c4cc11f02e201125ada1b6c4c7c",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ]
+    },
+    "icon.bonus.gold_vein": {
+      "target_path": "res://assets/art/icons/bonuses/gold_vein.png",
+      "priority": 1,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        20,
+        26,
+        236,
+        229
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 0.21052631578947367,
+      "upscaled": false,
+      "sha256": "535f6a21e38498d80660dd18e94e8815ba6589c52749c0cdb33f7771c5ecd985",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ]
+    },
+    "icon.bonus.rapid_fire": {
+      "target_path": "res://assets/art/icons/bonuses/rapid_fire.png",
+      "priority": 1,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        21,
+        60,
+        236,
+        196
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 0.1940700808625337,
+      "upscaled": false,
+      "sha256": "4280a0f4530cd68a7780110c7d708ea5c4a3bdaa97c23eb58f51ce61bb098068",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ]
+    },
+    "icon.bonus.quick_legs": {
+      "target_path": "res://assets/art/icons/bonuses/quick_legs.png",
+      "priority": 1,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        20,
+        41,
+        236,
+        215
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 0.20224719101123595,
+      "upscaled": false,
+      "sha256": "b063f1cf2afc97bc25f8df82487e54972dace7c5f351d49cce9e7a63555c64d0",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ]
+    },
+    "icon.bonus.sharp_eye": {
+      "target_path": "res://assets/art/icons/bonuses/sharp_eye.png",
+      "priority": 1,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        20,
+        41,
+        236,
+        214
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 0.18947368421052632,
+      "upscaled": false,
+      "sha256": "d3a4e3cc93f53c581b89e1a5b7459d7e1618b8af96922de1e3f714a17a2f615f",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ]
+    },
+    "icon.bonus.fast_hands": {
+      "target_path": "res://assets/art/icons/bonuses/fast_hands.png",
+      "priority": 1,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        20,
+        23,
+        236,
+        233
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 0.18717504332755633,
+      "upscaled": false,
+      "sha256": "9d8ca9df2cb8a0bbed5d78da388ace2104f0c5027d6fda21c08e2fe67107bd81",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ]
+    },
+    "ui.bonus_card_back": {
+      "target_path": "res://assets/art/ui/bonus_card_back.png",
+      "priority": 1,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        384
+      ],
+      "bbox_px": [
+        14,
+        25,
+        241,
+        359
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 0.7453416149068323,
+      "upscaled": false,
+      "sha256": "39e4c2514cd9d42a28d2669ec21fbcffff49562790c7520ce7fc9db00483c074",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "derived_from": "ui.card_flip_buff",
+      "frame": 0,
+      "note": "Static endpoint matches animation exactly; separately generated design source retained in prompt set."
+    },
+    "icon.debuff.slow_legs": {
+      "target_path": "res://assets/art/icons/debuffs/slow_legs.png",
+      "priority": 1,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        26,
+        20,
+        229,
+        236
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 0.21197252208047104,
+      "upscaled": false,
+      "sha256": "2e3b477966f4b70685bd83bafc383746513b7c2456e237a2506fcb1b66baa16b",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ]
+    },
+    "icon.debuff.weak_medkit": {
+      "target_path": "res://assets/art/icons/debuffs/weak_medkit.png",
+      "priority": 1,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        27,
+        20,
+        229,
+        236
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 0.20093023255813955,
+      "upscaled": false,
+      "sha256": "0468054c1137382f467c7a04dfa048ab42af48a2f2d8959616bc962b2ffd41bb",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ]
+    },
+    "icon.debuff.molotov": {
+      "target_path": "res://assets/art/icons/debuffs/molotov.png",
+      "priority": 1,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        47,
+        20,
+        208,
+        236
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 0.18414322250639387,
+      "upscaled": false,
+      "sha256": "f48e98bb05a3a7e8cfa1cbeb863415450c85698c7ed5de4353b763b8a6c594cf",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ]
+    },
+    "icon.debuff.dull_ammo": {
+      "target_path": "res://assets/art/icons/debuffs/dull_ammo.png",
+      "priority": 1,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        26,
+        20,
+        229,
+        236
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 0.22905620360551432,
+      "upscaled": false,
+      "sha256": "d3725ccff91b5c262d8ed650ffeb7046e9710e59f863955767e158e5bdded16f",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ]
+    },
+    "icon.debuff.frail": {
+      "target_path": "res://assets/art/icons/debuffs/frail.png",
+      "priority": 1,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        47,
+        20,
+        208,
+        236
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 0.20396600566572237,
+      "upscaled": false,
+      "sha256": "779b5790ae32f83be8973ccf5ceee9aa49a6b2da8929f70078ac4449f7eaee5f",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ]
+    },
+    "icon.debuff.stiff_bolt": {
+      "target_path": "res://assets/art/icons/debuffs/stiff_bolt.png",
+      "priority": 1,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        23,
+        20,
+        232,
+        236
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 0.21301775147928995,
+      "upscaled": false,
+      "sha256": "c5543ae844a76376990809a0eacf72c6a4269a90358556f2b46dad7f0ca3067f",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ]
+    },
+    "icon.debuff.poor_loot": {
+      "target_path": "res://assets/art/icons/debuffs/poor_loot.png",
+      "priority": 1,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        20,
+        32,
+        236,
+        223
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 0.2134387351778656,
+      "upscaled": false,
+      "sha256": "8ecd7db63b2392cc10fc19c376b99d9d65ed92587c7767517d041d15df1db33d",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ]
+    },
+    "ui.curse_card_back": {
+      "target_path": "res://assets/art/ui/curse_card_back.png",
+      "priority": 1,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        384
+      ],
+      "bbox_px": [
+        16,
+        28,
+        240,
+        356
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 0.7515657620041754,
+      "upscaled": false,
+      "sha256": "9cdeec7e7de9ab50ff5b1e646f770cd2ddf5fac44e863d5815695d9d6e1421bb",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "derived_from": "ui.card_flip_curse",
+      "frame": 0,
+      "note": "Static endpoint matches animation exactly; separately generated design source retained in prompt set."
+    },
+    "ui.card_face_buff": {
+      "target_path": "res://assets/art/ui/card_face_buff.png",
+      "priority": 1,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        384
+      ],
+      "bbox_px": [
+        16,
+        26,
+        240,
+        358
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 0.7453416149068323,
+      "upscaled": false,
+      "sha256": "d830cfb35fbc3e011407f5c7a580336a42374b1ea001208f9b5fc0f3773a23ba",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "derived_from": "ui.card_flip_buff",
+      "frame": 7,
+      "note": "Static endpoint matches animation exactly; separately generated design source retained in prompt set."
+    },
+    "ui.card_face_curse": {
+      "target_path": "res://assets/art/ui/card_face_curse.png",
+      "priority": 1,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        384
+      ],
+      "bbox_px": [
+        15,
+        26,
+        240,
+        357
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 0.7515657620041754,
+      "upscaled": false,
+      "sha256": "61d99ad8fc3e35bb2c02b03835819afb406bf0d62c56c513830c7b9f0f7f4f19",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "derived_from": "ui.card_flip_curse",
+      "frame": 7,
+      "note": "Static endpoint matches animation exactly; separately generated design source retained in prompt set."
+    },
+    "ui.bonus_case_closed": {
+      "target_path": "res://assets/art/ui/bonus_case_closed.png",
+      "priority": 1,
+      "status": "prepared",
+      "canvas_px": [
+        512,
+        384
+      ],
+      "bbox_px": [
+        94,
+        128,
+        417,
+        368
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 1,
+      "upscaled": false,
+      "sha256": "18ba393668fdc8d5ee9d8e92eaf50142721ab10b239a809bfda6f2af2b7bd264",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "derived_from": "ui.bonus_case_anim",
+      "frame": 0,
+      "note": "Static endpoint matches animation exactly; separately generated design source retained in prompt set."
+    },
+    "ui.bonus_case_open": {
+      "target_path": "res://assets/art/ui/bonus_case_open.png",
+      "priority": 1,
+      "status": "prepared",
+      "canvas_px": [
+        512,
+        384
+      ],
+      "bbox_px": [
+        96,
+        24,
+        415,
+        368
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 1,
+      "upscaled": false,
+      "sha256": "177bca78eed8d3cecab1006fb02ea8985d7ed512ec54f3676f9c6036f02ceb2d",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "derived_from": "ui.bonus_case_anim",
+      "frame": 7,
+      "note": "Static endpoint matches animation exactly; separately generated design source retained in prompt set."
+    },
+    "ui.curse_case_closed": {
+      "target_path": "res://assets/art/ui/curse_case_closed.png",
+      "priority": 1,
+      "status": "prepared",
+      "canvas_px": [
+        512,
+        384
+      ],
+      "bbox_px": [
+        84,
+        57,
+        427,
+        368
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 0.8823529411764706,
+      "upscaled": false,
+      "sha256": "60b392c3af6de8a3a9ece42a0fba1673adbd5ead8a19f8166042bf37cfdf0a4f",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "derived_from": "ui.curse_case_anim",
+      "frame": 0,
+      "note": "Static endpoint matches animation exactly; separately generated design source retained in prompt set."
+    },
+    "ui.curse_case_open": {
+      "target_path": "res://assets/art/ui/curse_case_open.png",
+      "priority": 1,
+      "status": "prepared",
+      "canvas_px": [
+        512,
+        384
+      ],
+      "bbox_px": [
+        92,
+        10,
+        419,
+        368
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 0.8823529411764706,
+      "upscaled": false,
+      "sha256": "5e453c474b478045991509ec13b1be0e5d7542a75675f6a6e78fbe405db13211",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "derived_from": "ui.curse_case_anim",
+      "frame": 7,
+      "note": "Static endpoint matches animation exactly; separately generated design source retained in prompt set."
+    },
+    "ui.card_flip_buff": {
+      "target_path": "res://assets/art/ui/card_flip_buff.png",
+      "priority": 1,
+      "status": "prepared",
+      "canvas_px": [
+        2048,
+        384
+      ],
+      "bbox_px": [
+        14,
+        12,
+        2032,
+        372
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 0.7453416149068323,
+      "upscaled": false,
+      "sha256": "3da4291ba53bf0457c5d569aefbf4e4af2a680c72d5d3e016913325591e1f875",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        256,
+        384
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "bbox_px": [
+            14,
+            25,
+            241,
+            359
+          ],
+          "pivot_px": [
+            128,
+            192
+          ],
+          "rgba_sha256": "af1cc7d1b522d35b01b4aa2730cc80bcce9b8191cb4e8109b61bc1b75faa3939"
+        },
+        {
+          "index": 1,
+          "bbox_px": [
+            39,
+            15,
+            217,
+            368
+          ],
+          "pivot_px": [
+            128,
+            192
+          ],
+          "rgba_sha256": "cbbeeefb9ac86488a398f76c7478deb4a9cf1d16f9e9f57ddcc50f88b99c6fe8"
+        },
+        {
+          "index": 2,
+          "bbox_px": [
+            71,
+            12,
+            184,
+            372
+          ],
+          "pivot_px": [
+            128,
+            192
+          ],
+          "rgba_sha256": "99720a7a841090cdfb9eb07e22bd9909bcbdbb3e74d2a61b63ab33cca20f9d25"
+        },
+        {
+          "index": 3,
+          "bbox_px": [
+            106,
+            12,
+            150,
+            372
+          ],
+          "pivot_px": [
+            128,
+            192
+          ],
+          "rgba_sha256": "1da706cf50f5239f0c57771f78e6d1796051bc805f57d9da0e34048f1f5dd284"
+        },
+        {
+          "index": 4,
+          "bbox_px": [
+            107,
+            12,
+            149,
+            372
+          ],
+          "pivot_px": [
+            128,
+            192
+          ],
+          "rgba_sha256": "87c1fe651a4bef51b378a301a5a1a30a9d664334f44ec4a742887e2ff835b3aa"
+        },
+        {
+          "index": 5,
+          "bbox_px": [
+            87,
+            12,
+            168,
+            372
+          ],
+          "pivot_px": [
+            128,
+            192
+          ],
+          "rgba_sha256": "558ae6c3e38618b9504014f2e245ea91e370360f5e17471ad6eb300ff7a88220"
+        },
+        {
+          "index": 6,
+          "bbox_px": [
+            52,
+            17,
+            204,
+            366
+          ],
+          "pivot_px": [
+            128,
+            192
+          ],
+          "rgba_sha256": "1b8142789d09bb1dbb800b506aa0d3f45dc8d51570f8b34e4189432696606296"
+        },
+        {
+          "index": 7,
+          "bbox_px": [
+            16,
+            26,
+            240,
+            358
+          ],
+          "pivot_px": [
+            128,
+            192
+          ],
+          "rgba_sha256": "617caa52718a591d5367c77b9d8e17b7dd021251bc9cc94b4bfa71be7ab0117a"
+        }
+      ],
+      "layout": "row_major",
+      "frame_count": 8,
+      "frame_origin_px": [
+        128,
+        192
+      ]
+    },
+    "ui.card_flip_curse": {
+      "target_path": "res://assets/art/ui/card_flip_curse.png",
+      "priority": 1,
+      "status": "prepared",
+      "canvas_px": [
+        2048,
+        384
+      ],
+      "bbox_px": [
+        16,
+        12,
+        2032,
+        372
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 0.7515657620041754,
+      "upscaled": false,
+      "sha256": "81ec6182d70f3e49f6a8147e2ab8235107831c136b5e7f17bd777bc2d1f31e75",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        256,
+        384
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "bbox_px": [
+            16,
+            28,
+            240,
+            356
+          ],
+          "pivot_px": [
+            128,
+            192
+          ],
+          "rgba_sha256": "e6f994b2a5344faf455a4446f0e752d8d5dbdd50f4a08dce605e085835e9afdc"
+        },
+        {
+          "index": 1,
+          "bbox_px": [
+            38,
+            17,
+            218,
+            366
+          ],
+          "pivot_px": [
+            128,
+            192
+          ],
+          "rgba_sha256": "71d70c959a118d07d32a455b6d122d0cc60d4ebe42724d66edaabbd8db8569e3"
+        },
+        {
+          "index": 2,
+          "bbox_px": [
+            70,
+            12,
+            185,
+            371
+          ],
+          "pivot_px": [
+            128,
+            192
+          ],
+          "rgba_sha256": "dd66f294b60e21c298599f4a7b69c88a4160369a5440f9c1ffe24ac27354d757"
+        },
+        {
+          "index": 3,
+          "bbox_px": [
+            100,
+            12,
+            155,
+            371
+          ],
+          "pivot_px": [
+            128,
+            192
+          ],
+          "rgba_sha256": "581162abbf47307d4439ade4571b53c8d1a92c1e412a0ca46e5a706a5819e8af"
+        },
+        {
+          "index": 4,
+          "bbox_px": [
+            112,
+            12,
+            143,
+            372
+          ],
+          "pivot_px": [
+            128,
+            192
+          ],
+          "rgba_sha256": "26ccd2f130a36ba395f97d142d550f126892b385c33d27237629155dbcb00348"
+        },
+        {
+          "index": 5,
+          "bbox_px": [
+            86,
+            12,
+            170,
+            372
+          ],
+          "pivot_px": [
+            128,
+            192
+          ],
+          "rgba_sha256": "cc093a5ff9719eda9e13c4332ddfe3833e3b523379c4ab70fbecedcc5e7d8036"
+        },
+        {
+          "index": 6,
+          "bbox_px": [
+            45,
+            14,
+            211,
+            370
+          ],
+          "pivot_px": [
+            128,
+            192
+          ],
+          "rgba_sha256": "bcce30f468bf12a1d3c36a6764f6e6335d050e9213ffc7c875a94d9fdf03ee65"
+        },
+        {
+          "index": 7,
+          "bbox_px": [
+            15,
+            26,
+            240,
+            357
+          ],
+          "pivot_px": [
+            128,
+            192
+          ],
+          "rgba_sha256": "c81c75f1957913a33d2ad7cd526cff8d3ea660a927387de428c0f03fe4977e5a"
+        }
+      ],
+      "layout": "row_major",
+      "frame_count": 8,
+      "frame_origin_px": [
+        128,
+        192
+      ]
+    },
+    "ui.card_glow": {
+      "target_path": "res://assets/art/ui/card_glow.png",
+      "priority": 1,
+      "status": "prepared",
+      "canvas_px": [
+        320,
+        448
+      ],
+      "bbox_px": [
+        10,
+        8,
+        310,
+        440
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 0.34477254588986433,
+      "upscaled": false,
+      "sha256": "e711af5d6649da68f19790ea9073e568a1668ba8110050d2faf3c23f7a1d3686",
+      "alpha_extrema": [
+        0,
+        253
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1060,
+        1484
+      ]
+    },
+    "ui.bonus_case_anim": {
+      "target_path": "res://assets/art/ui/bonus_case_anim.png",
+      "priority": 1,
+      "status": "prepared",
+      "canvas_px": [
+        4096,
+        384
+      ],
+      "bbox_px": [
+        94,
+        24,
+        3999,
+        368
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 1,
+      "upscaled": false,
+      "sha256": "7ce08506afe56387913fce835a51f8e832d65de7d37f3a7f07d33f7a0e2c47f4",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        512,
+        384
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "bbox_px": [
+            94,
+            128,
+            417,
+            368
+          ],
+          "pivot_px": [
+            256,
+            368
+          ],
+          "rgba_sha256": "0b67474687529bd7fb74c16ece2d2681e3a81ea8259e0fbf5c445f66ac4c155d"
+        },
+        {
+          "index": 1,
+          "bbox_px": [
+            94,
+            125,
+            417,
+            368
+          ],
+          "pivot_px": [
+            256,
+            368
+          ],
+          "rgba_sha256": "ab5106f303ad8d558267f447363aa8e25d3e0a48adc00dafb3b2ceb24f6a9446"
+        },
+        {
+          "index": 2,
+          "bbox_px": [
+            94,
+            119,
+            418,
+            368
+          ],
+          "pivot_px": [
+            256,
+            368
+          ],
+          "rgba_sha256": "d3508c1058d3912e5069966a077cea26b70c331be510ffb2a318916b6769e661"
+        },
+        {
+          "index": 3,
+          "bbox_px": [
+            93,
+            104,
+            418,
+            368
+          ],
+          "pivot_px": [
+            256,
+            368
+          ],
+          "rgba_sha256": "53ed394c0b6b22185b0ade22e6d52e2a1ad032bbe90fd6a3ffb59785a057645c"
+        },
+        {
+          "index": 4,
+          "bbox_px": [
+            95,
+            65,
+            416,
+            368
+          ],
+          "pivot_px": [
+            256,
+            368
+          ],
+          "rgba_sha256": "01e67dd9db762928a93c4e62f09a551a91fb04eb054feb8a63f543121452f2aa"
+        },
+        {
+          "index": 5,
+          "bbox_px": [
+            84,
+            39,
+            427,
+            368
+          ],
+          "pivot_px": [
+            256,
+            368
+          ],
+          "rgba_sha256": "dacd84ad1917cba2d8a9f952e60c9b6cbbc78c7ad7c150d7a938c12ac4269909"
+        },
+        {
+          "index": 6,
+          "bbox_px": [
+            96,
+            32,
+            416,
+            368
+          ],
+          "pivot_px": [
+            256,
+            368
+          ],
+          "rgba_sha256": "7ed9c9005468af7a0af94dccf492604f93dd55f2f42776c9b8140fb3cb9a1f54"
+        },
+        {
+          "index": 7,
+          "bbox_px": [
+            96,
+            24,
+            415,
+            368
+          ],
+          "pivot_px": [
+            256,
+            368
+          ],
+          "rgba_sha256": "62ada8d4c7193403c2a250601571ef2e8ab68779b229b3182a0b2b5cddac1afb"
+        }
+      ],
+      "layout": "row_major",
+      "frame_count": 8,
+      "frame_origin_px": [
+        256,
+        368
+      ]
+    },
+    "ui.curse_case_anim": {
+      "target_path": "res://assets/art/ui/curse_case_anim.png",
+      "priority": 1,
+      "status": "prepared",
+      "canvas_px": [
+        4096,
+        384
+      ],
+      "bbox_px": [
+        84,
+        8,
+        4003,
+        368
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 0.8823529411764706,
+      "upscaled": false,
+      "sha256": "503626823d11b30890dfab09ed2ddad4c08bd81e64c6fa654bcdbfd8e6bf90ca",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        512,
+        384
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "bbox_px": [
+            84,
+            57,
+            427,
+            368
+          ],
+          "pivot_px": [
+            256,
+            368
+          ],
+          "rgba_sha256": "43f5536ec2869ed722ce830678192d10fbc67bdff5a3f5a97da97f031bb43dd2"
+        },
+        {
+          "index": 1,
+          "bbox_px": [
+            84,
+            57,
+            427,
+            368
+          ],
+          "pivot_px": [
+            256,
+            368
+          ],
+          "rgba_sha256": "349a7b695e65fb9bd70b755503329dbe39831c348ea7d1082cd6e963fda441b6"
+        },
+        {
+          "index": 2,
+          "bbox_px": [
+            86,
+            57,
+            426,
+            368
+          ],
+          "pivot_px": [
+            256,
+            368
+          ],
+          "rgba_sha256": "c41c768947ced5c9de5fe85edaa6a82aa81cea30904f4c855276666ad2e0ab87"
+        },
+        {
+          "index": 3,
+          "bbox_px": [
+            87,
+            8,
+            424,
+            368
+          ],
+          "pivot_px": [
+            256,
+            368
+          ],
+          "rgba_sha256": "30c5ff82bf7e5f3bcd47f82690f1ff7635e32658d72a6ed6182840ccee118293"
+        },
+        {
+          "index": 4,
+          "bbox_px": [
+            87,
+            41,
+            425,
+            368
+          ],
+          "pivot_px": [
+            256,
+            368
+          ],
+          "rgba_sha256": "b9c9169a5970b5a642ab2cbb540845dda5085adfcb1a4d1431ea9a2b10078dc9"
+        },
+        {
+          "index": 5,
+          "bbox_px": [
+            90,
+            12,
+            422,
+            368
+          ],
+          "pivot_px": [
+            256,
+            368
+          ],
+          "rgba_sha256": "4c6b9de0917313bf3775a17954fae871888c68b4cc3db4b314a6024f9c2e405c"
+        },
+        {
+          "index": 6,
+          "bbox_px": [
+            90,
+            13,
+            422,
+            368
+          ],
+          "pivot_px": [
+            256,
+            368
+          ],
+          "rgba_sha256": "5be12fc62810d8ce62e98b5cc17a1d838ee9bfec6d7b8943730b28b46b17f7e3"
+        },
+        {
+          "index": 7,
+          "bbox_px": [
+            92,
+            10,
+            419,
+            368
+          ],
+          "pivot_px": [
+            256,
+            368
+          ],
+          "rgba_sha256": "fd3b958ab6fa76f05a73d2026d510fe060399375eec3cd05327121f93a2d6a8a"
+        }
+      ],
+      "layout": "row_major",
+      "frame_count": 8,
+      "frame_origin_px": [
+        256,
+        368
+      ]
+    }
+  },
+  "priorities": {
+    "1": {
+      "status": "prepared",
+      "asset_ids": [
+        "icon.bonus.double_damage",
+        "icon.bonus.sturdy_body",
+        "icon.bonus.gold_vein",
+        "icon.bonus.rapid_fire",
+        "icon.bonus.quick_legs",
+        "icon.bonus.sharp_eye",
+        "icon.bonus.fast_hands",
+        "ui.bonus_card_back",
+        "icon.debuff.slow_legs",
+        "icon.debuff.weak_medkit",
+        "icon.debuff.molotov",
+        "icon.debuff.dull_ammo",
+        "icon.debuff.frail",
+        "icon.debuff.stiff_bolt",
+        "icon.debuff.poor_loot",
+        "ui.curse_card_back",
+        "ui.card_face_buff",
+        "ui.card_face_curse",
+        "ui.bonus_case_closed",
+        "ui.bonus_case_open",
+        "ui.curse_case_closed",
+        "ui.curse_case_open",
+        "ui.card_flip_buff",
+        "ui.card_flip_curse",
+        "ui.card_glow",
+        "ui.bonus_case_anim",
+        "ui.curse_case_anim"
+      ],
+      "runtime_verified": false
+    }
+  },
+  "disputed": []
+}

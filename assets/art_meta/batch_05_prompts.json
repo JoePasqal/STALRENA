@@ -1,0 +1,149 @@
+{
+  "icon.bonus.double_damage": {
+    "prompt": "Use case: stylized-concept. Production game inventory icon for STALRENA, detailed hand-painted 2D with painted volume, weathered gray steel, dirty olive and rusty brown, soft upper-left light. ONE isolated crossed pair of heavy brass-jacketed bullet projectiles with a small vivid red-orange impact accent symbolizing DOUBLE DAMAGE. Recognizable compact silhouette at 64px. Genuine transparent RGBA background, no floor, no text, numbers, lettering, frames, card, UI or watermark. Large square source, centered subject with generous clear padding all around, intended final256x256 safe margin16px. Render crisp material detail, not pixel art.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "icon.bonus.sturdy_body": {
+    "prompt": "Use case: stylized-concept. STALRENA production game icon, detailed hand-painted 2D volume, weathered steel/brass, olive and rusty brown palette, soft upper-left light, readable silhouette at64px. ONE compact centered symbolic item cluster: A rugged steel breastplate with a small blue-white protective glow, symbol of sturdy constitution. Truly transparent RGBA background, no scene or floor, no text, numbers, letters, frames, panels, watermark. Large square source, generous padding all around for final256x256 with16px safe margins. Crisp painterly material detail, not pixel art.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "icon.bonus.gold_vein": {
+    "prompt": "Use case: stylized-concept. STALRENA production game icon, detailed hand-painted 2D volume, weathered steel/brass, olive and rusty brown palette, soft upper-left light, readable silhouette at64px. ONE compact centered symbolic item cluster: A cluster of raw gold ore nuggets and brass coins with no inscriptions, rich mineral veins. Truly transparent RGBA background, no scene or floor, no text, numbers, letters, frames, panels, watermark. Large square source, generous padding all around for final256x256 with16px safe margins. Crisp painterly material detail, not pixel art.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "icon.bonus.rapid_fire": {
+    "prompt": "Use case: stylized-concept. STALRENA production game icon, detailed hand-painted 2D volume, weathered steel/brass, olive and rusty brown palette, soft upper-left light, readable silhouette at64px. ONE compact centered symbolic item cluster: A short diagonal row of three brass cartridges and quick orange motion streaks, rapid firing. Truly transparent RGBA background, no scene or floor, no text, numbers, letters, frames, panels, watermark. Large square source, generous padding all around for final256x256 with16px safe margins. Crisp painterly material detail, not pixel art.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "icon.bonus.quick_legs": {
+    "prompt": "Use case: stylized-concept. STALRENA production game icon, detailed hand-painted 2D volume, weathered steel/brass, olive and rusty brown palette, soft upper-left light, readable silhouette at64px. ONE compact centered symbolic item cluster: A pair of olive rugged survivor running boots with light blue trailing speed accents. Truly transparent RGBA background, no scene or floor, no text, numbers, letters, frames, panels, watermark. Large square source, generous padding all around for final256x256 with16px safe margins. Crisp painterly material detail, not pixel art.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "icon.bonus.sharp_eye": {
+    "prompt": "Use case: stylized-concept. STALRENA production game icon, detailed hand-painted 2D volume, weathered steel/brass, olive and rusty brown palette, soft upper-left light, readable silhouette at64px. ONE compact centered symbolic item cluster: A weathered brass optical scope lens with a bright blue focused eye-like reflection. Truly transparent RGBA background, no scene or floor, no text, numbers, letters, frames, panels, watermark. Large square source, generous padding all around for final256x256 with16px safe margins. Crisp painterly material detail, not pixel art.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "icon.bonus.fast_hands": {
+    "prompt": "Use case: stylized-concept. STALRENA production game icon, detailed hand-painted 2D volume, weathered steel/brass, olive and rusty brown palette, soft upper-left light, readable silhouette at64px. ONE compact centered symbolic item cluster: Two olive tactical gloves holding a steel magazine with subtle blue movement arcs. Truly transparent RGBA background, no scene or floor, no text, numbers, letters, frames, panels, watermark. Large square source, generous padding all around for final256x256 with16px safe margins. Crisp painterly material detail, not pixel art.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "ui.bonus_card_back": {
+    "prompt": "Use case: stylized-concept. Production painted2D UI asset STALRENA postapocalyptic industrial game. BACK of a single vertical reward card, bronze-gold beveled steel border, worn dark olive leather panel, centered abstract embossed radial sun seal, no letters, no numbers. Rounded clipped corners. Closed flat card facing viewer straight on.. Single 2:3 portrait card centered on genuine TRANSPARENT background with clear margin; detailed painted volume and worn material, soft upper-left light, no long shadow, no extra objects, no typography, no labels, no watermark. Render source at least768x1152; final card canvas256x384. Card's interior panel is opaque, outside transparent.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "icon.debuff.slow_legs": {
+    "prompt": "Use case: stylized-concept. STALRENA production game icon, detailed hand-painted 2D volume, weathered steel/brass, olive and rusty brown palette, soft upper-left light, readable silhouette at64px. ONE compact centered symbolic item cluster: One heavy worn military boot entangled in rusty iron chain, dark muted palette, small red embers. Truly transparent RGBA background, no scene or floor, no text, numbers, letters, frames, panels, watermark. Large square source, generous padding all around for final256x256 with16px safe margins. Crisp painterly material detail, not pixel art.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "icon.debuff.weak_medkit": {
+    "prompt": "Use case: stylized-concept. STALRENA production game icon, detailed hand-painted 2D volume, weathered steel/brass, olive and rusty brown palette, soft upper-left light, readable silhouette at64px. ONE compact centered symbolic item cluster: A torn dirty medical pouch with a dim blue cracked vial and loose bandage, faded blue cross shape without lettering, dark palette. Truly transparent RGBA background, no scene or floor, no text, numbers, letters, frames, panels, watermark. Large square source, generous padding all around for final256x256 with16px safe margins. Crisp painterly material detail, not pixel art.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "icon.debuff.molotov": {
+    "prompt": "Use case: stylized-concept. STALRENA production game icon, detailed hand-painted 2D volume, weathered steel/brass, olive and rusty brown palette, soft upper-left light, readable silhouette at64px. ONE compact centered symbolic item cluster: A stylized fantasy videogame fire-debuff emblem: a small closed amber glass bottle silhouetted inside a painted red-orange flame-shaped aura. Symbolic UI art, no realistic construction detail. Truly transparent RGBA background, no scene or floor, no text, numbers, letters, frames, panels, watermark. Large square source, generous padding all around for final256x256 with16px safe margins. Crisp painterly material detail, not pixel art.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "icon.debuff.dull_ammo": {
+    "prompt": "Use case: stylized-concept. STALRENA production game icon, detailed hand-painted 2D volume, weathered steel/brass, olive and rusty brown palette, soft upper-left light, readable silhouette at64px. ONE compact centered symbolic item cluster: Two corroded dented brass cartridges with blunt damaged tips, dark desaturated steel rust, red crack accent. Truly transparent RGBA background, no scene or floor, no text, numbers, letters, frames, panels, watermark. Large square source, generous padding all around for final256x256 with16px safe margins. Crisp painterly material detail, not pixel art.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "icon.debuff.frail": {
+    "prompt": "Use case: stylized-concept. STALRENA production game icon, detailed hand-painted 2D volume, weathered steel/brass, olive and rusty brown palette, soft upper-left light, readable silhouette at64px. ONE compact centered symbolic item cluster: A thin cracked steel breastplate with a broken fastening strap, dark desaturated gray with small red crack glow. Truly transparent RGBA background, no scene or floor, no text, numbers, letters, frames, panels, watermark. Large square source, generous padding all around for final256x256 with16px safe margins. Crisp painterly material detail, not pixel art.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "icon.debuff.stiff_bolt": {
+    "prompt": "Use case: stylized-concept. STALRENA production game icon, detailed hand-painted 2D volume, weathered steel/brass, olive and rusty brown palette, soft upper-left light, readable silhouette at64px. ONE compact centered symbolic item cluster: A rusty stuck bolt mechanism and jammed spring, dark industrial steel, slight red warning glint. Truly transparent RGBA background, no scene or floor, no text, numbers, letters, frames, panels, watermark. Large square source, generous padding all around for final256x256 with16px safe margins. Crisp painterly material detail, not pixel art.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "icon.debuff.poor_loot": {
+    "prompt": "Use case: stylized-concept. STALRENA production game icon, detailed hand-painted 2D volume, weathered steel/brass, olive and rusty brown palette, soft upper-left light, readable silhouette at64px. ONE compact centered symbolic item cluster: A frayed nearly empty cloth coin pouch with one dull coin, torn seam, dim rust and gray palette. Truly transparent RGBA background, no scene or floor, no text, numbers, letters, frames, panels, watermark. Large square source, generous padding all around for final256x256 with16px safe margins. Crisp painterly material detail, not pixel art.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "ui.curse_card_back": {
+    "prompt": "Use case: stylized-concept. Production painted2D UI asset STALRENA postapocalyptic industrial game. BACK of a single vertical curse card, rusty iron border with dark crimson inlays, charcoal worn leather panel, centered angular ominous eye seal, no letters, no numbers. Rounded clipped corners. Closed flat card facing viewer straight on.. Single 2:3 portrait card centered on genuine TRANSPARENT background with clear margin; detailed painted volume and worn material, soft upper-left light, no long shadow, no extra objects, no typography, no labels, no watermark. Render source at least768x1152; final card canvas256x384. Card's interior panel is opaque, outside transparent.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "ui.card_face_buff": {
+    "prompt": "Use case: stylized-concept. Production painted2D UI asset STALRENA postapocalyptic industrial game. FRONT of a single vertical reward card. Thin bronze-gold steel decorative perimeter with corner rivets. Large completely BLANK dark olive parchment central field to hold code-rendered icon and text. No symbols in center. Rounded clipped corners. Flat straight-on.. Single 2:3 portrait card centered on genuine TRANSPARENT background with clear margin; detailed painted volume and worn material, soft upper-left light, no long shadow, no extra objects, no typography, no labels, no watermark. Render source at least768x1152; final card canvas256x384. Card's interior panel is opaque, outside transparent.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "ui.card_face_curse": {
+    "prompt": "Use case: stylized-concept. Production painted2D UI asset STALRENA postapocalyptic industrial game. FRONT of a single vertical curse card. Thin rusted dark iron perimeter with crimson corner inlays. Large completely BLANK dark charcoal parchment central field to hold code-rendered icon and text. No symbols in center. Rounded clipped corners. Flat straight-on.. Single 2:3 portrait card centered on genuine TRANSPARENT background with clear margin; detailed painted volume and worn material, soft upper-left light, no long shadow, no extra objects, no typography, no labels, no watermark. Render source at least768x1152; final card canvas256x384. Card's interior panel is opaque, outside transparent.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "ui.bonus_case_closed": {
+    "prompt": "Use case: stylized-concept. STALRENA production hand-painted detailed2D game sprite with painted volume, worn metal/wood materials, upper-left soft light, muted gray olive rust palette. One CLOSED rectangular rugged GOLDEN reward case with bronze clasps, dark olive metal inset panels, hinges at back, worn but valuable. Elevated top-down three-quarter game camera, lid fully shut. Single isolated case, no floor, no labels. Genuine transparent RGBA background, no long cast shadow, no text, numbers, watermark or scene. Render at high resolution with generous margin around entire subject. Intended final512x384 case canvas or320x448 glow.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "ui.bonus_case_open": {
+    "prompt": "Use case: stylized-concept. STALRENA production hand-painted detailed2D game sprite with painted volume, worn metal/wood materials, upper-left soft light, muted gray olive rust palette. One OPEN rectangular rugged GOLDEN reward case with bronze clasps, dark olive metal inset panels, hinges at back. Elevated top-down three-quarter game camera. Rear hinged lid raised about95degrees, empty inner compartment emits soft warm gold light. Single isolated case, no floor, no loot items or labels. Genuine transparent RGBA background, no long cast shadow, no text, numbers, watermark or scene. Render at high resolution with generous margin around entire subject. Intended final512x384 case canvas or320x448 glow.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "ui.curse_case_closed": {
+    "prompt": "Use case: stylized-concept. STALRENA production hand-painted detailed2D game sprite with painted volume, worn metal/wood materials, upper-left soft light, muted gray olive rust palette. One CLOSED weathered wooden curse crate, rugged rectangular timber construction with dark iron straps and RED edging, hinges at back. Elevated top-down three-quarter game camera, lid fully shut. Single isolated box, no floor, no labels. Genuine transparent RGBA background, no long cast shadow, no text, numbers, watermark or scene. Render at high resolution with generous margin around entire subject. Intended final512x384 case canvas or320x448 glow.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "ui.curse_case_open": {
+    "prompt": "Use case: stylized-concept. STALRENA production hand-painted detailed2D game sprite with painted volume, worn metal/wood materials, upper-left soft light, muted gray olive rust palette. One OPEN weathered wooden curse crate, rugged rectangular timber construction with dark iron straps and RED edging, hinges at back. Elevated top-down three-quarter game camera, rear lid raised95degrees, empty compartment glows dim crimson. Single isolated box, no floor, no loot items or labels. Genuine transparent RGBA background, no long cast shadow, no text, numbers, watermark or scene. Render at high resolution with generous margin around entire subject. Intended final512x384 case canvas or320x448 glow.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "ui.card_flip_buff": {
+    "prompt": "Use case: stylized-concept. Produce ONE transparent RGBA animation keyframe sheet for STALRENA. Input is a REFERENCE for exact object design/material, not a separate frame. gold bronze steel perimeter, dark olive panel, sun seal on BACK, blank olive FRONT. A vertical card rotates around its vertical center axis: frames 0 full BACK,1 back three-quarter,2 back narrow,3 almost edge-on,4 thin front edge,5 front narrow,6 front three-quarter,7 full BLANK FRONT. Each card same height and center; only apparent width changes; front contains no icons/text. Layout EXACTLY 4 columns by2 rows, EIGHT distinct frames in row-major order. Each cell with generous transparent gutters, identical camera and scale, fully isolated, no touching neighboring frames. Detailed painted2D volume, soft upper-left light, gray olive rust industrial aesthetic. No typography, labels, numbers, grid lines, arrows, baked UI. High-resolution wide source ideally2048x1536; every object sufficiently large to downsample into final256x384 frame. Actual alpha outside objects.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      4,
+      2
+    ]
+  },
+  "ui.card_flip_curse": {
+    "prompt": "Use case: stylized-concept. Produce ONE transparent RGBA animation keyframe sheet for STALRENA. Input is a REFERENCE for exact object design/material, not a separate frame. dark rusty iron perimeter, crimson inlays, ominous eye seal on BACK, blank charcoal FRONT. A vertical card rotates around its vertical center axis: frames 0 full BACK,1 back three-quarter,2 back narrow,3 almost edge-on,4 thin front edge,5 front narrow,6 front three-quarter,7 full BLANK FRONT. Each card same height and center; only apparent width changes; front contains no icons/text. Layout EXACTLY 4 columns by2 rows, EIGHT distinct frames in row-major order. Each cell with generous transparent gutters, identical camera and scale, fully isolated, no touching neighboring frames. Detailed painted2D volume, soft upper-left light, gray olive rust industrial aesthetic. No typography, labels, numbers, grid lines, arrows, baked UI. High-resolution wide source ideally2048x1536; every object sufficiently large to downsample into final256x384 frame. Actual alpha outside objects.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      4,
+      2
+    ]
+  },
+  "ui.card_glow": {
+    "prompt": "Use case: stylized-concept. STALRENA production hand-painted detailed2D game sprite with painted volume, worn metal/wood materials, upper-left soft light, muted gray olive rust palette. A soft rectangular GOLDEN selection aura for a vertical card with rounded corners. Hollow fully transparent center and outside, only diffuse luminous perimeter, no card, no solid panel, no text. Aspect5:7, large source. Glow fades smoothly, keep transparent margins. Genuine transparent RGBA background, no long cast shadow, no text, numbers, watermark or scene. Render at high resolution with generous margin around entire subject. Intended final512x384 case canvas or320x448 glow.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "ui.bonus_case_anim": {
+    "prompt": "Use case: stylized-concept. Produce ONE transparent RGBA animation keyframe sheet for STALRENA. Input is a REFERENCE for exact object design/material, not a separate frame. golden bronze reward case with dark olive inset panels, warm GOLD light. The SAME case in 8 stages of opening: 0 closed,1 latch releases lid5degrees,2 lid20degrees,3 lid40degrees,4 lid65degrees,5 lid90degrees and bright light bloom,6 open light settles,7 fully open lid95degrees. Fixed camera and fixed case base position/size, ONLY lid angle/light changes. Layout EXACTLY 4 columns by2 rows, EIGHT distinct frames in row-major order. Each cell with generous transparent gutters, identical camera and scale, fully isolated, no touching neighboring frames. Detailed painted2D volume, soft upper-left light, gray olive rust industrial aesthetic. No typography, labels, numbers, grid lines, arrows, baked UI. High-resolution wide source ideally2048x1536; every object sufficiently large to downsample into final512x384 frame. Actual alpha outside objects.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      4,
+      2
+    ]
+  },
+  "ui.curse_case_anim": {
+    "prompt": "Use case: stylized-concept. Produce ONE transparent RGBA animation keyframe sheet for STALRENA. Input is a REFERENCE for exact object design/material, not a separate frame. wooden timber crate with red edging and dark iron straps, dim CRIMSON light. The SAME case in 8 stages of opening: 0 closed,1 latch releases lid5degrees,2 lid20degrees,3 lid40degrees,4 lid65degrees,5 lid90degrees and bright light bloom,6 open light settles,7 fully open lid95degrees. Fixed camera and fixed case base position/size, ONLY lid angle/light changes. Layout EXACTLY 4 columns by2 rows, EIGHT distinct frames in row-major order. Each cell with generous transparent gutters, identical camera and scale, fully isolated, no touching neighboring frames. Detailed painted2D volume, soft upper-left light, gray olive rust industrial aesthetic. No typography, labels, numbers, grid lines, arrows, baked UI. High-resolution wide source ideally2048x1536; every object sufficiently large to downsample into final512x384 frame. Actual alpha outside objects.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      4,
+      2
+    ]
+  }
+}
