@@ -53,7 +53,7 @@ func _ready() -> void:
 	game.intro_t = 0.0
 	if shot == "case":
 		var rn: RunState = Session.run
-		rn.waves_completed = 9
+		rn.waves_completed = 11 if str(args.get("kind", "buff")) == "debuff" else 9
 		rn.phase = "combat"
 		rn.coins_at_wave_start = rn.coins
 		Economy.complete_wave(rn)
