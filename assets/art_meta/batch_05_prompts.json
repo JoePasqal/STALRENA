@@ -145,5 +145,60 @@
       4,
       2
     ]
+  },
+  "prop.concrete_block_b": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One tall cracked reinforced-concrete road barrier, angular asymmetric broken corner, weathered gray with moss patches; substantial readable mass, broad base resting on ground. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "prop.concrete_block_c": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One battered reinforced-concrete barricade with protruding rusty bent rebar at one broken end, different silhouette from standard barrier, pale gray and moss; broad grounded base. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "prop.pipe_long": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One LONG continuous horizontal industrial pipeline segment, very wide aspect4:1. Single rusty gray-green pipe spans nearly full width, bolted flanges at both ends, THREE sturdy steel saddle supports bolted into low concrete footings, short soft contact shadows only directly under feet. One central small valve wheel attached to pipe. Pipe is clearly supported above ground by these integral stands. No disjoint elbows, no repeated tiny pipes. Elevated view, source wide at least1600px across, final canvas512x128. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "prop.pipe_tee": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One grounded industrial T-junction pipeline segment with two bolted flanges and third branch, rusty gray-green steel, connected to a low concrete footing by visible bolted saddle supports, small valve. No floating disconnected pipes. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "prop.wrecked_car_b": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One wrecked old compact industrial station wagon, corroded olive-gray body, missing hood exposing rusted engine, collapsed tires, asymmetric broken doors, full car lying normally on wheels, THREE-QUARTER TOP-DOWN view, distinct from sedan. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "prop.wrecked_car_c": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One wrecked rusty ochre-gray van tipped onto its SIDE, underside chassis and two upper wheels visible, smashed windows, isolated entire vehicle, elevated three-quarter view, grounded on side with short contact shadow. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "prop.machine_a": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One abandoned industrial SAWMILL BANDSAW machine: bulky faded olive cast-metal pedestal, vertical saw frame, work table with a short weathered timber offcut, rusty mechanical wheel and motor, grounded heavy bolted base. No guard signage. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "prop.machine_b": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One abandoned industrial SAWMILL PLANER machine: long squat cast-iron workbench with rollers, electric motor and belt guard, weathered gray olive paint and rust, visible sturdy four feet bolted to concrete pads. Different silhouette from bandsaw. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "prop.pillar": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One cracked old square concrete support pillar with rusty steel mounting bracket near top and chunky exposed foundation foot, short broken wire near cap, gray concrete moss olive, tall single object fully shown. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "water.flooded": {
+    "prompt": "TOP-DOWN FLAT SEAMLESS TILEABLE WATER TEXTURE, fills whole square canvas opaque. Shallow dirty olive-gray flooded industrial yard water, gentle uneven small ripples, soft broken cloudy sky reflections, faint brown submerged mud and silt, a few tiny floating leaves. NO banks, land, rocks, reeds or large objects, no perspective horizon. Natural irregular non-mirrored distribution, no bilateral or kaleidoscopic symmetry. Opposite edges must tile continuously. Detailed hand-painted game surface, low contrast, no text. At least1024x1024 source, final512x512.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "water.flooded_edge": {
+    "prompt": "One modular long irregular SHORELINE STRIP for a shallow dirty olive-gray industrial puddle. Top-down flat texture. Winding asymmetrical muddy brown gravel bank with small olive reeds and wet stones, thin broken ripple line, shallow gray-green water fades away into TRUE TRANSPARENCY on water side. Both sides outside narrow bank transparent, no solid rectangular background. Horizontal extent like512x256, entire irregular strip has free organic ends, not a closed oval, no water rectangle. Painterly detailed2D, soft upper-left light, no long shadows or text.",
+    "mode": "built_in_imagegen",
+    "layout": null
   }
 }

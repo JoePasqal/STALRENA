@@ -34,6 +34,10 @@
       "source_size_px": [
         1254,
         1254
+      ],
+      "visible_extent_world_px": [
+        206.0,
+        216.0
       ]
     },
     "icon.bonus.sturdy_body": {
@@ -63,6 +67,10 @@
       "source_size_px": [
         1254,
         1254
+      ],
+      "visible_extent_world_px": [
+        216.0,
+        201.0
       ]
     },
     "icon.bonus.gold_vein": {
@@ -92,6 +100,10 @@
       "source_size_px": [
         1254,
         1254
+      ],
+      "visible_extent_world_px": [
+        216.0,
+        203.0
       ]
     },
     "icon.bonus.rapid_fire": {
@@ -121,6 +133,10 @@
       "source_size_px": [
         1254,
         1254
+      ],
+      "visible_extent_world_px": [
+        215.0,
+        136.0
       ]
     },
     "icon.bonus.quick_legs": {
@@ -150,6 +166,10 @@
       "source_size_px": [
         1254,
         1254
+      ],
+      "visible_extent_world_px": [
+        216.0,
+        174.0
       ]
     },
     "icon.bonus.sharp_eye": {
@@ -179,6 +199,10 @@
       "source_size_px": [
         1254,
         1254
+      ],
+      "visible_extent_world_px": [
+        216.0,
+        173.0
       ]
     },
     "icon.bonus.fast_hands": {
@@ -208,6 +232,10 @@
       "source_size_px": [
         1254,
         1254
+      ],
+      "visible_extent_world_px": [
+        216.0,
+        210.0
       ]
     },
     "ui.bonus_card_back": {
@@ -236,7 +264,11 @@
       "runtime_verified": false,
       "derived_from": "ui.card_flip_buff",
       "frame": 0,
-      "note": "Static endpoint matches animation exactly; separately generated design source retained in prompt set."
+      "note": "Static endpoint matches animation exactly; separately generated design source retained in prompt set.",
+      "visible_extent_world_px": [
+        227.0,
+        334.0
+      ]
     },
     "icon.debuff.slow_legs": {
       "target_path": "res://assets/art/icons/debuffs/slow_legs.png",
@@ -265,6 +297,10 @@
       "source_size_px": [
         1254,
         1254
+      ],
+      "visible_extent_world_px": [
+        203.0,
+        216.0
       ]
     },
     "icon.debuff.weak_medkit": {
@@ -294,6 +330,10 @@
       "source_size_px": [
         1254,
         1254
+      ],
+      "visible_extent_world_px": [
+        202.0,
+        216.0
       ]
     },
     "icon.debuff.molotov": {
@@ -323,6 +363,10 @@
       "source_size_px": [
         1254,
         1254
+      ],
+      "visible_extent_world_px": [
+        161.0,
+        216.0
       ]
     },
     "icon.debuff.dull_ammo": {
@@ -352,6 +396,10 @@
       "source_size_px": [
         1254,
         1254
+      ],
+      "visible_extent_world_px": [
+        203.0,
+        216.0
       ]
     },
     "icon.debuff.frail": {
@@ -381,6 +429,10 @@
       "source_size_px": [
         1254,
         1254
+      ],
+      "visible_extent_world_px": [
+        161.0,
+        216.0
       ]
     },
     "icon.debuff.stiff_bolt": {
@@ -410,6 +462,10 @@
       "source_size_px": [
         1254,
         1254
+      ],
+      "visible_extent_world_px": [
+        209.0,
+        216.0
       ]
     },
     "icon.debuff.poor_loot": {
@@ -439,6 +495,10 @@
       "source_size_px": [
         1254,
         1254
+      ],
+      "visible_extent_world_px": [
+        216.0,
+        191.0
       ]
     },
     "ui.curse_card_back": {
@@ -467,7 +527,11 @@
       "runtime_verified": false,
       "derived_from": "ui.card_flip_curse",
       "frame": 0,
-      "note": "Static endpoint matches animation exactly; separately generated design source retained in prompt set."
+      "note": "Static endpoint matches animation exactly; separately generated design source retained in prompt set.",
+      "visible_extent_world_px": [
+        224.0,
+        328.0
+      ]
     },
     "ui.card_face_buff": {
       "target_path": "res://assets/art/ui/card_face_buff.png",
@@ -495,7 +559,11 @@
       "runtime_verified": false,
       "derived_from": "ui.card_flip_buff",
       "frame": 7,
-      "note": "Static endpoint matches animation exactly; separately generated design source retained in prompt set."
+      "note": "Static endpoint matches animation exactly; separately generated design source retained in prompt set.",
+      "visible_extent_world_px": [
+        224.0,
+        332.0
+      ]
     },
     "ui.card_face_curse": {
       "target_path": "res://assets/art/ui/card_face_curse.png",
@@ -523,7 +591,11 @@
       "runtime_verified": false,
       "derived_from": "ui.card_flip_curse",
       "frame": 7,
-      "note": "Static endpoint matches animation exactly; separately generated design source retained in prompt set."
+      "note": "Static endpoint matches animation exactly; separately generated design source retained in prompt set.",
+      "visible_extent_world_px": [
+        225.0,
+        331.0
+      ]
     },
     "ui.bonus_case_closed": {
       "target_path": "res://assets/art/ui/bonus_case_closed.png",
@@ -551,7 +623,11 @@
       "runtime_verified": false,
       "derived_from": "ui.bonus_case_anim",
       "frame": 0,
-      "note": "Static endpoint matches animation exactly; separately generated design source retained in prompt set."
+      "note": "Static endpoint matches animation exactly; separately generated design source retained in prompt set.",
+      "visible_extent_world_px": [
+        323.0,
+        240.0
+      ]
     },
     "ui.bonus_case_open": {
       "target_path": "res://assets/art/ui/bonus_case_open.png",
@@ -579,7 +655,11 @@
       "runtime_verified": false,
       "derived_from": "ui.bonus_case_anim",
       "frame": 7,
-      "note": "Static endpoint matches animation exactly; separately generated design source retained in prompt set."
+      "note": "Static endpoint matches animation exactly; separately generated design source retained in prompt set.",
+      "visible_extent_world_px": [
+        319.0,
+        344.0
+      ]
     },
     "ui.curse_case_closed": {
       "target_path": "res://assets/art/ui/curse_case_closed.png",
@@ -607,7 +687,11 @@
       "runtime_verified": false,
       "derived_from": "ui.curse_case_anim",
       "frame": 0,
-      "note": "Static endpoint matches animation exactly; separately generated design source retained in prompt set."
+      "note": "Static endpoint matches animation exactly; separately generated design source retained in prompt set.",
+      "visible_extent_world_px": [
+        343.0,
+        311.0
+      ]
     },
     "ui.curse_case_open": {
       "target_path": "res://assets/art/ui/curse_case_open.png",
@@ -635,7 +719,11 @@
       "runtime_verified": false,
       "derived_from": "ui.curse_case_anim",
       "frame": 7,
-      "note": "Static endpoint matches animation exactly; separately generated design source retained in prompt set."
+      "note": "Static endpoint matches animation exactly; separately generated design source retained in prompt set.",
+      "visible_extent_world_px": [
+        327.0,
+        358.0
+      ]
     },
     "ui.card_flip_buff": {
       "target_path": "res://assets/art/ui/card_flip_buff.png",
@@ -784,6 +872,10 @@
       "frame_origin_px": [
         128,
         192
+      ],
+      "visible_extent_world_px": [
+        2018.0,
+        360.0
       ]
     },
     "ui.card_flip_curse": {
@@ -933,6 +1025,10 @@
       "frame_origin_px": [
         128,
         192
+      ],
+      "visible_extent_world_px": [
+        2016.0,
+        360.0
       ]
     },
     "ui.card_glow": {
@@ -962,6 +1058,10 @@
       "source_size_px": [
         1060,
         1484
+      ],
+      "visible_extent_world_px": [
+        300.0,
+        432.0
       ]
     },
     "ui.bonus_case_anim": {
@@ -1111,6 +1211,10 @@
       "frame_origin_px": [
         256,
         368
+      ],
+      "visible_extent_world_px": [
+        3905.0,
+        344.0
       ]
     },
     "ui.curse_case_anim": {
@@ -1260,6 +1364,405 @@
       "frame_origin_px": [
         256,
         368
+      ],
+      "visible_extent_world_px": [
+        3919.0,
+        360.0
+      ]
+    },
+    "prop.concrete_block_b": {
+      "target_path": "res://assets/art/props/concrete_block_b.png",
+      "priority": 2,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        14,
+        20,
+        241,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.18797709923664122,
+      "upscaled": false,
+      "sha256": "b58e786f4d4945e5348183097a6e391c11fbe49bbd9ef661916c560a85f28978",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        113.5,
+        98.5
+      ]
+    },
+    "prop.concrete_block_c": {
+      "target_path": "res://assets/art/props/concrete_block_c.png",
+      "priority": 2,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        12,
+        47,
+        244,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.2024432809773124,
+      "upscaled": false,
+      "sha256": "ce415c83f616167f85d1c0d39a8a4cd85f522fe330e4a1ff360cb6019651e7f5",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        116.0,
+        85.0
+      ]
+    },
+    "prop.pipe_long": {
+      "target_path": "res://assets/art/props/pipe_long.png",
+      "priority": 2,
+      "status": "prepared",
+      "canvas_px": [
+        512,
+        128
+      ],
+      "bbox_px": [
+        78,
+        20,
+        434,
+        100
+      ],
+      "pivot_px": [
+        256,
+        100
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.16701461377870563,
+      "upscaled": false,
+      "sha256": "f45c9f4a962f488b97509d253d61b1670be0ccfacfb4294bb442d9995439fa46",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        2172,
+        724
+      ],
+      "visible_extent_world_px": [
+        178.0,
+        40.0
+      ]
+    },
+    "prop.pipe_tee": {
+      "target_path": "res://assets/art/props/pipe_tee.png",
+      "priority": 2,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        12,
+        69,
+        244,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.1583617747440273,
+      "upscaled": false,
+      "sha256": "c65131cbc8535e0e0a987a880d0a0e01de3bdb3a407dedb3576df3db1af1e72d",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1536,
+        1024
+      ],
+      "visible_extent_world_px": [
+        116.0,
+        74.0
+      ]
+    },
+    "prop.wrecked_car_b": {
+      "target_path": "res://assets/art/props/wrecked_car_b.png",
+      "priority": 2,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        12,
+        34,
+        244,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.18831168831168832,
+      "upscaled": false,
+      "sha256": "b11e321466757e2960f9b485d4753be68a22e6e49cc6f3f5e681578c54feccc1",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        116.0,
+        91.5
+      ]
+    },
+    "prop.wrecked_car_c": {
+      "target_path": "res://assets/art/props/wrecked_car_c.png",
+      "priority": 2,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        12,
+        22,
+        244,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.19479429051217464,
+      "upscaled": false,
+      "sha256": "cbfeaca5184e68f4906a379f4d2218df4352e3a7aa1e626ee494cc0c1702ae40",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        116.0,
+        97.5
+      ]
+    },
+    "prop.machine_a": {
+      "target_path": "res://assets/art/props/machine_a.png",
+      "priority": 2,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        46,
+        20,
+        210,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.1574740207833733,
+      "upscaled": false,
+      "sha256": "d479da595a7972d08fe017abe3e43c08828c96d0c7fd4e0ce3b2345aa97568dd",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        82.0,
+        98.5
+      ]
+    },
+    "prop.machine_b": {
+      "target_path": "res://assets/art/props/machine_b.png",
+      "priority": 2,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        12,
+        48,
+        244,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.19414225941422594,
+      "upscaled": false,
+      "sha256": "2ae137bf1d5fe4d0a98d387e06661ff24dc00447be4a5ca5529865aa841a71ef",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        116.0,
+        84.5
+      ]
+    },
+    "prop.pillar": {
+      "target_path": "res://assets/art/props/pillar.png",
+      "priority": 2,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        94,
+        20,
+        161,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.16081632653061226,
+      "upscaled": false,
+      "sha256": "5d0bb559618cf01c0f1ddcaf2038d062a96a037bc3234e41b7732f8c3d591b08",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        33.5,
+        98.5
+      ]
+    },
+    "water.flooded": {
+      "target_path": "res://assets/art/floors/water_flooded.png",
+      "priority": 2,
+      "status": "prepared",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "bbox_px": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 0.4082934609250399,
+      "upscaled": false,
+      "sha256": "291a34b804890094172fd1599a2a1fa581b4a4d02994e37edb93e9a2b66ea131",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "runtime_verified": false,
+      "tile_metrics": {
+        "seam_lr_mean": 3.8470052083333335,
+        "seam_tb_mean": 4.178385416666667,
+        "internal_mean": 2.3229166666666665,
+        "mirror_x_mean": 10.760388692220053
+      },
+      "visible_extent_world_px": [
+        512.0,
+        512.0
+      ]
+    },
+    "water.flooded_edge": {
+      "target_path": "res://assets/art/floors/water_flooded_edge.png",
+      "priority": 2,
+      "status": "prepared",
+      "canvas_px": [
+        512,
+        256
+      ],
+      "bbox_px": [
+        8,
+        14,
+        504,
+        241
+      ],
+      "pivot_px": [
+        256,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.2800677583286279,
+      "upscaled": false,
+      "sha256": "89a5582109c387c18d84b38ebc6c3ad657e4cb51f0822ab30ba0d060f5140346",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1774,
+        887
+      ],
+      "visible_extent_world_px": [
+        248.0,
+        113.5
       ]
     }
   },
@@ -1296,7 +1799,26 @@
         "ui.curse_case_anim"
       ],
       "runtime_verified": false
+    },
+    "2": {
+      "status": "prepared",
+      "asset_ids": [
+        "prop.concrete_block_b",
+        "prop.concrete_block_c",
+        "prop.pipe_long",
+        "prop.pipe_tee",
+        "prop.wrecked_car_b",
+        "prop.wrecked_car_c",
+        "prop.machine_a",
+        "prop.machine_b",
+        "prop.pillar",
+        "water.flooded",
+        "water.flooded_edge"
+      ],
+      "runtime_verified": false
     }
   },
-  "disputed": []
+  "disputed": [
+    "water.flooded_edge указан в заказе, но отсутствовал в manifest. Добавлена planned-запись с явным target_path assets/art/floors/water_flooded_edge.png, холстом 512×256 и pivot (256,217). Это отдельная полоса берега без коллизии; проверить стыковку при размещении."
+  ]
 }
