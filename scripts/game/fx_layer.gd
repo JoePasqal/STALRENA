@@ -11,6 +11,10 @@ var sparks: Array = []            # {pos, t}
 var flames: Array = []            # {pos, vel, t, life}
 var flashes: Array = []           # {pos, t, color, r}
 var heals: Array = []
+var muzzles: Array = []           # {pos, ang, flip, t}
+const MUZZLE_ANCHOR_DEFAULT := Vector2(29, 69)
+const MUZZLE_SCALE := 0.3
+const MUZZLE_LIFE := 0.07
 var low_quality := false
 var game
 
@@ -48,6 +52,12 @@ func spark(pos: Vector2) -> void:
 		sparks.append({"pos": pos + Vector2(0, -ProjectileManager.HEIGHT), "t": 0.0})
 
 
+## Настоящая вспышка выстрела: точка привязки к дулу из метаданных (по умолчанию (29,69)).
+func muzzle(world_pos: Vector2, ang: float, flip: bool) -> void:
+	if muzzles.size() < 10:
+		muzzles.append({"pos": world_pos + Vector2(0, -ProjectileManager.HEIGHT), "ang": ang, "flip": flip, "t": 0.0})
+
+
 func flash(pos: Vector2, color: Color, r: float = 18.0) -> void:
 	if flashes.size() < 24:
 		flashes.append({"pos": pos, "t": 0.0, "color": color, "r": r})
@@ -75,6 +85,9 @@ func step(dt: float) -> void:
 	for fl in flashes:
 		fl.t += dt
 	flashes = flashes.filter(func(fl): return fl.t < 0.12)
+	for m in muzzles:
+		m.t += dt
+	muzzles = muzzles.filter(func(m): return m.t < MUZZLE_LIFE)
 	queue_redraw()
 
 
@@ -89,6 +102,15 @@ func _draw() -> void:
 	for fl in flashes:
 		var k3: float = fl.t / 0.12
 		draw_circle(fl.pos, fl.r * (1.0 - 0.4 * k3), Color(fl.color.r, fl.color.g, fl.color.b, 0.8 * (1.0 - k3)))
+	if not muzzles.is_empty():
+		var tex := AssetRegistry.get_texture("fx.muzzle")
+		var anchor: Vector2 = AssetRegistry.get_muzzle_flash_anchor()
+		for m in muzzles:
+			var k: float = 1.0 - m.t / MUZZLE_LIFE
+			var sc := MUZZLE_SCALE * (0.8 + 0.4 * k)
+			draw_set_transform(m.pos, m.ang, Vector2(sc, sc * (-1.0 if m.flip else 1.0)))
+			draw_texture(tex, -anchor, Color(1, 1, 1, clampf(k * 1.4, 0.0, 1.0)))
+		draw_set_transform(Vector2.ZERO, 0.0, Vector2.ONE)
 	var font := ThemeDB.fallback_font
 	for n in numbers:
 		var a := 1.0 - clampf((n.t - 0.4) / 0.4, 0.0, 1.0)

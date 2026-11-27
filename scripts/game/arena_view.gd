@@ -50,6 +50,25 @@ func _draw() -> void:
 		while yy < w.end.y - 6.0:
 			draw_line(Vector2(w.position.x + 14, yy), Vector2(w.end.x - 14, yy), Color(0.6, 0.8, 0.85, 0.16), 2.0)
 			yy += 26.0
+	# декор без коллизии: паровые клапаны у слотов опасностей (Насосная), камыш по краям воды (Двор)
+	if floor_id == "floor.pumping" and AssetRegistry.file_exists("prop.steam_valve"):
+		var vt := AssetRegistry.get_texture("prop.steam_valve")
+		var vp := AssetRegistry.get_pivot("prop.steam_valve")
+		var vs := AssetRegistry.get_scale("prop.steam_valve")
+		for s in model.hazard_slots:
+			draw_set_transform(Vector2(s.x, s.y), 0.0, Vector2(vs, vs))
+			draw_texture(vt, -vp, Color(1, 1, 1, 0.95))
+		draw_set_transform(Vector2.ZERO, 0.0, Vector2.ONE)
+	if floor_id == "floor.flooded" and AssetRegistry.file_exists("prop.reeds"):
+		var rt := AssetRegistry.get_texture("prop.reeds")
+		var rp := AssetRegistry.get_pivot("prop.reeds")
+		var rs := AssetRegistry.get_scale("prop.reeds") * 0.7
+		for w in model.water:
+			var n := int(w.size.x / 150.0)
+			for i in n:
+				draw_set_transform(Vector2(w.position.x + 40.0 + i * 150.0, w.position.y + 6.0), 0.0, Vector2(rs, rs))
+				draw_texture(rt, -rp)
+		draw_set_transform(Vector2.ZERO, 0.0, Vector2.ONE)
 	# граница арены
 	var b := 60.0
 	var dark := Color(0.04, 0.045, 0.04, 1)

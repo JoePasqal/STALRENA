@@ -293,7 +293,10 @@ func _fire() -> void:
 			game.fx.spark(origin + aim_dir * 14.0)
 			continue
 		game.projectiles.spawn(true, mz, d, float(wstats.projectile_speed), dmg, float(wstats.range), 3.0, kind, int(wstats.pierce), crit)
-	game.fx.flash(mz + Vector2(0, -ProjectileManager.HEIGHT), Color(1.0, 0.9, 0.6), 12.0)
+	if AssetRegistry.file_exists("fx.muzzle"):
+		game.fx.muzzle(mz, aim_dir.angle(), aim_dir.x < 0.0)
+	else:
+		game.fx.flash(mz + Vector2(0, -ProjectileManager.HEIGHT), Color(1.0, 0.9, 0.6), 12.0)
 	Sfx.play("shot_" + str(weapon_def.id))
 
 

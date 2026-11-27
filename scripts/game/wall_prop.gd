@@ -32,7 +32,7 @@ func _colors() -> Array:
 	return [Color(0.52, 0.52, 0.5), Color(0.34, 0.34, 0.33)]
 
 
-const PROP_FOR_KIND := {"logs": "prop.log_stack", "crate": "prop.crate", "fence": "prop.fence"}
+const PROP_FOR_KIND := {"logs": "prop.log_stack", "crate": "prop.crate", "fence": "prop.fence", "concrete": "prop.concrete_block", "pipe": "prop.pipe", "debris": "prop.wrecked_car"}
 
 
 ## Настоящий спрайт препятствия (если файл есть): только вид; коллизия остаётся прямоугольником данных.
@@ -52,10 +52,35 @@ func _draw_sprite(pid: String) -> void:
 	draw_set_transform(Vector2.ZERO, 0.0, Vector2.ONE)
 
 
+## Мозаика спрайтов, покрывающая весь прямоугольник коллизии (высокие/широкие блоки, трубы, обломки).
+func _draw_tiled(pid: String) -> void:
+	var tex := AssetRegistry.get_texture(pid)
+	var piv := AssetRegistry.get_pivot(pid)
+	var cell := float(tex.get_size().x)
+	var vis_w := cell * 0.8
+	var base := AssetRegistry.get_scale(pid)
+	var minor := minf(rect.size.x, maxf(rect.size.y * 1.4, 60.0))
+	var s := clampf(minor / vis_w, 0.3, base * 1.4)
+	var step_x := vis_w * s
+	var step_y := maxf(step_x * 0.5, 20.0)
+	var nx := maxi(int(ceil(rect.size.x / step_x)), 1)
+	var ny := maxi(int(ceil(rect.size.y / step_y)), 1)
+	for r in ny:
+		var by := -rect.size.y + (r + 1) * rect.size.y / ny
+		for i in nx:
+			var cx := -rect.size.x * 0.5 + (i + 0.5) * rect.size.x / nx
+			draw_set_transform(Vector2(cx, by), 0.0, Vector2(s, s))
+			draw_texture(tex, -piv)
+	draw_set_transform(Vector2.ZERO, 0.0, Vector2.ONE)
+
+
 func _draw() -> void:
 	var pid: String = PROP_FOR_KIND.get(kind, "")
 	if pid != "" and AssetRegistry.file_exists(pid):
-		_draw_sprite(pid)
+		if kind in ["concrete", "pipe", "debris"]:
+			_draw_tiled(pid)
+		else:
+			_draw_sprite(pid)
 		return
 	var cols := _colors()
 	var top_c: Color = (cols[0] as Color) * tint

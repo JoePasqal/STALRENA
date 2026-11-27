@@ -1,7 +1,7 @@
 
 # Статус графики (генерируется tools/art_report.gd)
 
-Записей в manifest: 58. Файлы найдены: 49. Остальные заменяются процедурными заглушками того же логического размера (AssetRegistry).
+Записей в manifest: 58. Файлы найдены: 58. Остальные заменяются процедурными заглушками того же логического размера (AssetRegistry).
 
 Статусы интеграции: planned → source_received → prepared → integrated → verified. Здесь реально используются только `placeholder` и `source_received`; повышение статуса — ручная проверка размера, прозрачности, pivot и ракурсов (assets/art_status.json).
 
@@ -48,20 +48,20 @@
 | `enemy.brute` | actor_atlas | `assets/art/enemies/brute.png` | 256x256 | integrated |
 | `enemy.flanker` | actor_atlas | `assets/art/enemies/flanker.png` | 256x256 | integrated |
 | `enemy.carrier` | actor_atlas | `assets/art/enemies/carrier.png` | 256x256 | integrated |
-| `boss.cleaver` | boss_atlas | `assets/art/bosses/cleaver.png` | 512x512 | placeholder (файла нет, процедурная заглушка) |
-| `boss.boilermaster` | boss_atlas | `assets/art/bosses/boilermaster.png` | 512x512 | placeholder (файла нет, процедурная заглушка) |
-| `boss.broodmother` | boss_atlas | `assets/art/bosses/broodmother.png` | 512x512 | placeholder (файла нет, процедурная заглушка) |
+| `boss.cleaver` | boss_atlas | `assets/art/bosses/cleaver.png` | 512x512 | integrated |
+| `boss.boilermaster` | boss_atlas | `assets/art/bosses/boilermaster.png` | 512x512 | integrated |
+| `boss.broodmother` | boss_atlas | `assets/art/bosses/broodmother.png` | 512x512 | integrated |
 | `floor.sawmill` | floor_texture | `assets/art/floors/sawmill.png` | 512x512 | integrated |
 | `floor.pumping` | floor_texture | `assets/art/floors/pumping.png` | 512x512 | integrated |
 | `floor.flooded` | floor_texture | `assets/art/floors/flooded.png` | 512x512 | integrated |
 | `prop.crate` | prop | `assets/art/props/crate.png` | 256x256 | integrated |
 | `prop.log_stack` | prop | `assets/art/props/log_stack.png` | 256x256 | integrated |
-| `prop.concrete_block` | prop | `assets/art/props/concrete_block.png` | 256x256 | placeholder (файла нет, процедурная заглушка) |
+| `prop.concrete_block` | prop | `assets/art/props/concrete_block.png` | 256x256 | integrated |
 | `prop.fence` | prop | `assets/art/props/fence.png` | 256x256 | prepared |
-| `prop.pipe` | prop | `assets/art/props/pipe.png` | 256x256 | placeholder (файла нет, процедурная заглушка) |
-| `prop.steam_valve` | prop | `assets/art/props/steam_valve.png` | 256x256 | placeholder (файла нет, процедурная заглушка) |
-| `prop.wrecked_car` | prop | `assets/art/props/wrecked_car.png` | 512x512 | placeholder (файла нет, процедурная заглушка) |
-| `prop.reeds` | prop | `assets/art/props/reeds.png` | 256x256 | placeholder (файла нет, процедурная заглушка) |
+| `prop.pipe` | prop | `assets/art/props/pipe.png` | 256x256 | integrated |
+| `prop.steam_valve` | prop | `assets/art/props/steam_valve.png` | 256x256 | integrated |
+| `prop.wrecked_car` | prop | `assets/art/props/wrecked_car.png` | 256x256 | integrated |
+| `prop.reeds` | prop | `assets/art/props/reeds.png` | 256x256 | integrated |
 | `icon.medkit` | icon | `assets/art/icons/medkit.png` | 256x256 | integrated |
 | `icon.parts` | icon | `assets/art/icons/parts.png` | 256x256 | integrated |
-| `fx.muzzle` | fx_atlas | `assets/art/fx/muzzle.png` | 128x128 | placeholder (файла нет, процедурная заглушка) |
+| `fx.muzzle` | fx_atlas | `assets/art/fx/muzzle.png` | 128x128 | integrated |

@@ -18,6 +18,8 @@ func _ready() -> void:
 	DirAccess.make_dir_recursive_absolute(out)
 	get_window().size = Vector2i(1280, 720)
 	Settings.data.autoaim = false
+	Settings.data.tutorial_done = true            # без оверлея обучения (в памяти, файл не сохраняется)
+	Settings.data.tutorial_shop_done = true
 	Session.new_run(3)
 	game = load("res://scenes/game.tscn").instantiate()
 	game.auto_open_ui = false
@@ -30,6 +32,8 @@ func _ready() -> void:
 	if mode in ["enemies", "all"]: await enemies_shot()
 	if mode in ["walk", "all"]: await walk_frames()
 	if mode in ["death", "all"]: await death_frames()
+	if mode in ["bosses", "all"]: await bosses_sheet()
+	if mode in ["flash", "all"]: await flash_sheet()
 	if mode in ["walkn", "all"]: await walk_n_weapons()
 	if mode in ["floors", "all"]: await floors_shot()
 	if mode in ["props", "all"]:
@@ -259,3 +263,43 @@ func floors_shot() -> void:
 		game.player.visible = true
 		await _f(4)
 		get_viewport().get_texture().get_image().save_png("%s/arena_%s.png" % [out, pair[1]])
+
+
+func bosses_sheet() -> void:
+	game.player.visible = false
+	var crops: Array = []
+	game.cam.zoom = Vector2(1.2, 1.2)
+	for id in ["cleaver", "boilermaster", "broodmother"]:
+		for d in [Vector2.DOWN, Vector2.RIGHT, Vector2.UP, Vector2.LEFT]:
+			var b := Boss.new()
+			b.setup_boss(game, id, 1, game.arena.start)
+			game.entities.add_child(b)
+			game.enemies.append(b)
+			b.state = Enemy.S.MOVE
+			b.sprite.visible = true
+			b.face = d
+			b._update_visual(0.0)
+			await _f(3)
+			var img := get_viewport().get_texture().get_image()
+			var c := img.get_size() / 2
+			crops.append(img.get_region(Rect2i(c.x - 150, c.y - 215, 300, 300)))
+			game.enemies.erase(b)
+			b.queue_free()
+	game.cam.zoom = Vector2(2, 2)
+	_sheet(crops, 4, "bosses_SENW")
+	game.player.visible = true
+
+
+## Вспышка выстрела у дула каждого из семи оружий (E и W) — для проверки точки привязки.
+func flash_sheet() -> void:
+	var crops: Array = []
+	for weapon in GameData.weapon_ids:
+		for dir in [Vector2.RIGHT, Vector2.LEFT]:
+			_setup_player(weapon, "", dir)
+			game.player.debug_muzzle = true
+			game.fx.muzzles.clear()
+			game.fx.muzzle(game.player.muzzle_point(), dir.angle(), dir.x < 0.0)
+			game.fx.queue_redraw()
+			await _f(1)
+			crops.append(_crop())
+	_sheet(crops, 4, "muzzle_flash_all7_EW")

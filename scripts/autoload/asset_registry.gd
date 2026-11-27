@@ -155,7 +155,7 @@ func get_armor_frame(id: String, dir: String) -> Dictionary:
 
 ## Метаданные поставок арта (assets/art_meta/*.json): сокеты героя, хват/дуло оружия.
 var meta := {}
-const META_FILES := ["res://assets/art_meta/batch_02.json", "res://assets/art_meta/weapons.json"]
+const META_FILES := ["res://assets/art_meta/batch_02.json", "res://assets/art_meta/batch_04.json", "res://assets/art_meta/weapons.json"]
 
 
 func _load_meta() -> void:
@@ -211,6 +211,13 @@ func get_weapon_points(weapon_sprite_id: String) -> Dictionary:
 		grip = Vector2(w.grip_px[0], w.grip_px[1])
 		muzzle = Vector2(w.muzzle_px[0], w.muzzle_px[1])
 	return {"grip": grip, "muzzle": muzzle}
+
+
+func get_muzzle_flash_anchor() -> Vector2:
+	if file_exists("fx.muzzle") and meta.has("assets") and meta.assets.has("fx.muzzle"):
+		var o: Array = meta.assets["fx.muzzle"].origin_px
+		return Vector2(o[0], o[1])
+	return Vector2(29, 69) if file_exists("fx.muzzle") else Vector2(64, 64)
 
 
 func get_muzzle_offset(weapon_sprite_id: String) -> float:
