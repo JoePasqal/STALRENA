@@ -32,6 +32,7 @@ func _ready() -> void:
 	if mode in ["enemies", "all"]: await enemies_shot()
 	if mode in ["walk", "all"]: await walk_frames()
 	if mode in ["death", "all"]: await death_frames()
+	if mode == "locations": await locations_shots()
 	if mode in ["bosses", "all"]: await bosses_sheet()
 	if mode in ["flash", "all"]: await flash_sheet()
 	if mode in ["walkn", "all"]: await walk_n_weapons()
@@ -303,3 +304,29 @@ func flash_sheet() -> void:
 			await _f(1)
 			crops.append(_crop())
 	_sheet(crops, 4, "muzzle_flash_all7_EW")
+
+
+## Все шесть раскладок целиком (зум 0.75) с героем и врагами — для визуальной оценки укрытий.
+func locations_shots() -> void:
+	var items := [["sawmill_a", "sawmill"], ["sawmill_b", "sawmill"], ["pumping_a", "pumping"], ["pumping_b", "pumping"], ["flooded_a", "flooded"], ["flooded_b", "flooded"]]
+	for it in items:
+		await _begin({}, 0)
+		game._build_arena({"layout_id": it[0], "location_id": it[1], "tint_index": 0, "sector": 1})
+		game.arena = ArenaModel.from_layout(it[0])
+		game.cam.zoom = Vector2(0.72, 0.72)
+		game.cam.position = Vector2(800, 500)
+		game.player.position = game.arena.start
+		game.player.visible = true
+		game.player.aim_dir = Vector2.RIGHT
+		game.player._frame_key = ""
+		game.player._update_visuals(0.0)
+		var spots := [Vector2(520, 380), Vector2(1120, 360), Vector2(560, 640), Vector2(1080, 650), Vector2(800, 280)]
+		var ids := ["drifter", "runner", "spitter", "gunner", "brute"]
+		for i in spots.size():
+			if game.arena.is_point_free(spots[i], 24.0):
+				var e: Enemy = game._spawn_enemy(ids[i], "", spots[i], false)
+				e.state = Enemy.S.MOVE
+				e.sprite.visible = true
+				e.face = Vector2.DOWN
+		await _f(5)
+		get_viewport().get_texture().get_image().save_png("%s/loc_%s.png" % [out, it[0]])

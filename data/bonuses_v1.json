@@ -1,0 +1,16 @@
+{
+ "schema_version": 1,
+ "note": "Бонус-кейс: после каждой 10-й пройденной волны игрок выбирает 1 из 3 закрытых карточек; бонус действует следующие 2 волны. Значения — стартовые гипотезы, требуют плейтеста. Правила аптечки (20% за 4 с) и «броня = ХП, без снижения урона» не затрагиваются; общие caps (stat_caps) остаются в силе.",
+ "interval_waves": 10,
+ "duration_waves": 2,
+ "options_count": 3,
+ "bonuses": [
+  {"id": "double_damage", "name": "Двойной урон", "desc": "Урон оружия ×2", "effects": {"damage_percent": 1.0}, "icon_id": "icon.bonus.double_damage", "color": [1.0, 0.45, 0.2]},
+  {"id": "sturdy_body", "name": "Крепкое тело", "desc": "+50% к максимуму ХП (аптечка по-прежнему лечит 20% максимума)", "effects": {"max_hp_percent": 0.5}, "icon_id": "icon.bonus.sturdy_body", "color": [0.5, 0.85, 0.5]},
+  {"id": "gold_vein", "name": "Золотая жила", "desc": "+25% монет за каждую волну", "effects": {}, "coin_bonus": 0.25, "icon_id": "icon.bonus.gold_vein", "color": [1.0, 0.85, 0.3]},
+  {"id": "rapid_fire", "name": "Скорострельность", "desc": "+40% темпа стрельбы", "effects": {"fire_rate_percent": 0.4}, "icon_id": "icon.bonus.rapid_fire", "color": [1.0, 0.7, 0.3]},
+  {"id": "quick_legs", "name": "Лёгкий шаг", "desc": "+20% скорости движения", "effects": {"move_speed_percent": 0.2}, "icon_id": "icon.bonus.quick_legs", "color": [0.55, 0.85, 1.0]},
+  {"id": "sharp_eye", "name": "Верный глаз", "desc": "+25% шанса крита и +0,5 к множителю крита", "effects": {"crit_chance_add": 0.25, "crit_multiplier_add": 0.5}, "icon_id": "icon.bonus.sharp_eye", "color": [0.95, 0.5, 0.9]},
+  {"id": "fast_hands", "name": "Быстрые руки", "desc": "Перезарядка в 2 раза быстрее", "effects": {"reload_speed_percent": 1.0}, "icon_id": "icon.bonus.fast_hands", "color": [0.7, 0.8, 0.95]}
+ ]
+}

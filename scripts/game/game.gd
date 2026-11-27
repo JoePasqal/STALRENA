@@ -42,6 +42,7 @@ var shop_ui: ShopScreen
 var pause_ui: Control
 var results_ui: Control
 var tutorial: Tutorial
+var bonus_ui: BonusCaseScreen
 var _kill_count_wave := 0
 var _damage_at_wave_start := 0.0
 var _hits_at_wave_start := 0
@@ -125,6 +126,12 @@ func _build_ui() -> void:
 	tutorial = Tutorial.new()
 	tutorial.game = self
 	tut_layer.add_child(tutorial)
+	var bonus_layer := CanvasLayer.new()
+	bonus_layer.layer = 17
+	add_child(bonus_layer)
+	bonus_ui = BonusCaseScreen.new()
+	bonus_ui.game = self
+	bonus_layer.add_child(bonus_ui)
 	var over_layer := CanvasLayer.new()
 	over_layer.layer = 20
 	add_child(over_layer)
@@ -179,6 +186,9 @@ func _enter_shop() -> void:
 	Sfx.music("shop")
 	shop_ui.open()
 	tutorial.begin_shop()
+	if BonusService.has_case(run):
+		bonus_ui.open()                # кейс ждёт открытия (после перезагрузки варианты те же)
+		bonus_ui.closed.connect(shop_ui.refresh, CONNECT_ONE_SHOT)
 	hud.visible = false
 	touch.visible = false
 	shop_opened.emit()

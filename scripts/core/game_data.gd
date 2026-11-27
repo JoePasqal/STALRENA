@@ -6,10 +6,14 @@ extends RefCounted
 const BALANCE_PATH := "res://data/balance_v1.json"
 const LAYOUTS_PATH := "res://data/layouts_v1.json"
 const MODIFIERS_PATH := "res://data/arena_modifiers_v1.json"
+const BONUSES_PATH := "res://data/bonuses_v1.json"
 
 static var B: Dictionary = {}
 static var layouts: Dictionary = {}          # id -> layout dict
 static var layouts_by_location: Dictionary = {}
+static var bonus_cfg: Dictionary = {}              # data/bonuses_v1.json
+static var bonuses: Dictionary = {}
+static var bonus_ids: Array = []
 static var modifiers: Dictionary = {}          # steam/electric/toxic: параметры опасностей арены
 static var weapons: Dictionary = {}
 static var weapon_ids: Array = []
@@ -65,6 +69,11 @@ static func reload(path: String = BALANCE_PATH, layouts_path: String = LAYOUTS_P
 			layouts_by_location[l.location_id] = []
 		layouts_by_location[l.location_id].append(l.id)
 	modifiers = _read_json(MODIFIERS_PATH).get("modifiers", {})
+	bonus_cfg = _read_json(BONUSES_PATH)
+	bonuses.clear(); bonus_ids.clear()
+	for b in bonus_cfg.get("bonuses", []):
+		bonuses[b.id] = b
+		bonus_ids.append(b.id)
 	_ready_flag = true
 
 
@@ -208,6 +217,8 @@ static func validate() -> Array:
 			tot += float(lv.rank_weights[k])
 		if tot <= 0.0:
 			err.append("shop level %s: пустые веса рангов" % lv.level)
+	if bonus_ids.size() < int(bonus_cfg.get("options_count", 3)):
+		err.append("бонусов меньше, чем карточек в кейсе")
 	if int(B.shop.offer_count) != 6:
 		err.append("offer_count != 6")
 	return err

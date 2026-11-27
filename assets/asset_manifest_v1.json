@@ -3,7 +3,7 @@
   "art_contract": "ART_CONTRACT.md",
   "status_note": "No PNG files are supplied in this archive. All entries are planned, runtime must provide placeholders.",
   "coordinate_origin": "top_left",
-  "asset_count": 58,
+  "asset_count": 68,
   "assets": [
     {
       "id": "hero.body",
@@ -1043,6 +1043,126 @@
         128
       ],
       "atlas_layout": "metadata_required"
+    },
+    {
+      "id": "icon.bonus.double_damage",
+      "target_path": "res://assets/art/icons/bonuses/double_damage.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "icon.bonus.sturdy_body",
+      "target_path": "res://assets/art/icons/bonuses/sturdy_body.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "icon.bonus.gold_vein",
+      "target_path": "res://assets/art/icons/bonuses/gold_vein.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "icon.bonus.rapid_fire",
+      "target_path": "res://assets/art/icons/bonuses/rapid_fire.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "icon.bonus.quick_legs",
+      "target_path": "res://assets/art/icons/bonuses/quick_legs.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "icon.bonus.sharp_eye",
+      "target_path": "res://assets/art/icons/bonuses/sharp_eye.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "icon.bonus.fast_hands",
+      "target_path": "res://assets/art/icons/bonuses/fast_hands.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "ui.bonus_card_back",
+      "target_path": "res://assets/art/ui/bonus_card_back.png",
+      "kind": "ui",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        384
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "ui.bonus_case_closed",
+      "target_path": "res://assets/art/ui/bonus_case_closed.png",
+      "kind": "ui",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        512,
+        384
+      ],
+      "has_alpha": true
+    },
+    {
+      "id": "ui.bonus_case_open",
+      "target_path": "res://assets/art/ui/bonus_case_open.png",
+      "kind": "ui",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        512,
+        384
+      ],
+      "has_alpha": true
     }
   ]
 }

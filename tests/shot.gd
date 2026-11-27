@@ -15,6 +15,8 @@ func _ready() -> void:
 	Settings.data.autoaim = true
 	if args.has("touch"):
 		Settings.data.touch_ui = "on"
+	Settings.data.tutorial_done = true
+	Settings.data.tutorial_shop_done = true
 	Session.new_run(int(args.get("seed", 5)))
 	if args.has("loadout"):
 		DebugTools.apply_loadout(Session.run, int(args.loadout))
@@ -49,6 +51,27 @@ func _ready() -> void:
 	game.bot = BotInput.new()
 	game.state = game.St.COMBAT
 	game.intro_t = 0.0
+	if shot == "case":
+		var rn: RunState = Session.run
+		rn.waves_completed = 9
+		rn.phase = "combat"
+		rn.coins_at_wave_start = rn.coins
+		Economy.complete_wave(rn)
+		game._enter_shop()
+		await _frames(4)
+		var ui: BonusCaseScreen = game.bonus_ui
+		var stage := str(args.get("stage", "closed"))
+		if stage != "closed":
+			ui._anim_speed = 1.0
+			ui._on_btn()
+			await get_tree().create_timer(1.6).timeout
+		if stage in ["mid", "done"]:
+			ui._on_card(ui.cards[1])
+			await get_tree().create_timer(1.55 if stage == "mid" else 6.0).timeout
+		await _frames(3)
+		_save(out)
+		get_tree().quit()
+		return
 	if shot == "pause" or shot == "results" or shot == "settings":
 		game.state = game.St.COMBAT
 		for i in 120:

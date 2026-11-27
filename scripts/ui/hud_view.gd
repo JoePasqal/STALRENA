@@ -53,7 +53,9 @@ func show_wave_intro(run: RunState, gw: int, plan: Dictionary) -> void:
 func show_wave_complete(res: Dictionary) -> void:
 	var rw: Dictionary = res.reward
 	_banner_title = "Волна %d пройдена" % int(res.wave)
-	_banner_sub = "+%d монет (база %d, рост %d, процент %d%s)" % [int(rw.total), int(rw.base), int(rw.growth), int(rw.interest), (", босс %d" % int(rw.boss)) if int(rw.boss) > 0 else ""]
+	_banner_sub = "+%d монет (база %d, рост %d, процент %d%s%s)" % [int(rw.total), int(rw.base), int(rw.growth), int(rw.interest), (", босс %d" % int(rw.boss)) if int(rw.boss) > 0 else "", (", бонус %d" % int(rw.bonus)) if int(rw.get("bonus", 0)) > 0 else ""]
+	if BonusService.has_case(game.run):
+		_banner_sub += "\nВ магазине вас ждёт кейс бонуса!"
 	_banner_total = 2.4
 	_banner_t = _banner_total
 
@@ -135,6 +137,9 @@ func _draw() -> void:
 	var top := "Сектор %d · Волна %d/%d  (№%d)" % [run.sector_of(gwv), run.local_wave_of(gwv), int(GameData.B.waves.sector_length), gwv]
 	draw_string(f, Vector2(0, m.y + 24), top, HORIZONTAL_ALIGNMENT_CENTER, size.x, 22, Color.WHITE)
 	draw_string(f, Vector2(0, m.y + 50), "Монеты: %d" % run.coins, HORIZONTAL_ALIGNMENT_CENTER, size.x, 18, Color(1.0, 0.9, 0.5))
+	var ab := BonusService.active_def(run)
+	if not ab.is_empty():
+		draw_string(f, Vector2(0, m.y + 72), "Бонус: %s · осталось волн: %d" % [ab.name, int(run.active_bonus.waves_left)], HORIZONTAL_ALIGNMENT_CENTER, size.x, 18, Color(0.6, 1.0, 0.6))
 	# ---- аптечка
 	var mk := "Аптечка %d/1" % pl.medkit.stock
 	if not touch_on:

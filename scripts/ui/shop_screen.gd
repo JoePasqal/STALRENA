@@ -158,6 +158,9 @@ func refresh() -> void:
 	var boss := run.is_boss_wave(gw)
 	_top_label.text = "МАГАЗИН · Следующая: волна %d (сектор %d, %d/%d)%s" % [gw, sec, run.local_wave_of(gw), int(GameData.B.waves.sector_length), "  · БОСС" if boss else ""]
 	_coins_label.text = "Монеты: %d" % run.coins
+	var ab := BonusService.active_def(run)
+	if not ab.is_empty():
+		_top_label.text += "  · Бонус: %s (%d вол.)" % [ab.name, int(run.active_bonus.waves_left)]
 	_level_label.text = "Магазин %d/%d · ячеек %d" % [run.shop_level, GameData.max_shop_level(), GameData.module_slots(run.shop_level)]
 	_build_cards(run)
 	_build_right(run)

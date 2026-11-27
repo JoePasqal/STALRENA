@@ -62,5 +62,15 @@
 | `icon.medkit` | icon | 256x256 | RGBA | ок |
 | `icon.parts` | icon | 256x256 | RGBA | ок |
 | `fx.muzzle` | fx_atlas | 128x128 | RGBA | ок |
+| `icon.bonus.double_damage` | нет файла |  |  | заглушка |
+| `icon.bonus.sturdy_body` | нет файла |  |  | заглушка |
+| `icon.bonus.gold_vein` | нет файла |  |  | заглушка |
+| `icon.bonus.rapid_fire` | нет файла |  |  | заглушка |
+| `icon.bonus.quick_legs` | нет файла |  |  | заглушка |
+| `icon.bonus.sharp_eye` | нет файла |  |  | заглушка |
+| `icon.bonus.fast_hands` | нет файла |  |  | заглушка |
+| `ui.bonus_card_back` | нет файла |  |  | заглушка |
+| `ui.bonus_case_closed` | нет файла |  |  | заглушка |
+| `ui.bonus_case_open` | нет файла |  |  | заглушка |
 
-Итого записей: 58; файлов найдено: 58; с замечаниями: 0.
+Итого записей: 68; файлов найдено: 58; с замечаниями: 0.

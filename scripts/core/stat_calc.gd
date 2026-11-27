@@ -28,6 +28,9 @@ static func module_bonuses(run: RunState) -> Dictionary:
 		var b: Dictionary = GameData.sets[sid].bonus
 		for k in b:
 			out[k] = float(out.get(k, 0.0)) + float(b[k])   # не зависит от уровня модулей
+	var eff := BonusService.effects(run)                      # бонус-кейс (2 волны)
+	for k in eff:
+		out[k] = float(out.get(k, 0.0)) + float(eff[k])
 	return out
 
 
