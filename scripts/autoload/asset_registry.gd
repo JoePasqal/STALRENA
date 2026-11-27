@@ -110,6 +110,9 @@ func get_actor_frame(id: String, anim: String, dir: String, idx: int = 0) -> Dic
 	if tex == null:
 		_note_placeholder(id)
 		return {"texture": get_texture(id, d), "region": Rect2(Vector2.ZERO, frame_px), "flip_h": flip, "pivot": get_pivot(id), "placeholder": true}
+	if tex.get_size().x <= frame_px.x + 0.5 and tex.get_size().y <= frame_px.y + 0.5:
+		# одиночный статичный кадр (первая поставка): используем его для всех поз и направлений
+		return {"texture": tex, "region": Rect2(Vector2.ZERO, tex.get_size()), "flip_h": flip, "pivot": get_pivot(id), "placeholder": false}
 	var row := ACTOR_DIRS.find(d)
 	var cols: Array = ATLAS_COLUMNS.get(anim, [0])
 	var col: int = cols[idx % cols.size()]
