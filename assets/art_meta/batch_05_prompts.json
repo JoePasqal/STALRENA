@@ -200,5 +200,165 @@
     "prompt": "One modular long irregular SHORELINE STRIP for a shallow dirty olive-gray industrial puddle. Top-down flat texture. Winding asymmetrical muddy brown gravel bank with small olive reeds and wet stones, thin broken ripple line, shallow gray-green water fades away into TRUE TRANSPARENCY on water side. Both sides outside narrow bank transparent, no solid rectangular background. Horizontal extent like512x256, entire irregular strip has free organic ends, not a closed oval, no water rectangle. Painterly detailed2D, soft upper-left light, no long shadows or text.",
     "mode": "built_in_imagegen",
     "layout": null
+  },
+  "decor.sawmill.sawdust_pile": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. A low irregular mound of golden-brown sawdust and wood chips, scattered frayed splinters, no logs, shallow grounded mound Small non-colliding scenery object, no surrounding diorama. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "decor.sawmill.stump": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One low weathered tree stump, uneven cut with visible growth rings and chopped notches, two exposed roots, moss patches Small non-colliding scenery object, no surrounding diorama. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "decor.sawmill.planks": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. A small loosely scattered stack of five weathered broken timber planks, rusty nails and rough chipped ends, ground lying Small non-colliding scenery object, no surrounding diorama. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "decor.sawmill.barrel": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One dented old olive painted steel oil drum standing upright, rusty hoops, blank surface without markings Small non-colliding scenery object, no surrounding diorama. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "decor.sawmill.chain": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. A short loose coiled heavy rusty iron chain lying on ground, irregular figure-eight pile, a broken link at end Small non-colliding scenery object, no surrounding diorama. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "decor.sawmill.tire": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One worn abandoned rubber truck tire lying partly tilted, muddy tread, little moss in hollow Small non-colliding scenery object, no surrounding diorama. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "decor.sawmill.forklift": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One abandoned compact forklift, weathered dirty olive metal, rusted forks lowered on ground, small wheels, open empty driver cage, whole vehicle Small non-colliding scenery object, no surrounding diorama. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "decor.sawmill.saw_machine": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One small abandoned circular saw bench, cast iron olive work table, visible toothed circular steel blade, rusty crank and sturdy feet Small non-colliding scenery object, no surrounding diorama. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "decor.sawmill.fire_barrel": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One old rusty steel barrel upright with a small warm orange controlled fire visible inside its open top, perforated lower vents, glowing embers, no surrounding flames Small non-colliding scenery object, no surrounding diorama. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "decor.sawmill.oil_stain": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. A low irregular dark brown-black greasy oil stain on ground with a subtle oily muted rainbow sheen, flat decal, organic lobed outline, no ground background Small non-colliding scenery object, no surrounding diorama. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "decor.pumping.cable_reel": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One large battered wooden industrial cable spool with dark thick cable wound around core, lying upright on circular flange, rusty central hub, damp wood Isolated small scenery prop, no surrounding floor or diorama. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "decor.pumping.rust_barrel": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One badly rusted red-brown metal barrel lying on its side with a dented endcap and peeling gray paint, no markings Isolated small scenery prop, no surrounding floor or diorama. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "decor.pumping.oil_puddle": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One irregular small dark petroleum puddle decal with subdued oily blue-violet sheen and a few separated drops, flat on ground, no soil background Isolated small scenery prop, no surrounding floor or diorama. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "decor.pumping.panel_a": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One old squat olive electrical control cabinet on short legs with a half-open hinged door, visible ceramic breakers and blank unlabeled round gauges, heavily weathered Isolated small scenery prop, no surrounding floor or diorama. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "decor.pumping.panel_b": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One damaged gray steel switchboard cabinet with dented twin doors, exposed disconnected wire bundle below, small blank glass gauge, different shape from olive control cabinet Isolated small scenery prop, no surrounding floor or diorama. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "decor.pumping.barrier": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One portable metal industrial safety barrier on two weighted feet, faded diagonal yellow-black stripes across steel beam, rusty frame, no text Isolated small scenery prop, no surrounding floor or diorama. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "decor.pumping.grate": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One rectangular rusted drainage grate with dark gaps between thick slats, lying flat, chipped concrete rim only narrowly around metal, no surrounding floor Isolated small scenery prop, no surrounding floor or diorama. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "decor.pumping.lamp_post": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One old short industrial lamp post with weathered steel upright bolted to a concrete foot, crooked hooded lamp at top, weak warm white light, entire object including foot Isolated small scenery prop, no surrounding floor or diorama. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "decor.flooded.driftwood": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One crooked waterlogged fallen driftwood trunk with two short root branches, slick dark bark and pale exposed wood, horizontally lying Small non-colliding scenery sprite, no surrounding scene. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "decor.flooded.dead_tree": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One small dead leafless tree with twisted bare branches and exposed root base, broken crown, entire isolated silhouette Small non-colliding scenery sprite, no surrounding scene. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "decor.flooded.sandbags": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One low uneven pile of five damp faded canvas sandbags, moss along seams, sagging stacked shapes Small non-colliding scenery sprite, no surrounding scene. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "decor.flooded.rocks": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. A small asymmetrical cluster of three wet gray stones with olive moss and chipped pale edges, low grounded Small non-colliding scenery sprite, no surrounding scene. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "decor.flooded.algae": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. A flat irregular tufted mat of stringy dirty green algae and wet pond weed, no water background, organic decal silhouette Small non-colliding scenery sprite, no surrounding scene. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "decor.flooded.float_debris": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. A sparse cluster of floating broken wooden scraps, one crushed rusty tin and leaf fragments, grouped as one small scenery sprite without water background Small non-colliding scenery sprite, no surrounding scene. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "decor.flooded.fence_broken": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One short collapsed rotten wooden fence section with two broken posts and three crooked slats, partly lying on ground, corroded wire Small non-colliding scenery sprite, no surrounding scene. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "decor.flooded.grass_island": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One small uneven clump of olive marsh grass on a tiny muddy root island, a few dry reeds, entirely isolated organic footprint Small non-colliding scenery sprite, no surrounding scene. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "decor.common.bones": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. A small scattered cluster of old bleached animal bones and one weathered small animal skull, dry abandoned ground debris, non-graphic no flesh Small non-colliding environmental sprite, no scene. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "decor.common.blood_stain": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One small faded dark maroon dried blood stain decal, irregular splatter with separated small drops, flat graphic environmental mark, no bodies or wounds, no ground background Small non-colliding environmental sprite, no scene. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "decor.common.shells": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. A sparse small cluster of several spent brass cartridge casings lying at different angles, tarnished brass, empty casings only, isolated ground debris Small non-colliding environmental sprite, no scene. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "decor.common.rags": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. A small rumpled pile of dirty olive and gray torn fabric scraps with frayed hems, one short leather strap, discarded ground debris Small non-colliding environmental sprite, no scene. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "decor.common.weeds": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One clump of hardy dusty olive weeds with a few dry stems, small tangled exposed roots, entire isolated plant tuft Small non-colliding environmental sprite, no scene. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
+  },
+  "decor.common.backpack": {
+    "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One abandoned faded olive canvas survivor backpack lying on its side with sagging pockets, worn leather straps, dirt and rusted buckles, no badges or lettering Small non-colliding environmental sprite, no scene. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
+    "mode": "built_in_imagegen",
+    "layout": null
   }
 }

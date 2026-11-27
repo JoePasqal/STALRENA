@@ -1764,6 +1764,1158 @@
         248.0,
         113.5
       ]
+    },
+    "decor.sawmill.sawdust_pile": {
+      "target_path": "res://assets/art/decor/sawmill/sawdust_pile.png",
+      "priority": 3,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        12,
+        118,
+        244,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.16361071932299012,
+      "upscaled": false,
+      "sha256": "94dce0f4ca3327a12a8211f95a06337f77789690bf6198f31ab07d57a863d0b0",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1536,
+        1024
+      ],
+      "visible_extent_world_px": [
+        116.0,
+        49.5
+      ]
+    },
+    "decor.sawmill.stump": {
+      "target_path": "res://assets/art/decor/sawmill/stump.png",
+      "priority": 3,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        12,
+        59,
+        244,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.18082618862042088,
+      "upscaled": false,
+      "sha256": "6863ad138f7cdb123a4436066aa7ce73680f8bc28d066608ebd9621dc9d74256",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1536,
+        1024
+      ],
+      "visible_extent_world_px": [
+        116.0,
+        79.0
+      ]
+    },
+    "decor.sawmill.planks": {
+      "target_path": "res://assets/art/decor/sawmill/planks.png",
+      "priority": 3,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        12,
+        49,
+        244,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.1853035143769968,
+      "upscaled": false,
+      "sha256": "a106dbf24fc16af5b2d93a17d8a937551e8f9adb1892e46dd0be3201ed9cd0cc",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1536,
+        1024
+      ],
+      "visible_extent_world_px": [
+        116.0,
+        84.0
+      ]
+    },
+    "decor.sawmill.barrel": {
+      "target_path": "res://assets/art/decor/sawmill/barrel.png",
+      "priority": 3,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        73,
+        20,
+        182,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.16953528399311532,
+      "upscaled": false,
+      "sha256": "8182ea875a730a888130649507053a8ff254e3824848c73d41a830b2e356757f",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        54.5,
+        98.5
+      ]
+    },
+    "decor.sawmill.chain": {
+      "target_path": "res://assets/art/decor/sawmill/chain.png",
+      "priority": 3,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        44,
+        122,
+        212,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.13157894736842105,
+      "upscaled": false,
+      "sha256": "2b904cbd32f791b4d5046ccfa69fec58a12a82d6affec6e8468d95127ee29d05",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1536,
+        1024
+      ],
+      "visible_extent_world_px": [
+        84.0,
+        47.5
+      ]
+    },
+    "decor.sawmill.tire": {
+      "target_path": "res://assets/art/decor/sawmill/tire.png",
+      "priority": 3,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        24,
+        20,
+        231,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.21530054644808744,
+      "upscaled": false,
+      "sha256": "53d2efe8dcf7aa49ac402f6c3ccfc18fdc3982c3b6bea1a138d4a247894a2fc3",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        103.5,
+        98.5
+      ]
+    },
+    "decor.sawmill.forklift": {
+      "target_path": "res://assets/art/decor/sawmill/forklift.png",
+      "priority": 3,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        26,
+        20,
+        230,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.17779783393501805,
+      "upscaled": false,
+      "sha256": "55e88b9e56e8fd92cdf088863b45848bcdbfdc477d4ccf687ea4138d38a27f95",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1312,
+        1199
+      ],
+      "visible_extent_world_px": [
+        102.0,
+        98.5
+      ]
+    },
+    "decor.sawmill.saw_machine": {
+      "target_path": "res://assets/art/decor/sawmill/saw_machine.png",
+      "priority": 3,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        33,
+        20,
+        223,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.1968031968031968,
+      "upscaled": false,
+      "sha256": "1d77009c025a740afe9fc750b2bf8caf37607c5f4a29e8a9ecdaeae1271975f9",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1536,
+        1024
+      ],
+      "visible_extent_world_px": [
+        95.0,
+        98.5
+      ]
+    },
+    "decor.sawmill.fire_barrel": {
+      "target_path": "res://assets/art/decor/sawmill/fire_barrel.png",
+      "priority": 3,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        75,
+        20,
+        180,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.17668161434977578,
+      "upscaled": false,
+      "sha256": "3dcc60052adc18c547675f868ce57b7fc255d588b902d4086ad8798277bb4fe0",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        52.5,
+        98.5
+      ]
+    },
+    "decor.sawmill.oil_stain": {
+      "target_path": "res://assets/art/decor/sawmill/oil_stain.png",
+      "priority": 3,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        55,
+        122,
+        200,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.1317614424410541,
+      "upscaled": false,
+      "sha256": "78c033d280c9c432415df36be0950efb94746f85b2ff093656af5ab57a7edf1e",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        72.5,
+        47.5
+      ]
+    },
+    "decor.pumping.cable_reel": {
+      "target_path": "res://assets/art/decor/pumping/cable_reel.png",
+      "priority": 3,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        45,
+        20,
+        211,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.16375727348295926,
+      "upscaled": false,
+      "sha256": "c87a365a5f88438d36e25890a91d85d2bd05f2da1cd43a4e5ee2ef9b40b1eda5",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        83.0,
+        98.5
+      ]
+    },
+    "decor.pumping.rust_barrel": {
+      "target_path": "res://assets/art/decor/pumping/rust_barrel.png",
+      "priority": 3,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        13,
+        20,
+        242,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.21092077087794434,
+      "upscaled": false,
+      "sha256": "2830a8d5906e12f848326d94341845fb7227f84562cd80dfbc9d25efe570d87c",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1536,
+        1024
+      ],
+      "visible_extent_world_px": [
+        114.5,
+        98.5
+      ]
+    },
+    "decor.pumping.oil_puddle": {
+      "target_path": "res://assets/art/decor/pumping/oil_puddle.png",
+      "priority": 3,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        40,
+        122,
+        215,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.16351118760757316,
+      "upscaled": false,
+      "sha256": "1d54048507a060d8708da3700b287813c1cc2b59ef85d72e14546a72f2f6480a",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        87.5,
+        47.5
+      ]
+    },
+    "decor.pumping.panel_a": {
+      "target_path": "res://assets/art/decor/pumping/panel_a.png",
+      "priority": 3,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        62,
+        20,
+        193,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.164578111946533,
+      "upscaled": false,
+      "sha256": "e6f8a09a3b172d24c32d9be26716c640befee5cdee36c7b032669a0844134415",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        65.5,
+        98.5
+      ]
+    },
+    "decor.pumping.panel_b": {
+      "target_path": "res://assets/art/decor/pumping/panel_b.png",
+      "priority": 3,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        65,
+        20,
+        191,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.17012089810017272,
+      "upscaled": false,
+      "sha256": "2ae9b88bcfd15251976106eb91e870bbe7b13464e34bd9a0e3fc42cff322f1e3",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        63.0,
+        98.5
+      ]
+    },
+    "decor.pumping.barrier": {
+      "target_path": "res://assets/art/decor/pumping/barrier.png",
+      "priority": 3,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        12,
+        87,
+        244,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.1686046511627907,
+      "upscaled": false,
+      "sha256": "d5ee7919fec2dea3c043d5d5bb75ea4dd70230348c7a0d432913c82d0f652949",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1536,
+        1024
+      ],
+      "visible_extent_world_px": [
+        116.0,
+        65.0
+      ]
+    },
+    "decor.pumping.grate": {
+      "target_path": "res://assets/art/decor/pumping/grate.png",
+      "priority": 3,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        12,
+        105,
+        244,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.1766945925361767,
+      "upscaled": false,
+      "sha256": "e59d81aa4903a4c2ebe1bd634da96560974cf108200deb761d8739417dc077f2",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1536,
+        1024
+      ],
+      "visible_extent_world_px": [
+        116.0,
+        56.0
+      ]
+    },
+    "decor.pumping.lamp_post": {
+      "target_path": "res://assets/art/decor/pumping/lamp_post.png",
+      "priority": 3,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        74,
+        20,
+        181,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.1668077900084674,
+      "upscaled": false,
+      "sha256": "dd4a27912163bbe2b6a24d2d9e62368f666d66544c22ec50e5a1c61eae192f16",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        53.5,
+        98.5
+      ]
+    },
+    "decor.flooded.driftwood": {
+      "target_path": "res://assets/art/decor/flooded/driftwood.png",
+      "priority": 3,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        12,
+        104,
+        244,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.19141914191419143,
+      "upscaled": false,
+      "sha256": "cb0e3fb000ab06fd3fcb208262706da985b7f0d4091600eb2f0fc14bb546e3d0",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        116.0,
+        56.5
+      ]
+    },
+    "decor.flooded.dead_tree": {
+      "target_path": "res://assets/art/decor/flooded/dead_tree.png",
+      "priority": 3,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        46,
+        20,
+        210,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.16294458229942102,
+      "upscaled": false,
+      "sha256": "290380bedeec490322138dfb21e8a0f76a797c65f3af16447607ef353f3b0241",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        82.0,
+        98.5
+      ]
+    },
+    "decor.flooded.sandbags": {
+      "target_path": "res://assets/art/decor/flooded/sandbags.png",
+      "priority": 3,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        12,
+        140,
+        244,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.12513484358144553,
+      "upscaled": false,
+      "sha256": "a535918c3c3086fd490401d6ce42f8e1c3cc8f6e28d820dfa521a472fdad15ae",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1983,
+        793
+      ],
+      "visible_extent_world_px": [
+        116.0,
+        38.5
+      ]
+    },
+    "decor.flooded.rocks": {
+      "target_path": "res://assets/art/decor/flooded/rocks.png",
+      "priority": 3,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        12,
+        30,
+        244,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.22179732313575526,
+      "upscaled": false,
+      "sha256": "0a6ea7d174a9fc8d20a5da94c1b202014cd5b656247b607fb28db238a5e4b676",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        116.0,
+        93.5
+      ]
+    },
+    "decor.flooded.algae": {
+      "target_path": "res://assets/art/decor/flooded/algae.png",
+      "priority": 3,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        56,
+        122,
+        200,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.12010113780025285,
+      "upscaled": false,
+      "sha256": "c7a4c32ec6c033d1cac3546c9d83b93c6640a1a78aba8106ac6a4f7e871ca427",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        72.0,
+        47.5
+      ]
+    },
+    "decor.flooded.float_debris": {
+      "target_path": "res://assets/art/decor/flooded/float_debris.png",
+      "priority": 3,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        12,
+        23,
+        244,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.26303854875283444,
+      "upscaled": false,
+      "sha256": "6a04e82d62b619740f16616a80eedc400dc866a85e356a3f1f3d09e973d2cfa0",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        116.0,
+        97.0
+      ]
+    },
+    "decor.flooded.fence_broken": {
+      "target_path": "res://assets/art/decor/flooded/fence_broken.png",
+      "priority": 3,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        17,
+        20,
+        239,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.20414507772020726,
+      "upscaled": false,
+      "sha256": "3721f87bc537188f24650184ba612e8f6822563ceda8c61bbbeabc2cd7c47b0e",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        111.0,
+        98.5
+      ]
+    },
+    "decor.flooded.grass_island": {
+      "target_path": "res://assets/art/decor/flooded/grass_island.png",
+      "priority": 3,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        16,
+        20,
+        240,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.22184684684684686,
+      "upscaled": false,
+      "sha256": "ad0c8ba8eccdc44bd63f51fcc84ead69a60bb22c759c49f7e15ccf86078c629d",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        112.0,
+        98.5
+      ]
+    },
+    "decor.common.bones": {
+      "target_path": "res://assets/art/decor/common/bones.png",
+      "priority": 3,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        17,
+        20,
+        239,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.22800925925925927,
+      "upscaled": false,
+      "sha256": "6843123acd7dfdd98fe7fea6afd2acf31af103fa0806be39987407b53c17c29f",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        111.0,
+        98.5
+      ]
+    },
+    "decor.common.blood_stain": {
+      "target_path": "res://assets/art/decor/common/blood_stain.png",
+      "priority": 3,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        74,
+        122,
+        182,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.11269276393831554,
+      "upscaled": false,
+      "sha256": "b0fad8d66b27f4b6781b894ebdb41cdddccffe60f438240a05c17eefa5d66bcc",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        54.0,
+        47.5
+      ]
+    },
+    "decor.common.shells": {
+      "target_path": "res://assets/art/decor/common/shells.png",
+      "priority": 3,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        79,
+        122,
+        176,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.10710259301014656,
+      "upscaled": false,
+      "sha256": "36842142af9e980cf490880b454c73302e0a78353f4d34c4d7da101b53d7c434",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        48.5,
+        47.5
+      ]
+    },
+    "decor.common.rags": {
+      "target_path": "res://assets/art/decor/common/rags.png",
+      "priority": 3,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        12,
+        38,
+        244,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.20440528634361232,
+      "upscaled": false,
+      "sha256": "cd41ae81a90ad61008cd86eefa07177bdad58ab3c75fc86da6e158ca848f93c3",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        116.0,
+        89.5
+      ]
+    },
+    "decor.common.weeds": {
+      "target_path": "res://assets/art/decor/common/weeds.png",
+      "priority": 3,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        30,
+        20,
+        226,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.19582504970178927,
+      "upscaled": false,
+      "sha256": "3d0518b98cb27e346138005236199482066688db51a10a5910c190dd18a87c41",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        98.0,
+        98.5
+      ]
+    },
+    "decor.common.backpack": {
+      "target_path": "res://assets/art/decor/common/backpack.png",
+      "priority": 3,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        24,
+        20,
+        232,
+        217
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.1804029304029304,
+      "upscaled": false,
+      "sha256": "fbf152a3826d7871053d5324ba6484b539cf1b2195d754de4f24f3eeb8a57e81",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        104.0,
+        98.5
+      ]
     }
   },
   "priorities": {
@@ -1814,6 +2966,44 @@
         "prop.pillar",
         "water.flooded",
         "water.flooded_edge"
+      ],
+      "runtime_verified": false
+    },
+    "3": {
+      "status": "prepared",
+      "asset_ids": [
+        "decor.sawmill.sawdust_pile",
+        "decor.sawmill.stump",
+        "decor.sawmill.planks",
+        "decor.sawmill.barrel",
+        "decor.sawmill.chain",
+        "decor.sawmill.tire",
+        "decor.sawmill.forklift",
+        "decor.sawmill.saw_machine",
+        "decor.sawmill.fire_barrel",
+        "decor.sawmill.oil_stain",
+        "decor.pumping.cable_reel",
+        "decor.pumping.rust_barrel",
+        "decor.pumping.oil_puddle",
+        "decor.pumping.panel_a",
+        "decor.pumping.panel_b",
+        "decor.pumping.barrier",
+        "decor.pumping.grate",
+        "decor.pumping.lamp_post",
+        "decor.flooded.driftwood",
+        "decor.flooded.dead_tree",
+        "decor.flooded.sandbags",
+        "decor.flooded.rocks",
+        "decor.flooded.algae",
+        "decor.flooded.float_debris",
+        "decor.flooded.fence_broken",
+        "decor.flooded.grass_island",
+        "decor.common.bones",
+        "decor.common.blood_stain",
+        "decor.common.shells",
+        "decor.common.rags",
+        "decor.common.weeds",
+        "decor.common.backpack"
       ],
       "runtime_verified": false
     }
