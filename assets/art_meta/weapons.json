@@ -31,7 +31,7 @@
         224,
         64
       ],
-      "note": "Picked on full-resolution painted source then transformed with uniform resize. Check in engine."
+      "note": "Batch 04: barrel cut measured on existing 256x128 PNG; grip unchanged. Engine check pending."
     },
     "weapon.lmg": {
       "grip_px": [
@@ -42,7 +42,7 @@
         224,
         64
       ],
-      "note": "Picked on full-resolution painted source then transformed with uniform resize. Check in engine."
+      "note": "Batch 04: barrel cut measured on existing 256x128 PNG; grip unchanged. Engine check pending."
     },
     "weapon.marksman": {
       "grip_px": [
@@ -51,9 +51,9 @@
       ],
       "muzzle_px": [
         224,
-        64
+        63
       ],
-      "note": "Picked on full-resolution painted source then transformed with uniform resize. Check in engine."
+      "note": "Batch 04: barrel cut measured on existing 256x128 PNG; grip unchanged. Engine check pending."
     },
     "weapon.shotgun": {
       "grip_px": [
@@ -61,21 +61,21 @@
         91
       ],
       "muzzle_px": [
-        224,
+        225,
         64
       ],
-      "note": "Picked on full-resolution painted source then transformed with uniform resize. Check in engine."
+      "note": "Batch 04: upper barrel cut, measured on existing 256x128 PNG; grip unchanged. Engine check pending."
     },
     "weapon.flamethrower": {
       "grip_px": [
-        29,
-        55
+        63,
+        81
       ],
       "muzzle_px": [
-        224,
-        64
+        207,
+        67
       ],
-      "note": "Picked on full-resolution painted source then transformed with uniform resize. Check in engine."
+      "note": "Batch 04 compact repaint: 160 px visible width within unchanged 256x128 canvas. Pixel coordinates refer to this PNG; engine check pending."
     }
   }
 }

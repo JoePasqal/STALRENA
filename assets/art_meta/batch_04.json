@@ -1,0 +1,385 @@
+{
+  "schema_version": 1,
+  "batch": 4,
+  "base_commit": "66f5c00945025339ba39107be649e1285acbb790",
+  "status": "prepared",
+  "runtime_verified": false,
+  "coordinate_origin": "top_left",
+  "assets": {
+    "boss.cleaver": {
+      "path": "assets/art/bosses/cleaver.png",
+      "canvas_px": [
+        1536,
+        512
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "bounds": [
+        122,
+        116,
+        1287,
+        300
+      ],
+      "frame_px": [
+        512,
+        512
+      ],
+      "pivot_px": [
+        256,
+        416
+      ],
+      "world_scale": 0.5,
+      "layout": "3x1_S_E_N",
+      "uniform_source_scale": 0.4918032786885246,
+      "frame_bounds": [
+        [
+          122,
+          120,
+          268,
+          296
+        ],
+        [
+          62,
+          140,
+          389,
+          276
+        ],
+        [
+          127,
+          116,
+          258,
+          300
+        ]
+      ]
+    },
+    "boss.boilermaster": {
+      "path": "assets/art/bosses/boilermaster.png",
+      "canvas_px": [
+        1536,
+        512
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "bounds": [
+        138,
+        116,
+        1261,
+        300
+      ],
+      "frame_px": [
+        512,
+        512
+      ],
+      "pivot_px": [
+        256,
+        416
+      ],
+      "world_scale": 0.5,
+      "layout": "3x1_S_E_N",
+      "uniform_source_scale": 0.4291845493562232,
+      "frame_bounds": [
+        [
+          138,
+          117,
+          236,
+          299
+        ],
+        [
+          170,
+          116,
+          173,
+          300
+        ],
+        [
+          138,
+          120,
+          237,
+          296
+        ]
+      ]
+    },
+    "boss.broodmother": {
+      "path": "assets/art/bosses/broodmother.png",
+      "canvas_px": [
+        1536,
+        512
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "bounds": [
+        91,
+        116,
+        1352,
+        300
+      ],
+      "frame_px": [
+        512,
+        512
+      ],
+      "pivot_px": [
+        256,
+        416
+      ],
+      "world_scale": 0.5,
+      "layout": "3x1_S_E_N",
+      "uniform_source_scale": 0.5093378607809848,
+      "frame_bounds": [
+        [
+          91,
+          132,
+          330,
+          284
+        ],
+        [
+          69,
+          193,
+          374,
+          223
+        ],
+        [
+          93,
+          116,
+          326,
+          300
+        ]
+      ]
+    },
+    "prop.concrete_block": {
+      "path": "assets/art/props/concrete_block.png",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "bounds": [
+        20,
+        38,
+        216,
+        179
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_scale": 0.20300751879699247
+    },
+    "prop.pipe": {
+      "path": "assets/art/props/pipe.png",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "bounds": [
+        20,
+        39,
+        216,
+        178
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_scale": 0.2305229455709712
+    },
+    "prop.steam_valve": {
+      "path": "assets/art/props/steam_valve.png",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "bounds": [
+        44,
+        37,
+        168,
+        180
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_scale": 0.1722488038277512
+    },
+    "prop.wrecked_car": {
+      "path": "assets/art/props/wrecked_car.png",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "bounds": [
+        20,
+        71,
+        216,
+        146
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 1,
+      "source_scale": 0.142668428005284
+    },
+    "prop.reeds": {
+      "path": "assets/art/props/reeds.png",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "bounds": [
+        36,
+        37,
+        185,
+        180
+      ],
+      "pivot_px": [
+        128,
+        217
+      ],
+      "world_scale": 0.5,
+      "source_scale": 0.15088013411567477
+    },
+    "fx.muzzle": {
+      "path": "assets/art/fx/muzzle.png",
+      "canvas_px": [
+        128,
+        128
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "bounds": [
+        8,
+        29,
+        112,
+        70
+      ],
+      "frame_px": [
+        128,
+        128
+      ],
+      "origin_px": [
+        29,
+        69
+      ],
+      "source_scale": 0.11902231668437832
+    },
+    "weapon.flamethrower": {
+      "path": "assets/art/weapons/flamethrower.png",
+      "canvas_px": [
+        256,
+        128
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "bounds": [
+        48,
+        29,
+        160,
+        75
+      ],
+      "grip_px": [
+        63,
+        81
+      ],
+      "muzzle_px": [
+        207,
+        67
+      ],
+      "world_scale": 0.25,
+      "visible_width_px": 160,
+      "source_grip_px": [
+        478,
+        537
+      ],
+      "source_muzzle_px": [
+        1325,
+        451
+      ],
+      "source_scale": 0.16985138004246284
+    },
+    "icon.weapon.flamethrower": {
+      "path": "assets/art/icons/weapons/flamethrower.png",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "bounds": [
+        16,
+        76,
+        224,
+        105
+      ],
+      "source": "full_resolution_repaint_separately_framed"
+    }
+  },
+  "weapon_muzzle_corrections": {
+    "weapon.shotgun": [
+      225,
+      64
+    ],
+    "weapon.marksman": [
+      224,
+      63
+    ],
+    "weapon.smg": [
+      224,
+      64
+    ],
+    "weapon.lmg": [
+      224,
+      64
+    ]
+  },
+  "armor_animated_overlays": "deferred_optional",
+  "notes": [
+    "Boss sheets: one row of S, E, N, no death or walk frames in this batch.",
+    "All positions are pixels of final PNG or individual atlas cell as indicated.",
+    "prop.wrecked_car changed to 256x256 pivot (128,217), scale 1.0.",
+    "fx.muzzle points right; use origin_px (29,69) at weapon muzzle, not image center."
+  ]
+}
