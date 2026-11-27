@@ -3,7 +3,7 @@
   "art_contract": "ART_CONTRACT.md",
   "status_note": "No PNG files are supplied in this archive. All entries are planned, runtime must provide placeholders.",
   "coordinate_origin": "top_left",
-  "asset_count": 164,
+  "asset_count": 182,
   "assets": [
     {
       "id": "hero.body",
@@ -2999,6 +2999,295 @@
         208
       ],
       "world_scale": 0.5
+    },
+    {
+      "id": "ui.card_flip_buff",
+      "target_path": "res://assets/art/ui/card_flip_buff.png",
+      "kind": "ui",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        2048,
+        384
+      ],
+      "has_alpha": true,
+      "note": "переворот карточки бафа: 8 кадров 256×384 (рубашка → ребро → лицо без содержимого, содержимое рисует код), горизонтальная полоса",
+      "frame_px": [
+        256,
+        384
+      ],
+      "frames": 8
+    },
+    {
+      "id": "ui.card_flip_curse",
+      "target_path": "res://assets/art/ui/card_flip_curse.png",
+      "kind": "ui",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        2048,
+        384
+      ],
+      "has_alpha": true,
+      "note": "то же для красной карточки проклятия",
+      "frame_px": [
+        256,
+        384
+      ],
+      "frames": 8
+    },
+    {
+      "id": "ui.card_face_buff",
+      "target_path": "res://assets/art/ui/card_face_buff.png",
+      "kind": "ui",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        384
+      ],
+      "has_alpha": true,
+      "note": "лицевая рамка/фон карточки бафа без текста и иконки"
+    },
+    {
+      "id": "ui.card_face_curse",
+      "target_path": "res://assets/art/ui/card_face_curse.png",
+      "kind": "ui",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        384
+      ],
+      "has_alpha": true,
+      "note": "лицевая рамка/фон карточки проклятия без текста и иконки"
+    },
+    {
+      "id": "ui.card_glow",
+      "target_path": "res://assets/art/ui/card_glow.png",
+      "kind": "ui",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        320,
+        448
+      ],
+      "has_alpha": true,
+      "note": "ореол выбранной карточки (мягкое свечение)"
+    },
+    {
+      "id": "ui.bonus_case_anim",
+      "target_path": "res://assets/art/ui/bonus_case_anim.png",
+      "kind": "ui",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        4096,
+        384
+      ],
+      "has_alpha": true,
+      "note": "открытие золотого кейса: 8 кадров 512×384 (закрыт → крышка поднимается → вспышка света → открыт)",
+      "frame_px": [
+        512,
+        384
+      ],
+      "frames": 8
+    },
+    {
+      "id": "ui.curse_case_anim",
+      "target_path": "res://assets/art/ui/curse_case_anim.png",
+      "kind": "ui",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        4096,
+        384
+      ],
+      "has_alpha": true,
+      "note": "открытие деревянного ящика с красной окантовкой: 8 кадров, красноватый свет",
+      "frame_px": [
+        512,
+        384
+      ],
+      "frames": 8
+    },
+    {
+      "id": "fx.fire_loop",
+      "target_path": "res://assets/art/fx/fire_loop.png",
+      "kind": "fx_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        768,
+        128
+      ],
+      "has_alpha": true,
+      "note": "зацикленный огонь на земле (молотов): 6 кадров 128×128, вид сверху под углом",
+      "frame_px": [
+        128,
+        128
+      ],
+      "frames": 6
+    },
+    {
+      "id": "fx.fire_burst",
+      "target_path": "res://assets/art/fx/fire_burst.png",
+      "kind": "fx_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        1024,
+        256
+      ],
+      "has_alpha": true,
+      "note": "разбитая бутылка и вспышка при поджоге: 4 кадра 256×256",
+      "frame_px": [
+        256,
+        256
+      ],
+      "frames": 4
+    },
+    {
+      "id": "fx.steam_puff",
+      "target_path": "res://assets/art/fx/steam_puff.png",
+      "kind": "fx_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        768,
+        128
+      ],
+      "has_alpha": true,
+      "note": "клуб пара: 6 кадров 128×128, зацикленный",
+      "frame_px": [
+        128,
+        128
+      ],
+      "frames": 6
+    },
+    {
+      "id": "fx.explosion",
+      "target_path": "res://assets/art/fx/explosion.png",
+      "kind": "fx_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        2048,
+        256
+      ],
+      "has_alpha": true,
+      "note": "взрыв: 8 кадров 256×256",
+      "frame_px": [
+        256,
+        256
+      ],
+      "frames": 8
+    },
+    {
+      "id": "fx.hit_spark",
+      "target_path": "res://assets/art/fx/hit_spark.png",
+      "kind": "fx_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        512,
+        128
+      ],
+      "has_alpha": true,
+      "note": "искры попадания: 4 кадра 128×128",
+      "frame_px": [
+        128,
+        128
+      ],
+      "frames": 4
+    },
+    {
+      "id": "fx.heal",
+      "target_path": "res://assets/art/fx/heal.png",
+      "kind": "fx_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        768,
+        128
+      ],
+      "has_alpha": true,
+      "note": "голубая аура лечения аптечкой: 6 кадров 128×128 (дружественный цвет)",
+      "frame_px": [
+        128,
+        128
+      ],
+      "frames": 6
+    },
+    {
+      "id": "fx.spawn_ring",
+      "target_path": "res://assets/art/fx/spawn_ring.png",
+      "kind": "fx_atlas",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        512,
+        128
+      ],
+      "has_alpha": true,
+      "note": "кольцо появления врага: 4 кадра 128×128, красно-оранжевое",
+      "frame_px": [
+        128,
+        128
+      ],
+      "frames": 4
+    },
+    {
+      "id": "ui.logo",
+      "target_path": "res://assets/art/ui/logo.png",
+      "kind": "ui",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        1024,
+        320
+      ],
+      "has_alpha": true,
+      "note": "логотип STALRENA без фона (текст допустим именно здесь)"
+    },
+    {
+      "id": "ui.menu_bg",
+      "target_path": "res://assets/art/ui/menu_bg.png",
+      "kind": "ui",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        1920,
+        1080
+      ],
+      "has_alpha": false,
+      "note": "фон главного меню (арена с героем в сумерках), без текста"
+    },
+    {
+      "id": "app.icon",
+      "target_path": "res://assets/art/ui/app_icon.png",
+      "kind": "ui",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        512,
+        512
+      ],
+      "has_alpha": true,
+      "note": "иконка приложения Android 512×512 (без прозрачных углов), и отдельный foreground 432×432 для adaptive icon"
+    },
+    {
+      "id": "ui.coin",
+      "target_path": "res://assets/art/ui/coin.png",
+      "kind": "icon",
+      "status": "planned",
+      "required_for_code_to_run": false,
+      "canvas_px": [
+        256,
+        256
+      ],
+      "has_alpha": true,
+      "note": "иконка монеты для HUD и магазина"
     }
   ]
 }
