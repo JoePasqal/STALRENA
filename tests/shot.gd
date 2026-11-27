@@ -36,6 +36,9 @@ func _ready() -> void:
 		ShopService.generate_offers(run, false)
 		game._enter_shop()
 		await _frames(4)
+		if args.has("tut"):
+			game.tutorial.debug_show(str(args.tut))
+			await _frames(8)
 		_save(out)
 		get_tree().quit()
 		return
@@ -71,7 +74,11 @@ func _ready() -> void:
 		game.state = game.St.WAVE_INTRO
 		game.intro_t = 5.0
 		game.hud.show_wave_intro(run2, game.gw, game.plan)
-	await _frames(3)
+	if args.has("tut"):
+		game.tutorial.debug_show(str(args.tut))
+		if str(args.tut) == "medkit":
+			game.player.hp = game.player.max_hp * 0.5
+	await _frames(8 if args.has("tut") else 3)
 	_save(out)
 	print("shot saved ", out, " state=", game.state, " enemies=", game.enemies.size())
 	get_tree().quit()

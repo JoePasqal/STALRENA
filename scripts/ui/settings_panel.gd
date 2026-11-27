@@ -30,6 +30,13 @@ func _ready() -> void:
 	_option(vb, "Качество эффектов", "quality", [["low", "Низкое (меньше эффектов)"], ["medium", "Среднее"], ["high", "Высокое"]])
 	_option(vb, "Сенсорное управление", "touch_ui", [["auto", "Авто"], ["on", "Всегда"], ["off", "Выключено"]])
 	_option(vb, "Лимит кадров", "fps_cap", [[30, "30 (экономия)"], [60, "60"], [0, "Без лимита"]])
+	var replay := UiKit.button("Повторить обучение (со следующего магазина/забега)", Vector2(0, 48), 18)
+	replay.pressed.connect(func():
+		Settings.set_value("tutorial_shop_done", false)
+		Settings.set_value("tutorial_done", false)
+		Settings.set_value("hints", true)
+		replay.text = "Обучение включено: начните новый забег")
+	vb.add_child(replay)
 	var close := UiKit.button("Закрыть", Vector2(0, 56))
 	close.pressed.connect(func():
 		closed.emit()

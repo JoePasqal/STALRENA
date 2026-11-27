@@ -13,6 +13,7 @@ var _cards_box: GridContainer
 var _right_box: VBoxContainer
 var _bottom_box: HBoxContainer
 var _start_box: VBoxContainer
+var _right_panel: Control
 var _top_label: Label
 var _coins_label: Label
 var _level_label: Label
@@ -74,6 +75,7 @@ func _ready() -> void:
 	mid.add_child(_cards_box)
 	var rp := PanelContainer.new()
 	rp.custom_minimum_size = Vector2(380, 0)
+	_right_panel = rp
 	mid.add_child(rp)
 	var rv := VBoxContainer.new()
 	rv.add_theme_constant_override("separation", 6)
@@ -83,7 +85,7 @@ func _ready() -> void:
 	for i in TAB_NAMES.size():
 		var tb := UiKit.button(TAB_NAMES[i], Vector2(0, 44), 20)
 		tb.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-		tb.pressed.connect(func(): _tab = i; refresh())
+		tb.pressed.connect(func(): Sfx.play("click"); _tab = i; refresh())
 		tabs.add_child(tb)
 	var sc := ScrollContainer.new()
 	sc.size_flags_vertical = Control.SIZE_EXPAND_FILL
@@ -306,6 +308,7 @@ func _buy(uid: int) -> void:
 		var o: Dictionary = run.last_purchase
 		var msg := "Куплено: %s" % GameData.item_name(str(o.type), str(o.id)) if str(o.kind) != "complete" else "Куплено"
 		if res.get("ranked_up", false):
+			Sfx.play("levelup")
 			msg = "Ранг собран: %s → %s!" % [GameData.item_name(str(o.type), str(o.id)), GameData.rank_roman(int(res.rank))]
 		toast(msg, true)
 	else:
@@ -472,6 +475,7 @@ func _build_bottom(run: RunState) -> void:
 	_bottom_box.add_child(rb)
 	var lk := UiKit.button("Замок: ВКЛ (набор сохранится)" if run.shop_locked else "Сохранить предложения", Vector2(0, 56), 18)
 	lk.pressed.connect(func():
+		Sfx.play("lock")
 		ShopService.set_lock(_run(), not _run().shop_locked)
 		Session.save()
 		refresh())
@@ -486,11 +490,12 @@ func _build_bottom(run: RunState) -> void:
 		ub.disabled = not up.ok
 		if not up.ok:
 			ub.tooltip_text = str(up.reason)
-			ub.text = "Магазин ↑ %d (%s)" % [int(up.cost), str(up.reason)] if str(up.reason).begins_with("Нужно") else ub.text
+			if str(up.reason).begins_with("Нужно"):
+				ub.text = "Магазин ↑ %d · с волны %d" % [int(up.cost), int(GameData.shop_level_def(run.shop_level + 1).minimum_completed_wave) + 1]
 	ub.pressed.connect(func():
 		var r := ShopService.upgrade_shop(_run())
 		if r.ok:
-			Sfx.play("buy")
+			Sfx.play("levelup")
 			Session.save()
 			toast("Уровень магазина %d. Новые предложения — после обновления." % int(r.level), true)
 		else:
@@ -526,7 +531,7 @@ func _refresh_pressed() -> void:
 	var run := _run()
 	var r := ShopService.refresh(run)
 	if r.ok:
-		Sfx.play("buy")
+		Sfx.play("refresh")
 		Session.save()
 		toast("Набор обновлён" + (" · замок снят" if r.lock_cleared else ""), true)
 	else:
@@ -556,3 +561,13 @@ func _update_hint(run: RunState) -> void:
 	else:
 		parts.append("Гарантия части: %d/%d платных обновлений без подходящей части." % [mini(run.pity, int(GameData.B.shop.pity_failed_paid_rerolls_before_guarantee)), int(GameData.B.shop.pity_failed_paid_rerolls_before_guarantee)])
 	_hint.text = "  ".join(parts)
+
+
+## Прямоугольники для подсветки в обучении (глобальные координаты окна).
+func tutorial_rects() -> Dictionary:
+	return {
+		"cards": _cards_box.get_global_rect(),
+		"right": _right_panel.get_global_rect(),
+		"bottom": _bottom_box.get_global_rect(),
+		"start": _start_box.get_global_rect(),
+	}

@@ -141,6 +141,7 @@ func start_reload() -> void:
 		return
 	reloading = true
 	reload_left = float(wstats.reload_time)
+	Sfx.play("reload")
 
 
 # ---- симуляция ------------------------------------------------------------
@@ -190,6 +191,7 @@ func _aim_and_fire(dt: float) -> void:
 		if reload_left <= 0.0:
 			reloading = false
 			ammo = float(wstats.magazine)
+			Sfx.play("reload_done")
 	var autoaim: bool = bool(Settings.data.autoaim)
 	firing = false
 	if manual_fire:
@@ -207,6 +209,9 @@ func _aim_and_fire(dt: float) -> void:
 			aim_dir = aim_input.normalized()
 	if ammo <= 0.001 and not reloading:
 		start_reload()                     # автоперезарядка при пустом магазине
+	if firing and reloading and cooldown <= 0.0 and str(wstats.fire_mode) != "cone_ticks":
+		cooldown = 0.35
+		Sfx.play("empty")                      # пытаемся стрелять во время перезарядки
 	if firing and not reloading and ammo > 0.001:
 		if str(wstats.fire_mode) == "cone_ticks":
 			_flame(dt)
@@ -289,11 +294,12 @@ func _fire() -> void:
 			continue
 		game.projectiles.spawn(true, mz, d, float(wstats.projectile_speed), dmg, float(wstats.range), 3.0, kind, int(wstats.pierce), crit)
 	game.fx.flash(mz + Vector2(0, -ProjectileManager.HEIGHT), Color(1.0, 0.9, 0.6), 12.0)
-	Sfx.play("shot_heavy" if float(wstats.damage) >= 30.0 or pellets > 1 else "shot")
+	Sfx.play("shot_" + str(weapon_def.id))
 
 
 func _flame(dt: float) -> void:
 	flame_tick += dt
+	Sfx.play("flame")
 	var tick_s := float(wstats.tick_seconds)
 	ammo = maxf(ammo - float(wstats.fuel_per_second) * dt, 0.0)
 	if randf() < 0.9:

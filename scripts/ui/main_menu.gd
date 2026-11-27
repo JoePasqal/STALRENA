@@ -52,6 +52,7 @@ func _ready() -> void:
 	_confirm.confirmed.connect(_start_new)
 	add_child(_confirm)
 	_refresh()
+	Sfx.music("shop")
 
 
 func _refresh() -> void:

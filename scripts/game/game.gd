@@ -41,6 +41,7 @@ var touch: TouchControls
 var shop_ui: ShopScreen
 var pause_ui: Control
 var results_ui: Control
+var tutorial: Tutorial
 var _kill_count_wave := 0
 var _damage_at_wave_start := 0.0
 var _hits_at_wave_start := 0
@@ -62,6 +63,7 @@ func _ready() -> void:
 		else:
 			Session.run = RunState.new_run()
 			run = Session.run
+	Sfx.warmup()
 	_build_world()
 	_build_ui()
 	if not auto_open_ui:
@@ -117,6 +119,12 @@ func _build_ui() -> void:
 	ui_layer.add_child(shop_ui)
 	shop_ui.start_requested.connect(_on_start_wave)
 	shop_ui.menu_requested.connect(_exit_to_menu)
+	var tut_layer := CanvasLayer.new()
+	tut_layer.layer = 15
+	add_child(tut_layer)
+	tutorial = Tutorial.new()
+	tutorial.game = self
+	tut_layer.add_child(tutorial)
 	var over_layer := CanvasLayer.new()
 	over_layer.layer = 20
 	add_child(over_layer)
@@ -168,7 +176,9 @@ func _enter_shop() -> void:
 	player.visible = false
 	run.hp = StatCalc.max_hp(run)
 	Session.save()
+	Sfx.music("shop")
 	shop_ui.open()
+	tutorial.begin_shop()
 	hud.visible = false
 	touch.visible = false
 	shop_opened.emit()
@@ -225,8 +235,11 @@ func _launch_wave() -> void:
 	shop_ui.close()
 	hud.show_wave_intro(run, gw, plan)
 	Sfx.play("wave")
+	Sfx.music("combat")
+	tutorial.begin_controls()
 	if plan.boss:
 		_spawn_boss()
+		Sfx.play("boss_roar")
 
 
 func _spawn_boss() -> void:
@@ -307,6 +320,8 @@ func _poll_input() -> void:
 func _physics_process(delta: float) -> void:
 	match state:
 		St.WAVE_INTRO:
+			if tutorial.blocking:
+				return                     # схема управления: интро ждёт «Понятно»
 			intro_t -= delta
 			_update_camera()
 			fx.step(delta)
@@ -315,6 +330,7 @@ func _physics_process(delta: float) -> void:
 		St.COMBAT:
 			_poll_input()
 			sim_step(delta)
+			tutorial.combat_tick(delta)
 		St.WAVE_COMPLETE:
 			complete_t -= delta
 			fx.step(delta)
@@ -599,6 +615,8 @@ func _on_wave_won() -> void:
 	_log_wave(res)
 	Session.save()
 	complete_t = 2.4
+	Sfx.play("win")
+	tutorial.on_wave_won()
 	hud.show_wave_complete(res)
 	wave_won.emit(res)
 
@@ -630,5 +648,7 @@ func _on_player_dead() -> void:
 	get_tree().paused = false
 	hud.visible = false
 	touch.visible = false
+	Sfx.music("")
+	Sfx.play("lose")
 	results_ui.open(rec)
 	player_died.emit()

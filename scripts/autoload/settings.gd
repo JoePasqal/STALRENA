@@ -14,6 +14,8 @@ var data := {
 	"screen_shake": false,
 	"show_fps": false,
 	"fps_cap": 60,
+	"tutorial_shop_done": false,   # обучение: экраны магазина показаны
+	"tutorial_done": false,        # обучение: подсказки первой волны пройдены
 }
 
 

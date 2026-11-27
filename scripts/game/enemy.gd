@@ -146,7 +146,7 @@ func take_damage(amount: float, crit: bool, source: String) -> void:
 	game.run.stats["damage"] = float(game.run.stats.get("damage", 0.0)) + amount
 	if source == "player":
 		game.fx.damage_number(position, amount, get_instance_id(), crit)
-		Sfx.play("hit")
+		Sfx.play("hit_crit" if crit else "hit")
 	elif source == "burn" or source == "hazard":
 		game.fx.damage_number(position, amount, get_instance_id(), false)
 	if hp <= 0.0:
@@ -174,6 +174,7 @@ func die() -> void:
 		return
 	state = S.DEAD
 	release_token()
+	Sfx.play("enemy_die")
 	game.on_enemy_died(self)
 
 
@@ -478,6 +479,8 @@ func _begin_telegraph() -> void:
 	lock_dir = (pl.position - position).normalized()
 	face = lock_dir
 	lock_pos = pl.position
+	if role == "ranged" or role == "charge" or role == "area_melee":
+		Sfx.play("tele")
 	if role == "area_melee":
 		lock_pos = position + lock_dir * 30.0
 		locked = true

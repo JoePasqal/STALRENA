@@ -143,6 +143,7 @@ func _begin_attack(a: Dictionary) -> void:
 	var pl = game.player
 	cur = a
 	last_attack = a.id
+	Sfx.play("boss_tele")
 	_set_state(Enemy.S.TELEGRAPH)
 	telegraph_total = float(a.telegraph_seconds)          # телеграфы не сокращаются во второй фазе
 	recovery_total = float(a.recovery_seconds) * (0.8 if phase == 2 else 1.0)

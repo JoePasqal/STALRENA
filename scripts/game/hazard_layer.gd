@@ -99,6 +99,8 @@ func step(dt: float) -> void:
 
 
 func _apply(h: Dictionary, pl) -> void:
+	if h.once and str(h.get("tag", "")) == "explosion":
+		Sfx.play("explosion")
 	if h.hits_player and pl != null and not pl.dead and contains(h, pl.position):
 		pl.take_damage(h.damage, h.source, false)
 		if h.knock > 0.0:
