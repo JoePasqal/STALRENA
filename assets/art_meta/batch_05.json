@@ -876,6 +876,10 @@
       "visible_extent_world_px": [
         2018.0,
         360.0
+      ],
+      "max_frame_extent_world_px": [
+        227.0,
+        360.0
       ]
     },
     "ui.card_flip_curse": {
@@ -1028,6 +1032,10 @@
       ],
       "visible_extent_world_px": [
         2016.0,
+        360.0
+      ],
+      "max_frame_extent_world_px": [
+        225.0,
         360.0
       ]
     },
@@ -1215,6 +1223,10 @@
       "visible_extent_world_px": [
         3905.0,
         344.0
+      ],
+      "max_frame_extent_world_px": [
+        343.0,
+        344.0
       ]
     },
     "ui.curse_case_anim": {
@@ -1367,6 +1379,10 @@
       ],
       "visible_extent_world_px": [
         3919.0,
+        360.0
+      ],
+      "max_frame_extent_world_px": [
+        343.0,
         360.0
       ]
     },
@@ -3042,6 +3058,10 @@
       "visible_extent_world_px": [
         738.0,
         104.0
+      ],
+      "max_frame_extent_world_px": [
+        102.0,
+        104.0
       ]
     },
     "fx.fire_burst": {
@@ -3140,6 +3160,10 @@
       "fps_hint": 8,
       "visible_extent_world_px": [
         881.0,
+        135.0
+      ],
+      "max_frame_extent_world_px": [
+        236.0,
         135.0
       ]
     },
@@ -3267,6 +3291,10 @@
       "fps_hint": 8,
       "visible_extent_world_px": [
         721.0,
+        104.0
+      ],
+      "max_frame_extent_world_px": [
+        94.0,
         104.0
       ]
     },
@@ -3423,6 +3451,10 @@
       "visible_extent_world_px": [
         1930.0,
         214.0
+      ],
+      "max_frame_extent_world_px": [
+        236.0,
+        214.0
       ]
     },
     "fx.hit_spark": {
@@ -3521,6 +3553,10 @@
       "fps_hint": 8,
       "visible_extent_world_px": [
         477.0,
+        100.0
+      ],
+      "max_frame_extent_world_px": [
+        108.0,
         100.0
       ]
     },
@@ -3649,6 +3685,10 @@
       "visible_extent_world_px": [
         744.0,
         99.0
+      ],
+      "max_frame_extent_world_px": [
+        108.0,
+        99.0
       ]
     },
     "fx.spawn_ring": {
@@ -3748,6 +3788,6507 @@
       "visible_extent_world_px": [
         478.0,
         63.0
+      ],
+      "max_frame_extent_world_px": [
+        108.0,
+        63.0
+      ]
+    },
+    "enemy.drifter.walk": {
+      "target_path": "res://assets/art/enemies/drifter_walk.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        1024,
+        768
+      ],
+      "bbox_px": [
+        73,
+        55,
+        936,
+        720
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": [
+        0.48154093097913325,
+        0.4830917874396135,
+        0.46296296296296297
+      ],
+      "upscaled": false,
+      "sha256": "0927a7575fe2ab6352e4976dbd7db0da7f0df8efe162f215236d44d6bdd73f05",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        256,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "direction": "S",
+          "pose": 0,
+          "bbox_px": [
+            88,
+            55,
+            168,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.48154093097913325,
+          "rgba_sha256": "c765b3b1f52c083753e2099174023e37d0742079816f23112e9cc9289393d732"
+        },
+        {
+          "index": 1,
+          "direction": "S",
+          "pose": 1,
+          "bbox_px": [
+            89,
+            59,
+            168,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.48154093097913325,
+          "rgba_sha256": "1873836110abc2ffcba2fe4f8eb6e646b059a9f1bc6a9236e4e6a6825c62c956"
+        },
+        {
+          "index": 2,
+          "direction": "S",
+          "pose": 2,
+          "bbox_px": [
+            89,
+            57,
+            167,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.48154093097913325,
+          "rgba_sha256": "dd87782b4678f267ec2b141385db841b1bc1e5bffd3cc280c1f1fa20c79652e8"
+        },
+        {
+          "index": 3,
+          "direction": "S",
+          "pose": 3,
+          "bbox_px": [
+            89,
+            59,
+            167,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.48154093097913325,
+          "rgba_sha256": "634c16866a82cfbc9d4525c57f0a6ff2ff257ac6819dac8fa5004d10ca04ef0c"
+        },
+        {
+          "index": 4,
+          "direction": "E",
+          "pose": 0,
+          "bbox_px": [
+            73,
+            59,
+            183,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4830917874396135,
+          "rgba_sha256": "8adcbc16cc85d9541f00c34738d5de14b35435182a773cff42140c22c73744f8"
+        },
+        {
+          "index": 5,
+          "direction": "E",
+          "pose": 1,
+          "bbox_px": [
+            89,
+            57,
+            167,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4830917874396135,
+          "rgba_sha256": "c6e9ca224d4c4553d2559cc3f7b08dc40596c54b5c86c74de2859750b2e4abcc"
+        },
+        {
+          "index": 6,
+          "direction": "E",
+          "pose": 2,
+          "bbox_px": [
+            72,
+            58,
+            184,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4830917874396135,
+          "rgba_sha256": "162189e7025baf0b008141164a762be37566358d2eb581b6984a00838b90e9c5"
+        },
+        {
+          "index": 7,
+          "direction": "E",
+          "pose": 3,
+          "bbox_px": [
+            89,
+            58,
+            168,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4830917874396135,
+          "rgba_sha256": "b59b8a3c7d0e9444398874d2fe50b2d0b2cdab3a763f4794a26258373aaf1bb3"
+        },
+        {
+          "index": 8,
+          "direction": "N",
+          "pose": 0,
+          "bbox_px": [
+            91,
+            59,
+            166,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.46296296296296297,
+          "rgba_sha256": "4d70d9d9b8c9bc64676d1f64485fce7261e9dcfa804bb4739f97fa9fce2f10c7"
+        },
+        {
+          "index": 9,
+          "direction": "N",
+          "pose": 1,
+          "bbox_px": [
+            91,
+            61,
+            166,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.46296296296296297,
+          "rgba_sha256": "27688a6793bb95f1c8ca9447f4908d53dd2452623ddf8ad6fcd7fd92161a7c61"
+        },
+        {
+          "index": 10,
+          "direction": "N",
+          "pose": 2,
+          "bbox_px": [
+            90,
+            57,
+            166,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.46296296296296297,
+          "rgba_sha256": "49f054a6cfde034c7f62c47a7f0818f07ed5430a598796d5b768d400a199b979"
+        },
+        {
+          "index": 11,
+          "direction": "N",
+          "pose": 3,
+          "bbox_px": [
+            91,
+            57,
+            166,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.46296296296296297,
+          "rgba_sha256": "45580ce6e0017786494a5710a8eaddfc24cd19db49a8657c96aab429d379431d"
+        }
+      ],
+      "layout": "4x3_S_E_N",
+      "frame_count": 12,
+      "reference_height_px_by_direction": [
+        150,
+        150,
+        150
+      ],
+      "animation": "walk",
+      "loop": true,
+      "fps_hint": 8,
+      "normalization": "one uniform scale per direction; death uses one scale for all four poses",
+      "source_size_px": [
+        1448,
+        1086
+      ],
+      "visible_extent_world_px": [
+        431.5,
+        332.5
+      ],
+      "max_frame_extent_world_px": [
+        56.0,
+        76.5
+      ]
+    },
+    "enemy.drifter.attack": {
+      "target_path": "res://assets/art/enemies/drifter_attack.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        768,
+        768
+      ],
+      "bbox_px": [
+        74,
+        58,
+        688,
+        720
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": [
+        0.45180722891566266,
+        0.44776119402985076,
+        0.4297994269340974
+      ],
+      "upscaled": false,
+      "sha256": "1a7b77477db7f561fa6f29b165c511133fdeaba5f4ccc56497b68990f9dd0544",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        256,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "direction": "S",
+          "pose": 0,
+          "bbox_px": [
+            74,
+            58,
+            183,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.45180722891566266,
+          "rgba_sha256": "62965e7b33ff7ec652a670de7c486236959e94f9795226cfc319708db35e9d64"
+        },
+        {
+          "index": 1,
+          "direction": "S",
+          "pose": 1,
+          "bbox_px": [
+            81,
+            58,
+            175,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.45180722891566266,
+          "rgba_sha256": "e594ed89b9da88bafaccd8ffa02dbcbd9bee985b04cfe5815acb94281d392da1"
+        },
+        {
+          "index": 2,
+          "direction": "S",
+          "pose": 2,
+          "bbox_px": [
+            83,
+            67,
+            173,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.45180722891566266,
+          "rgba_sha256": "614850c62b3fe7fbbe233b837949d9c892cf20561c0418aa4f591e53ce985863"
+        },
+        {
+          "index": 3,
+          "direction": "E",
+          "pose": 0,
+          "bbox_px": [
+            82,
+            58,
+            174,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.44776119402985076,
+          "rgba_sha256": "e2a7e34c74af27c570e87c324e5754729806e4774c832fdd339ba52fe7b0e1d0"
+        },
+        {
+          "index": 4,
+          "direction": "E",
+          "pose": 1,
+          "bbox_px": [
+            51,
+            56,
+            205,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.44776119402985076,
+          "rgba_sha256": "7a1b8a51773b284ebedc62dcfc7ea5801df1ccd89a295fcce5d3989cb1415c1f"
+        },
+        {
+          "index": 5,
+          "direction": "E",
+          "pose": 2,
+          "bbox_px": [
+            85,
+            64,
+            172,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.44776119402985076,
+          "rgba_sha256": "146ee6b802d62cdb0ca63bd470fb3bad536de5eab11981e9132f9f6bb8a52041"
+        },
+        {
+          "index": 6,
+          "direction": "N",
+          "pose": 0,
+          "bbox_px": [
+            77,
+            58,
+            179,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4297994269340974,
+          "rgba_sha256": "875b545f7d9fe35a90db3c97a68fa7dc3e7e79aa40c46a93ad5f264e3c6d6cb8"
+        },
+        {
+          "index": 7,
+          "direction": "N",
+          "pose": 1,
+          "bbox_px": [
+            56,
+            54,
+            201,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4297994269340974,
+          "rgba_sha256": "af4beeeebe896f4ed08ad7c0e4a443dfb8f701777d563ef7a43a91a183a4835b"
+        },
+        {
+          "index": 8,
+          "direction": "N",
+          "pose": 2,
+          "bbox_px": [
+            81,
+            62,
+            176,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4297994269340974,
+          "rgba_sha256": "3a5412dac6d85c8fcb61c9e4cf8154594ac038bf94c79d0e95e96d2b1bce4f1e"
+        }
+      ],
+      "layout": "3x3_S_E_N",
+      "frame_count": 9,
+      "reference_height_px_by_direction": [
+        150,
+        150,
+        150
+      ],
+      "animation": "attack",
+      "loop": false,
+      "fps_hint": 6,
+      "normalization": "one uniform scale per direction; death uses one scale for all four poses",
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        307.0,
+        331.0
+      ],
+      "max_frame_extent_world_px": [
+        77.0,
+        77.0
+      ]
+    },
+    "enemy.drifter.death": {
+      "target_path": "res://assets/art/enemies/drifter_death.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        1024,
+        256
+      ],
+      "bbox_px": [
+        87,
+        58,
+        976,
+        208
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": [
+        0.2830188679245283
+      ],
+      "upscaled": false,
+      "sha256": "57ea9fb2bd02e381dfbcef7e9d716c34448501379e909b075ece3035fca20b6d",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        256,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "direction": "shared",
+          "pose": 0,
+          "bbox_px": [
+            87,
+            58,
+            170,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.2830188679245283,
+          "rgba_sha256": "89c18193b9f9ce1f67f0b33b8f36765c07cf3780c0617b5dddbed729ef1a99a5"
+        },
+        {
+          "index": 1,
+          "direction": "shared",
+          "pose": 1,
+          "bbox_px": [
+            79,
+            90,
+            177,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.2830188679245283,
+          "rgba_sha256": "7c43f6c312462320fe571288005668d29988c2eee36d202100e21aa9daa879c1"
+        },
+        {
+          "index": 2,
+          "direction": "shared",
+          "pose": 0,
+          "bbox_px": [
+            58,
+            104,
+            198,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.2830188679245283,
+          "rgba_sha256": "89df5e2d29279b463a55d08856917e90b0c3df00d33c1d2b49dde7f5792e0543"
+        },
+        {
+          "index": 3,
+          "direction": "shared",
+          "pose": 1,
+          "bbox_px": [
+            48,
+            141,
+            208,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.2830188679245283,
+          "rgba_sha256": "3eb653c622f96558c70276514b78485b04dd74b3c4b877226b2b2d138b007bc4"
+        }
+      ],
+      "layout": "4x1_shared",
+      "frame_count": 4,
+      "reference_height_px_by_direction": [
+        150,
+        150,
+        150
+      ],
+      "animation": "death",
+      "loop": false,
+      "fps_hint": 6,
+      "normalization": "one uniform scale per direction; death uses one scale for all four poses",
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        444.5,
+        75.0
+      ],
+      "max_frame_extent_world_px": [
+        80.0,
+        75.0
+      ]
+    },
+    "corpse.drifter": {
+      "target_path": "res://assets/art/corpses/drifter.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        48,
+        127,
+        208,
+        194
+      ],
+      "pivot_px": [
+        128,
+        160
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.2830188679245283,
+      "upscaled": false,
+      "sha256": "2456c26f5ba79e28493ff2919d53ffc63d5d7a7933dae295c220306e61d30563",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "derived_from": "enemy.drifter.death",
+      "frame": 3,
+      "spawn_offset_from_actor_px": [
+        0,
+        -34
+      ],
+      "spawn_offset_from_actor_world_px": [
+        0.0,
+        -17.0
+      ],
+      "note": "Same painted final death pose at same scale, reanchored from feet pivot to corpse body center. Spawn at actor position + spawn_offset_from_actor_world_px to avoid a transition jump. No independent rescaling.",
+      "visible_extent_world_px": [
+        80.0,
+        33.5
+      ]
+    },
+    "enemy.runner.walk": {
+      "target_path": "res://assets/art/enemies/runner_walk.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        1024,
+        768
+      ],
+      "bbox_px": [
+        36,
+        56,
+        985,
+        720
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": [
+        0.5114638447971781,
+        0.5732484076433121,
+        0.4882154882154882
+      ],
+      "upscaled": false,
+      "sha256": "3e8e1890d4b2c17511c7dcb1b5ff4dd814022af9d73d4de02ca15457f70f7eef",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        256,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "direction": "S",
+          "pose": 0,
+          "bbox_px": [
+            100,
+            56,
+            156,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5114638447971781,
+          "rgba_sha256": "1dea6d14fb2846c168505a08418d42631f39f330b16ae4accdd49d8b93d72db3"
+        },
+        {
+          "index": 1,
+          "direction": "S",
+          "pose": 1,
+          "bbox_px": [
+            103,
+            67,
+            154,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5114638447971781,
+          "rgba_sha256": "85001710f6c0992ea26c141352e26c2d5f3b433999efd79701753e3f6a7d34a5"
+        },
+        {
+          "index": 2,
+          "direction": "S",
+          "pose": 2,
+          "bbox_px": [
+            101,
+            59,
+            155,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5114638447971781,
+          "rgba_sha256": "9e44bdb89535452334af6c67ba39f80faa4ff76acae1185ee5650489d0dc3226"
+        },
+        {
+          "index": 3,
+          "direction": "S",
+          "pose": 3,
+          "bbox_px": [
+            102,
+            73,
+            154,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5114638447971781,
+          "rgba_sha256": "71831b3073871fae3f18e5a612f40206f15d914d9658ff3edaf47c7738e7ec77"
+        },
+        {
+          "index": 4,
+          "direction": "E",
+          "pose": 0,
+          "bbox_px": [
+            36,
+            116,
+            220,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5732484076433121,
+          "rgba_sha256": "a5c783a5581959daa17a4b6d7c26db71387bf22d36fc13f8a27e1a6a170326d6"
+        },
+        {
+          "index": 5,
+          "direction": "E",
+          "pose": 1,
+          "bbox_px": [
+            40,
+            120,
+            217,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5732484076433121,
+          "rgba_sha256": "94b65f758135f586ff4df7d3d7181225b5ccf7153af91d8bb8a2be357e73c0ee"
+        },
+        {
+          "index": 6,
+          "direction": "E",
+          "pose": 2,
+          "bbox_px": [
+            37,
+            118,
+            220,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5732484076433121,
+          "rgba_sha256": "853a405ed77c2286b6cd02c5c674b9b038faa7ebed80c83d9b2fc27476ceaf30"
+        },
+        {
+          "index": 7,
+          "direction": "E",
+          "pose": 3,
+          "bbox_px": [
+            39,
+            118,
+            217,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5732484076433121,
+          "rgba_sha256": "4c9d482218616667b6b925ff87ff8d450772455c3bd86005f45cb46f8663ab36"
+        },
+        {
+          "index": 8,
+          "direction": "N",
+          "pose": 0,
+          "bbox_px": [
+            104,
+            58,
+            153,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4882154882154882,
+          "rgba_sha256": "52fc31dc3b1efaec431ea6268cac29e607c7f78826a6d4d2000e4b39516eb0eb"
+        },
+        {
+          "index": 9,
+          "direction": "N",
+          "pose": 1,
+          "bbox_px": [
+            104,
+            73,
+            153,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4882154882154882,
+          "rgba_sha256": "f30df14b17cf8f18f89691a14859ba0d281678d2ffecb9c567f9dbdab5580798"
+        },
+        {
+          "index": 10,
+          "direction": "N",
+          "pose": 2,
+          "bbox_px": [
+            104,
+            57,
+            153,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4882154882154882,
+          "rgba_sha256": "5afa86f62650d34db97093d958c5f39ded2b079dbbead7ba2fe49d46a5bc7d7e"
+        },
+        {
+          "index": 11,
+          "direction": "N",
+          "pose": 3,
+          "bbox_px": [
+            103,
+            68,
+            153,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4882154882154882,
+          "rgba_sha256": "b27728d1cf63f1ab8aaaa99c35eb7d2f9637d406dbe7c06101b241a42f6dbf48"
+        }
+      ],
+      "layout": "4x3_S_E_N",
+      "frame_count": 12,
+      "reference_height_px_by_direction": [
+        145,
+        90,
+        145
+      ],
+      "animation": "walk",
+      "loop": true,
+      "fps_hint": 8,
+      "normalization": "one uniform scale per direction; death uses one scale for all four poses",
+      "source_size_px": [
+        1448,
+        1086
+      ],
+      "visible_extent_world_px": [
+        474.5,
+        332.0
+      ],
+      "max_frame_extent_world_px": [
+        92.0,
+        76.0
+      ]
+    },
+    "enemy.runner.attack": {
+      "target_path": "res://assets/art/enemies/runner_attack.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        768,
+        768
+      ],
+      "bbox_px": [
+        51,
+        63,
+        718,
+        720
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": [
+        0.46774193548387094,
+        0.4712041884816754,
+        0.4420731707317073
+      ],
+      "upscaled": false,
+      "sha256": "c747a94a7d2e294a34bb9b4242fe0a1e5636b11396fa482ae375d9d377de99b4",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        256,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "direction": "S",
+          "pose": 0,
+          "bbox_px": [
+            97,
+            63,
+            160,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.46774193548387094,
+          "rgba_sha256": "1e51d7a23f6864767c8eebb678f73d9de012f298d2cc4166244c3b8a61fbacb4"
+        },
+        {
+          "index": 1,
+          "direction": "S",
+          "pose": 1,
+          "bbox_px": [
+            88,
+            63,
+            169,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.46774193548387094,
+          "rgba_sha256": "0991cba648c6ee33c9927b6f1d0668ad98e2a6da7c9d015e051147ad39c74436"
+        },
+        {
+          "index": 2,
+          "direction": "S",
+          "pose": 2,
+          "bbox_px": [
+            96,
+            64,
+            160,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.46774193548387094,
+          "rgba_sha256": "7cb1e42434a0dec216bbedae0a559181014ddf09d444e9e25887276440500842"
+        },
+        {
+          "index": 3,
+          "direction": "E",
+          "pose": 0,
+          "bbox_px": [
+            51,
+            118,
+            206,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4712041884816754,
+          "rgba_sha256": "64969cc681d1041ca9ee51a18e50a40ef21ad447f8db3379fe56f1bcc913f5c8"
+        },
+        {
+          "index": 4,
+          "direction": "E",
+          "pose": 1,
+          "bbox_px": [
+            41,
+            128,
+            216,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4712041884816754,
+          "rgba_sha256": "d427f6bed5507a2a73102dbdba51c3784a42bcc8e07270ee2ca008156cfa258e"
+        },
+        {
+          "index": 5,
+          "direction": "E",
+          "pose": 2,
+          "bbox_px": [
+            50,
+            117,
+            206,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4712041884816754,
+          "rgba_sha256": "bc69f7b3b7045ddd6a0fd6554c54f4d09ad773e13d1ea56cad71b34222e59fa9"
+        },
+        {
+          "index": 6,
+          "direction": "N",
+          "pose": 0,
+          "bbox_px": [
+            98,
+            63,
+            158,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4420731707317073,
+          "rgba_sha256": "71f1fa8bd600a8046dbdf0dd929442a75316d39197510a1e41d41733851996cc"
+        },
+        {
+          "index": 7,
+          "direction": "N",
+          "pose": 1,
+          "bbox_px": [
+            94,
+            63,
+            162,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4420731707317073,
+          "rgba_sha256": "23a230d21a7e0f185edf0368fc654e24cfdfb70362411080e7493929805bea47"
+        },
+        {
+          "index": 8,
+          "direction": "N",
+          "pose": 2,
+          "bbox_px": [
+            98,
+            60,
+            159,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4420731707317073,
+          "rgba_sha256": "04c95e0016f2a2ea767163a7452fdf628aa91f95a743f72459f2d21413b12762"
+        }
+      ],
+      "layout": "3x3_S_E_N",
+      "frame_count": 9,
+      "reference_height_px_by_direction": [
+        145,
+        90,
+        145
+      ],
+      "animation": "attack",
+      "loop": false,
+      "fps_hint": 6,
+      "normalization": "one uniform scale per direction; death uses one scale for all four poses",
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        333.5,
+        328.5
+      ],
+      "max_frame_extent_world_px": [
+        87.5,
+        74.0
+      ]
+    },
+    "enemy.runner.death": {
+      "target_path": "res://assets/art/enemies/runner_death.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        1024,
+        256
+      ],
+      "bbox_px": [
+        54,
+        63,
+        1008,
+        208
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": [
+        0.43283582089552236
+      ],
+      "upscaled": false,
+      "sha256": "135ad58c7feda44630bbb2a38a29e0dd35a5ae3e737abf091ef1aa35b1c05a3f",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        256,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "direction": "shared",
+          "pose": 0,
+          "bbox_px": [
+            54,
+            63,
+            202,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.43283582089552236,
+          "rgba_sha256": "68020baa2327107aa92baebfb58901ef807696e73c6e23b1841d2f7aa63e5df6"
+        },
+        {
+          "index": 1,
+          "direction": "shared",
+          "pose": 1,
+          "bbox_px": [
+            37,
+            95,
+            219,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.43283582089552236,
+          "rgba_sha256": "6741421766bc94214687c646fc65c2aa090453abfcc10fb69aa865b2200de0f4"
+        },
+        {
+          "index": 2,
+          "direction": "shared",
+          "pose": 0,
+          "bbox_px": [
+            32,
+            95,
+            224,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.43283582089552236,
+          "rgba_sha256": "bdfb2eb80679c20635c05a447382c98bd20f20ae1768526fb82bb0ca333dd69f"
+        },
+        {
+          "index": 3,
+          "direction": "shared",
+          "pose": 1,
+          "bbox_px": [
+            16,
+            121,
+            240,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.43283582089552236,
+          "rgba_sha256": "14df175c8c99b3ab92174c3934c7c1117491f059c267b0d110042df2a3f1a255"
+        }
+      ],
+      "layout": "4x1_shared",
+      "frame_count": 4,
+      "reference_height_px_by_direction": [
+        145,
+        90,
+        145
+      ],
+      "animation": "death",
+      "loop": false,
+      "fps_hint": 6,
+      "normalization": "one uniform scale per direction; death uses one scale for all four poses",
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        477.0,
+        72.5
+      ],
+      "max_frame_extent_world_px": [
+        112.0,
+        72.5
+      ]
+    },
+    "corpse.runner": {
+      "target_path": "res://assets/art/corpses/runner.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        16,
+        117,
+        240,
+        204
+      ],
+      "pivot_px": [
+        128,
+        160
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.43283582089552236,
+      "upscaled": false,
+      "sha256": "4b06f5c4ea131776020f945e8527f88ac69df4123015e2ed0cdea04a0984fa2a",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "derived_from": "enemy.runner.death",
+      "frame": 3,
+      "spawn_offset_from_actor_px": [
+        0,
+        -44
+      ],
+      "spawn_offset_from_actor_world_px": [
+        0.0,
+        -22.0
+      ],
+      "note": "Same painted final death pose at same scale, reanchored from feet pivot to corpse body center. Spawn at actor position + spawn_offset_from_actor_world_px to avoid a transition jump. No independent rescaling.",
+      "visible_extent_world_px": [
+        112.0,
+        43.5
+      ]
+    },
+    "enemy.spitter.walk": {
+      "target_path": "res://assets/art/enemies/spitter_walk.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        1024,
+        768
+      ],
+      "bbox_px": [
+        54,
+        90,
+        961,
+        720
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": [
+        0.4581673306772908,
+        0.5133928571428571,
+        0.47619047619047616
+      ],
+      "upscaled": false,
+      "sha256": "6eed5664d6c29863f9ab70e94b0f326fdbbbeda89e60e3494262108e8df63bb5",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        256,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "direction": "S",
+          "pose": 0,
+          "bbox_px": [
+            80,
+            90,
+            176,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4581673306772908,
+          "rgba_sha256": "17d86342d513b5ee9824ca2807ced7fd972b0786b003c76c54288737f98a82fe"
+        },
+        {
+          "index": 1,
+          "direction": "S",
+          "pose": 1,
+          "bbox_px": [
+            82,
+            96,
+            174,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4581673306772908,
+          "rgba_sha256": "9cbcbf4f2d5dd4768426969b858a2376b4bc7835dec50246702622b9817bc60b"
+        },
+        {
+          "index": 2,
+          "direction": "S",
+          "pose": 2,
+          "bbox_px": [
+            80,
+            90,
+            176,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4581673306772908,
+          "rgba_sha256": "5fa6b7c75c20cab17d37ebfb02610c5db465b37c379577ceab547c9dafa729a5"
+        },
+        {
+          "index": 3,
+          "direction": "S",
+          "pose": 3,
+          "bbox_px": [
+            82,
+            98,
+            174,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4581673306772908,
+          "rgba_sha256": "5ed61e224d93bd22770d8d3af9de37a3b391cf5cc7c4559e8dbed08f5cbd363b"
+        },
+        {
+          "index": 4,
+          "direction": "E",
+          "pose": 0,
+          "bbox_px": [
+            54,
+            92,
+            203,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5133928571428571,
+          "rgba_sha256": "4ef6975cc76e81b4cbf3de943dca9f39515bd392fbf5e4eb25ba8a9e9bb8c56d"
+        },
+        {
+          "index": 5,
+          "direction": "E",
+          "pose": 1,
+          "bbox_px": [
+            65,
+            96,
+            191,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5133928571428571,
+          "rgba_sha256": "5a5bf85e8a12d1e7b93c29e2774e3002177202fd008167fd2067d3a6df91f8ab"
+        },
+        {
+          "index": 6,
+          "direction": "E",
+          "pose": 2,
+          "bbox_px": [
+            53,
+            91,
+            203,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5133928571428571,
+          "rgba_sha256": "b3c91449fad25e7ebb017fd081ad24b3b9a847199d00e654fc3962661d50684f"
+        },
+        {
+          "index": 7,
+          "direction": "E",
+          "pose": 3,
+          "bbox_px": [
+            63,
+            94,
+            193,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5133928571428571,
+          "rgba_sha256": "f578ae3432f41737d34fcc3fb5238e829903ee9039cf2c6fab1568788e6d7cb2"
+        },
+        {
+          "index": 8,
+          "direction": "N",
+          "pose": 0,
+          "bbox_px": [
+            81,
+            86,
+            176,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.47619047619047616,
+          "rgba_sha256": "1ed72b630d91d30daf35175e607dc093d6a91633656a668946d82017073b42b5"
+        },
+        {
+          "index": 9,
+          "direction": "N",
+          "pose": 1,
+          "bbox_px": [
+            80,
+            95,
+            176,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.47619047619047616,
+          "rgba_sha256": "5118ee45a472bc2bb70ce7271472ee6fa2cae0e0751bd4ef9c815d76235fcfda"
+        },
+        {
+          "index": 10,
+          "direction": "N",
+          "pose": 2,
+          "bbox_px": [
+            79,
+            92,
+            178,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.47619047619047616,
+          "rgba_sha256": "91248398cf0e3a555db6c0c3868a701437a850fbc1d7d4129de3c14b48c8232d"
+        },
+        {
+          "index": 11,
+          "direction": "N",
+          "pose": 3,
+          "bbox_px": [
+            80,
+            94,
+            176,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.47619047619047616,
+          "rgba_sha256": "74a080add88f07aae034f92529eb554a2ae9368e28ec3bfa804ccf42bdd82ef0"
+        }
+      ],
+      "layout": "4x3_S_E_N",
+      "frame_count": 12,
+      "reference_height_px_by_direction": [
+        115,
+        115,
+        115
+      ],
+      "animation": "walk",
+      "loop": true,
+      "fps_hint": 8,
+      "normalization": "one uniform scale per direction; death uses one scale for all four poses",
+      "source_size_px": [
+        1448,
+        1086
+      ],
+      "visible_extent_world_px": [
+        453.5,
+        315.0
+      ],
+      "max_frame_extent_world_px": [
+        75.0,
+        61.0
+      ]
+    },
+    "enemy.spitter.attack": {
+      "target_path": "res://assets/art/enemies/spitter_attack.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        768,
+        768
+      ],
+      "bbox_px": [
+        57,
+        87,
+        721,
+        720
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": [
+        0.4811715481171548,
+        0.4831932773109244,
+        0.4732510288065844
+      ],
+      "upscaled": false,
+      "sha256": "3d906063088a87e408b1b83b2dc91949601bbb8c64d5020b308448c99c234013",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        256,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "direction": "S",
+          "pose": 0,
+          "bbox_px": [
+            64,
+            93,
+            192,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4811715481171548,
+          "rgba_sha256": "0eda036ac74818d1821691394fc1c893732555f5ee207d442bb9cb3cb9010834"
+        },
+        {
+          "index": 1,
+          "direction": "S",
+          "pose": 1,
+          "bbox_px": [
+            52,
+            87,
+            205,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4811715481171548,
+          "rgba_sha256": "833b01e6e197921604e8988bccc0e33f941cb64fc6629b15774d55f357492436"
+        },
+        {
+          "index": 2,
+          "direction": "S",
+          "pose": 2,
+          "bbox_px": [
+            64,
+            93,
+            193,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4811715481171548,
+          "rgba_sha256": "fc2fd003c462d6f6ac156c83915c6cfc22ce1cac6fdd3e60bc03f22f0bb82d52"
+        },
+        {
+          "index": 3,
+          "direction": "E",
+          "pose": 0,
+          "bbox_px": [
+            63,
+            93,
+            193,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4831932773109244,
+          "rgba_sha256": "67a55fb83949dc823e4cc0d290ae20f68e1a4c5dcb84c7aca2acae57383c8547"
+        },
+        {
+          "index": 4,
+          "direction": "E",
+          "pose": 1,
+          "bbox_px": [
+            35,
+            94,
+            221,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4831932773109244,
+          "rgba_sha256": "50cd853caee8268e2856a27db1c36985f034c362f5bb16fbde3201cfabd0538a"
+        },
+        {
+          "index": 5,
+          "direction": "E",
+          "pose": 2,
+          "bbox_px": [
+            47,
+            95,
+            209,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4831932773109244,
+          "rgba_sha256": "d3041cc5ce474dbe0e496f0eaa19f76ac48d6b5a7b6911ad47177991c6a9c11d"
+        },
+        {
+          "index": 6,
+          "direction": "N",
+          "pose": 0,
+          "bbox_px": [
+            57,
+            93,
+            200,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4732510288065844,
+          "rgba_sha256": "fbd6f5cd8c8a91005bff36e510edbab60c5e7adc1573d9458d1c9e3586607541"
+        },
+        {
+          "index": 7,
+          "direction": "N",
+          "pose": 1,
+          "bbox_px": [
+            54,
+            81,
+            202,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4732510288065844,
+          "rgba_sha256": "796c261329d538b6b719fe183d30a061ef4ba6fd71b59ecc0fe5720473248ed5"
+        },
+        {
+          "index": 8,
+          "direction": "N",
+          "pose": 2,
+          "bbox_px": [
+            58,
+            95,
+            199,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4732510288065844,
+          "rgba_sha256": "7a05ea2bec1601e69bc0bbc18dc9351563877f658bb0178d3f47df9e45c5bfec"
+        }
+      ],
+      "layout": "3x3_S_E_N",
+      "frame_count": 9,
+      "reference_height_px_by_direction": [
+        115,
+        115,
+        115
+      ],
+      "animation": "attack",
+      "loop": false,
+      "fps_hint": 6,
+      "normalization": "one uniform scale per direction; death uses one scale for all four poses",
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        332.0,
+        316.5
+      ],
+      "max_frame_extent_world_px": [
+        93.0,
+        63.5
+      ]
+    },
+    "enemy.spitter.death": {
+      "target_path": "res://assets/art/enemies/spitter_death.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        1024,
+        256
+      ],
+      "bbox_px": [
+        67,
+        93,
+        982,
+        208
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": [
+        0.3116531165311653
+      ],
+      "upscaled": false,
+      "sha256": "fca15d631eda9667da83f1002e99f12e2779d947ec438df3c027dac01368d98a",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        256,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "direction": "shared",
+          "pose": 0,
+          "bbox_px": [
+            67,
+            93,
+            190,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.3116531165311653,
+          "rgba_sha256": "b00083a851c17720c3fa4aecfdafc9ce7272ae01c806bf28e508904c994190a7"
+        },
+        {
+          "index": 1,
+          "direction": "shared",
+          "pose": 1,
+          "bbox_px": [
+            55,
+            101,
+            202,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.3116531165311653,
+          "rgba_sha256": "66c6b3decd19439d2cf7b16fe2ff9172cc0cb0dab78b9322628e779957bb24b8"
+        },
+        {
+          "index": 2,
+          "direction": "shared",
+          "pose": 0,
+          "bbox_px": [
+            52,
+            113,
+            204,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.3116531165311653,
+          "rgba_sha256": "c4314573e8974dd5958d4a22741823b5fc3d0965ed60d020bffa63c3aca78194"
+        },
+        {
+          "index": 3,
+          "direction": "shared",
+          "pose": 1,
+          "bbox_px": [
+            43,
+            126,
+            214,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.3116531165311653,
+          "rgba_sha256": "1bbddafe344392f48669310ac2a3b4fd68b93a2f012b7847906a6562e9c91220"
+        }
+      ],
+      "layout": "4x1_shared",
+      "frame_count": 4,
+      "reference_height_px_by_direction": [
+        115,
+        115,
+        115
+      ],
+      "animation": "death",
+      "loop": false,
+      "fps_hint": 6,
+      "normalization": "one uniform scale per direction; death uses one scale for all four poses",
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        457.5,
+        57.5
+      ],
+      "max_frame_extent_world_px": [
+        85.5,
+        57.5
+      ]
+    },
+    "corpse.spitter": {
+      "target_path": "res://assets/art/corpses/spitter.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        43,
+        119,
+        214,
+        201
+      ],
+      "pivot_px": [
+        128,
+        160
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.3116531165311653,
+      "upscaled": false,
+      "sha256": "a18b9562c77b3beb102aeeb48f728daa1c5e2bf2b3425f6ca9005a3f07dd8457",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "derived_from": "enemy.spitter.death",
+      "frame": 3,
+      "spawn_offset_from_actor_px": [
+        0,
+        -41
+      ],
+      "spawn_offset_from_actor_world_px": [
+        0.0,
+        -20.5
+      ],
+      "note": "Same painted final death pose at same scale, reanchored from feet pivot to corpse body center. Spawn at actor position + spawn_offset_from_actor_world_px to avoid a transition jump. No independent rescaling.",
+      "visible_extent_world_px": [
+        85.5,
+        41.0
+      ]
+    },
+    "enemy.gunner.walk": {
+      "target_path": "res://assets/art/enemies/gunner_walk.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        1024,
+        768
+      ],
+      "bbox_px": [
+        81,
+        55,
+        937,
+        720
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": [
+        0.4769475357710652,
+        0.4942339373970346,
+        0.47058823529411764
+      ],
+      "upscaled": false,
+      "sha256": "2b9ae792d86374abd6ab1a3dcd9842a45f310341b9f3d22b93b97ed27548e7e8",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        256,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "direction": "S",
+          "pose": 0,
+          "bbox_px": [
+            90,
+            55,
+            166,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4769475357710652,
+          "rgba_sha256": "0c5ff3f0fb7f87820b88daf5a1041776bc1e0baef093efef9d0fcbe1caf7c80a"
+        },
+        {
+          "index": 1,
+          "direction": "S",
+          "pose": 1,
+          "bbox_px": [
+            91,
+            60,
+            166,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4769475357710652,
+          "rgba_sha256": "409623110e0853ec363dbb11669432c2322416ac7139bdf06a0ed66232e0038a"
+        },
+        {
+          "index": 2,
+          "direction": "S",
+          "pose": 2,
+          "bbox_px": [
+            91,
+            56,
+            165,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4769475357710652,
+          "rgba_sha256": "cf823832e96d7f740079946686d69bf2adc70f7a87823f164b3f8f4ef7257f81"
+        },
+        {
+          "index": 3,
+          "direction": "S",
+          "pose": 3,
+          "bbox_px": [
+            92,
+            62,
+            164,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4769475357710652,
+          "rgba_sha256": "c06fe4acbfcbf4e472d9713a0834688d76ce53ba40a027ff113a9fa737b27a98"
+        },
+        {
+          "index": 4,
+          "direction": "E",
+          "pose": 0,
+          "bbox_px": [
+            81,
+            58,
+            175,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4942339373970346,
+          "rgba_sha256": "9f9958665b52e78456f8f5ba32e2fe8a1b8ce206fc48213678139719fcf255b9"
+        },
+        {
+          "index": 5,
+          "direction": "E",
+          "pose": 1,
+          "bbox_px": [
+            87,
+            58,
+            169,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4942339373970346,
+          "rgba_sha256": "24fce1dd88a97b36f8d4bfdf033072f146f3d6077dc0776625e05f24150c5bee"
+        },
+        {
+          "index": 6,
+          "direction": "E",
+          "pose": 2,
+          "bbox_px": [
+            81,
+            59,
+            175,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4942339373970346,
+          "rgba_sha256": "edcb87ea7d1a1d685545febb0e70e832e29929f1d30d38f879baca17849e6489"
+        },
+        {
+          "index": 7,
+          "direction": "E",
+          "pose": 3,
+          "bbox_px": [
+            88,
+            57,
+            169,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4942339373970346,
+          "rgba_sha256": "2038650b3930e9b41240ef02d7f7ac2d84d3f2a535e0d9ce0cf9e3ef5331b642"
+        },
+        {
+          "index": 8,
+          "direction": "N",
+          "pose": 0,
+          "bbox_px": [
+            92,
+            58,
+            165,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.47058823529411764,
+          "rgba_sha256": "cb090908ed66df95bb8785658c2ec6d92c871368147f56f16953a9c7453bd5f7"
+        },
+        {
+          "index": 9,
+          "direction": "N",
+          "pose": 1,
+          "bbox_px": [
+            92,
+            63,
+            165,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.47058823529411764,
+          "rgba_sha256": "2606e74eb9c7550939c16d4147772ed63e5a79fb7ccbd16fc778dd7e263e2aa9"
+        },
+        {
+          "index": 10,
+          "direction": "N",
+          "pose": 2,
+          "bbox_px": [
+            92,
+            59,
+            165,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.47058823529411764,
+          "rgba_sha256": "353f2ede0a40eedc43168a52110b5d2b5fafd05c2015ad14bb694041db80c965"
+        },
+        {
+          "index": 11,
+          "direction": "N",
+          "pose": 3,
+          "bbox_px": [
+            92,
+            61,
+            165,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.47058823529411764,
+          "rgba_sha256": "204a6b50d82b6612e7a2cc4dbf2cc4c77d0de2a3b0ae509da62a5a85ec6a78f5"
+        }
+      ],
+      "layout": "4x3_S_E_N",
+      "frame_count": 12,
+      "reference_height_px_by_direction": [
+        150,
+        150,
+        148
+      ],
+      "animation": "walk",
+      "loop": true,
+      "fps_hint": 8,
+      "normalization": "one uniform scale per direction; death uses one scale for all four poses",
+      "source_size_px": [
+        1448,
+        1086
+      ],
+      "visible_extent_world_px": [
+        428.0,
+        332.5
+      ],
+      "max_frame_extent_world_px": [
+        47.0,
+        76.5
+      ]
+    },
+    "enemy.gunner.attack": {
+      "target_path": "res://assets/art/enemies/gunner_attack.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        768,
+        768
+      ],
+      "bbox_px": [
+        82,
+        58,
+        695,
+        720
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": [
+        0.4225352112676056,
+        0.4166666666666667,
+        0.42165242165242167
+      ],
+      "upscaled": false,
+      "sha256": "f0f6c276060d0d768c93ed82562c5c15cf47e181f1d8ba43be406aa19a0abb3c",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        256,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "direction": "S",
+          "pose": 0,
+          "bbox_px": [
+            86,
+            58,
+            171,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4225352112676056,
+          "rgba_sha256": "a881e4ed5c3b3c70c763e30804bbb4b5e9409321d8df23f6f52c61ab2196ea70"
+        },
+        {
+          "index": 1,
+          "direction": "S",
+          "pose": 1,
+          "bbox_px": [
+            70,
+            62,
+            186,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4225352112676056,
+          "rgba_sha256": "8ad5c7abaa7ed4008bb48ffd7a7b6d76be6449a68a4bb27ac8534d25df73c84a"
+        },
+        {
+          "index": 2,
+          "direction": "S",
+          "pose": 2,
+          "bbox_px": [
+            81,
+            60,
+            176,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4225352112676056,
+          "rgba_sha256": "9c5b825f050c08f4b4aa7fb6e62a4c8dc65088d6fba3ae234b51269b85a25b9c"
+        },
+        {
+          "index": 3,
+          "direction": "E",
+          "pose": 0,
+          "bbox_px": [
+            82,
+            58,
+            174,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4166666666666667,
+          "rgba_sha256": "83b70a49de00d4e9d5f3e6920413d1710109588783423cedb61fb2d677be8d04"
+        },
+        {
+          "index": 4,
+          "direction": "E",
+          "pose": 1,
+          "bbox_px": [
+            57,
+            60,
+            199,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4166666666666667,
+          "rgba_sha256": "241a8f6ddcd446a3d9cdfd7466a64f9738a7cfb17991b516a50ffa461623611b"
+        },
+        {
+          "index": 5,
+          "direction": "E",
+          "pose": 2,
+          "bbox_px": [
+            74,
+            59,
+            183,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4166666666666667,
+          "rgba_sha256": "76d4dc509cd00711d7fd19c61adeef31df8c4c92a3952839544a0a32bfab9f25"
+        },
+        {
+          "index": 6,
+          "direction": "N",
+          "pose": 0,
+          "bbox_px": [
+            87,
+            60,
+            170,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.42165242165242167,
+          "rgba_sha256": "11d1f351a7684245d1d55c36a263549c5d6b6087a99cb285a7e6bd6d7b43dec7"
+        },
+        {
+          "index": 7,
+          "direction": "N",
+          "pose": 1,
+          "bbox_px": [
+            70,
+            59,
+            186,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.42165242165242167,
+          "rgba_sha256": "3c07bbf2d945c80181ca075b0e93b15e9984a854838aa6948a21ee8a30708c54"
+        },
+        {
+          "index": 8,
+          "direction": "N",
+          "pose": 2,
+          "bbox_px": [
+            82,
+            58,
+            174,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.42165242165242167,
+          "rgba_sha256": "a26e1b62b53da2303bab182776bf18801f8254be67666a6c10c78905a4a2a510"
+        }
+      ],
+      "layout": "3x3_S_E_N",
+      "frame_count": 9,
+      "reference_height_px_by_direction": [
+        150,
+        150,
+        148
+      ],
+      "animation": "attack",
+      "loop": false,
+      "fps_hint": 6,
+      "normalization": "one uniform scale per direction; death uses one scale for all four poses",
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        306.5,
+        331.0
+      ],
+      "max_frame_extent_world_px": [
+        71.0,
+        75.0
+      ]
+    },
+    "enemy.gunner.death": {
+      "target_path": "res://assets/art/enemies/gunner_death.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        1024,
+        256
+      ],
+      "bbox_px": [
+        86,
+        58,
+        982,
+        208
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": [
+        0.3171247357293869
+      ],
+      "upscaled": false,
+      "sha256": "d655fc915622d955cd37ad837c6d28197c00f81d65e4e14861ae13068a5af485",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        256,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "direction": "shared",
+          "pose": 0,
+          "bbox_px": [
+            86,
+            58,
+            171,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.3171247357293869,
+          "rgba_sha256": "4fbd13fec6690dd7973384c3a22c7e253e4edc3ae255cd3fac864b5657ed18ce"
+        },
+        {
+          "index": 1,
+          "direction": "shared",
+          "pose": 1,
+          "bbox_px": [
+            79,
+            87,
+            177,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.3171247357293869,
+          "rgba_sha256": "fa19151faa5a5ac72a91225708ddd3a576995b4aeef2f356b96b305450203f54"
+        },
+        {
+          "index": 2,
+          "direction": "shared",
+          "pose": 0,
+          "bbox_px": [
+            54,
+            112,
+            202,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.3171247357293869,
+          "rgba_sha256": "9c81646fae83f5492a313ec8e1ac12ae93d4321804dd54887e790ca6e4f34351"
+        },
+        {
+          "index": 3,
+          "direction": "shared",
+          "pose": 1,
+          "bbox_px": [
+            43,
+            133,
+            214,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.3171247357293869,
+          "rgba_sha256": "b045d5391aaff25efef42b1146638286d4efcae180db62c09a5e256a164d4134"
+        }
+      ],
+      "layout": "4x1_shared",
+      "frame_count": 4,
+      "reference_height_px_by_direction": [
+        150,
+        150,
+        148
+      ],
+      "animation": "death",
+      "loop": false,
+      "fps_hint": 6,
+      "normalization": "one uniform scale per direction; death uses one scale for all four poses",
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        448.0,
+        75.0
+      ],
+      "max_frame_extent_world_px": [
+        85.5,
+        75.0
+      ]
+    },
+    "corpse.gunner": {
+      "target_path": "res://assets/art/corpses/gunner.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        43,
+        123,
+        214,
+        198
+      ],
+      "pivot_px": [
+        128,
+        160
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.3171247357293869,
+      "upscaled": false,
+      "sha256": "621ef2c1cf1e7b33bd9057175d4eef9ff3aecadfa3a21ce98eb77f6b9979c9d7",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "derived_from": "enemy.gunner.death",
+      "frame": 3,
+      "spawn_offset_from_actor_px": [
+        0,
+        -38
+      ],
+      "spawn_offset_from_actor_world_px": [
+        0.0,
+        -19.0
+      ],
+      "note": "Same painted final death pose at same scale, reanchored from feet pivot to corpse body center. Spawn at actor position + spawn_offset_from_actor_world_px to avoid a transition jump. No independent rescaling.",
+      "visible_extent_world_px": [
+        85.5,
+        37.5
+      ]
+    },
+    "enemy.charger.walk": {
+      "target_path": "res://assets/art/enemies/charger_walk.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        1024,
+        768
+      ],
+      "bbox_px": [
+        26,
+        59,
+        999,
+        720
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": [
+        0.5653846153846154,
+        0.6649746192893401,
+        0.5394495412844037
+      ],
+      "upscaled": false,
+      "sha256": "c39a119855756c61a0f8d9af2d3ca26c1b39ff67591699d44cad6e121d161613",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        256,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "direction": "S",
+          "pose": 0,
+          "bbox_px": [
+            82,
+            59,
+            175,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5653846153846154,
+          "rgba_sha256": "1f31631b4ff7f1818c72419f33464f35260abadefef2c9761a31c7292988af9f"
+        },
+        {
+          "index": 1,
+          "direction": "S",
+          "pose": 1,
+          "bbox_px": [
+            82,
+            62,
+            175,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5653846153846154,
+          "rgba_sha256": "9ba60b9bb09efda9db64b7029d1d7035914faa7e06e6f3eebd16274fa9b3050e"
+        },
+        {
+          "index": 2,
+          "direction": "S",
+          "pose": 2,
+          "bbox_px": [
+            80,
+            60,
+            176,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5653846153846154,
+          "rgba_sha256": "c1afbec32a681110810b72d95f6b606fa1aa8e9ac4630e2ee2b6cef411df4d26"
+        },
+        {
+          "index": 3,
+          "direction": "S",
+          "pose": 3,
+          "bbox_px": [
+            80,
+            63,
+            177,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5653846153846154,
+          "rgba_sha256": "502fd7a4bcfbadf302c2a4a69d67bb3852ac6ab9a87930197ea1ef41549ecb78"
+        },
+        {
+          "index": 4,
+          "direction": "E",
+          "pose": 0,
+          "bbox_px": [
+            26,
+            78,
+            231,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.6649746192893401,
+          "rgba_sha256": "583443761a16b4eb1f7cb3b1d2a212c2642afec631ffefe98cd0bd42970e19e6"
+        },
+        {
+          "index": 5,
+          "direction": "E",
+          "pose": 1,
+          "bbox_px": [
+            14,
+            80,
+            242,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.6649746192893401,
+          "rgba_sha256": "078275a13ee9b655aa663b9980d8aa84024960c04b7b2123795fe2d7a4bec332"
+        },
+        {
+          "index": 6,
+          "direction": "E",
+          "pose": 2,
+          "bbox_px": [
+            21,
+            74,
+            235,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.6649746192893401,
+          "rgba_sha256": "a4135ca9ab35c11f4e22a3e07f8c93c65e0514d96b5fd84b24e483bc323a259a"
+        },
+        {
+          "index": 7,
+          "direction": "E",
+          "pose": 3,
+          "bbox_px": [
+            26,
+            76,
+            231,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.6649746192893401,
+          "rgba_sha256": "3c13992e6b9261fc8255abc9660011a4e1d4663f74ba3c6611a1afc2d25a92e4"
+        },
+        {
+          "index": 8,
+          "direction": "N",
+          "pose": 0,
+          "bbox_px": [
+            82,
+            60,
+            174,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5394495412844037,
+          "rgba_sha256": "388f27a2d51afbffb26a7a84c05e52d8aa7c3922deac3148931bdd1fe36fb77b"
+        },
+        {
+          "index": 9,
+          "direction": "N",
+          "pose": 1,
+          "bbox_px": [
+            83,
+            62,
+            174,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5394495412844037,
+          "rgba_sha256": "2405219cdecb310468cd3524ea176fe48954f61ac3a573434e4fa281d5d847c3"
+        },
+        {
+          "index": 10,
+          "direction": "N",
+          "pose": 2,
+          "bbox_px": [
+            83,
+            59,
+            174,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5394495412844037,
+          "rgba_sha256": "cd9a0828708719120bb64762c549f241dc34782f6e38dbf7116c15564ca53018"
+        },
+        {
+          "index": 11,
+          "direction": "N",
+          "pose": 3,
+          "bbox_px": [
+            82,
+            62,
+            174,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5394495412844037,
+          "rgba_sha256": "b42e23765b0a8d5314bea328e72aeb6098a830bce251cef1edaa7f93a79f2dae"
+        }
+      ],
+      "layout": "4x3_S_E_N",
+      "frame_count": 12,
+      "reference_height_px_by_direction": [
+        147,
+        131,
+        147
+      ],
+      "animation": "walk",
+      "loop": true,
+      "fps_hint": 8,
+      "normalization": "one uniform scale per direction; death uses one scale for all four poses",
+      "source_size_px": [
+        1448,
+        1086
+      ],
+      "visible_extent_world_px": [
+        486.5,
+        330.5
+      ],
+      "max_frame_extent_world_px": [
+        114.0,
+        74.5
+      ]
+    },
+    "enemy.charger.attack": {
+      "target_path": "res://assets/art/enemies/charger_attack.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        768,
+        768
+      ],
+      "bbox_px": [
+        30,
+        61,
+        738,
+        720
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": [
+        0.4867549668874172,
+        0.5346938775510204,
+        0.4696485623003195
+      ],
+      "upscaled": false,
+      "sha256": "d7521f69610181757624bf11cca20c233b00a73fb9ada681f6e5c2d202ccfcef",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        256,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "direction": "S",
+          "pose": 0,
+          "bbox_px": [
+            78,
+            61,
+            179,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4867549668874172,
+          "rgba_sha256": "9235dbdfdd4b53c76cb706974c27b43e53fc7b42107d5123948c7effcd1e7bcf"
+        },
+        {
+          "index": 1,
+          "direction": "S",
+          "pose": 1,
+          "bbox_px": [
+            64,
+            72,
+            193,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4867549668874172,
+          "rgba_sha256": "872bbc2cdcdf51b77bd9d60ef337012d1e37493cbc02e9fea45c08d9a9e6273e"
+        },
+        {
+          "index": 2,
+          "direction": "S",
+          "pose": 2,
+          "bbox_px": [
+            78,
+            61,
+            179,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4867549668874172,
+          "rgba_sha256": "827ba9c2d4a7315fd36c803ad2b43dc39a1934032a8a03991c24691cc20da447"
+        },
+        {
+          "index": 3,
+          "direction": "E",
+          "pose": 0,
+          "bbox_px": [
+            30,
+            77,
+            227,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5346938775510204,
+          "rgba_sha256": "6cc45b50d87eab39284c7f5e893d860015158616b5a08c8ad7b0123f7c56312e"
+        },
+        {
+          "index": 4,
+          "direction": "E",
+          "pose": 1,
+          "bbox_px": [
+            22,
+            84,
+            235,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5346938775510204,
+          "rgba_sha256": "40b9f3d1553eb21073f1324934e81a6f212e5d4dcfc52f1bd4cde178cb1b085b"
+        },
+        {
+          "index": 5,
+          "direction": "E",
+          "pose": 2,
+          "bbox_px": [
+            30,
+            82,
+            226,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5346938775510204,
+          "rgba_sha256": "20ac27f524cfa82d1709258b27ab45651a48009ed4a226766c71cf884fd5fd5a"
+        },
+        {
+          "index": 6,
+          "direction": "N",
+          "pose": 0,
+          "bbox_px": [
+            78,
+            61,
+            179,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4696485623003195,
+          "rgba_sha256": "ab66c98e3419ed2209798372667c706ad7a2aa184eea84782a82249dc388bba2"
+        },
+        {
+          "index": 7,
+          "direction": "N",
+          "pose": 1,
+          "bbox_px": [
+            69,
+            75,
+            188,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4696485623003195,
+          "rgba_sha256": "2d5425768e292288cd670fcf9ec240e7d254c31c710ddf8afae5858e78f81c4c"
+        },
+        {
+          "index": 8,
+          "direction": "N",
+          "pose": 2,
+          "bbox_px": [
+            76,
+            59,
+            180,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4696485623003195,
+          "rgba_sha256": "2b896bf8ebff3b91af3afe96cce4821bb5c89cb2b492702a4b87e4b6c196633f"
+        }
+      ],
+      "layout": "3x3_S_E_N",
+      "frame_count": 9,
+      "reference_height_px_by_direction": [
+        147,
+        131,
+        147
+      ],
+      "animation": "attack",
+      "loop": false,
+      "fps_hint": 6,
+      "normalization": "one uniform scale per direction; death uses one scale for all four poses",
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        354.0,
+        329.5
+      ],
+      "max_frame_extent_world_px": [
+        106.5,
+        74.5
+      ]
+    },
+    "enemy.charger.death": {
+      "target_path": "res://assets/art/enemies/charger_death.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        1024,
+        256
+      ],
+      "bbox_px": [
+        50,
+        61,
+        996,
+        208
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": [
+        0.35853658536585364
+      ],
+      "upscaled": false,
+      "sha256": "f0e48734f4d989e838aaa1e24b6459c7fbb43faa0b78452a2a4c662d1cb50066",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        256,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "direction": "shared",
+          "pose": 0,
+          "bbox_px": [
+            50,
+            61,
+            206,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.35853658536585364,
+          "rgba_sha256": "7b40e089a9ed01564739b8d02f31e0c6fcfec1492c6e4a3203942f73cc3d31e0"
+        },
+        {
+          "index": 1,
+          "direction": "shared",
+          "pose": 1,
+          "bbox_px": [
+            40,
+            85,
+            216,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.35853658536585364,
+          "rgba_sha256": "d7fdfe3079cfc0fc484e25e7d1a638a15f0ba62e4b700fa15ca2ee556732c102"
+        },
+        {
+          "index": 2,
+          "direction": "shared",
+          "pose": 0,
+          "bbox_px": [
+            39,
+            102,
+            217,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.35853658536585364,
+          "rgba_sha256": "6972c1be415f1bf1e2d0e53bd25b7214605309b13af6328148daf08ff735a9cf"
+        },
+        {
+          "index": 3,
+          "direction": "shared",
+          "pose": 1,
+          "bbox_px": [
+            28,
+            117,
+            228,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.35853658536585364,
+          "rgba_sha256": "090e707b43b7d707b76df388061514ef1e43c76385ab0b96eb1bbe4e63705d68"
+        }
+      ],
+      "layout": "4x1_shared",
+      "frame_count": 4,
+      "reference_height_px_by_direction": [
+        147,
+        131,
+        147
+      ],
+      "animation": "death",
+      "loop": false,
+      "fps_hint": 6,
+      "normalization": "one uniform scale per direction; death uses one scale for all four poses",
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        473.0,
+        73.5
+      ],
+      "max_frame_extent_world_px": [
+        100.0,
+        73.5
+      ]
+    },
+    "corpse.charger": {
+      "target_path": "res://assets/art/corpses/charger.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        28,
+        115,
+        228,
+        206
+      ],
+      "pivot_px": [
+        128,
+        160
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.35853658536585364,
+      "upscaled": false,
+      "sha256": "685ddc03440256c66c5d14a83c427fa6ea496e93c3bc9b18c5e0def7f1c212ae",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "derived_from": "enemy.charger.death",
+      "frame": 3,
+      "spawn_offset_from_actor_px": [
+        0,
+        -46
+      ],
+      "spawn_offset_from_actor_world_px": [
+        0.0,
+        -23.0
+      ],
+      "note": "Same painted final death pose at same scale, reanchored from feet pivot to corpse body center. Spawn at actor position + spawn_offset_from_actor_world_px to avoid a transition jump. No independent rescaling.",
+      "visible_extent_world_px": [
+        100.0,
+        45.5
+      ]
+    },
+    "enemy.brute.walk": {
+      "target_path": "res://assets/art/enemies/brute_walk.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        1024,
+        768
+      ],
+      "bbox_px": [
+        61,
+        35,
+        957,
+        720
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": [
+        0.5555555555555556,
+        0.5676126878130217,
+        0.5304212168486739
+      ],
+      "upscaled": false,
+      "sha256": "73754f7e43903d81639cd408a8d518ec29ad9db45172e034233c64a8da375a3f",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        256,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "direction": "S",
+          "pose": 0,
+          "bbox_px": [
+            69,
+            35,
+            187,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5555555555555556,
+          "rgba_sha256": "b63c471c87c697ab4cf5be9cc63ce4dbb821e709e1e1cf672bb2aab12b2039cc"
+        },
+        {
+          "index": 1,
+          "direction": "S",
+          "pose": 1,
+          "bbox_px": [
+            66,
+            39,
+            190,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5555555555555556,
+          "rgba_sha256": "79110d2f1e82523ec3d03794e2274c4ca99fd318882e7a15fddc8c319f353830"
+        },
+        {
+          "index": 2,
+          "direction": "S",
+          "pose": 2,
+          "bbox_px": [
+            66,
+            37,
+            190,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5555555555555556,
+          "rgba_sha256": "3b682c61895a91169530ac2ebede1cca536af2dabe2473046dfda9000a56a89b"
+        },
+        {
+          "index": 3,
+          "direction": "S",
+          "pose": 3,
+          "bbox_px": [
+            68,
+            39,
+            189,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5555555555555556,
+          "rgba_sha256": "669a0625f7385b081ca6a61389f1aa5682cd96153ec07c936d0ca20a54a06e35"
+        },
+        {
+          "index": 4,
+          "direction": "E",
+          "pose": 0,
+          "bbox_px": [
+            61,
+            38,
+            195,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5676126878130217,
+          "rgba_sha256": "78e617f299c6adbd08e819b4eb1031569ebcceca7560ff0158ebdc578b39c966"
+        },
+        {
+          "index": 5,
+          "direction": "E",
+          "pose": 1,
+          "bbox_px": [
+            85,
+            37,
+            172,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5676126878130217,
+          "rgba_sha256": "6b82e9c5edfdf7692ba514f64b099fca751d3613a983c0465210cee234442421"
+        },
+        {
+          "index": 6,
+          "direction": "E",
+          "pose": 2,
+          "bbox_px": [
+            57,
+            39,
+            199,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5676126878130217,
+          "rgba_sha256": "041323793300b0408dfa86fde7e7a8258d630b851c01962a1500dd139d6504f0"
+        },
+        {
+          "index": 7,
+          "direction": "E",
+          "pose": 3,
+          "bbox_px": [
+            80,
+            38,
+            176,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5676126878130217,
+          "rgba_sha256": "7653dbfa91cec93c3caf386388e847e178590af975ea9cfa8c2e956cd9a076a0"
+        },
+        {
+          "index": 8,
+          "direction": "N",
+          "pose": 0,
+          "bbox_px": [
+            69,
+            38,
+            188,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5304212168486739,
+          "rgba_sha256": "e566a38c329887e9f82f3c43afdd972073bd1e212ddde1c847136bac0c6a8d6d"
+        },
+        {
+          "index": 9,
+          "direction": "N",
+          "pose": 1,
+          "bbox_px": [
+            69,
+            39,
+            188,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5304212168486739,
+          "rgba_sha256": "ef56ba7f77e704659e5d9f633cc90468c1875980bdd73b0e67fe672484142fd0"
+        },
+        {
+          "index": 10,
+          "direction": "N",
+          "pose": 2,
+          "bbox_px": [
+            68,
+            38,
+            189,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5304212168486739,
+          "rgba_sha256": "fc79bfb34084adfbb7036d239556880393df72f4d2f1d4902485918d7362b03e"
+        },
+        {
+          "index": 11,
+          "direction": "N",
+          "pose": 3,
+          "bbox_px": [
+            71,
+            37,
+            185,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5304212168486739,
+          "rgba_sha256": "bc582e4d29e46bd0cabb672c00a9611a6351a9fc2b68eb271998c1bb6924dea4"
+        }
+      ],
+      "layout": "4x3_S_E_N",
+      "frame_count": 12,
+      "reference_height_px_by_direction": [
+        170,
+        170,
+        170
+      ],
+      "animation": "walk",
+      "loop": true,
+      "fps_hint": 8,
+      "normalization": "one uniform scale per direction; death uses one scale for all four poses",
+      "source_size_px": [
+        1448,
+        1086
+      ],
+      "visible_extent_world_px": [
+        448.0,
+        342.5
+      ],
+      "max_frame_extent_world_px": [
+        71.0,
+        86.5
+      ]
+    },
+    "enemy.brute.attack": {
+      "target_path": "res://assets/art/enemies/brute_attack.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        768,
+        768
+      ],
+      "bbox_px": [
+        50,
+        38,
+        716,
+        720
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": [
+        0.5167173252279635,
+        0.5029585798816568,
+        0.5029585798816568
+      ],
+      "upscaled": false,
+      "sha256": "07004c9f67ccad0b7a08936874e243b80aea97d8f42a3b5b3f2ec6155b83aa86",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        256,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "direction": "S",
+          "pose": 0,
+          "bbox_px": [
+            50,
+            38,
+            206,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5167173252279635,
+          "rgba_sha256": "fe5434afe869e2e2f99ca842ebcdfd641e9d56a93d92e92f924cf3f86af97daf"
+        },
+        {
+          "index": 1,
+          "direction": "S",
+          "pose": 1,
+          "bbox_px": [
+            54,
+            63,
+            202,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5167173252279635,
+          "rgba_sha256": "fce795a5a8a325585c3c865814ca27c6e2fd13a42407c48b39e8802fb2cb817c"
+        },
+        {
+          "index": 2,
+          "direction": "S",
+          "pose": 2,
+          "bbox_px": [
+            53,
+            45,
+            204,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5167173252279635,
+          "rgba_sha256": "0faca11b9e6a90c880757d1ad3f025424d30818ceab919f677bd19f525b63eea"
+        },
+        {
+          "index": 3,
+          "direction": "E",
+          "pose": 0,
+          "bbox_px": [
+            77,
+            38,
+            179,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5029585798816568,
+          "rgba_sha256": "dd23a1e47683117f2d4e48d115a1db50df0195b948ca67cfc2aa85268be82f04"
+        },
+        {
+          "index": 4,
+          "direction": "E",
+          "pose": 1,
+          "bbox_px": [
+            47,
+            61,
+            210,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5029585798816568,
+          "rgba_sha256": "f49fe48a18d6bfd0c0a32f50426d34fc5800bd4e1f884b4a3dcfe508707dfe00"
+        },
+        {
+          "index": 5,
+          "direction": "E",
+          "pose": 2,
+          "bbox_px": [
+            80,
+            49,
+            177,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5029585798816568,
+          "rgba_sha256": "1db4f3504defedb0731fe9f3d4f31b76bafe168089710ed5be7d21d561739146"
+        },
+        {
+          "index": 6,
+          "direction": "N",
+          "pose": 0,
+          "bbox_px": [
+            60,
+            38,
+            197,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5029585798816568,
+          "rgba_sha256": "2e42b12cdfbe66629419dd980db6b5e303adf3bf0aa3fc459a6f143cf036af5c"
+        },
+        {
+          "index": 7,
+          "direction": "N",
+          "pose": 1,
+          "bbox_px": [
+            47,
+            62,
+            210,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5029585798816568,
+          "rgba_sha256": "76ccc6562a09791de5ed91f378fd8c6e9208cc2a922818976d4c42034815ce73"
+        },
+        {
+          "index": 8,
+          "direction": "N",
+          "pose": 2,
+          "bbox_px": [
+            53,
+            40,
+            203,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5029585798816568,
+          "rgba_sha256": "753fd3705ed073cf72dd729eedacd235e2a1e8b6659e114b47c09835dcc14248"
+        }
+      ],
+      "layout": "3x3_S_E_N",
+      "frame_count": 9,
+      "reference_height_px_by_direction": [
+        170,
+        170,
+        170
+      ],
+      "animation": "attack",
+      "loop": false,
+      "fps_hint": 6,
+      "normalization": "one uniform scale per direction; death uses one scale for all four poses",
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        333.0,
+        341.0
+      ],
+      "max_frame_extent_world_px": [
+        81.5,
+        85.0
+      ]
+    },
+    "enemy.brute.death": {
+      "target_path": "res://assets/art/enemies/brute_death.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        1024,
+        256
+      ],
+      "bbox_px": [
+        63,
+        38,
+        998,
+        208
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": [
+        0.3434343434343434
+      ],
+      "upscaled": false,
+      "sha256": "97745f72b6cd184d77dbf770edcdb1de701a21679a3236b972984fd59f226037",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        256,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "direction": "shared",
+          "pose": 0,
+          "bbox_px": [
+            63,
+            38,
+            194,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.3434343434343434,
+          "rgba_sha256": "df49d92c98d3322c4050454b9a32d121bee5c3daba4157899d0611785d632d01"
+        },
+        {
+          "index": 1,
+          "direction": "shared",
+          "pose": 1,
+          "bbox_px": [
+            56,
+            63,
+            201,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.3434343434343434,
+          "rgba_sha256": "c1a56d824ae670fac5342f8b8e672a9e905f7a68bba798fb014fe1b1829b3366"
+        },
+        {
+          "index": 2,
+          "direction": "shared",
+          "pose": 0,
+          "bbox_px": [
+            33,
+            87,
+            224,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.3434343434343434,
+          "rgba_sha256": "cb20c332c8903431ff38689975439a5c81cc698bfd09c27bf417c61c373d9449"
+        },
+        {
+          "index": 3,
+          "direction": "shared",
+          "pose": 1,
+          "bbox_px": [
+            27,
+            119,
+            230,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.3434343434343434,
+          "rgba_sha256": "3cf4166f9a0511491c0d6dc325809703254e0dc45fcb58ac877d475cf91f3900"
+        }
+      ],
+      "layout": "4x1_shared",
+      "frame_count": 4,
+      "reference_height_px_by_direction": [
+        170,
+        170,
+        170
+      ],
+      "animation": "death",
+      "loop": false,
+      "fps_hint": 6,
+      "normalization": "one uniform scale per direction; death uses one scale for all four poses",
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        467.5,
+        85.0
+      ],
+      "max_frame_extent_world_px": [
+        101.5,
+        85.0
+      ]
+    },
+    "corpse.brute": {
+      "target_path": "res://assets/art/corpses/brute.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        27,
+        116,
+        230,
+        205
+      ],
+      "pivot_px": [
+        128,
+        160
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.3434343434343434,
+      "upscaled": false,
+      "sha256": "c12adce98d17107e42cf333df67e9c267bf122edc696c8b4e4a9252f203f2858",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "derived_from": "enemy.brute.death",
+      "frame": 3,
+      "spawn_offset_from_actor_px": [
+        0,
+        -45
+      ],
+      "spawn_offset_from_actor_world_px": [
+        0.0,
+        -22.5
+      ],
+      "note": "Same painted final death pose at same scale, reanchored from feet pivot to corpse body center. Spawn at actor position + spawn_offset_from_actor_world_px to avoid a transition jump. No independent rescaling.",
+      "visible_extent_world_px": [
+        101.5,
+        44.5
+      ]
+    },
+    "enemy.flanker.walk": {
+      "target_path": "res://assets/art/enemies/flanker_walk.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        1024,
+        768
+      ],
+      "bbox_px": [
+        50,
+        58,
+        960,
+        720
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": [
+        0.5076142131979695,
+        0.5748987854251012,
+        0.476038338658147
+      ],
+      "upscaled": false,
+      "sha256": "c03dd91857a39e42af8ebce76ccdd7ccfe93bf663a35e8233495f72fcf5ca950",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        256,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "direction": "S",
+          "pose": 0,
+          "bbox_px": [
+            78,
+            58,
+            178,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5076142131979695,
+          "rgba_sha256": "b61c422f9ce76c65d4a74190216f13d9223be8a48ce265f75bec6e63ade53480"
+        },
+        {
+          "index": 1,
+          "direction": "S",
+          "pose": 1,
+          "bbox_px": [
+            80,
+            58,
+            176,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5076142131979695,
+          "rgba_sha256": "5f9d793aea122acfbc11a7e6a3bb57e2ac97d70d053dc737d0db0fffc2127d0f"
+        },
+        {
+          "index": 2,
+          "direction": "S",
+          "pose": 2,
+          "bbox_px": [
+            76,
+            58,
+            180,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5076142131979695,
+          "rgba_sha256": "187fb6d3f8447dc2cdf7f49c9cb8ad5143f03c760c6d2e3a2e5a7b8fc504e356"
+        },
+        {
+          "index": 3,
+          "direction": "S",
+          "pose": 3,
+          "bbox_px": [
+            78,
+            58,
+            179,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5076142131979695,
+          "rgba_sha256": "ae830cedbe64eeb3f24e9f3f2ee2be26e2784768d7fd126be7031e1d3fe24960"
+        },
+        {
+          "index": 4,
+          "direction": "E",
+          "pose": 0,
+          "bbox_px": [
+            50,
+            65,
+            207,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5748987854251012,
+          "rgba_sha256": "87599ee0fd75e85be3fcae761881d43fdf55e09f75d2fb12ee0ac2eeccadb9eb"
+        },
+        {
+          "index": 5,
+          "direction": "E",
+          "pose": 1,
+          "bbox_px": [
+            63,
+            63,
+            193,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5748987854251012,
+          "rgba_sha256": "5e46d45f61c572bafe50d92a49e6879d7959ae3b6365666b24c9dbebbd4994d2"
+        },
+        {
+          "index": 6,
+          "direction": "E",
+          "pose": 2,
+          "bbox_px": [
+            49,
+            67,
+            208,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5748987854251012,
+          "rgba_sha256": "9b55d9ec5e388322781d27b72f40ff363c07c9708107e7fd06dee60ad2f3e2aa"
+        },
+        {
+          "index": 7,
+          "direction": "E",
+          "pose": 3,
+          "bbox_px": [
+            65,
+            68,
+            192,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5748987854251012,
+          "rgba_sha256": "70e2a9be687231ccb42dbcedc790e64899d450eee96aef09e01e3501e8994f25"
+        },
+        {
+          "index": 8,
+          "direction": "N",
+          "pose": 0,
+          "bbox_px": [
+            79,
+            59,
+            178,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.476038338658147,
+          "rgba_sha256": "6c0e4e584e817db3990ab84400f920f7cec38242bcf73dd09fc07e1ad42b235e"
+        },
+        {
+          "index": 9,
+          "direction": "N",
+          "pose": 1,
+          "bbox_px": [
+            83,
+            58,
+            174,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.476038338658147,
+          "rgba_sha256": "b965b17c20c8db9caddc69836d31ffc9f9233bc2e74ced795af532bc30db9239"
+        },
+        {
+          "index": 10,
+          "direction": "N",
+          "pose": 2,
+          "bbox_px": [
+            79,
+            59,
+            177,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.476038338658147,
+          "rgba_sha256": "61cc7acd3251c22c6fb2c44346cf514c59201a889454fdf81c50156e7c5676f5"
+        },
+        {
+          "index": 11,
+          "direction": "N",
+          "pose": 3,
+          "bbox_px": [
+            81,
+            59,
+            176,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.476038338658147,
+          "rgba_sha256": "a32df1e2acd4a77273dff41082abb1b4616ae1f28536c56845a20af899e70f6a"
+        }
+      ],
+      "layout": "4x3_S_E_N",
+      "frame_count": 12,
+      "reference_height_px_by_direction": [
+        150,
+        142,
+        149
+      ],
+      "animation": "walk",
+      "loop": true,
+      "fps_hint": 8,
+      "normalization": "one uniform scale per direction; death uses one scale for all four poses",
+      "source_size_px": [
+        1448,
+        1086
+      ],
+      "visible_extent_world_px": [
+        455.0,
+        331.0
+      ],
+      "max_frame_extent_world_px": [
+        79.5,
+        75.0
+      ]
+    },
+    "enemy.flanker.attack": {
+      "target_path": "res://assets/art/enemies/flanker_attack.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        768,
+        768
+      ],
+      "bbox_px": [
+        64,
+        58,
+        723,
+        720
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": [
+        0.4838709677419355,
+        0.49477351916376305,
+        0.4775641025641026
+      ],
+      "upscaled": false,
+      "sha256": "b12179e0c93dbddac26e6a07736764eb9610bab7c7bde27e6eacea8c9bc2a9f8",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        256,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "direction": "S",
+          "pose": 0,
+          "bbox_px": [
+            68,
+            58,
+            188,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4838709677419355,
+          "rgba_sha256": "bee68e3b7e1e34b7ece191aebc7448b8a30fc46fa96e13e95d82b2e429cf077d"
+        },
+        {
+          "index": 1,
+          "direction": "S",
+          "pose": 1,
+          "bbox_px": [
+            52,
+            67,
+            205,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4838709677419355,
+          "rgba_sha256": "f60d0154a4eb38b5e1e4c6133d15cea94b87ad3d125a9d6c5393b0e4c59c928f"
+        },
+        {
+          "index": 2,
+          "direction": "S",
+          "pose": 2,
+          "bbox_px": [
+            70,
+            65,
+            186,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4838709677419355,
+          "rgba_sha256": "32a7bfc62163eb7d98270af9e25061034b92b5d5d165d115afe91f400dd730bb"
+        },
+        {
+          "index": 3,
+          "direction": "E",
+          "pose": 0,
+          "bbox_px": [
+            64,
+            66,
+            193,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.49477351916376305,
+          "rgba_sha256": "c409b5775c75f7987824fd0af779dd89aefde055df3c9e4672c34406c0e93dfb"
+        },
+        {
+          "index": 4,
+          "direction": "E",
+          "pose": 1,
+          "bbox_px": [
+            32,
+            67,
+            224,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.49477351916376305,
+          "rgba_sha256": "87defdc84f210c3f7ea35a528ec015c99864656f034a071ff4e8e16ab2b14033"
+        },
+        {
+          "index": 5,
+          "direction": "E",
+          "pose": 2,
+          "bbox_px": [
+            46,
+            68,
+            211,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.49477351916376305,
+          "rgba_sha256": "70b75beee7efebbf6b6584ad70dfb7cbdcf262b37bb1209dbc0fdd99b9595a3f"
+        },
+        {
+          "index": 6,
+          "direction": "N",
+          "pose": 0,
+          "bbox_px": [
+            70,
+            59,
+            187,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4775641025641026,
+          "rgba_sha256": "955b52945518898db49c27eeec179d35656c7e13b10f30aae2fe3e20a2340282"
+        },
+        {
+          "index": 7,
+          "direction": "N",
+          "pose": 1,
+          "bbox_px": [
+            41,
+            63,
+            215,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4775641025641026,
+          "rgba_sha256": "9c662f87c27e49b2a857ce36bff76ad5945ec4ac4540c3411d62bc2d05e4251a"
+        },
+        {
+          "index": 8,
+          "direction": "N",
+          "pose": 2,
+          "bbox_px": [
+            68,
+            58,
+            189,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4775641025641026,
+          "rgba_sha256": "52cb0751d38d84f43f5f282ee0452d7c8f301c8072712a62d6599d9ea538d061"
+        }
+      ],
+      "layout": "3x3_S_E_N",
+      "frame_count": 9,
+      "reference_height_px_by_direction": [
+        150,
+        142,
+        149
+      ],
+      "animation": "attack",
+      "loop": false,
+      "fps_hint": 6,
+      "normalization": "one uniform scale per direction; death uses one scale for all four poses",
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        329.5,
+        331.0
+      ],
+      "max_frame_extent_world_px": [
+        96.0,
+        75.0
+      ]
+    },
+    "enemy.flanker.death": {
+      "target_path": "res://assets/art/enemies/flanker_death.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        1024,
+        256
+      ],
+      "bbox_px": [
+        69,
+        58,
+        993,
+        208
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": [
+        0.3333333333333333
+      ],
+      "upscaled": false,
+      "sha256": "8d9326cad69e93ebef2210080b3c31fe63683b9531c62b4e11b964c276ab1d6d",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        256,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "direction": "shared",
+          "pose": 0,
+          "bbox_px": [
+            69,
+            58,
+            187,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.3333333333333333,
+          "rgba_sha256": "dfbe14bff0aaba756534647da98ced5c348bc6f685e58159ef0a29da54b1788e"
+        },
+        {
+          "index": 1,
+          "direction": "shared",
+          "pose": 1,
+          "bbox_px": [
+            57,
+            88,
+            199,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.3333333333333333,
+          "rgba_sha256": "9e2adbdfdaa6ecd054a5b6fb19ca3dbb91f255060ab7fd215c54645169392093"
+        },
+        {
+          "index": 2,
+          "direction": "shared",
+          "pose": 0,
+          "bbox_px": [
+            38,
+            118,
+            218,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.3333333333333333,
+          "rgba_sha256": "ade15742e4c0c647a30d8e6ecfb846951187daf49b7006f834b14e29486c3ca3"
+        },
+        {
+          "index": 3,
+          "direction": "shared",
+          "pose": 1,
+          "bbox_px": [
+            32,
+            154,
+            225,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.3333333333333333,
+          "rgba_sha256": "ce1c538e6cd8d686e2c957599f113afaaf406ef2baa171da7c68ff1ac6d929cc"
+        }
+      ],
+      "layout": "4x1_shared",
+      "frame_count": 4,
+      "reference_height_px_by_direction": [
+        150,
+        142,
+        149
+      ],
+      "animation": "death",
+      "loop": false,
+      "fps_hint": 6,
+      "normalization": "one uniform scale per direction; death uses one scale for all four poses",
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        462.0,
+        75.0
+      ],
+      "max_frame_extent_world_px": [
+        96.5,
+        75.0
+      ]
+    },
+    "corpse.flanker": {
+      "target_path": "res://assets/art/corpses/flanker.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        32,
+        133,
+        225,
+        187
+      ],
+      "pivot_px": [
+        128,
+        160
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.3333333333333333,
+      "upscaled": false,
+      "sha256": "c0bed4de33e941708d34c01b027810e9015b546b7f129ed71e1f271587d25cef",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "derived_from": "enemy.flanker.death",
+      "frame": 3,
+      "spawn_offset_from_actor_px": [
+        0,
+        -27
+      ],
+      "spawn_offset_from_actor_world_px": [
+        0.0,
+        -13.5
+      ],
+      "note": "Same painted final death pose at same scale, reanchored from feet pivot to corpse body center. Spawn at actor position + spawn_offset_from_actor_world_px to avoid a transition jump. No independent rescaling.",
+      "visible_extent_world_px": [
+        96.5,
+        27.0
+      ]
+    },
+    "enemy.carrier.walk": {
+      "target_path": "res://assets/art/enemies/carrier_walk.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        1024,
+        768
+      ],
+      "bbox_px": [
+        37,
+        68,
+        988,
+        720
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": [
+        0.5487804878048781,
+        0.5963302752293578,
+        0.531496062992126
+      ],
+      "upscaled": false,
+      "sha256": "a331c57a77985cb39646cea09d4f3e6bb96484e946a379b22bb8ad72d4fa96a9",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        256,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "direction": "S",
+          "pose": 0,
+          "bbox_px": [
+            71,
+            70,
+            185,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5487804878048781,
+          "rgba_sha256": "17d3b9744508778249f214bdcb3c6f6c87425a6c27782f7029cc88fb6e8243ef"
+        },
+        {
+          "index": 1,
+          "direction": "S",
+          "pose": 1,
+          "bbox_px": [
+            72,
+            76,
+            185,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5487804878048781,
+          "rgba_sha256": "1536496e0b7697fc93a1eab6c3f4064825d581d569c1d6dcd3bb38eb5c8a1fdc"
+        },
+        {
+          "index": 2,
+          "direction": "S",
+          "pose": 2,
+          "bbox_px": [
+            71,
+            68,
+            185,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5487804878048781,
+          "rgba_sha256": "c6fe26d120822bd85ea263b21bf4767bbbfb5a1c5f1ae7fd0e577f57acaa2a1f"
+        },
+        {
+          "index": 3,
+          "direction": "S",
+          "pose": 3,
+          "bbox_px": [
+            73,
+            76,
+            184,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5487804878048781,
+          "rgba_sha256": "6d4f54319a04f043436f86b21ffa74cfbc8238c4d6102111fa7b8bcdaafa8afc"
+        },
+        {
+          "index": 4,
+          "direction": "E",
+          "pose": 0,
+          "bbox_px": [
+            37,
+            79,
+            220,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5963302752293578,
+          "rgba_sha256": "d7ca1ed24ecb6412902573e0eb591c4dcb83ea3560ed967110e1a63d433ac33d"
+        },
+        {
+          "index": 5,
+          "direction": "E",
+          "pose": 1,
+          "bbox_px": [
+            46,
+            77,
+            211,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5963302752293578,
+          "rgba_sha256": "f9992eb540032d518653492f37ad71883c3f40fa8ad6760df71507d8b499eb23"
+        },
+        {
+          "index": 6,
+          "direction": "E",
+          "pose": 2,
+          "bbox_px": [
+            36,
+            79,
+            220,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5963302752293578,
+          "rgba_sha256": "b48d375d1858a8d63dbe3fafff59ead3d4ca1a27b7d203f63095529c754721ff"
+        },
+        {
+          "index": 7,
+          "direction": "E",
+          "pose": 3,
+          "bbox_px": [
+            37,
+            75,
+            220,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5963302752293578,
+          "rgba_sha256": "336b665d815c6aaa7ce5a6ddf7298d8b7792d413efcce80c0c1ef5665a8d2176"
+        },
+        {
+          "index": 8,
+          "direction": "N",
+          "pose": 0,
+          "bbox_px": [
+            73,
+            74,
+            184,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.531496062992126,
+          "rgba_sha256": "03cc8469104fb7b57835e93020711f13e462d25477afd44ece8c36174fda1054"
+        },
+        {
+          "index": 9,
+          "direction": "N",
+          "pose": 1,
+          "bbox_px": [
+            74,
+            76,
+            183,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.531496062992126,
+          "rgba_sha256": "dcf3ce4ed9ee9408f9e40eceeb2886d9c29c2a918d78577fdee35d7a0f712b42"
+        },
+        {
+          "index": 10,
+          "direction": "N",
+          "pose": 2,
+          "bbox_px": [
+            73,
+            72,
+            183,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.531496062992126,
+          "rgba_sha256": "31aca00788ef11cfbfac250d8c9ec8bc5e61fdb8f115113fecfa45acab43265e"
+        },
+        {
+          "index": 11,
+          "direction": "N",
+          "pose": 3,
+          "bbox_px": [
+            74,
+            70,
+            183,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.531496062992126,
+          "rgba_sha256": "c0a5621f04cf2028cb76538170040c544a4f796fa5f48bf1fb3c5b07c7827748"
+        }
+      ],
+      "layout": "4x3_S_E_N",
+      "frame_count": 12,
+      "reference_height_px_by_direction": [
+        135,
+        130,
+        135
+      ],
+      "animation": "walk",
+      "loop": true,
+      "fps_hint": 8,
+      "normalization": "one uniform scale per direction; death uses one scale for all four poses",
+      "source_size_px": [
+        1448,
+        1086
+      ],
+      "visible_extent_world_px": [
+        475.5,
+        326.0
+      ],
+      "max_frame_extent_world_px": [
+        92.0,
+        70.0
+      ]
+    },
+    "enemy.carrier.attack": {
+      "target_path": "res://assets/art/enemies/carrier_attack.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        768,
+        768
+      ],
+      "bbox_px": [
+        44,
+        61,
+        725,
+        720
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": [
+        0.4909090909090909,
+        0.5118110236220472,
+        0.4787234042553192
+      ],
+      "upscaled": false,
+      "sha256": "213afc8187127e7ada90e61aa280fd2acea65adfe91a86fa7622ee36b943f9ce",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        256,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "direction": "S",
+          "pose": 0,
+          "bbox_px": [
+            68,
+            73,
+            189,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4909090909090909,
+          "rgba_sha256": "b9e24ba8f9eb34d125ed2069f4cef3bc852ea537b6b638c3933cc60c89af8e2e"
+        },
+        {
+          "index": 1,
+          "direction": "S",
+          "pose": 1,
+          "bbox_px": [
+            54,
+            61,
+            202,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4909090909090909,
+          "rgba_sha256": "049f0f56b5e1af5ac1b2ac923de3e8ff9504a224530e01314d45e89ada8326aa"
+        },
+        {
+          "index": 2,
+          "direction": "S",
+          "pose": 2,
+          "bbox_px": [
+            66,
+            73,
+            190,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4909090909090909,
+          "rgba_sha256": "297670f227c0b188790eaa573fe3b1529a4a870c36278d15d70363fe18f25baa"
+        },
+        {
+          "index": 3,
+          "direction": "E",
+          "pose": 0,
+          "bbox_px": [
+            44,
+            78,
+            213,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5118110236220472,
+          "rgba_sha256": "14764977a42d5065de13098ec6bdd8182f80624e6ef23f47e946799b0dc05518"
+        },
+        {
+          "index": 4,
+          "direction": "E",
+          "pose": 1,
+          "bbox_px": [
+            38,
+            69,
+            219,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5118110236220472,
+          "rgba_sha256": "23887a6430a4ad97ec431b3f219c0f5de745eaba590f3c703ff64fce9552ad2e"
+        },
+        {
+          "index": 5,
+          "direction": "E",
+          "pose": 2,
+          "bbox_px": [
+            44,
+            80,
+            213,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.5118110236220472,
+          "rgba_sha256": "e7a7eebbe798c1a9770a65587e1811f7ec0badec0fe18e16b2fad5f7ebdc58b8"
+        },
+        {
+          "index": 6,
+          "direction": "N",
+          "pose": 0,
+          "bbox_px": [
+            71,
+            73,
+            185,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4787234042553192,
+          "rgba_sha256": "fb5c3121589fe64a9406e3b5ef14a3ccf4c67d9cc597cf2704d57e666edd016c"
+        },
+        {
+          "index": 7,
+          "direction": "N",
+          "pose": 1,
+          "bbox_px": [
+            57,
+            59,
+            200,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4787234042553192,
+          "rgba_sha256": "67997f4f80478957998fba43ccc05b1d5b53a2bb31954650b908e7affb5cffab"
+        },
+        {
+          "index": 8,
+          "direction": "N",
+          "pose": 2,
+          "bbox_px": [
+            69,
+            71,
+            187,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.4787234042553192,
+          "rgba_sha256": "2a5836cb5929f60a1a7bde536813dfd8b64ea8de1cb7ae1dd017adc8e1f1b207"
+        }
+      ],
+      "layout": "3x3_S_E_N",
+      "frame_count": 9,
+      "reference_height_px_by_direction": [
+        135,
+        130,
+        135
+      ],
+      "animation": "attack",
+      "loop": false,
+      "fps_hint": 6,
+      "normalization": "one uniform scale per direction; death uses one scale for all four poses",
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        340.5,
+        329.5
+      ],
+      "max_frame_extent_world_px": [
+        90.5,
+        74.5
+      ]
+    },
+    "enemy.carrier.death": {
+      "target_path": "res://assets/art/enemies/carrier_death.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        1024,
+        256
+      ],
+      "bbox_px": [
+        63,
+        73,
+        985,
+        208
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": [
+        0.3276699029126214
+      ],
+      "upscaled": false,
+      "sha256": "75ca9a7ec8084da1607cb8c03c7df8c8a5109ae2fd7317be3a171a4c5abed30d",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        256,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "direction": "shared",
+          "pose": 0,
+          "bbox_px": [
+            63,
+            73,
+            193,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.3276699029126214,
+          "rgba_sha256": "efc32ea2a5bb2500a9900ccf82d015d9a058d7f9c5c745a448d1fdd92731a1ac"
+        },
+        {
+          "index": 1,
+          "direction": "shared",
+          "pose": 1,
+          "bbox_px": [
+            52,
+            94,
+            205,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.3276699029126214,
+          "rgba_sha256": "03fa66d6e7758afab80fdc18ce3c8f51635a9397e5e8964ad53dedc9190062be"
+        },
+        {
+          "index": 2,
+          "direction": "shared",
+          "pose": 0,
+          "bbox_px": [
+            54,
+            106,
+            202,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.3276699029126214,
+          "rgba_sha256": "74cd7c54cfa2981f359038f79fc52fba44fdc17d8b304807eb21f88f2f8e1d3c"
+        },
+        {
+          "index": 3,
+          "direction": "shared",
+          "pose": 1,
+          "bbox_px": [
+            40,
+            122,
+            217,
+            208
+          ],
+          "pivot_px": [
+            128,
+            208
+          ],
+          "source_to_png_scale": 0.3276699029126214,
+          "rgba_sha256": "8001e72845c7fed2d7ea905ada92a427ababc34de640dc7c2b255d6da177cc89"
+        }
+      ],
+      "layout": "4x1_shared",
+      "frame_count": 4,
+      "reference_height_px_by_direction": [
+        135,
+        130,
+        135
+      ],
+      "animation": "death",
+      "loop": false,
+      "fps_hint": 6,
+      "normalization": "one uniform scale per direction; death uses one scale for all four poses",
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        461.0,
+        67.5
+      ],
+      "max_frame_extent_world_px": [
+        88.5,
+        67.5
+      ]
+    },
+    "corpse.carrier": {
+      "target_path": "res://assets/art/corpses/carrier.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "bbox_px": [
+        40,
+        117,
+        217,
+        203
+      ],
+      "pivot_px": [
+        128,
+        160
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.3276699029126214,
+      "upscaled": false,
+      "sha256": "92c1aee2cdfdd6d06abd0d93afb5e6b31df4d7a01167e5ffd63d533ff41764aa",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "derived_from": "enemy.carrier.death",
+      "frame": 3,
+      "spawn_offset_from_actor_px": [
+        0,
+        -43
+      ],
+      "spawn_offset_from_actor_world_px": [
+        0.0,
+        -21.5
+      ],
+      "note": "Same painted final death pose at same scale, reanchored from feet pivot to corpse body center. Spawn at actor position + spawn_offset_from_actor_world_px to avoid a transition jump. No independent rescaling.",
+      "visible_extent_world_px": [
+        88.5,
+        43.0
+      ]
+    },
+    "boss.cleaver.walk": {
+      "target_path": "res://assets/art/bosses/cleaver_walk.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        2048,
+        1536
+      ],
+      "bbox_px": [
+        95,
+        133,
+        1952,
+        1440
+      ],
+      "pivot_px": [
+        256,
+        416
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": [
+        1,
+        1,
+        1
+      ],
+      "upscaled": false,
+      "sha256": "f110e44fa4797ad3e56f33c9112acb40f7272b03ed614b8d13facf262817ba3c",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        512,
+        512
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "direction": "S",
+          "pose": 0,
+          "bbox_px": [
+            153,
+            141,
+            360,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 1,
+          "rgba_sha256": "e65ac4f70ada62929fb3b4b70f7d5b8996b0aa263e03700409698fdb2725b10b"
+        },
+        {
+          "index": 1,
+          "direction": "S",
+          "pose": 1,
+          "bbox_px": [
+            151,
+            139,
+            362,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 1,
+          "rgba_sha256": "64295c0114f4dd336a57becfa369e08d7788548eb759f9c0c5ad02af4da46b03"
+        },
+        {
+          "index": 2,
+          "direction": "S",
+          "pose": 2,
+          "bbox_px": [
+            151,
+            136,
+            362,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 1,
+          "rgba_sha256": "8f1ce9b9c6806ee13b09cf367cfe8123e15d51aec0c7efb72af0d180067729fe"
+        },
+        {
+          "index": 3,
+          "direction": "S",
+          "pose": 3,
+          "bbox_px": [
+            152,
+            133,
+            361,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 1,
+          "rgba_sha256": "cd2bba5da3a082c3e237ed54f690b74ad1b58998e7f68bdddc51084110f45d75"
+        },
+        {
+          "index": 4,
+          "direction": "E",
+          "pose": 0,
+          "bbox_px": [
+            95,
+            186,
+            418,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 1,
+          "rgba_sha256": "bea66dfc3026fdba1e5f6338bc9b3cc049a430c1b8cf9fa559af3c9ab5f5db04"
+        },
+        {
+          "index": 5,
+          "direction": "E",
+          "pose": 1,
+          "bbox_px": [
+            77,
+            194,
+            435,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 1,
+          "rgba_sha256": "1d248553380021cd6e729765720c6aab37c26a1b290da78ac91bb49bfee87310"
+        },
+        {
+          "index": 6,
+          "direction": "E",
+          "pose": 2,
+          "bbox_px": [
+            91,
+            187,
+            422,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 1,
+          "rgba_sha256": "304bc560de2e182148aa6df299a9cd8b90419821e5feae062f14f334c47f89e2"
+        },
+        {
+          "index": 7,
+          "direction": "E",
+          "pose": 3,
+          "bbox_px": [
+            96,
+            192,
+            416,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 1,
+          "rgba_sha256": "1e1f88703487e4ac91099f91e551321e8549385d10b4c418668f5a99623a35a8"
+        },
+        {
+          "index": 8,
+          "direction": "N",
+          "pose": 0,
+          "bbox_px": [
+            146,
+            128,
+            367,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 1,
+          "rgba_sha256": "ab304796c8a1909f5313bef40165e9d4f9a2ed6f42147cc1aa4bd6f939e7759e"
+        },
+        {
+          "index": 9,
+          "direction": "N",
+          "pose": 1,
+          "bbox_px": [
+            148,
+            130,
+            364,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 1,
+          "rgba_sha256": "86f396f67b6c3ff0a71cd34ba588ba6270c47d290a69435b3979b89ef5ed897e"
+        },
+        {
+          "index": 10,
+          "direction": "N",
+          "pose": 2,
+          "bbox_px": [
+            147,
+            127,
+            365,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 1,
+          "rgba_sha256": "c920bbb999fc8be307772dbff789461f319968c924f9f63c5546f64724221786"
+        },
+        {
+          "index": 11,
+          "direction": "N",
+          "pose": 3,
+          "bbox_px": [
+            150,
+            127,
+            363,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 1,
+          "rgba_sha256": "f20bcf7390f1b52a69e9f13a220613cc2578d254b6ea4786c3accfb49cccd301"
+        }
+      ],
+      "layout": "4x3_S_E_N",
+      "frame_count": 12,
+      "reference_height_px_by_direction": [
+        296,
+        276,
+        300
+      ],
+      "animation": "walk",
+      "loop": true,
+      "fps_hint": 8,
+      "normalization": "one uniform scale per direction; death uses one scale for all four poses",
+      "source_size_px": [
+        1448,
+        1086
+      ],
+      "visible_extent_world_px": [
+        928.5,
+        653.5
+      ],
+      "max_frame_extent_world_px": [
+        179.0,
+        144.5
+      ]
+    },
+    "boss.cleaver.death": {
+      "target_path": "res://assets/art/bosses/cleaver_death.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        2048,
+        512
+      ],
+      "bbox_px": [
+        101,
+        120,
+        1996,
+        416
+      ],
+      "pivot_px": [
+        256,
+        416
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": [
+        0.714975845410628
+      ],
+      "upscaled": false,
+      "sha256": "13491323f36ca9e3ce81a9ad350142a8af4106aee8355ae3d451b4da1249e93d",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        512,
+        512
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "direction": "shared",
+          "pose": 0,
+          "bbox_px": [
+            101,
+            120,
+            411,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 0.714975845410628,
+          "rgba_sha256": "c3eac7d3e64e756014fbbc8d4c68a0c54afd685c18c962d0ea0a323219a9d069"
+        },
+        {
+          "index": 1,
+          "direction": "shared",
+          "pose": 1,
+          "bbox_px": [
+            84,
+            164,
+            429,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 0.714975845410628,
+          "rgba_sha256": "e80d625b4b0a0298e7254fba305ba23330d64a3a3c619bcdbee4f3af818e2efd"
+        },
+        {
+          "index": 2,
+          "direction": "shared",
+          "pose": 0,
+          "bbox_px": [
+            81,
+            186,
+            432,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 0.714975845410628,
+          "rgba_sha256": "ac872c29cb19f2d3a383bac445a0a3882a74860ac85959a54a62bbc717e87b4b"
+        },
+        {
+          "index": 3,
+          "direction": "shared",
+          "pose": 1,
+          "bbox_px": [
+            52,
+            227,
+            460,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 0.714975845410628,
+          "rgba_sha256": "ed739ca377b27067845f43a0412eca3e00097663e90a7aefbdf93b74478b85f4"
+        }
+      ],
+      "layout": "4x1_shared",
+      "frame_count": 4,
+      "reference_height_px_by_direction": [
+        296,
+        276,
+        300
+      ],
+      "animation": "death",
+      "loop": false,
+      "fps_hint": 6,
+      "normalization": "one uniform scale per direction; death uses one scale for all four poses",
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        947.5,
+        148.0
+      ],
+      "max_frame_extent_world_px": [
+        204.0,
+        148.0
+      ]
+    },
+    "corpse.boss.cleaver": {
+      "target_path": "res://assets/art/corpses/boss_cleaver.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "bbox_px": [
+        52,
+        226,
+        460,
+        415
+      ],
+      "pivot_px": [
+        256,
+        320
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.714975845410628,
+      "upscaled": false,
+      "sha256": "f173a734bcde905a3002c49ede05b8a81657ec7277f8822b6087de546f876fcd",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "derived_from": "boss.cleaver.death",
+      "frame": 3,
+      "spawn_offset_from_actor_px": [
+        0,
+        -95
+      ],
+      "spawn_offset_from_actor_world_px": [
+        0.0,
+        -47.5
+      ],
+      "note": "Same painted final death pose at same scale, reanchored from feet pivot to corpse body center. Spawn at actor position + spawn_offset_from_actor_world_px to avoid a transition jump. No independent rescaling.",
+      "visible_extent_world_px": [
+        204.0,
+        94.5
+      ]
+    },
+    "boss.boilermaster.walk": {
+      "target_path": "res://assets/art/bosses/boilermaster_walk.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        2048,
+        1536
+      ],
+      "bbox_px": [
+        143,
+        112,
+        1897,
+        1440
+      ],
+      "pivot_px": [
+        256,
+        416
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": [
+        0.92,
+        0.9478672985781991,
+        0.9024390243902439
+      ],
+      "upscaled": false,
+      "sha256": "27e1d850d1776930fe34d53a4edc21c2d2fb7667de1f79cdb636fcc6e1b4f5bf",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        512,
+        512
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "direction": "S",
+          "pose": 0,
+          "bbox_px": [
+            154,
+            112,
+            358,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 0.92,
+          "rgba_sha256": "5975bde993ad2a2d528062907e3431c863b7692323023ecf62d03e6530b0713f"
+        },
+        {
+          "index": 1,
+          "direction": "S",
+          "pose": 1,
+          "bbox_px": [
+            157,
+            120,
+            355,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 0.92,
+          "rgba_sha256": "95301701e6ab3ea1f50e7330a06dc58308da1c40293d473b2436764d37e3ccf4"
+        },
+        {
+          "index": 2,
+          "direction": "S",
+          "pose": 2,
+          "bbox_px": [
+            159,
+            114,
+            354,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 0.92,
+          "rgba_sha256": "9f4b7caa5d3326d2d99ca4492c35be34c5934e588c16285fb9a6287c118663f7"
+        },
+        {
+          "index": 3,
+          "direction": "S",
+          "pose": 3,
+          "bbox_px": [
+            151,
+            122,
+            361,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 0.92,
+          "rgba_sha256": "ee99d7c869cf5cbbd1b978edc79e14d1e0fcc89a99345c8d033325a758e7ce1f"
+        },
+        {
+          "index": 4,
+          "direction": "E",
+          "pose": 0,
+          "bbox_px": [
+            143,
+            117,
+            370,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 0.9478672985781991,
+          "rgba_sha256": "59d02587c4b0022360a4fc0a8447c6d4618fb512d5c2f68883718c64315cdbfe"
+        },
+        {
+          "index": 5,
+          "direction": "E",
+          "pose": 1,
+          "bbox_px": [
+            174,
+            116,
+            339,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 0.9478672985781991,
+          "rgba_sha256": "2dd7b2b6f7f4b719d9a2bc92bcc889a6fe40c40785b91991cae78157eb495982"
+        },
+        {
+          "index": 6,
+          "direction": "E",
+          "pose": 2,
+          "bbox_px": [
+            147,
+            116,
+            365,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 0.9478672985781991,
+          "rgba_sha256": "72f8af6b7630e9923c20b4464c41541cbd43a9115f1c67c3b5fd4e9818c6606b"
+        },
+        {
+          "index": 7,
+          "direction": "E",
+          "pose": 3,
+          "bbox_px": [
+            172,
+            114,
+            341,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 0.9478672985781991,
+          "rgba_sha256": "504227d2227be7706f6324c5e57a641fd4dc4e011c660719fbf3c7aba6e5c0e9"
+        },
+        {
+          "index": 8,
+          "direction": "N",
+          "pose": 0,
+          "bbox_px": [
+            152,
+            117,
+            360,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 0.9024390243902439,
+          "rgba_sha256": "0605609903834d282d1ed2feb6023988ff29802ac096c86d5f7af774109550e0"
+        },
+        {
+          "index": 9,
+          "direction": "N",
+          "pose": 1,
+          "bbox_px": [
+            157,
+            121,
+            356,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 0.9024390243902439,
+          "rgba_sha256": "5e5c53099a5fddad02085baf57234341d4db60957cb4bb8f5fd9ea482724f83b"
+        },
+        {
+          "index": 10,
+          "direction": "N",
+          "pose": 2,
+          "bbox_px": [
+            156,
+            119,
+            357,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 0.9024390243902439,
+          "rgba_sha256": "3b44cc30c41c5cc05cc4141698abc907ead6c05573b5e72f0c9f852e9af71ee3"
+        },
+        {
+          "index": 11,
+          "direction": "N",
+          "pose": 3,
+          "bbox_px": [
+            152,
+            128,
+            361,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 0.9024390243902439,
+          "rgba_sha256": "d53b09b018ce986ebf4689c99d6c3c715f54591f9ff110cf0dec18375fd8ad53"
+        }
+      ],
+      "layout": "4x3_S_E_N",
+      "frame_count": 12,
+      "reference_height_px_by_direction": [
+        299,
+        300,
+        296
+      ],
+      "animation": "walk",
+      "loop": true,
+      "fps_hint": 8,
+      "normalization": "one uniform scale per direction; death uses one scale for all four poses",
+      "source_size_px": [
+        1448,
+        1086
+      ],
+      "visible_extent_world_px": [
+        877.0,
+        664.0
+      ],
+      "max_frame_extent_world_px": [
+        113.5,
+        152.0
+      ]
+    },
+    "boss.boilermaster.death": {
+      "target_path": "res://assets/art/bosses/boilermaster_death.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        2048,
+        512
+      ],
+      "bbox_px": [
+        142,
+        117,
+        1951,
+        416
+      ],
+      "pivot_px": [
+        256,
+        416
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": [
+        0.5368043087971275
+      ],
+      "upscaled": false,
+      "sha256": "41f137470fd8b6d6e5423e12f40c6ec951c3512bf60455e4ac38bfed12420552",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        512,
+        512
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "direction": "shared",
+          "pose": 0,
+          "bbox_px": [
+            142,
+            117,
+            371,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 0.5368043087971275,
+          "rgba_sha256": "ac9940273b90bb4ce94a03029852d49087998fe8500a80cd15533c66a9d0a73c"
+        },
+        {
+          "index": 1,
+          "direction": "shared",
+          "pose": 1,
+          "bbox_px": [
+            134,
+            155,
+            378,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 0.5368043087971275,
+          "rgba_sha256": "ff2466a4875c9c811010b525e023eba705df568208b17ab77dd8528f9cb83ac3"
+        },
+        {
+          "index": 2,
+          "direction": "shared",
+          "pose": 0,
+          "bbox_px": [
+            108,
+            194,
+            405,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 0.5368043087971275,
+          "rgba_sha256": "199fbab9f1d23efe448f21cd4985d32ca7c127a5b05dba0912f6eb07c501b2fd"
+        },
+        {
+          "index": 3,
+          "direction": "shared",
+          "pose": 1,
+          "bbox_px": [
+            97,
+            253,
+            415,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 0.5368043087971275,
+          "rgba_sha256": "4667e36a9a0e2ba85418096d81957e491c5695c77b933e268e6716f10a3368e1"
+        }
+      ],
+      "layout": "4x1_shared",
+      "frame_count": 4,
+      "reference_height_px_by_direction": [
+        299,
+        300,
+        296
+      ],
+      "animation": "death",
+      "loop": false,
+      "fps_hint": 6,
+      "normalization": "one uniform scale per direction; death uses one scale for all four poses",
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        904.5,
+        149.5
+      ],
+      "max_frame_extent_world_px": [
+        159.0,
+        149.5
+      ]
+    },
+    "corpse.boss.boilermaster": {
+      "target_path": "res://assets/art/corpses/boss_boilermaster.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "bbox_px": [
+        97,
+        239,
+        415,
+        402
+      ],
+      "pivot_px": [
+        256,
+        320
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.5368043087971275,
+      "upscaled": false,
+      "sha256": "66a0a072cecce8661842cf1fd06926a91d7f9b1ff080d97c816c9affd385daf4",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "derived_from": "boss.boilermaster.death",
+      "frame": 3,
+      "spawn_offset_from_actor_px": [
+        0,
+        -82
+      ],
+      "spawn_offset_from_actor_world_px": [
+        0.0,
+        -41.0
+      ],
+      "note": "Same painted final death pose at same scale, reanchored from feet pivot to corpse body center. Spawn at actor position + spawn_offset_from_actor_world_px to avoid a transition jump. No independent rescaling.",
+      "visible_extent_world_px": [
+        159.0,
+        81.5
+      ]
+    },
+    "boss.broodmother.walk": {
+      "target_path": "res://assets/art/bosses/broodmother_walk.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        2048,
+        1536
+      ],
+      "bbox_px": [
+        91,
+        147,
+        1957,
+        1440
+      ],
+      "pivot_px": [
+        256,
+        416
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": [
+        1,
+        1,
+        1
+      ],
+      "upscaled": false,
+      "sha256": "3ea163f3161298d2b84e78b50ecf7dd9b1c7a3d17c865d5346b914351579ef7b",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        512,
+        512
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "direction": "S",
+          "pose": 0,
+          "bbox_px": [
+            136,
+            147,
+            376,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 1,
+          "rgba_sha256": "128220477619e61efaa1ebc0de35956db355605ea1088584de3b92d5191d3b78"
+        },
+        {
+          "index": 1,
+          "direction": "S",
+          "pose": 1,
+          "bbox_px": [
+            136,
+            161,
+            376,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 1,
+          "rgba_sha256": "4ac84887b260a6fc235414630097f45b7f9bfb1561bb8afb9cbb73d1c7d573e8"
+        },
+        {
+          "index": 2,
+          "direction": "S",
+          "pose": 2,
+          "bbox_px": [
+            138,
+            148,
+            374,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 1,
+          "rgba_sha256": "3131bcf06c90b8a9143ffe2db317ddcbff54e690621d0bbeecc53ab07d952e49"
+        },
+        {
+          "index": 3,
+          "direction": "S",
+          "pose": 3,
+          "bbox_px": [
+            138,
+            161,
+            375,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 1,
+          "rgba_sha256": "7aa3df0e2e54b2b9979f696d37b0352d85053a93ae244e3fec3d5836f608b0b0"
+        },
+        {
+          "index": 4,
+          "direction": "E",
+          "pose": 0,
+          "bbox_px": [
+            91,
+            219,
+            422,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 1,
+          "rgba_sha256": "ae4b0607f91e51aa6a2bfb137e49779ff67f02fb0486d920891c0cde16dc6d53"
+        },
+        {
+          "index": 5,
+          "direction": "E",
+          "pose": 1,
+          "bbox_px": [
+            92,
+            222,
+            421,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 1,
+          "rgba_sha256": "e0b0feaa12b8d95790d2fd93514076c0ab7bdd54e4c5e0de73d2e090685c7829"
+        },
+        {
+          "index": 6,
+          "direction": "E",
+          "pose": 2,
+          "bbox_px": [
+            93,
+            221,
+            420,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 1,
+          "rgba_sha256": "8705ecb421cb7d812c35c72d1ea6915e0b12bc9466303430c5db88080b592022"
+        },
+        {
+          "index": 7,
+          "direction": "E",
+          "pose": 3,
+          "bbox_px": [
+            91,
+            222,
+            421,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 1,
+          "rgba_sha256": "63661fd973cda95ee55508784229cfd1333fa2e130e97e73675e793af6ce711f"
+        },
+        {
+          "index": 8,
+          "direction": "N",
+          "pose": 0,
+          "bbox_px": [
+            128,
+            139,
+            384,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 1,
+          "rgba_sha256": "8e131866ca922f713781f7be6af56296d0d65e2698276572e42ba29de6dcb265"
+        },
+        {
+          "index": 9,
+          "direction": "N",
+          "pose": 1,
+          "bbox_px": [
+            135,
+            140,
+            377,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 1,
+          "rgba_sha256": "9936dd5c842f8c89fca387afd4798dfb76d7ea4a99471b84489ff093d83aa863"
+        },
+        {
+          "index": 10,
+          "direction": "N",
+          "pose": 2,
+          "bbox_px": [
+            133,
+            140,
+            380,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 1,
+          "rgba_sha256": "c620876bc7163a7401fa740c957b484bb8d3296cbfcf462c1c54467f090dd0fb"
+        },
+        {
+          "index": 11,
+          "direction": "N",
+          "pose": 3,
+          "bbox_px": [
+            135,
+            141,
+            377,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 1,
+          "rgba_sha256": "141b8d34aad9c21c4d2ac6be2cb457fbef380366937ce1dfca14c63389af5fbd"
+        }
+      ],
+      "layout": "4x3_S_E_N",
+      "frame_count": 12,
+      "reference_height_px_by_direction": [
+        284,
+        223,
+        300
+      ],
+      "animation": "walk",
+      "loop": true,
+      "fps_hint": 8,
+      "normalization": "one uniform scale per direction; death uses one scale for all four poses",
+      "source_size_px": [
+        1448,
+        1086
+      ],
+      "visible_extent_world_px": [
+        933.0,
+        646.5
+      ],
+      "max_frame_extent_world_px": [
+        165.5,
+        138.5
+      ]
+    },
+    "boss.broodmother.death": {
+      "target_path": "res://assets/art/bosses/broodmother_death.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        2048,
+        512
+      ],
+      "bbox_px": [
+        93,
+        132,
+        1970,
+        416
+      ],
+      "pivot_px": [
+        256,
+        416
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": [
+        0.5966386554621849
+      ],
+      "upscaled": false,
+      "sha256": "1eacdcc706d929cbee5e69173d7c1eb0ca39d09f424af3983291a1b076ba42de",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        512,
+        512
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "direction": "shared",
+          "pose": 0,
+          "bbox_px": [
+            93,
+            132,
+            420,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 0.5966386554621849,
+          "rgba_sha256": "295254c41114251c360b0db269eec385940799e69eb7888400c92ef6ad6635d4"
+        },
+        {
+          "index": 1,
+          "direction": "shared",
+          "pose": 1,
+          "bbox_px": [
+            87,
+            183,
+            425,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 0.5966386554621849,
+          "rgba_sha256": "2a590e25c42761dd9bfdf7b051eac3739e0926bceb7afbb26b3783f8479b47c2"
+        },
+        {
+          "index": 2,
+          "direction": "shared",
+          "pose": 0,
+          "bbox_px": [
+            92,
+            218,
+            420,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 0.5966386554621849,
+          "rgba_sha256": "2a23e8e96948600926d297d97d33b168b958b403fd5ed0f675eda6a64f0c3b97"
+        },
+        {
+          "index": 3,
+          "direction": "shared",
+          "pose": 1,
+          "bbox_px": [
+            79,
+            246,
+            434,
+            416
+          ],
+          "pivot_px": [
+            256,
+            416
+          ],
+          "source_to_png_scale": 0.5966386554621849,
+          "rgba_sha256": "c9aea92061462969c4ff6e4f5aed5e36fc603043bd1b223a43e069b0c3f3311f"
+        }
+      ],
+      "layout": "4x1_shared",
+      "frame_count": 4,
+      "reference_height_px_by_direction": [
+        284,
+        223,
+        300
+      ],
+      "animation": "death",
+      "loop": false,
+      "fps_hint": 6,
+      "normalization": "one uniform scale per direction; death uses one scale for all four poses",
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "visible_extent_world_px": [
+        938.5,
+        142.0
+      ],
+      "max_frame_extent_world_px": [
+        177.5,
+        142.0
+      ]
+    },
+    "corpse.boss.broodmother": {
+      "target_path": "res://assets/art/corpses/boss_broodmother.png",
+      "priority": 5,
+      "status": "prepared",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "bbox_px": [
+        79,
+        235,
+        434,
+        405
+      ],
+      "pivot_px": [
+        256,
+        320
+      ],
+      "world_scale": 0.5,
+      "source_to_png_scale": 0.5966386554621849,
+      "upscaled": false,
+      "sha256": "e62ed30c385ca0382bc3275e81e8a83c6cba357028dd763615682272129f70ab",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "derived_from": "boss.broodmother.death",
+      "frame": 3,
+      "spawn_offset_from_actor_px": [
+        0,
+        -85
+      ],
+      "spawn_offset_from_actor_world_px": [
+        0.0,
+        -42.5
+      ],
+      "note": "Same painted final death pose at same scale, reanchored from feet pivot to corpse body center. Spawn at actor position + spawn_offset_from_actor_world_px to avoid a transition jump. No independent rescaling.",
+      "visible_extent_world_px": [
+        177.5,
+        85.0
       ]
     }
   },
@@ -3852,9 +10393,68 @@
         "fx.spawn_ring"
       ],
       "runtime_verified": false
+    },
+    "5": {
+      "status": "prepared",
+      "asset_ids": [
+        "enemy.drifter.walk",
+        "enemy.drifter.attack",
+        "enemy.drifter.death",
+        "corpse.drifter",
+        "enemy.runner.walk",
+        "enemy.runner.attack",
+        "enemy.runner.death",
+        "corpse.runner",
+        "enemy.spitter.walk",
+        "enemy.spitter.attack",
+        "enemy.spitter.death",
+        "corpse.spitter",
+        "enemy.gunner.walk",
+        "enemy.gunner.attack",
+        "enemy.gunner.death",
+        "corpse.gunner",
+        "enemy.charger.walk",
+        "enemy.charger.attack",
+        "enemy.charger.death",
+        "corpse.charger",
+        "enemy.brute.walk",
+        "enemy.brute.attack",
+        "enemy.brute.death",
+        "corpse.brute",
+        "enemy.flanker.walk",
+        "enemy.flanker.attack",
+        "enemy.flanker.death",
+        "corpse.flanker",
+        "enemy.carrier.walk",
+        "enemy.carrier.attack",
+        "enemy.carrier.death",
+        "corpse.carrier",
+        "boss.cleaver.walk",
+        "boss.cleaver.death",
+        "corpse.boss.cleaver",
+        "boss.boilermaster.walk",
+        "boss.boilermaster.death",
+        "corpse.boss.boilermaster",
+        "boss.broodmother.walk",
+        "boss.broodmother.death",
+        "corpse.boss.broodmother"
+      ],
+      "runtime_verified": false
     }
   },
   "disputed": [
-    "water.flooded_edge указан в заказе, но отсутствовал в manifest. Добавлена planned-запись с явным target_path assets/art/floors/water_flooded_edge.png, холстом 512×256 и pivot (256,217). Это отдельная полоса берега без коллизии; проверить стыковку при размещении."
-  ]
+    "water.flooded_edge указан в заказе, но отсутствовал в manifest. Добавлена planned-запись с явным target_path assets/art/floors/water_flooded_edge.png, холстом 512×256 и pivot (256,217). Это отдельная полоса берега без коллизии; проверить стыковку при размещении.",
+    "tools/art_audit.py распознаёт только старые single/strip3/6-column actor layouts; новые walk/attack/death форматы из текущего заказа могут давать «неизвестная раскладка». Размеры и каждую клетку дополнительно проверяет batch_05 metadata validation. Код аудитора не менялся.",
+    "Все 11 corpse.* имеют kind=prop, но pivot по заказу находится в центре лежащего тела (128,160)/(256,320), а не на нижней границе. Аудитор сравнивает низ bbox с pivot как у стоячего укрытия и выдаёт 11 ложных замечаний; pivot и рисунок не сдвигались ради обхода этой проверки."
+  ],
+  "baked_attack_fx": {
+    "enemy.gunner.attack": {
+      "pose": 1,
+      "effect": "muzzle_flash; recovery pose has small smoke wisp"
+    },
+    "enemy.spitter.attack": {
+      "pose": 1,
+      "effect": "small spit droplet"
+    }
+  }
 }

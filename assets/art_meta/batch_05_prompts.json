@@ -416,5 +416,245 @@
       2,
       2
     ]
+  },
+  "enemy.drifter.walk": {
+    "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.drifter.walk animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY FOUR columns by THREE rows (12 poses). Rows S front-facing walking toward viewer, E right-facing side walking right, N back-facing walking away. Columns 0 left foot forward/right back,1 passing step feet near center,2 right foot forward/left back,3 opposite passing. Clear alternating limb articulation and subtle torso bounce, not four identical idle copies. Quadrupeds use natural four-limb gait, alternating front/hind limbs. Fixed camera and character scale in all frames. Each row keeps its direction. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 3072x2304. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      4,
+      3
+    ]
+  },
+  "enemy.drifter.attack": {
+    "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.drifter.attack animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY THREE columns by THREE rows (9 poses). Rows S facing viewer, E facing RIGHT, N back-facing. Columns 0 anticipatory windup,1 peak attack lunge/strike,2 recovery. Keep feet/ground origin fixed, lean shoulders/torso visibly. Humanoid drifter swipes, wolf bites, frog spitter swells throat and spits a small orange spit droplet, gunner raises and fires rifle then recoils, boar lowers head to charge, brute winds up fist and slams, flanker makes claw swipe, carrier heaves abdomen. Use ONLY appropriate action for this reference creature, no unrelated new weapons. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2304x2304. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      3,
+      3
+    ]
+  },
+  "enemy.drifter.death": {
+    "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.drifter.death animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY TWO columns by TWO rows, FOUR chronological death/fall frames in reading order. Frame0 unmistakably staggered, knees buckling/head pitching downward;1 collapsing onto knees or forelimbs;2 tipping onto side toward ground;3 fully prone motionless body lying on its side with limbs relaxed. Same body size and anatomy across all four. Final frame MUST be a flat lying corpse, whole body visible. NON-GRAPHIC no blood, guts or dismemberment. One common three-quarter/front direction; no direction rows. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2048x2048. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      2,
+      2
+    ]
+  },
+  "enemy.runner.walk": {
+    "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.runner.walk animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY FOUR columns by THREE rows (12 poses). Rows S front-facing walking toward viewer, E right-facing side walking right, N back-facing walking away. Columns 0 left foot forward/right back,1 passing step feet near center,2 right foot forward/left back,3 opposite passing. Clear alternating limb articulation and subtle torso bounce, not four identical idle copies. Quadrupeds use natural four-limb gait, alternating front/hind limbs. Fixed camera and character scale in all frames. Each row keeps its direction. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 3072x2304. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      4,
+      3
+    ]
+  },
+  "enemy.runner.attack": {
+    "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.runner.attack animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY THREE columns by THREE rows (9 poses). Rows S facing viewer, E facing RIGHT, N back-facing. Columns 0 anticipatory windup,1 peak attack lunge/strike,2 recovery. Keep feet/ground origin fixed, lean shoulders/torso visibly. Humanoid drifter swipes, wolf bites, frog spitter swells throat and spits a small orange spit droplet, gunner raises and fires rifle then recoils, boar lowers head to charge, brute winds up fist and slams, flanker makes claw swipe, carrier heaves abdomen. Use ONLY appropriate action for this reference creature, no unrelated new weapons. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2304x2304. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      3,
+      3
+    ]
+  },
+  "enemy.runner.death": {
+    "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.runner.death animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY TWO columns by TWO rows, FOUR chronological death/fall frames in reading order. Frame0 unmistakably staggered, knees buckling/head pitching downward;1 collapsing onto knees or forelimbs;2 tipping onto side toward ground;3 fully prone motionless body lying on its side with limbs relaxed. Same body size and anatomy across all four. Final frame MUST be a flat lying corpse, whole body visible. NON-GRAPHIC no blood, guts or dismemberment. One common three-quarter/front direction; no direction rows. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2048x2048. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      2,
+      2
+    ]
+  },
+  "enemy.spitter.walk": {
+    "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.spitter.walk animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY FOUR columns by THREE rows (12 poses). Rows S front-facing walking toward viewer, E right-facing side walking right, N back-facing walking away. Columns 0 left foot forward/right back,1 passing step feet near center,2 right foot forward/left back,3 opposite passing. Clear alternating limb articulation and subtle torso bounce, not four identical idle copies. Quadrupeds use natural four-limb gait, alternating front/hind limbs. Fixed camera and character scale in all frames. Each row keeps its direction. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 3072x2304. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      4,
+      3
+    ]
+  },
+  "enemy.spitter.attack": {
+    "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.spitter.attack animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY THREE columns by THREE rows (9 poses). Rows S facing viewer, E facing RIGHT, N back-facing. Columns 0 anticipatory windup,1 peak attack lunge/strike,2 recovery. Keep feet/ground origin fixed, lean shoulders/torso visibly. Humanoid drifter swipes, wolf bites, frog spitter swells throat and spits a small orange spit droplet, gunner raises and fires rifle then recoils, boar lowers head to charge, brute winds up fist and slams, flanker makes claw swipe, carrier heaves abdomen. Use ONLY appropriate action for this reference creature, no unrelated new weapons. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2304x2304. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      3,
+      3
+    ]
+  },
+  "enemy.spitter.death": {
+    "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.spitter.death animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY TWO columns by TWO rows, FOUR chronological death/fall frames in reading order. Frame0 unmistakably staggered, knees buckling/head pitching downward;1 collapsing onto knees or forelimbs;2 tipping onto side toward ground;3 fully prone motionless body lying on its side with limbs relaxed. Same body size and anatomy across all four. Final frame MUST be a flat lying corpse, whole body visible. NON-GRAPHIC no blood, guts or dismemberment. One common three-quarter/front direction; no direction rows. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2048x2048. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      2,
+      2
+    ]
+  },
+  "enemy.gunner.walk": {
+    "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.gunner.walk animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY FOUR columns by THREE rows (12 poses). Rows S front-facing walking toward viewer, E right-facing side walking right, N back-facing walking away. Columns 0 left foot forward/right back,1 passing step feet near center,2 right foot forward/left back,3 opposite passing. Clear alternating limb articulation and subtle torso bounce, not four identical idle copies. Quadrupeds use natural four-limb gait, alternating front/hind limbs. Fixed camera and character scale in all frames. Each row keeps its direction. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 3072x2304. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      4,
+      3
+    ]
+  },
+  "enemy.gunner.attack": {
+    "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.gunner.attack animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY THREE columns by THREE rows (9 poses). Rows S facing viewer, E facing RIGHT, N back-facing. Columns 0 anticipatory windup,1 peak attack lunge/strike,2 recovery. Keep feet/ground origin fixed, lean shoulders/torso visibly. Humanoid drifter swipes, wolf bites, frog spitter swells throat and spits a small orange spit droplet, gunner raises and fires rifle then recoils, boar lowers head to charge, brute winds up fist and slams, flanker makes claw swipe, carrier heaves abdomen. Use ONLY appropriate action for this reference creature, no unrelated new weapons. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2304x2304. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      3,
+      3
+    ]
+  },
+  "enemy.gunner.death": {
+    "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.gunner.death animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY TWO columns by TWO rows, FOUR chronological death/fall frames in reading order. Frame0 unmistakably staggered, knees buckling/head pitching downward;1 collapsing onto knees or forelimbs;2 tipping onto side toward ground;3 fully prone motionless body lying on its side with limbs relaxed. Same body size and anatomy across all four. Final frame MUST be a flat lying corpse, whole body visible. NON-GRAPHIC no blood, guts or dismemberment. One common three-quarter/front direction; no direction rows. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2048x2048. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      2,
+      2
+    ]
+  },
+  "enemy.charger.walk": {
+    "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.charger.walk animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY FOUR columns by THREE rows (12 poses). Rows S front-facing walking toward viewer, E right-facing side walking right, N back-facing walking away. Columns 0 left foot forward/right back,1 passing step feet near center,2 right foot forward/left back,3 opposite passing. Clear alternating limb articulation and subtle torso bounce, not four identical idle copies. Quadrupeds use natural four-limb gait, alternating front/hind limbs. Fixed camera and character scale in all frames. Each row keeps its direction. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 3072x2304. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      4,
+      3
+    ]
+  },
+  "enemy.charger.attack": {
+    "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.charger.attack animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY THREE columns by THREE rows (9 poses). Rows S facing viewer, E facing RIGHT, N back-facing. Columns 0 anticipatory windup,1 peak attack lunge/strike,2 recovery. Keep feet/ground origin fixed, lean shoulders/torso visibly. Humanoid drifter swipes, wolf bites, frog spitter swells throat and spits a small orange spit droplet, gunner raises and fires rifle then recoils, boar lowers head to charge, brute winds up fist and slams, flanker makes claw swipe, carrier heaves abdomen. Use ONLY appropriate action for this reference creature, no unrelated new weapons. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2304x2304. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      3,
+      3
+    ]
+  },
+  "enemy.charger.death": {
+    "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.charger.death animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY TWO columns by TWO rows, FOUR chronological death/fall frames in reading order. Frame0 unmistakably staggered, knees buckling/head pitching downward;1 collapsing onto knees or forelimbs;2 tipping onto side toward ground;3 fully prone motionless body lying on its side with limbs relaxed. Same body size and anatomy across all four. Final frame MUST be a flat lying corpse, whole body visible. NON-GRAPHIC no blood, guts or dismemberment. One common three-quarter/front direction; no direction rows. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2048x2048. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      2,
+      2
+    ]
+  },
+  "enemy.brute.walk": {
+    "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.brute.walk animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY FOUR columns by THREE rows (12 poses). Rows S front-facing walking toward viewer, E right-facing side walking right, N back-facing walking away. Columns 0 left foot forward/right back,1 passing step feet near center,2 right foot forward/left back,3 opposite passing. Clear alternating limb articulation and subtle torso bounce, not four identical idle copies. Quadrupeds use natural four-limb gait, alternating front/hind limbs. Fixed camera and character scale in all frames. Each row keeps its direction. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 3072x2304. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      4,
+      3
+    ]
+  },
+  "enemy.brute.attack": {
+    "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.brute.attack animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY THREE columns by THREE rows (9 poses). Rows S facing viewer, E facing RIGHT, N back-facing. Columns 0 anticipatory windup,1 peak attack lunge/strike,2 recovery. Keep feet/ground origin fixed, lean shoulders/torso visibly. Humanoid drifter swipes, wolf bites, frog spitter swells throat and spits a small orange spit droplet, gunner raises and fires rifle then recoils, boar lowers head to charge, brute winds up fist and slams, flanker makes claw swipe, carrier heaves abdomen. Use ONLY appropriate action for this reference creature, no unrelated new weapons. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2304x2304. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      3,
+      3
+    ]
+  },
+  "enemy.brute.death": {
+    "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.brute.death animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY TWO columns by TWO rows, FOUR chronological death/fall frames in reading order. Frame0 unmistakably staggered, knees buckling/head pitching downward;1 collapsing onto knees or forelimbs;2 tipping onto side toward ground;3 fully prone motionless body lying on its side with limbs relaxed. Same body size and anatomy across all four. Final frame MUST be a flat lying corpse, whole body visible. NON-GRAPHIC no blood, guts or dismemberment. One common three-quarter/front direction; no direction rows. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2048x2048. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      2,
+      2
+    ]
+  },
+  "enemy.flanker.walk": {
+    "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.flanker.walk animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY FOUR columns by THREE rows (12 poses). Rows S front-facing walking toward viewer, E right-facing side walking right, N back-facing walking away. Columns 0 left foot forward/right back,1 passing step feet near center,2 right foot forward/left back,3 opposite passing. Clear alternating limb articulation and subtle torso bounce, not four identical idle copies. Quadrupeds use natural four-limb gait, alternating front/hind limbs. Fixed camera and character scale in all frames. Each row keeps its direction. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 3072x2304. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      4,
+      3
+    ]
+  },
+  "enemy.flanker.attack": {
+    "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.flanker.attack animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY THREE columns by THREE rows (9 poses). Rows S facing viewer, E facing RIGHT, N back-facing. Columns 0 anticipatory windup,1 peak attack lunge/strike,2 recovery. Keep feet/ground origin fixed, lean shoulders/torso visibly. Humanoid drifter swipes, wolf bites, frog spitter swells throat and spits a small orange spit droplet, gunner raises and fires rifle then recoils, boar lowers head to charge, brute winds up fist and slams, flanker makes claw swipe, carrier heaves abdomen. Use ONLY appropriate action for this reference creature, no unrelated new weapons. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2304x2304. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      3,
+      3
+    ]
+  },
+  "enemy.flanker.death": {
+    "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.flanker.death animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY TWO columns by TWO rows, FOUR chronological death/fall frames in reading order. Frame0 unmistakably staggered, knees buckling/head pitching downward;1 collapsing onto knees or forelimbs;2 tipping onto side toward ground;3 fully prone motionless body lying on its side with limbs relaxed. Same body size and anatomy across all four. Final frame MUST be a flat lying corpse, whole body visible. NON-GRAPHIC no blood, guts or dismemberment. One common three-quarter/front direction; no direction rows. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2048x2048. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      2,
+      2
+    ]
+  },
+  "enemy.carrier.walk": {
+    "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.carrier.walk animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY FOUR columns by THREE rows (12 poses). Rows S front-facing walking toward viewer, E right-facing side walking right, N back-facing walking away. Columns 0 left foot forward/right back,1 passing step feet near center,2 right foot forward/left back,3 opposite passing. Clear alternating limb articulation and subtle torso bounce, not four identical idle copies. Quadrupeds use natural four-limb gait, alternating front/hind limbs. Fixed camera and character scale in all frames. Each row keeps its direction. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 3072x2304. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      4,
+      3
+    ]
+  },
+  "enemy.carrier.attack": {
+    "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.carrier.attack animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY THREE columns by THREE rows (9 poses). Rows S facing viewer, E facing RIGHT, N back-facing. Columns 0 anticipatory windup,1 peak attack lunge/strike,2 recovery. Keep feet/ground origin fixed, lean shoulders/torso visibly. Humanoid drifter swipes, wolf bites, frog spitter swells throat and spits a small orange spit droplet, gunner raises and fires rifle then recoils, boar lowers head to charge, brute winds up fist and slams, flanker makes claw swipe, carrier heaves abdomen. Use ONLY appropriate action for this reference creature, no unrelated new weapons. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2304x2304. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      3,
+      3
+    ]
+  },
+  "enemy.carrier.death": {
+    "prompt": "Use case: stylized-concept. Create ONE production STALRENA enemy.carrier.death animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY TWO columns by TWO rows, FOUR chronological death/fall frames in reading order. Frame0 unmistakably staggered, knees buckling/head pitching downward;1 collapsing onto knees or forelimbs;2 tipping onto side toward ground;3 fully prone motionless body lying on its side with limbs relaxed. Same body size and anatomy across all four. Final frame MUST be a flat lying corpse, whole body visible. NON-GRAPHIC no blood, guts or dismemberment. One common three-quarter/front direction; no direction rows. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2048x2048. Each character should be several hundred pixels high in source. Final frame 256 square, grounded at pivot 128,208.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      2,
+      2
+    ]
+  },
+  "boss.cleaver.walk": {
+    "prompt": "Use case: stylized-concept. Create ONE production STALRENA boss.cleaver.walk animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY FOUR columns by THREE rows (12 poses). Rows S front-facing walking toward viewer, E right-facing side walking right, N back-facing walking away. Columns 0 left foot forward/right back,1 passing step feet near center,2 right foot forward/left back,3 opposite passing. Clear alternating limb articulation and subtle torso bounce, not four identical idle copies. Quadrupeds use natural four-limb gait, alternating front/hind limbs. Fixed camera and character scale in all frames. Each row keeps its direction. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 3072x2304. Each character should be several hundred pixels high in source. Final frame 512 square, grounded at pivot 256,416.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      4,
+      3
+    ]
+  },
+  "boss.cleaver.death": {
+    "prompt": "Use case: stylized-concept. Create ONE production STALRENA boss.cleaver.death animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY TWO columns by TWO rows, FOUR chronological death/fall frames in reading order. Frame0 unmistakably staggered, knees buckling/head pitching downward;1 collapsing onto knees or forelimbs;2 tipping onto side toward ground;3 fully prone motionless body lying on its side with limbs relaxed. Same body size and anatomy across all four. Final frame MUST be a flat lying corpse, whole body visible. NON-GRAPHIC no blood, guts or dismemberment. One common three-quarter/front direction; no direction rows. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2048x2048. Each character should be several hundred pixels high in source. Final frame 512 square, grounded at pivot 256,416.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      2,
+      2
+    ]
+  },
+  "boss.boilermaster.walk": {
+    "prompt": "Use case: stylized-concept. Create ONE production STALRENA boss.boilermaster.walk animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY FOUR columns by THREE rows (12 poses). Rows S front-facing walking toward viewer, E right-facing side walking right, N back-facing walking away. Columns 0 left foot forward/right back,1 passing step feet near center,2 right foot forward/left back,3 opposite passing. Clear alternating limb articulation and subtle torso bounce, not four identical idle copies. Quadrupeds use natural four-limb gait, alternating front/hind limbs. Fixed camera and character scale in all frames. Each row keeps its direction. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 3072x2304. Each character should be several hundred pixels high in source. Final frame 512 square, grounded at pivot 256,416.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      4,
+      3
+    ]
+  },
+  "boss.boilermaster.death": {
+    "prompt": "Use case: stylized-concept. Create ONE production STALRENA boss.boilermaster.death animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY TWO columns by TWO rows, FOUR chronological death/fall frames in reading order. Frame0 unmistakably staggered, knees buckling/head pitching downward;1 collapsing onto knees or forelimbs;2 tipping onto side toward ground;3 fully prone motionless body lying on its side with limbs relaxed. Same body size and anatomy across all four. Final frame MUST be a flat lying corpse, whole body visible. NON-GRAPHIC no blood, guts or dismemberment. One common three-quarter/front direction; no direction rows. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2048x2048. Each character should be several hundred pixels high in source. Final frame 512 square, grounded at pivot 256,416.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      2,
+      2
+    ]
+  },
+  "boss.broodmother.walk": {
+    "prompt": "Use case: stylized-concept. Create ONE production STALRENA boss.broodmother.walk animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY FOUR columns by THREE rows (12 poses). Rows S front-facing walking toward viewer, E right-facing side walking right, N back-facing walking away. Columns 0 left foot forward/right back,1 passing step feet near center,2 right foot forward/left back,3 opposite passing. Clear alternating limb articulation and subtle torso bounce, not four identical idle copies. Quadrupeds use natural four-limb gait, alternating front/hind limbs. Fixed camera and character scale in all frames. Each row keeps its direction. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 3072x2304. Each character should be several hundred pixels high in source. Final frame 512 square, grounded at pivot 256,416.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      4,
+      3
+    ]
+  },
+  "boss.broodmother.death": {
+    "prompt": "Use case: stylized-concept. Create ONE production STALRENA boss.broodmother.death animation sheet. Input image is CHARACTER IDENTITY REFERENCE in S/E/N; preserve same creature, clothing, proportions, materials, silhouette and palette, redraw at high resolution. EXACTLY TWO columns by TWO rows, FOUR chronological death/fall frames in reading order. Frame0 unmistakably staggered, knees buckling/head pitching downward;1 collapsing onto knees or forelimbs;2 tipping onto side toward ground;3 fully prone motionless body lying on its side with limbs relaxed. Same body size and anatomy across all four. Final frame MUST be a flat lying corpse, whole body visible. NON-GRAPHIC no blood, guts or dismemberment. One common three-quarter/front direction; no direction rows. Detailed hand-painted2D volume, fixed elevated top-down camera, soft upper-left light, muted gray olive rust. Genuine transparent RGBA outside figures, no floor, no long cast shadows. Equal source cells with generous transparent gutters on ALL sides, no clipping or overlap. No frame numbers, captions, labels, grid, text, watermark. Entire figures including all feet/tails fully inside each cell. Source high resolution ideally 2048x2048. Each character should be several hundred pixels high in source. Final frame 512 square, grounded at pivot 256,416.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      2,
+      2
+    ]
   }
 }
