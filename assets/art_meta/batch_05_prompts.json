@@ -360,5 +360,61 @@
     "prompt": "Use case: stylized-concept. STALRENA production game environment sprite. One abandoned faded olive canvas survivor backpack lying on its side with sagging pockets, worn leather straps, dirt and rusted buckles, no badges or lettering Small non-colliding environmental sprite, no scene. Detailed hand-painted2D with painted volume, fixed elevated top-down camera, soft upper-left light. Muted concrete-gray, dirty olive, rust brown. Genuine transparent RGBA outside subject, no floor plane or background, no long cast shadows, no text, signs, numbers, UI, watermark. Entire isolated object with generous clear margin, crisp readable silhouette. Large high-resolution source; final canvas256x256 except specified pipeline.",
     "mode": "built_in_imagegen",
     "layout": null
+  },
+  "fx.fire_loop": {
+    "prompt": "Use case: stylized-concept. Production 2D painted game VFX animation sheet for STALRENA. A LOOPING pool of stylized red-orange ground fire seen from elevated camera, six complementary flame flicker poses at same fire footprint, no beginning/end fade, first-to-last transition continuous, some glowing embers, NO bottle or ground. EXACTLY 6 frames arranged 3 columns by 2 rows in reading order. Each frame isolated in equal cells with wide transparent gutters, no contact with cell edges. Genuine alpha transparency, especially smoke and glow; no black/white/colored background, no floor or baked shadow. Consistent scale/origin across all frames. Painterly detailed volume, elevated top-down camera, no text, labels, numerals, grid lines, border, watermark. Large source so individual frames can downsample to 128x128 without enlargement.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      3,
+      2
+    ]
+  },
+  "fx.fire_burst": {
+    "prompt": "Use case: stylized-concept. A production videogame sprite sheet of FOUR tiny isolated hand-painted orange flame impact bursts, 2x2 grid. Frame0 a small amber-glass SHARD cluster with two tiny orange sparks. Frame1 compact jagged orange/yellow flame bloom with a few glass fragments. Frame2 wider low orange flame splash. Frame3 fading small red embers and two tiny dark gray wisps. CRITICAL each sprite is a clean isolated CUTOUT surrounded by completely transparent EMPTY space, at least25percent margin INSIDE EACH CELL. NO broad ambient light, NO global glow, NO fog, NO white haze, NO drop shadow, NO backdrop of any color. Flames have crisp painted organic contours, warm orange body with bright yellow core. No text, labels, grid lines, floor, bottle or device. Painterly volume as top-down 2D game effect. Large source1024x1024 or larger, genuine RGBA transparent background.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      2,
+      2
+    ]
+  },
+  "fx.steam_puff": {
+    "prompt": "Use case: stylized-concept. Production 2D painted game VFX animation sheet for STALRENA. A LOOPING low industrial white-gray steam puff from ground vent, six overlapping billowing swirls shifting upward and dissipating, first-to-last cycle continuous, semi-transparent feathered vapor, no vent hardware or ground. EXACTLY 6 frames arranged 3 columns by 2 rows in reading order. Each frame isolated in equal cells with wide transparent gutters, no contact with cell edges. Genuine alpha transparency, especially smoke and glow; no black/white/colored background, no floor or baked shadow. Consistent scale/origin across all frames. Painterly detailed volume, elevated top-down camera, no text, labels, numerals, grid lines, border, watermark. Large source so individual frames can downsample to 128x128 without enlargement.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      3,
+      2
+    ]
+  },
+  "fx.explosion": {
+    "prompt": "Use case: stylized-concept. Production 2D painted game VFX animation sheet for STALRENA. Eight sequential game EXPLOSION frames: tiny bright ignition, expanding orange fireball, peak yellow-white bloom, orange rolling flames, darkening gray smoke, spreading smoke, thin wisps, almost dissipated small wisps. Fixed explosion origin and camera, no weapon or environment. EXACTLY 8 frames arranged 4 columns by 2 rows in reading order. Each frame isolated in equal cells with wide transparent gutters, no contact with cell edges. Genuine alpha transparency, especially smoke and glow; no black/white/colored background, no floor or baked shadow. Consistent scale/origin across all frames. Painterly detailed volume, elevated top-down camera, no text, labels, numerals, grid lines, border, watermark. Large source so individual frames can downsample to 256x256 without enlargement.\nRefinement: Use case: precise-object-edit. Edit this fx.explosion game VFX animation sheet. Preserve EXACT 8 frames and layout 4 columns by2 rows, preserve core subject, progression and colors. FIX ONLY TRANSPARENCY AND FRAME ISOLATION: REMOVE all broad white ambient haze, white background matte and global glow between frames. Each effect must be a compact isolated cutout with localized sparks/flame/smoke only. Every cell needs a wide EMPTY fully transparent band on all FOUR edges, at least15percent cell width/height. Smoke forms small defined organic wisps, never a big rectangular luminous patch. No shared haze bridging cells. Genuine RGBA, outside silhouettes alpha zero, no black backdrop. Keep painterly material and muted smoke, bright sparks only local. All frames fit intact with no clipping. No text, no grid, no labels.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      4,
+      2
+    ]
+  },
+  "fx.hit_spark": {
+    "prompt": "Use case: stylized-concept. Production 2D painted game VFX animation sheet for STALRENA. Four sequential compact metal HIT SPARK frames: bright white-orange impact star, outward yellow sparks, smaller red-orange streaks, faint final embers; fixed impact center, no bullet or target. EXACTLY 4 frames arranged 2 columns by 2 rows in reading order. Each frame isolated in equal cells with wide transparent gutters, no contact with cell edges. Genuine alpha transparency, especially smoke and glow; no black/white/colored background, no floor or baked shadow. Consistent scale/origin across all frames. Painterly detailed volume, elevated top-down camera, no text, labels, numerals, grid lines, border, watermark. Large source so individual frames can downsample to 128x128 without enlargement.\nRefinement: Use case: precise-object-edit. Edit this fx.hit_spark game VFX animation sheet. Preserve EXACT 4 frames and layout 2 columns by2 rows, preserve core subject, progression and colors. FIX ONLY TRANSPARENCY AND FRAME ISOLATION: REMOVE all broad white ambient haze, white background matte and global glow between frames. Each effect must be a compact isolated cutout with localized sparks/flame/smoke only. Every cell needs a wide EMPTY fully transparent band on all FOUR edges, at least15percent cell width/height. Smoke forms small defined organic wisps, never a big rectangular luminous patch. No shared haze bridging cells. Genuine RGBA, outside silhouettes alpha zero, no black backdrop. Keep painterly material and muted smoke, bright sparks only local. All frames fit intact with no clipping. No text, no grid, no labels.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      2,
+      2
+    ]
+  },
+  "fx.heal": {
+    "prompt": "Use case: stylized-concept. Production 2D painted game VFX animation sheet for STALRENA. A LOOPING friendly HEALING aura, six subtly different glowing SKY-BLUE translucent elliptical rings with rising cyan motes and soft curved wisps, no medical symbols, no numbers, no character, same ground center and size, coherent cyclic shimmer. EXACTLY 6 frames arranged 3 columns by 2 rows in reading order. Each frame isolated in equal cells with wide transparent gutters, no contact with cell edges. Genuine alpha transparency, especially smoke and glow; no black/white/colored background, no floor or baked shadow. Consistent scale/origin across all frames. Painterly detailed volume, elevated top-down camera, no text, labels, numerals, grid lines, border, watermark. Large source so individual frames can downsample to 128x128 without enlargement.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      3,
+      2
+    ]
+  },
+  "fx.spawn_ring": {
+    "prompt": "Use case: stylized-concept. Production 2D painted game VFX animation sheet for STALRENA. Four stages of an ENEMY SPAWN ring on ground, red-orange glowing low elliptical energy rim, 0 thin dim small ring,1 bright expanding rim,2 peak fiery ring with sparse embers,3 thinning fading ring. Clear readable perimeter, no character, no symbols. EXACTLY 4 frames arranged 2 columns by 2 rows in reading order. Each frame isolated in equal cells with wide transparent gutters, no contact with cell edges. Genuine alpha transparency, especially smoke and glow; no black/white/colored background, no floor or baked shadow. Consistent scale/origin across all frames. Painterly detailed volume, elevated top-down camera, no text, labels, numerals, grid lines, border, watermark. Large source so individual frames can downsample to 128x128 without enlargement.",
+    "mode": "built_in_imagegen",
+    "layout": [
+      2,
+      2
+    ]
   }
 }

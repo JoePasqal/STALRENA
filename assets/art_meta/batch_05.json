@@ -2916,6 +2916,839 @@
         104.0,
         98.5
       ]
+    },
+    "fx.fire_loop": {
+      "target_path": "res://assets/art/fx/fire_loop.png",
+      "priority": 4,
+      "status": "prepared",
+      "canvas_px": [
+        768,
+        128
+      ],
+      "bbox_px": [
+        15,
+        8,
+        753,
+        112
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 0.25,
+      "upscaled": false,
+      "sha256": "722efa115dc3b65fd6918c1a2c435ebe431b8c5a46fd0331592a0b5aa1a8fd87",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        128,
+        128
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "bbox_px": [
+            15,
+            21,
+            113,
+            112
+          ],
+          "pivot_px": [
+            64,
+            112
+          ],
+          "rgba_sha256": "adc4d5532061687c4a883a4c98c519f7194d3286df62a99b10e26e8a46a0426e"
+        },
+        {
+          "index": 1,
+          "bbox_px": [
+            13,
+            12,
+            115,
+            112
+          ],
+          "pivot_px": [
+            64,
+            112
+          ],
+          "rgba_sha256": "324b4d4f8e6c0549591a26fff53daef5afadcc8a1cf4e3b47bd5a5cef2a4dea8"
+        },
+        {
+          "index": 2,
+          "bbox_px": [
+            13,
+            10,
+            115,
+            112
+          ],
+          "pivot_px": [
+            64,
+            112
+          ],
+          "rgba_sha256": "2c1c58e52656d3c47bf1bf1c97ffc7a96a3fdd4b5960ee1d4e7c7605ce34f7f3"
+        },
+        {
+          "index": 3,
+          "bbox_px": [
+            14,
+            8,
+            114,
+            112
+          ],
+          "pivot_px": [
+            64,
+            112
+          ],
+          "rgba_sha256": "6345e5e8cbe62fb18e2aa3c4f961e8a0d01f37310f883b0991778d17f6b3a521"
+        },
+        {
+          "index": 4,
+          "bbox_px": [
+            15,
+            18,
+            113,
+            112
+          ],
+          "pivot_px": [
+            64,
+            112
+          ],
+          "rgba_sha256": "ffce2e21d0a6a891954ed6b423cd83b03990ef844ca86d4f6a9034ecff4f693f"
+        },
+        {
+          "index": 5,
+          "bbox_px": [
+            15,
+            21,
+            113,
+            112
+          ],
+          "pivot_px": [
+            64,
+            112
+          ],
+          "rgba_sha256": "33926ef75ab2bf260d581a2e6455e76955286f7cefcb8e23f14131aed12a464a"
+        }
+      ],
+      "layout": "row_major",
+      "frame_count": 6,
+      "frame_origin_px": [
+        64,
+        112
+      ],
+      "loop": true,
+      "fps_hint": 8,
+      "visible_extent_world_px": [
+        738.0,
+        104.0
+      ]
+    },
+    "fx.fire_burst": {
+      "target_path": "res://assets/art/fx/fire_burst.png",
+      "priority": 4,
+      "status": "prepared",
+      "canvas_px": [
+        1024,
+        256
+      ],
+      "bbox_px": [
+        75,
+        60,
+        956,
+        195
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 0.5010615711252654,
+      "upscaled": false,
+      "sha256": "8621f7729906d3935d8f4800c8bdc05f1313e186aba5befaa2b9cd5914e65ffd",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        256,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "bbox_px": [
+            75,
+            85,
+            181,
+            171
+          ],
+          "pivot_px": [
+            128,
+            128
+          ],
+          "rgba_sha256": "66a15236cb356b415be0fa8efe8a6876666975a2fe145dd1751714e9a2c0dd3a"
+        },
+        {
+          "index": 1,
+          "bbox_px": [
+            43,
+            60,
+            213,
+            195
+          ],
+          "pivot_px": [
+            128,
+            128
+          ],
+          "rgba_sha256": "66024ecca37ae2099942d8640a8581ce00d29142d1fe1d200429a4b076607fe9"
+        },
+        {
+          "index": 2,
+          "bbox_px": [
+            10,
+            69,
+            246,
+            187
+          ],
+          "pivot_px": [
+            128,
+            128
+          ],
+          "rgba_sha256": "9fc9b9727bc5f9952a36909b35aec21f0e46f1ce825f900d9df2b5612f53ab87"
+        },
+        {
+          "index": 3,
+          "bbox_px": [
+            68,
+            71,
+            188,
+            185
+          ],
+          "pivot_px": [
+            128,
+            128
+          ],
+          "rgba_sha256": "21158e72dc56f64dabdabe7c9f46f4ac982c354e038467df5dffa4b305add2bb"
+        }
+      ],
+      "layout": "row_major",
+      "frame_count": 4,
+      "frame_origin_px": [
+        128,
+        128
+      ],
+      "loop": false,
+      "fps_hint": 8,
+      "visible_extent_world_px": [
+        881.0,
+        135.0
+      ]
+    },
+    "fx.steam_puff": {
+      "target_path": "res://assets/art/fx/steam_puff.png",
+      "priority": 4,
+      "status": "prepared",
+      "canvas_px": [
+        768,
+        128
+      ],
+      "bbox_px": [
+        30,
+        8,
+        751,
+        112
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 0.2275711159737418,
+      "upscaled": false,
+      "sha256": "8058e7aa00f146405b9ed8890c7d8c89c3cb71ab6bfa24414b6800f0ef998e34",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        128,
+        128
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "bbox_px": [
+            30,
+            47,
+            98,
+            112
+          ],
+          "pivot_px": [
+            64,
+            112
+          ],
+          "rgba_sha256": "1a341a1e1d0029fdfae8938b1b29dbcab2c72428a47854123166e955c40cd4bc"
+        },
+        {
+          "index": 1,
+          "bbox_px": [
+            23,
+            30,
+            104,
+            112
+          ],
+          "pivot_px": [
+            64,
+            112
+          ],
+          "rgba_sha256": "f89b81399d53ab38079cf0bacfcc8136ce7764f4c0dbd2c4f2d477b03ca56c14"
+        },
+        {
+          "index": 2,
+          "bbox_px": [
+            21,
+            18,
+            107,
+            112
+          ],
+          "pivot_px": [
+            64,
+            112
+          ],
+          "rgba_sha256": "d68525cdf7f56b77355e10d6d79e4540272e2f3b19a2696a096bfcff6809ae54"
+        },
+        {
+          "index": 3,
+          "bbox_px": [
+            19,
+            11,
+            108,
+            112
+          ],
+          "pivot_px": [
+            64,
+            112
+          ],
+          "rgba_sha256": "9436bfc85063354b0d0862b48e16369f5bfe2e0d635c4bc13f139eed99aa86cd"
+        },
+        {
+          "index": 4,
+          "bbox_px": [
+            18,
+            9,
+            110,
+            112
+          ],
+          "pivot_px": [
+            64,
+            112
+          ],
+          "rgba_sha256": "3a07db9b817a52154d7c0b1008fc2f97c860a83e16186145b003fe621fab6b6c"
+        },
+        {
+          "index": 5,
+          "bbox_px": [
+            17,
+            8,
+            111,
+            112
+          ],
+          "pivot_px": [
+            64,
+            112
+          ],
+          "rgba_sha256": "ad317d5cd36c0c2118df38866513d9a6a5497d70740c805a8ff1890f392a5b0d"
+        }
+      ],
+      "layout": "row_major",
+      "frame_count": 6,
+      "frame_origin_px": [
+        64,
+        112
+      ],
+      "loop": true,
+      "fps_hint": 8,
+      "visible_extent_world_px": [
+        721.0,
+        104.0
+      ]
+    },
+    "fx.explosion": {
+      "target_path": "res://assets/art/fx/explosion.png",
+      "priority": 4,
+      "status": "prepared",
+      "canvas_px": [
+        2048,
+        256
+      ],
+      "bbox_px": [
+        92,
+        21,
+        2022,
+        235
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 0.6178010471204188,
+      "upscaled": false,
+      "sha256": "ceaa5fdfee1a92950a08d370e91d6a8ccaea9722006fe3dc1b81b687404247a3",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        256,
+        256
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "bbox_px": [
+            92,
+            97,
+            164,
+            158
+          ],
+          "pivot_px": [
+            128,
+            128
+          ],
+          "rgba_sha256": "af2c72f004be25b830be995f7e294bd22df3e1a91e2138e835b00d8089c637cf"
+        },
+        {
+          "index": 1,
+          "bbox_px": [
+            55,
+            57,
+            201,
+            199
+          ],
+          "pivot_px": [
+            128,
+            128
+          ],
+          "rgba_sha256": "f99c04b10711b04ae41c7bb31934dc4a1e88baf855d0f5249011f0fd1735d531"
+        },
+        {
+          "index": 2,
+          "bbox_px": [
+            11,
+            24,
+            245,
+            231
+          ],
+          "pivot_px": [
+            128,
+            128
+          ],
+          "rgba_sha256": "a8431cfa2bde0c0d36252cb12084a9fb5307ddc247135490981f6117b7333603"
+        },
+        {
+          "index": 3,
+          "bbox_px": [
+            14,
+            25,
+            241,
+            231
+          ],
+          "pivot_px": [
+            128,
+            128
+          ],
+          "rgba_sha256": "7c16d235717125155c5eebb9cb8a50d46a63a8c4821eeadcb5f28254ae8a7242"
+        },
+        {
+          "index": 4,
+          "bbox_px": [
+            12,
+            21,
+            244,
+            235
+          ],
+          "pivot_px": [
+            128,
+            128
+          ],
+          "rgba_sha256": "81310aa4e68c06a15b84e3c0ad1788e1abc275d926ceac747895a8471bcd7a9d"
+        },
+        {
+          "index": 5,
+          "bbox_px": [
+            10,
+            22,
+            246,
+            233
+          ],
+          "pivot_px": [
+            128,
+            128
+          ],
+          "rgba_sha256": "812ab624f53d61c7cba0dc063a384a7c457d8c1dcc417bf80347cd3e2d2a86b7"
+        },
+        {
+          "index": 6,
+          "bbox_px": [
+            14,
+            33,
+            241,
+            223
+          ],
+          "pivot_px": [
+            128,
+            128
+          ],
+          "rgba_sha256": "ec53c1a787a4bf9dae49b2f986b4c9bb29bbb157be1f21654fcbe1b68dbac3ad"
+        },
+        {
+          "index": 7,
+          "bbox_px": [
+            26,
+            59,
+            230,
+            197
+          ],
+          "pivot_px": [
+            128,
+            128
+          ],
+          "rgba_sha256": "60e123e4c7f26984591953ef1f26459dce6bfafe178f691db458d19a2763c414"
+        }
+      ],
+      "layout": "row_major",
+      "frame_count": 8,
+      "frame_origin_px": [
+        128,
+        128
+      ],
+      "loop": false,
+      "fps_hint": 8,
+      "visible_extent_world_px": [
+        1930.0,
+        214.0
+      ]
+    },
+    "fx.hit_spark": {
+      "target_path": "res://assets/art/fx/hit_spark.png",
+      "priority": 4,
+      "status": "prepared",
+      "canvas_px": [
+        512,
+        128
+      ],
+      "bbox_px": [
+        13,
+        14,
+        490,
+        114
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 0.2529274004683841,
+      "upscaled": false,
+      "sha256": "5fa2e7e652fd965a4afed2a718e66fc5304e7641deea967a909ff5cacd4d3bca",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        128,
+        128
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "bbox_px": [
+            13,
+            14,
+            115,
+            114
+          ],
+          "pivot_px": [
+            64,
+            64
+          ],
+          "rgba_sha256": "8cf6a34d14fac9f2e452e57d2174453d844fa514535661257d5dfcdf45e86757"
+        },
+        {
+          "index": 1,
+          "bbox_px": [
+            10,
+            14,
+            118,
+            114
+          ],
+          "pivot_px": [
+            64,
+            64
+          ],
+          "rgba_sha256": "95ac3441483a366588dd98cca4552c1a8083caeb789bd8cb8ceaaf35cabb4027"
+        },
+        {
+          "index": 2,
+          "bbox_px": [
+            17,
+            16,
+            111,
+            113
+          ],
+          "pivot_px": [
+            64,
+            64
+          ],
+          "rgba_sha256": "5a7beca0560cc13bc76b0a236011f4beb1a8db8d69f3e3ad7965d20fcbe70d21"
+        },
+        {
+          "index": 3,
+          "bbox_px": [
+            21,
+            26,
+            106,
+            102
+          ],
+          "pivot_px": [
+            64,
+            64
+          ],
+          "rgba_sha256": "9b4fe7ab16a504ca2b979884a8f5f5d5e802f6fa641760bf2432079b798e9df1"
+        }
+      ],
+      "layout": "row_major",
+      "frame_count": 4,
+      "frame_origin_px": [
+        64,
+        64
+      ],
+      "loop": false,
+      "fps_hint": 8,
+      "visible_extent_world_px": [
+        477.0,
+        100.0
+      ]
+    },
+    "fx.heal": {
+      "target_path": "res://assets/art/fx/heal.png",
+      "priority": 4,
+      "status": "prepared",
+      "canvas_px": [
+        768,
+        128
+      ],
+      "bbox_px": [
+        12,
+        14,
+        756,
+        113
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 0.22406639004149378,
+      "upscaled": false,
+      "sha256": "36e80db5c334a3928ecaa79b41ca710bbd362e5acbf96d8c54e88e8981594d9c",
+      "alpha_extrema": [
+        0,
+        252
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        128,
+        128
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "bbox_px": [
+            12,
+            20,
+            116,
+            107
+          ],
+          "pivot_px": [
+            64,
+            64
+          ],
+          "rgba_sha256": "671e70db3dd97f06ac81bb97d1fc40d1ed32dd1b4463ea4049dbad155f47759b"
+        },
+        {
+          "index": 1,
+          "bbox_px": [
+            10,
+            18,
+            117,
+            109
+          ],
+          "pivot_px": [
+            64,
+            64
+          ],
+          "rgba_sha256": "5bfce6edd31b11f2bc87e28d5efaf0da13bf7a98830131049f53c6da3bfe0001"
+        },
+        {
+          "index": 2,
+          "bbox_px": [
+            10,
+            14,
+            118,
+            113
+          ],
+          "pivot_px": [
+            64,
+            64
+          ],
+          "rgba_sha256": "b27443af27714822a0578b2a687ae6a017c478f7dad89cb5da65a47bf3dffa66"
+        },
+        {
+          "index": 3,
+          "bbox_px": [
+            10,
+            14,
+            118,
+            113
+          ],
+          "pivot_px": [
+            64,
+            64
+          ],
+          "rgba_sha256": "a0f92780265ee325a543353f772aa4b4f7aacfbdc537fdf6cb4f130e9ffbf06c"
+        },
+        {
+          "index": 4,
+          "bbox_px": [
+            10,
+            20,
+            117,
+            108
+          ],
+          "pivot_px": [
+            64,
+            64
+          ],
+          "rgba_sha256": "3f5b4bddb5e7d3c73d61eec8000b37d8fe899a932271e7e99cc6ca01b4f94d40"
+        },
+        {
+          "index": 5,
+          "bbox_px": [
+            11,
+            20,
+            116,
+            108
+          ],
+          "pivot_px": [
+            64,
+            64
+          ],
+          "rgba_sha256": "76a59bf007e724f20ce417cfcaf1aa69cc3f362f0a4c3ee577ee227964523653"
+        }
+      ],
+      "layout": "row_major",
+      "frame_count": 6,
+      "frame_origin_px": [
+        64,
+        64
+      ],
+      "loop": true,
+      "fps_hint": 8,
+      "visible_extent_world_px": [
+        744.0,
+        99.0
+      ]
+    },
+    "fx.spawn_ring": {
+      "target_path": "res://assets/art/fx/spawn_ring.png",
+      "priority": 4,
+      "status": "prepared",
+      "canvas_px": [
+        512,
+        128
+      ],
+      "bbox_px": [
+        22,
+        32,
+        500,
+        95
+      ],
+      "pivot_px": null,
+      "world_scale": 1.0,
+      "source_to_png_scale": 0.16289592760180996,
+      "upscaled": false,
+      "sha256": "d5964d3d55c7308faedb79a09d29b195547f8d10a3cb4fce440f2798f4aa8d2a",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "runtime_verified": false,
+      "frame_px": [
+        128,
+        128
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "bbox_px": [
+            22,
+            46,
+            106,
+            82
+          ],
+          "pivot_px": [
+            64,
+            64
+          ],
+          "rgba_sha256": "2b0eee74980d2a7faf1fcb657a6956abacd0ffc63dfc10bbccb47ab1f66bf734"
+        },
+        {
+          "index": 1,
+          "bbox_px": [
+            10,
+            38,
+            118,
+            90
+          ],
+          "pivot_px": [
+            64,
+            64
+          ],
+          "rgba_sha256": "a994456ea11e403148489c1e7cc4d4876ce63f3b4e7e7129fdfd64706b6cb30f"
+        },
+        {
+          "index": 2,
+          "bbox_px": [
+            10,
+            32,
+            118,
+            95
+          ],
+          "pivot_px": [
+            64,
+            64
+          ],
+          "rgba_sha256": "7f18620230f63c4778ff090ed1bd73b5803ec693ad550374ab724cb985654bfc"
+        },
+        {
+          "index": 3,
+          "bbox_px": [
+            11,
+            38,
+            116,
+            90
+          ],
+          "pivot_px": [
+            64,
+            64
+          ],
+          "rgba_sha256": "4bd4f6aed186e984cf91bc1bc383289c7e60d8dcdc8e0ab0552cd23d31efb2b1"
+        }
+      ],
+      "layout": "row_major",
+      "frame_count": 4,
+      "frame_origin_px": [
+        64,
+        64
+      ],
+      "loop": false,
+      "fps_hint": 8,
+      "visible_extent_world_px": [
+        478.0,
+        63.0
+      ]
     }
   },
   "priorities": {
@@ -3004,6 +3837,19 @@
         "decor.common.rags",
         "decor.common.weeds",
         "decor.common.backpack"
+      ],
+      "runtime_verified": false
+    },
+    "4": {
+      "status": "prepared",
+      "asset_ids": [
+        "fx.fire_loop",
+        "fx.fire_burst",
+        "fx.steam_puff",
+        "fx.explosion",
+        "fx.hit_spark",
+        "fx.heal",
+        "fx.spawn_ring"
       ],
       "runtime_verified": false
     }
