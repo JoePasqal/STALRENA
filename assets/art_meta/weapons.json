@@ -1,8 +1,81 @@
 {
   "weapons": {
-    "weapon.pistol":  {"grip_px": [66, 76], "muzzle_px": [222, 29],
-                       "note": "хват = центр рукояти (коричневая накладка); дуло — срез ствола. Измерено по PNG в Claude, требует визуальной проверки."},
-    "weapon.carbine": {"grip_px": [62, 78], "muzzle_px": [222, 50],
-                       "note": "хват = пистолетная рукоять; дуло — срез пламегасителя."}
+    "weapon.pistol": {
+      "grip_px": [
+        66,
+        76
+      ],
+      "muzzle_px": [
+        222,
+        33
+      ],
+      "note": "Visual confirmation on unchanged PNG; muzzle center corrected from y=29 to y=33. Pixel pick, not an engine verification."
+    },
+    "weapon.carbine": {
+      "grip_px": [
+        62,
+        78
+      ],
+      "muzzle_px": [
+        222,
+        50
+      ],
+      "note": "Visual confirmation on unchanged PNG. Pixel pick, not an engine verification."
+    },
+    "weapon.smg": {
+      "grip_px": [
+        103,
+        92
+      ],
+      "muzzle_px": [
+        224,
+        64
+      ],
+      "note": "Picked on full-resolution painted source then transformed with uniform resize. Check in engine."
+    },
+    "weapon.lmg": {
+      "grip_px": [
+        58,
+        89
+      ],
+      "muzzle_px": [
+        224,
+        64
+      ],
+      "note": "Picked on full-resolution painted source then transformed with uniform resize. Check in engine."
+    },
+    "weapon.marksman": {
+      "grip_px": [
+        67,
+        97
+      ],
+      "muzzle_px": [
+        224,
+        64
+      ],
+      "note": "Picked on full-resolution painted source then transformed with uniform resize. Check in engine."
+    },
+    "weapon.shotgun": {
+      "grip_px": [
+        76,
+        91
+      ],
+      "muzzle_px": [
+        224,
+        64
+      ],
+      "note": "Picked on full-resolution painted source then transformed with uniform resize. Check in engine."
+    },
+    "weapon.flamethrower": {
+      "grip_px": [
+        29,
+        55
+      ],
+      "muzzle_px": [
+        224,
+        64
+      ],
+      "note": "Picked on full-resolution painted source then transformed with uniform resize. Check in engine."
+    }
   }
 }

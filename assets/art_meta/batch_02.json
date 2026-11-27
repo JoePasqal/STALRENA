@@ -55,11 +55,123 @@
         125
       ],
       "N": [
-        142,
-        125
+        173,
+        128
       ]
     },
-    "socket_notes": "S/E visually located on gloves in idle frame. N is projected hidden-hand attachment. Walking/hit may need per-frame adjustments; not verified in engine."
+    "socket_notes": "N row repainted with visible right glove; use N per-frame coordinates. S/E unchanged. Death physical size calibrated by head reference rather than equal silhouette height.",
+    "weapon_socket_frames_px": {
+      "N": {
+        "idle": [
+          173,
+          128
+        ],
+        "walk": [
+          [
+            175,
+            126
+          ],
+          [
+            177,
+            127
+          ],
+          [
+            174,
+            127
+          ],
+          [
+            175,
+            126
+          ]
+        ],
+        "hit": [
+          181,
+          120
+        ]
+      }
+    },
+    "death_preparation": [
+      {
+        "frame": 0,
+        "head_reference_width_source_px": 84,
+        "head_reference_target_px": 26,
+        "uniform_scale": 0.30952380952380953,
+        "source_root_in_cell": [
+          330,
+          599
+        ],
+        "target_root": [
+          128,
+          208
+        ],
+        "bbox": [
+          60,
+          57,
+          181,
+          207
+        ]
+      },
+      {
+        "frame": 1,
+        "head_reference_width_source_px": 90,
+        "head_reference_target_px": 26,
+        "uniform_scale": 0.28888888888888886,
+        "source_root_in_cell": [
+          403,
+          594
+        ],
+        "target_root": [
+          128,
+          208
+        ],
+        "bbox": [
+          44,
+          99,
+          152,
+          207
+        ]
+      },
+      {
+        "frame": 2,
+        "head_reference_width_source_px": 88,
+        "head_reference_target_px": 26,
+        "uniform_scale": 0.29545454545454547,
+        "source_root_in_cell": [
+          464,
+          465
+        ],
+        "target_root": [
+          128,
+          208
+        ],
+        "bbox": [
+          7,
+          124,
+          146,
+          219
+        ]
+      },
+      {
+        "frame": 3,
+        "head_reference_width_source_px": 110,
+        "head_reference_target_px": 26,
+        "uniform_scale": 0.23636363636363636,
+        "source_root_in_cell": [
+          558,
+          428
+        ],
+        "target_root": [
+          128,
+          208
+        ],
+        "bbox": [
+          6,
+          173,
+          134,
+          226
+        ]
+      }
+    ]
   },
   "armor": {
     "sheet_px": [
@@ -80,7 +192,7 @@
       208
     ],
     "world_scale": 0.5,
-    "notes": "Static torso overlays. Check arm/hand occlusion and fit on walk/hit; suppress on death."
+    "notes": "E armhole now alpha transparent. S/N unchanged. Overlays remain static; per-frame fit still requires engine review."
   },
   "enemies": {
     "sheet_px": [
@@ -122,10 +234,10 @@
         128,
         217
       ],
-      "world_scale": 1.0,
+      "world_scale": 1,
       "reason": "Latest request overrides 512px manifest; scale 1.0 retains approximately previous 512px-at-0.5 logical footprint. Check visual fit without changing scene collision."
     }
   },
-  "weapons_unchanged": true,
-  "weapon_grip_notes": "Body socket alone will not correct grip in old weapon PNGs; visually measure each weapon pivot independently and compute muzzle using full 2D grip-to-muzzle vector."
+  "weapons_unchanged": false,
+  "weapon_grip_notes": "Use assets/art_meta/weapons.json; body socket and weapon grip are independent transforms."
 }

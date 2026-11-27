@@ -1,0 +1,572 @@
+{
+  "schema_version": 1,
+  "status": "prepared",
+  "runtime_verified": false,
+  "assets": {
+    "enemy.charger": {
+      "path": "assets/art/enemies/charger.png",
+      "canvas_px": [
+        768,
+        256
+      ],
+      "mode": "RGBA",
+      "frame_px": [
+        256,
+        256
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "layout": "3x1_S_E_N",
+      "source_scale": 0.31155015197568386
+    },
+    "enemy.gunner": {
+      "path": "assets/art/enemies/gunner.png",
+      "canvas_px": [
+        768,
+        256
+      ],
+      "mode": "RGBA",
+      "frame_px": [
+        256,
+        256
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "layout": "3x1_S_E_N",
+      "source_scale": 0.2508361204013378
+    },
+    "enemy.brute": {
+      "path": "assets/art/enemies/brute.png",
+      "canvas_px": [
+        768,
+        256
+      ],
+      "mode": "RGBA",
+      "frame_px": [
+        256,
+        256
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "layout": "3x1_S_E_N",
+      "source_scale": 0.3019538188277087
+    },
+    "enemy.flanker": {
+      "path": "assets/art/enemies/flanker.png",
+      "canvas_px": [
+        768,
+        256
+      ],
+      "mode": "RGBA",
+      "frame_px": [
+        256,
+        256
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "layout": "3x1_S_E_N",
+      "source_scale": 0.3282275711159737
+    },
+    "enemy.carrier": {
+      "path": "assets/art/enemies/carrier.png",
+      "canvas_px": [
+        768,
+        256
+      ],
+      "mode": "RGBA",
+      "frame_px": [
+        256,
+        256
+      ],
+      "pivot_px": [
+        128,
+        208
+      ],
+      "layout": "3x1_S_E_N",
+      "source_scale": 0.2903225806451613
+    },
+    "weapon.smg": {
+      "path": "assets/art/weapons/smg.png",
+      "canvas_px": [
+        256,
+        128
+      ],
+      "mode": "RGBA",
+      "grip_px": [
+        103,
+        92
+      ],
+      "muzzle_px": [
+        224,
+        64
+      ],
+      "uniform_source_scale": 0.10566037735849057
+    },
+    "weapon.lmg": {
+      "path": "assets/art/weapons/lmg.png",
+      "canvas_px": [
+        256,
+        128
+      ],
+      "mode": "RGBA",
+      "grip_px": [
+        58,
+        89
+      ],
+      "muzzle_px": [
+        224,
+        64
+      ],
+      "uniform_source_scale": 0.12392426850258176
+    },
+    "weapon.marksman": {
+      "path": "assets/art/weapons/marksman.png",
+      "canvas_px": [
+        256,
+        128
+      ],
+      "mode": "RGBA",
+      "grip_px": [
+        67,
+        97
+      ],
+      "muzzle_px": [
+        224,
+        64
+      ],
+      "uniform_source_scale": 0.1259475218658892
+    },
+    "weapon.shotgun": {
+      "path": "assets/art/weapons/shotgun.png",
+      "canvas_px": [
+        256,
+        128
+      ],
+      "mode": "RGBA",
+      "grip_px": [
+        76,
+        91
+      ],
+      "muzzle_px": [
+        224,
+        64
+      ],
+      "uniform_source_scale": 0.12735849056603774
+    },
+    "weapon.flamethrower": {
+      "path": "assets/art/weapons/flamethrower.png",
+      "canvas_px": [
+        256,
+        128
+      ],
+      "mode": "RGBA",
+      "grip_px": [
+        29,
+        55
+      ],
+      "muzzle_px": [
+        224,
+        64
+      ],
+      "uniform_source_scale": 0.1276595744680851
+    },
+    "icon.weapon.pistol": {
+      "path": "assets/art/icons/weapons/pistol.png",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "source": "full_resolution_weapon_illustration"
+    },
+    "icon.weapon.smg": {
+      "path": "assets/art/icons/weapons/smg.png",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "source": "full_resolution_weapon_illustration"
+    },
+    "icon.weapon.carbine": {
+      "path": "assets/art/icons/weapons/carbine.png",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "source": "full_resolution_weapon_illustration"
+    },
+    "icon.weapon.shotgun": {
+      "path": "assets/art/icons/weapons/shotgun.png",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "source": "full_resolution_weapon_illustration"
+    },
+    "icon.weapon.lmg": {
+      "path": "assets/art/icons/weapons/lmg.png",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "source": "full_resolution_weapon_illustration"
+    },
+    "icon.weapon.marksman": {
+      "path": "assets/art/icons/weapons/marksman.png",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "source": "full_resolution_weapon_illustration"
+    },
+    "icon.weapon.flamethrower": {
+      "path": "assets/art/icons/weapons/flamethrower.png",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "source": "full_resolution_weapon_illustration"
+    },
+    "icon.armor.light": {
+      "path": "assets/art/icons/armor/light.png",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "mode": "RGBA"
+    },
+    "armor.light": {
+      "path": "assets/art/armor/light.png",
+      "canvas_px": [
+        768,
+        256
+      ],
+      "mode": "RGBA",
+      "layout": "3x1_S_E_N",
+      "changed_cells": [
+        "E"
+      ]
+    },
+    "icon.armor.field": {
+      "path": "assets/art/icons/armor/field.png",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "mode": "RGBA"
+    },
+    "armor.field": {
+      "path": "assets/art/armor/field.png",
+      "canvas_px": [
+        768,
+        256
+      ],
+      "mode": "RGBA",
+      "layout": "3x1_S_E_N",
+      "changed_cells": [
+        "E"
+      ]
+    },
+    "icon.armor.heavy": {
+      "path": "assets/art/icons/armor/heavy.png",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "mode": "RGBA"
+    },
+    "armor.heavy": {
+      "path": "assets/art/armor/heavy.png",
+      "canvas_px": [
+        768,
+        256
+      ],
+      "mode": "RGBA",
+      "layout": "3x1_S_E_N",
+      "changed_cells": [
+        "E"
+      ]
+    },
+    "icon.module.amplifier": {
+      "path": "assets/art/icons/modules/amplifier.png",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "mode": "RGBA"
+    },
+    "icon.module.feeder": {
+      "path": "assets/art/icons/modules/feeder.png",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "mode": "RGBA"
+    },
+    "icon.module.bolt_drive": {
+      "path": "assets/art/icons/modules/bolt_drive.png",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "mode": "RGBA"
+    },
+    "icon.module.target_sensor": {
+      "path": "assets/art/icons/modules/target_sensor.png",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "mode": "RGBA"
+    },
+    "icon.module.precision_core": {
+      "path": "assets/art/icons/modules/precision_core.png",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "mode": "RGBA"
+    },
+    "icon.module.accelerator": {
+      "path": "assets/art/icons/modules/accelerator.png",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "mode": "RGBA"
+    },
+    "icon.module.reserve_cells": {
+      "path": "assets/art/icons/modules/reserve_cells.png",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "mode": "RGBA"
+    },
+    "icon.module.shock_lining": {
+      "path": "assets/art/icons/modules/shock_lining.png",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "mode": "RGBA"
+    },
+    "icon.module.cell_matrix": {
+      "path": "assets/art/icons/modules/cell_matrix.png",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "mode": "RGBA"
+    },
+    "icon.module.servos": {
+      "path": "assets/art/icons/modules/servos.png",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "mode": "RGBA"
+    },
+    "icon.module.rangefinder": {
+      "path": "assets/art/icons/modules/rangefinder.png",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "mode": "RGBA"
+    },
+    "icon.module.extended_mag": {
+      "path": "assets/art/icons/modules/extended_mag.png",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "mode": "RGBA"
+    },
+    "icon.parts": {
+      "path": "assets/art/icons/parts.png",
+      "canvas_px": [
+        256,
+        256
+      ],
+      "mode": "RGBA"
+    },
+    "floor.sawmill": {
+      "path": "assets/art/floors/sawmill.png",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "seamless_preparation": "periodic_boundary_correction_no_reflection"
+    },
+    "floor.pumping": {
+      "path": "assets/art/floors/pumping.png",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "seamless_preparation": "periodic_boundary_correction_no_reflection"
+    },
+    "floor.flooded": {
+      "path": "assets/art/floors/flooded.png",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "seamless_preparation": "periodic_boundary_correction_no_reflection"
+    },
+    "hero.body": {
+      "path": "assets/art/characters/hero/body.png",
+      "canvas_px": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "north_socket_px": [
+        [
+          173,
+          128
+        ],
+        [
+          175,
+          126
+        ],
+        [
+          177,
+          127
+        ],
+        [
+          174,
+          127
+        ],
+        [
+          175,
+          126
+        ],
+        [
+          181,
+          120
+        ]
+      ],
+      "death_preparation": [
+        {
+          "frame": 0,
+          "head_reference_width_source_px": 84,
+          "head_reference_target_px": 26,
+          "uniform_scale": 0.30952380952380953,
+          "source_root_in_cell": [
+            330,
+            599
+          ],
+          "target_root": [
+            128,
+            208
+          ],
+          "bbox": [
+            60,
+            57,
+            181,
+            207
+          ]
+        },
+        {
+          "frame": 1,
+          "head_reference_width_source_px": 90,
+          "head_reference_target_px": 26,
+          "uniform_scale": 0.28888888888888886,
+          "source_root_in_cell": [
+            403,
+            594
+          ],
+          "target_root": [
+            128,
+            208
+          ],
+          "bbox": [
+            44,
+            99,
+            152,
+            207
+          ]
+        },
+        {
+          "frame": 2,
+          "head_reference_width_source_px": 88,
+          "head_reference_target_px": 26,
+          "uniform_scale": 0.29545454545454547,
+          "source_root_in_cell": [
+            464,
+            465
+          ],
+          "target_root": [
+            128,
+            208
+          ],
+          "bbox": [
+            7,
+            124,
+            146,
+            219
+          ]
+        },
+        {
+          "frame": 3,
+          "head_reference_width_source_px": 110,
+          "head_reference_target_px": 26,
+          "uniform_scale": 0.23636363636363636,
+          "source_root_in_cell": [
+            558,
+            428
+          ],
+          "target_root": [
+            128,
+            208
+          ],
+          "bbox": [
+            6,
+            173,
+            134,
+            226
+          ]
+        }
+      ]
+    }
+  },
+  "floors": {
+    "floor.sawmill": {
+      "horizontal_edge_max_delta": 0,
+      "vertical_edge_max_delta": 0,
+      "mirror_x_mean_delta": 19.47400156656901,
+      "mirror_y_mean_delta": 19.481407165527344
+    },
+    "floor.pumping": {
+      "horizontal_edge_max_delta": 0,
+      "vertical_edge_max_delta": 0,
+      "mirror_x_mean_delta": 15.742746988932291,
+      "mirror_y_mean_delta": 15.051747639973959
+    },
+    "floor.flooded": {
+      "horizontal_edge_max_delta": 0,
+      "vertical_edge_max_delta": 0,
+      "mirror_x_mean_delta": 6.860514322916667,
+      "mirror_y_mean_delta": 6.9443003336588545
+    }
+  }
+}

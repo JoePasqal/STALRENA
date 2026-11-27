@@ -1,0 +1,157 @@
+{
+  "enemy.charger": {
+    "generation": "built-in image generation",
+    "source_filename": "exec-0e2453c7-601a-4277-bf44-ce27e0b18dee.png",
+    "prompt": "Background extraction ONLY for this three-pose game sprite strip. Preserve all three figures and exact positions/design/proportions unchanged. Remove ALL white or gray background AND ALL glow/halo and cast shadows around figures. Make every empty pixel outside character silhouettes genuinely alpha-zero transparent. Keep holes between arms and legs transparent. Do not add outlines, new poses, scenery, text or shadows. Output a clean transparent three-pose cutout strip."
+  },
+  "enemy.gunner": {
+    "generation": "built-in image generation",
+    "source_filename": "exec-628a6a68-2ff5-4b59-a3c1-ba610b63281a.png",
+    "prompt": "STALRENA production 2D sprite. Detailed hand-painted volume, gritty industrial postapocalypse, realistic proportions, fixed elevated top-down oblique camera 50 degrees, soft upper-left light. Muted concrete gray, dirty olive, rusty brown, clear silhouette. Transparent background, no ground, shadows, labels, text, grid or frame. Hostile ragged human scavenger with hood, battered dark brown jacket and face scarf, visibly holding a short rusty automatic rifle at waist, ready to fire. ONE character directional sheet only: three equal square cells in one horizontal row, overall 3:1 composition. Left cell SOUTH facing viewer/down, middle EAST facing RIGHT, right NORTH facing away. Same creature and same physical scale all views, feet contact midpoint at local 50% width 81.25% height; ample transparent gutters, figure ~60% cell height. No extra poses. High resolution source at least 2304x768."
+  },
+  "enemy.brute": {
+    "generation": "built-in image generation",
+    "source_filename": "exec-364e1cc8-e4dc-4e9a-8364-5ea94d0e8f00.png",
+    "prompt": "Background extraction ONLY for this three-pose game sprite strip. Preserve all three figures and exact positions/design/proportions unchanged. Remove ALL white or gray background AND ALL glow/halo and cast shadows around figures. Make every empty pixel outside character silhouettes genuinely alpha-zero transparent. Keep holes between arms and legs transparent. Do not add outlines, new poses, scenery, text or shadows. Output a clean transparent three-pose cutout strip."
+  },
+  "enemy.flanker": {
+    "generation": "built-in image generation",
+    "source_filename": "exec-55771d3d-a577-4ea7-8b2a-31effd729c09.png",
+    "prompt": "STALRENA production 2D sprite. Detailed hand-painted volume, gritty industrial postapocalypse, realistic proportions, fixed elevated top-down oblique camera 50 degrees, soft upper-left light. Muted concrete gray, dirty olive, rusty brown, clear silhouette. Transparent background, no ground, shadows, labels, text, grid or frame. Lean fast bipedal predatory mutant, long sinewy limbs, crouched stalking stance, dark gray-green skin and narrow head, no clothes or weapons, no gore. ONE character directional sheet only: three equal square cells in one horizontal row, overall 3:1 composition. Left cell SOUTH facing viewer/down, middle EAST facing RIGHT, right NORTH facing away. Same creature and same physical scale all views, feet contact midpoint at local 50% width 81.25% height; ample transparent gutters, figure ~60% cell height. No extra poses. High resolution source at least 2304x768."
+  },
+  "enemy.carrier": {
+    "generation": "built-in image generation",
+    "source_filename": "exec-1d91d58e-e1cc-42a4-81ee-298cf9e8c659.png",
+    "prompt": "STALRENA production 2D sprite. Detailed hand-painted volume, gritty industrial postapocalypse, realistic proportions, fixed elevated top-down oblique camera 50 degrees, soft upper-left light. Muted concrete gray, dirty olive, rusty brown, clear silhouette. Transparent background, no ground, shadows, labels, text, grid or frame. Bloated mutant quadruped with lumpy olive back and several closed swollen egg-like sacs on shoulders, short heavy legs, distinctive broad carrier silhouette; no gore or slime trail. ONE character directional sheet only: three equal square cells in one horizontal row, overall 3:1 composition. Left cell SOUTH facing viewer/down, middle EAST facing RIGHT, right NORTH facing away. Same creature and same physical scale all views, feet contact midpoint at local 50% width 81.25% height; ample transparent gutters, figure ~60% cell height. No extra poses. High resolution source at least 2304x768."
+  },
+  "weapon.smg": {
+    "generation": "built-in image generation",
+    "source_filename": "exec-46e46606-b07a-4040-9053-288e6d8dcc6b.png",
+    "prompt": "STALRENA combat weapon sprite, single isolated firearm pointing perfectly RIGHT. Compact submachine gun, short boxy dark steel receiver, straight stick magazine, folding wire buttstock, olive grip. Detailed hand-painted 2D with volume, clearly elevated oblique top-down view with top receiver visible, soft upper-left light, worn industrial materials in gray/olive/brown. Wide 2:1 canvas with entire object and generous transparent margin. No hands or people, text, logo, glow, cast shadow, ammo or accessories floating separately. Horizontal barrel, grip near left quarter, muzzle near right edge. Genuine transparent background. High resolution source, final will be 256x128."
+  },
+  "weapon.shotgun": {
+    "generation": "built-in image generation",
+    "source_filename": "exec-32cba9b8-e038-43d4-aa74-a8719e44723c.png",
+    "prompt": "An original clearly fictional sci-fi scattergun pickup for a hand-painted 2D videogame, chunky short twin-bore front housing, solid wooden grip-stock, exaggerated simple industrial silhouette, no real-world firearm model. Only an exterior painted illustration, no diagrams or working mechanism. Horizontal item facing RIGHT, all of item visible. Detailed 2D brushwork and soft upper-left shading, gray-green-brown palette matching STALRENA. Wide 2:1 image, actual transparent background, generous margins. No text, UI, person, hands, firing, flames, scenery, floor or cast shadow."
+  },
+  "weapon.lmg": {
+    "generation": "built-in image generation",
+    "source_filename": "exec-ed741a69-87da-48b6-8444-bc061c46142e.png",
+    "prompt": "STALRENA combat weapon sprite, single isolated firearm pointing perfectly RIGHT. Light machine gun, long thick barrel, box ammunition container, olive shoulder stock and folded compact bipod, dark scratched steel. Detailed hand-painted 2D with volume, clearly elevated oblique top-down view with top receiver visible, soft upper-left light, worn industrial materials in gray/olive/brown. Wide 2:1 canvas with entire object and generous transparent margin. No hands or people, text, logo, glow, cast shadow, ammo or accessories floating separately. Horizontal barrel, grip near left quarter, muzzle near right edge. Genuine transparent background. High resolution source, final will be 256x128."
+  },
+  "weapon.marksman": {
+    "generation": "built-in image generation",
+    "source_filename": "exec-cd5a9fe4-d492-400e-8786-f736d7273670.png",
+    "prompt": "A painted 2D videogame equipment sprite for STALRENA. A fictional long-barrel precision rifle with an olive stock and one simple short optical sight. Stylized hand-painted inventory art with tactile volume; only external silhouette and surfaces, no mechanical cutaways. Facing RIGHT horizontally, viewed obliquely from above. Muted steel gray, olive and brown, soft upper-left lighting. Single isolated item on actual transparent background, wide 2:1 canvas, generous clear margins. No person, hands, text, numbers, ground, shadows, firing effects or extra objects."
+  },
+  "weapon.flamethrower": {
+    "generation": "built-in image generation",
+    "source_filename": "exec-831f0914-4b3b-414d-94bd-b1786fcac6dd.png",
+    "prompt": "Original nonfunctional fantasy videogame equipment prop for STALRENA's fire-element weapon slot: a chunky retro-industrial projector with a blunt brass outlet pointing RIGHT, a blue-gray rounded side reservoir integrated into olive housing, and an oversized curved rear handle. It must look invented and visibly stylized, not a real-world weapon. Exterior illustration only. Hand-painted 2D volume with worn metal texture and soft upper-left light. Entire item horizontal within a wide 2:1 canvas, genuine transparent background, generous empty margins. No people, hands, words, digits, UI, scenery, shadows or emitted fire."
+  },
+  "floor.sawmill": {
+    "generation": "built-in image generation",
+    "source_filename": "exec-86084172-e3ab-4bf3-ba21-fdc520eadbcd.png",
+    "prompt": "STALRENA seamless repeating ground texture, flat orthographic TOP DOWN, square high resolution. Abandoned sawmill ground: compacted brown-gray dirt mixed with fine gravel, small weathered concrete fragments, tiny irregular wood chips and muted moss flecks. Low contrast microdetail, no distinctive large objects. Detailed hand-painted 2D, diffuse uniform soft lighting, no perspective or directional cast shadows. Natural stochastic ASYMMETRIC texture; must tile horizontally and vertically, seamless edge continuation. Absolutely NO mirrored quadrants, bilateral symmetry, kaleidoscope, radial center, decorative pattern, borders, words, numbers, objects with collision, or vignette. Entire canvas opaque filled texture, final 512x512."
+  },
+  "floor.pumping": {
+    "generation": "built-in image generation",
+    "source_filename": "exec-7692c698-e8e3-4200-8ba4-e253a093c010.png",
+    "prompt": "STALRENA seamless repeating ground texture, flat orthographic TOP DOWN, square high resolution. Abandoned pumping station floor: weathered gray concrete, irregular hairline cracks, tiny dull rust stains and olive grime, shallow surface pitting. No tile grid, no pipes, drains or obstacles. Detailed hand-painted 2D, diffuse uniform soft lighting, no perspective or directional cast shadows. Natural stochastic ASYMMETRIC texture; must tile horizontally and vertically, seamless edge continuation. Absolutely NO mirrored quadrants, bilateral symmetry, kaleidoscope, radial center, decorative pattern, borders, words, numbers, objects with collision, or vignette. Entire canvas opaque filled texture, final 512x512."
+  },
+  "floor.flooded": {
+    "generation": "built-in image generation",
+    "source_filename": "exec-64c8a348-b966-4749-92c8-78f5a710a4e1.png",
+    "prompt": "STALRENA seamless repeating ground texture, flat orthographic TOP DOWN, square high resolution. Flooded industrial yard ground: dark gray-brown mud seen beneath a thin shallow layer of dirty gray-green water, tiny irregular pebbles and silt mottling, very subtle ripples, no bright reflections or large puddle islands. Detailed hand-painted 2D, diffuse uniform soft lighting, no perspective or directional cast shadows. Natural stochastic ASYMMETRIC texture; must tile horizontally and vertically, seamless edge continuation. Absolutely NO mirrored quadrants, bilateral symmetry, kaleidoscope, radial center, decorative pattern, borders, words, numbers, objects with collision, or vignette. Entire canvas opaque filled texture, final 512x512."
+  },
+  "icon.module.amplifier": {
+    "generation": "built-in image generation",
+    "source_filename": "exec-50ecd31c-c1ea-4ee0-8fd4-a81521738301.png",
+    "prompt": "Use case stylized-concept. STALRENA inventory icon: one compact rugged electronic power amplifier module, dark metal block with copper coil and amber glass indicator. Detailed hand-painted 2D volume, realistic worn industrial materials, top-left soft light, muted olive gray rust copper colors. ONE clearly readable object, three-quarter overhead view, centered on genuine transparent background. Square canvas, object contained within central 80%, generous safe margin. No UI card, border, text, numbers, logos, sparkles, glow, floor or cast shadow. High resolution source to downsample into 256x256."
+  },
+  "icon.module.feeder": {
+    "generation": "built-in image generation",
+    "source_filename": "exec-8cea95de-b872-4dd1-8ce1-e3603c59f9fd.png",
+    "prompt": "Use case stylized-concept. STALRENA inventory icon: one ammunition feed mechanism module, compact belt feeder sprocket and steel feed tray, no loose ammunition. Detailed hand-painted 2D volume, realistic worn industrial materials, top-left soft light, muted olive gray rust copper colors. ONE clearly readable object, three-quarter overhead view, centered on genuine transparent background. Square canvas, object contained within central 80%, generous safe margin. No UI card, border, text, numbers, logos, sparkles, glow, floor or cast shadow. High resolution source to downsample into 256x256."
+  },
+  "icon.module.bolt_drive": {
+    "generation": "built-in image generation",
+    "source_filename": "exec-d3b7ae1f-e483-4639-91e5-69165e01dd0a.png",
+    "prompt": "Use case stylized-concept. STALRENA inventory icon: one compact mechanical actuator module, steel linear carriage, short piston and return spring. Detailed hand-painted 2D volume, realistic worn industrial materials, top-left soft light, muted olive gray rust copper colors. ONE clearly readable object, three-quarter overhead view, centered on genuine transparent background. Square canvas, object contained within central 80%, generous safe margin. No UI card, border, text, numbers, logos, sparkles, glow, floor or cast shadow. High resolution source to downsample into 256x256."
+  },
+  "icon.module.target_sensor": {
+    "generation": "built-in image generation",
+    "source_filename": "exec-8fce94bd-46bb-47c9-89c1-c771ae6f45b6.png",
+    "prompt": "Use case stylized-concept. STALRENA inventory icon: one small targeting sensor, rugged olive optical device with red-orange glass lens and connector. Detailed hand-painted 2D volume, realistic worn industrial materials, top-left soft light, muted olive gray rust copper colors. ONE clearly readable object, three-quarter overhead view, centered on genuine transparent background. Square canvas, object contained within central 80%, generous safe margin. No UI card, border, text, numbers, logos, sparkles, glow, floor or cast shadow. High resolution source to downsample into 256x256."
+  },
+  "icon.module.precision_core": {
+    "generation": "built-in image generation",
+    "source_filename": "exec-fa166acf-e98f-4a55-a530-fc8db926b948.png",
+    "prompt": "Use case stylized-concept. STALRENA inventory icon: one precision targeting core, steel cylinder with three calibrated concentric metal rings and a small amber crystal. Detailed hand-painted 2D volume, realistic worn industrial materials, top-left soft light, muted olive gray rust copper colors. ONE clearly readable object, three-quarter overhead view, centered on genuine transparent background. Square canvas, object contained within central 80%, generous safe margin. No UI card, border, text, numbers, logos, sparkles, glow, floor or cast shadow. High resolution source to downsample into 256x256."
+  },
+  "icon.module.accelerator": {
+    "generation": "built-in image generation",
+    "source_filename": "exec-e257ae2b-8de5-4102-acce-ad7b463afacf.png",
+    "prompt": "STALRENA inventory icon: one rugged electromagnetic accelerator module, short dark steel tube encircled by two copper coil bands and small ceramic connectors. ONE object in detailed hand-painted 2D volume, worn gray/olive/copper industrial materials, soft upper-left light, elevated three-quarter view. Square canvas, central 80% composition, actual alpha-transparent background. Clear silhouette at 64px. NO text, numbers, border, UI, glow, ground, drop shadow or extra objects. High resolution."
+  },
+  "icon.module.reserve_cells": {
+    "generation": "built-in image generation",
+    "source_filename": "exec-835ba83f-ed15-49c1-ab71-e6e30960044b.png",
+    "prompt": "STALRENA inventory icon: one compact rack of three blue-gray reserve energy cells held together by olive metal brace. ONE object in detailed hand-painted 2D volume, worn gray/olive/copper industrial materials, soft upper-left light, elevated three-quarter view. Square canvas, central 80% composition, actual alpha-transparent background. Clear silhouette at 64px. NO text, numbers, border, UI, glow, ground, drop shadow or extra objects. High resolution."
+  },
+  "icon.module.shock_lining": {
+    "generation": "built-in image generation",
+    "source_filename": "exec-0bda8bc8-0073-462f-848b-6d968abbdf7f.png",
+    "prompt": "STALRENA inventory icon: one folded impact-absorbing armor liner insert, olive quilted fabric with visible layered orange rubber honeycomb edge. ONE object in detailed hand-painted 2D volume, worn gray/olive/copper industrial materials, soft upper-left light, elevated three-quarter view. Square canvas, central 80% composition, actual alpha-transparent background. Clear silhouette at 64px. NO text, numbers, border, UI, glow, ground, drop shadow or extra objects. High resolution."
+  },
+  "icon.module.cell_matrix": {
+    "generation": "built-in image generation",
+    "source_filename": "exec-f260ea08-40aa-4a40-affa-2baaeccaac80.png",
+    "prompt": "STALRENA inventory icon: one small medical regeneration module, glass cartridge with pale cyan cellular mesh inside an olive steel holder. ONE object in detailed hand-painted 2D volume, worn gray/olive/copper industrial materials, soft upper-left light, elevated three-quarter view. Square canvas, central 80% composition, actual alpha-transparent background. Clear silhouette at 64px. NO text, numbers, border, UI, glow, ground, drop shadow or extra objects. High resolution."
+  },
+  "icon.module.servos": {
+    "generation": "built-in image generation",
+    "source_filename": "exec-2bf016cf-cfa1-496f-98b0-9d74ff8d1069.png",
+    "prompt": "STALRENA square inventory icon: one rugged servo motor actuator, olive metal housing, visible short mechanical joint and compact copper wiring. Detailed hand-painted 2D with volume, original industrial postapocalypse, muted worn gray steel, olive and copper, soft upper-left light, three-quarter overhead view. Centered single object, generous 10% margin, true transparent background. No text, digits, UI frame, shadows, ground, glow or scene. Clear silhouette for 64px use. High resolution."
+  },
+  "icon.module.rangefinder": {
+    "generation": "built-in image generation",
+    "source_filename": "exec-6209cf1c-07f5-4df8-b0bd-68fb5f257321.png",
+    "prompt": "STALRENA square inventory icon: one compact handheld optical rangefinder, paired small blue-gray lenses on olive metal body, no screen markings. Detailed hand-painted 2D with volume, original industrial postapocalypse, muted worn gray steel, olive and copper, soft upper-left light, three-quarter overhead view. Centered single object, generous 10% margin, true transparent background. No text, digits, UI frame, shadows, ground, glow or scene. Clear silhouette for 64px use. High resolution."
+  },
+  "icon.module.extended_mag": {
+    "generation": "built-in image generation",
+    "source_filename": "exec-deaca204-acd5-493a-812a-ad819003cc66.png",
+    "prompt": "STALRENA square inventory icon: one chunky curved extended ammunition magazine, dark steel with olive rubber base, no bullets or markings. Detailed hand-painted 2D with volume, original industrial postapocalypse, muted worn gray steel, olive and copper, soft upper-left light, three-quarter overhead view. Centered single object, generous 10% margin, true transparent background. No text, digits, UI frame, shadows, ground, glow or scene. Clear silhouette for 64px use. High resolution."
+  },
+  "icon.parts": {
+    "generation": "built-in image generation",
+    "source_filename": "exec-34cf73f0-2a0e-414e-9030-4bb950a880bf.png",
+    "prompt": "STALRENA square inventory icon: one compact bundle of salvage machine parts tied together by a simple wire loop: two gears, steel bracket, copper coil and bolt, a single coherent inventory object. Detailed hand-painted 2D with volume, original industrial postapocalypse, muted worn gray steel, olive and copper, soft upper-left light, three-quarter overhead view. Centered single object, generous 10% margin, true transparent background. No text, digits, UI frame, shadows, ground, glow or scene. Clear silhouette for 64px use. High resolution."
+  },
+  "fix.death": {
+    "generation": "built-in image generation",
+    "source_filename": "exec-c19547df-239e-4130-8baa-705c40be76fb.png",
+    "prompt": "Create FOUR distinct death-animation poses of this exact survivor, same brown hair, respirator, gray-green jacket, olive trousers, gloves and boots. Strict TWO BY TWO equal square cell sheet, genuine transparent background. Top-left: clear onset of falling, torso leaning strongly to left, knees buckling and one hand reaching toward ground; NOT standing idle. Top-right: falling onto one knee, torso bent and one hand on ground. Bottom-left: collapsing sideways, hips low and other arm extending. Bottom-right: lying fully on side dead, no gore. Consistent physical body scale in ALL four cells: head and shoulders same dimensions, kneeling figure must be SHORTER, never enlarged to fill its cell. Fixed elevated top-down camera; each pose fits fully with generous transparent padding. Soft upper-left light. No weapon, shadow, ground, text or grid. Detailed hand-painted 2D same art style. High resolution 2048x2048."
+  },
+  "fix.north": {
+    "generation": "built-in image generation",
+    "source_filename": "exec-3c3415ac-2b2b-4252-a42d-4a3ebad5b0db.png",
+    "prompt": "Create SIX NORTH-facing animation poses of this exact survivor, back of head and jacket visible. Same design, detailed painted 2D, fixed elevated top-down camera, top-left light. Strict THREE columns TWO rows of equal square cells, genuine transparent background. Order reading across: idle, walk left contact, walk passing left; then walk right contact, walk passing right, hit flinch. IMPORTANT right forearm reaches outward around his RIGHT waist and the dark gloved RIGHT HAND is clearly visible OUTSIDE the right edge of torso silhouette, at waist height; same hand placement all frames. Both hands empty, weapon is separate. Do not put glove behind back or hide within silhouette. Same body/head scale all frames, full body fits with huge margins, feet midpoint near (50%,81%) per cell, figure around60% height. No weapon, ground, cast shadows, text or grid. High resolution 2304x1536."
+  },
+  "fix.armor.light": {
+    "generation": "built-in image generation",
+    "source_filename": "exec-f3a81199-3710-4d11-ad08-73b70a2f144e.png",
+    "prompt": "Precise game asset edit. Reference image is the armor design reference ONLY. Create ONE corrected EAST/right-facing armor overlay of its light olive canvas vest with thin worn brown leather accents. Hand-painted 2D volume, elevated camera, top-left soft light. IMPORTANT: near-side arm and shoulder sleeve area must be ALPHA TRANSPARENT, entirely open. Draw only the vest chest panel, back panel and narrow shoulder connector that sit on torso; NO black oval, NO dark lining, NO armhole rim encircling the arm, NO inside of an empty garment. No shoulder cap covering sleeve. NO person, skin, body, arms, hands, legs, or mannequin. Do not include S/N views. Single small side-profile torso overlay centered on square transparent canvas with ample margin. No shadows, text or glow. Keep matching material design."
+  },
+  "fix.armor.field": {
+    "generation": "built-in image generation",
+    "source_filename": "exec-d3e61e10-e5b7-4139-ac8d-447c108a0bed.png",
+    "prompt": "Precise game asset edit. Reference image is the armor design reference ONLY. Create ONE corrected EAST/right-facing armor overlay of its field plate carrier with grey rigid chest plate and small olive waist pouches. Hand-painted 2D volume, elevated camera, top-left soft light. IMPORTANT: near-side arm and shoulder sleeve area must be ALPHA TRANSPARENT, entirely open. Draw only the vest chest panel, back panel and narrow shoulder connector that sit on torso; NO black oval, NO dark lining, NO armhole rim encircling the arm, NO inside of an empty garment. No shoulder cap covering sleeve. NO person, skin, body, arms, hands, legs, or mannequin. Do not include S/N views. Single small side-profile torso overlay centered on square transparent canvas with ample margin. No shadows, text or glow. Keep matching material design."
+  },
+  "fix.armor.heavy": {
+    "generation": "built-in image generation",
+    "source_filename": "exec-14d2e105-551e-4877-a03b-8c3bc19f48c6.png",
+    "prompt": "Precise game asset edit. Reference image is the armor design reference ONLY. Create ONE corrected EAST/right-facing armor overlay of its heavy olive vest with dark steel front and back plates and segmented abdominal armor. Hand-painted 2D volume, elevated camera, top-left soft light. IMPORTANT: near-side arm and shoulder sleeve area must be ALPHA TRANSPARENT, entirely open. Draw only the vest chest panel, back panel and narrow shoulder connector that sit on torso; NO black oval, NO dark lining, NO armhole rim encircling the arm, NO inside of an empty garment. No shoulder cap covering sleeve. NO person, skin, body, arms, hands, legs, or mannequin. Do not include S/N views. Single small side-profile torso overlay centered on square transparent canvas with ample margin. No shadows, text or glow. Keep matching material design."
+  }
+}

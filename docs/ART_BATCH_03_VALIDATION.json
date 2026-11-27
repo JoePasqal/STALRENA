@@ -1,0 +1,400 @@
+{
+  "gameplay_png_count": 40,
+  "new_assets": 35,
+  "revised_assets": 5,
+  "technical_checks": "passed",
+  "runtime_verified": false,
+  "checks": [
+    "expected dimensions",
+    "RGBA",
+    "safe icon margin 16px",
+    "transparent frame padding 4px",
+    "empty unused death cells",
+    "unchanged accepted S/E hero cells",
+    "unchanged armor S/N cells",
+    "opposing floor boundaries equal",
+    "floors not mirror symmetric"
+  ],
+  "floor_metrics": {
+    "floor.sawmill": {
+      "horizontal_edge_max_delta": 0,
+      "vertical_edge_max_delta": 0,
+      "mirror_x_mean_delta": 19.47400156656901,
+      "mirror_y_mean_delta": 19.481407165527344
+    },
+    "floor.pumping": {
+      "horizontal_edge_max_delta": 0,
+      "vertical_edge_max_delta": 0,
+      "mirror_x_mean_delta": 15.742746988932291,
+      "mirror_y_mean_delta": 15.051747639973959
+    },
+    "floor.flooded": {
+      "horizontal_edge_max_delta": 0,
+      "vertical_edge_max_delta": 0,
+      "mirror_x_mean_delta": 6.860514322916667,
+      "mirror_y_mean_delta": 6.9443003336588545
+    }
+  },
+  "files": [
+    {
+      "id": "enemy.charger",
+      "path": "assets/art/enemies/charger.png",
+      "size": [
+        768,
+        256
+      ],
+      "sha256": "f4aebdad1fc6f1694170da755a3901e787832b0df5f7dacb7ae0e300d8a57836"
+    },
+    {
+      "id": "enemy.gunner",
+      "path": "assets/art/enemies/gunner.png",
+      "size": [
+        768,
+        256
+      ],
+      "sha256": "193f826b36e7063c3f847e40513913511b2e187152e4a81235fe2a8603b277e4"
+    },
+    {
+      "id": "enemy.brute",
+      "path": "assets/art/enemies/brute.png",
+      "size": [
+        768,
+        256
+      ],
+      "sha256": "0755411eac16a93a72ffb9fc5c24c2e66cabc69fc5e03a283c45aff6049740cd"
+    },
+    {
+      "id": "enemy.flanker",
+      "path": "assets/art/enemies/flanker.png",
+      "size": [
+        768,
+        256
+      ],
+      "sha256": "1d59dbe45f9a85b8608a58b1bba9409896ecc8df6e5ca449be32d16957344fef"
+    },
+    {
+      "id": "enemy.carrier",
+      "path": "assets/art/enemies/carrier.png",
+      "size": [
+        768,
+        256
+      ],
+      "sha256": "e367fc6316b69a61c925cd5efa8c7ac3a54d80aebc24991b6a0b6d16e47e1ff4"
+    },
+    {
+      "id": "weapon.smg",
+      "path": "assets/art/weapons/smg.png",
+      "size": [
+        256,
+        128
+      ],
+      "sha256": "1447b7d4d7b5c5ab787f844b352aaac03989f7ba2bef29361a0894c07c6720cf"
+    },
+    {
+      "id": "weapon.lmg",
+      "path": "assets/art/weapons/lmg.png",
+      "size": [
+        256,
+        128
+      ],
+      "sha256": "1e2fb6f358d18525535908f055b076bb25d8518e1ff2c8d2dfba4023ccbf03e4"
+    },
+    {
+      "id": "weapon.marksman",
+      "path": "assets/art/weapons/marksman.png",
+      "size": [
+        256,
+        128
+      ],
+      "sha256": "ba2f7b6fa799db92beceda80a6e31d2da2e368cce39851979a73aa04f2c35cb1"
+    },
+    {
+      "id": "weapon.shotgun",
+      "path": "assets/art/weapons/shotgun.png",
+      "size": [
+        256,
+        128
+      ],
+      "sha256": "14777e3e27c8f5c082895bf42c68e818adddc79278b2789d73da5a4e78e3a9a7"
+    },
+    {
+      "id": "weapon.flamethrower",
+      "path": "assets/art/weapons/flamethrower.png",
+      "size": [
+        256,
+        128
+      ],
+      "sha256": "d9770a7af93d2f5434c83df69cd04db5c3db360201ba72173b8b46312b1bfbd6"
+    },
+    {
+      "id": "icon.weapon.pistol",
+      "path": "assets/art/icons/weapons/pistol.png",
+      "size": [
+        256,
+        256
+      ],
+      "sha256": "3a2b51ab2af68a7e6d0ca462010dac01a5299b38169dc2211222980025e704e1"
+    },
+    {
+      "id": "icon.weapon.smg",
+      "path": "assets/art/icons/weapons/smg.png",
+      "size": [
+        256,
+        256
+      ],
+      "sha256": "c153a3dc98bab229a2bf7a02304ee798db96024ed68fcba7a50bad212ff8aaba"
+    },
+    {
+      "id": "icon.weapon.carbine",
+      "path": "assets/art/icons/weapons/carbine.png",
+      "size": [
+        256,
+        256
+      ],
+      "sha256": "289bff40c9732fa00b97fc72a88d199ba3e681f95b70a8d85bbaa64b75f4f6fb"
+    },
+    {
+      "id": "icon.weapon.shotgun",
+      "path": "assets/art/icons/weapons/shotgun.png",
+      "size": [
+        256,
+        256
+      ],
+      "sha256": "21dd94077a2ed444719d3747b298748a9cc2f1113d044950cb841bbc297552e8"
+    },
+    {
+      "id": "icon.weapon.lmg",
+      "path": "assets/art/icons/weapons/lmg.png",
+      "size": [
+        256,
+        256
+      ],
+      "sha256": "4e435d65df727da0a95791989bc2d3fd34cc1edc22a7853bab549245fc288de5"
+    },
+    {
+      "id": "icon.weapon.marksman",
+      "path": "assets/art/icons/weapons/marksman.png",
+      "size": [
+        256,
+        256
+      ],
+      "sha256": "29fe97f77b68a719f2c12292fa512b12d2aaf551ca9011030fb99f0b28ed8352"
+    },
+    {
+      "id": "icon.weapon.flamethrower",
+      "path": "assets/art/icons/weapons/flamethrower.png",
+      "size": [
+        256,
+        256
+      ],
+      "sha256": "6876c9e058292a34b4161af8687159f0d1dd7c360fa09c5b3efa8f9f5b6bd5e5"
+    },
+    {
+      "id": "icon.armor.light",
+      "path": "assets/art/icons/armor/light.png",
+      "size": [
+        256,
+        256
+      ],
+      "sha256": "c5879e57f644538d53e958ffeb2d709beddacd84d4d47229370e344bf9810e3f"
+    },
+    {
+      "id": "armor.light",
+      "path": "assets/art/armor/light.png",
+      "size": [
+        768,
+        256
+      ],
+      "sha256": "91500ebe59eca8279bdd4964f0dabd694b57f7e331a0e5f7021cff0d7607c0d8"
+    },
+    {
+      "id": "icon.armor.field",
+      "path": "assets/art/icons/armor/field.png",
+      "size": [
+        256,
+        256
+      ],
+      "sha256": "6f9ed3fc66ce066a7d42fd1205484312798ba397427c1621a7f86dbdb7d8b879"
+    },
+    {
+      "id": "armor.field",
+      "path": "assets/art/armor/field.png",
+      "size": [
+        768,
+        256
+      ],
+      "sha256": "a716aa27d9f0b256fce81e75d4d2db15cd39b219f045e26738def042fbbb9473"
+    },
+    {
+      "id": "icon.armor.heavy",
+      "path": "assets/art/icons/armor/heavy.png",
+      "size": [
+        256,
+        256
+      ],
+      "sha256": "bf5264e5296b10f928257eb8acecc216c5a48e0e64099e30475dcc80f518c74c"
+    },
+    {
+      "id": "armor.heavy",
+      "path": "assets/art/armor/heavy.png",
+      "size": [
+        768,
+        256
+      ],
+      "sha256": "953490b5e661e5ac95ae5be1cb7d61c89819fdcac1511175ab24630935bead30"
+    },
+    {
+      "id": "icon.module.amplifier",
+      "path": "assets/art/icons/modules/amplifier.png",
+      "size": [
+        256,
+        256
+      ],
+      "sha256": "ec704888226038c834b3d9404659ff375a1db94bcb68970c5b2081cb263085cf"
+    },
+    {
+      "id": "icon.module.feeder",
+      "path": "assets/art/icons/modules/feeder.png",
+      "size": [
+        256,
+        256
+      ],
+      "sha256": "287e7d4a7b43ea7e2cd0fd147cf0265028c565f8322c4da8f8485b568c2aecd9"
+    },
+    {
+      "id": "icon.module.bolt_drive",
+      "path": "assets/art/icons/modules/bolt_drive.png",
+      "size": [
+        256,
+        256
+      ],
+      "sha256": "78ff681ea413c94840720fc8c345cdc2ac0b3fb874e1741507bca5c47f72c6a8"
+    },
+    {
+      "id": "icon.module.target_sensor",
+      "path": "assets/art/icons/modules/target_sensor.png",
+      "size": [
+        256,
+        256
+      ],
+      "sha256": "c5b09e6eb855496eb4da770e7e0c138a6b7c5cfbee5b4f88b0ac48b9b251dab1"
+    },
+    {
+      "id": "icon.module.precision_core",
+      "path": "assets/art/icons/modules/precision_core.png",
+      "size": [
+        256,
+        256
+      ],
+      "sha256": "8a9ef333b7c6fddf53cc9f2bdf031d030b0846763a7b57050dbaadc2dda68ab4"
+    },
+    {
+      "id": "icon.module.accelerator",
+      "path": "assets/art/icons/modules/accelerator.png",
+      "size": [
+        256,
+        256
+      ],
+      "sha256": "04d9b1560a6109cff3a5d91718cd1d8a1b8f61baa3108cefbd8e528a92ecb72b"
+    },
+    {
+      "id": "icon.module.reserve_cells",
+      "path": "assets/art/icons/modules/reserve_cells.png",
+      "size": [
+        256,
+        256
+      ],
+      "sha256": "69107f1b99429d0832c26aa54683dfb802d593063ccf89bc8cf198f40edd428c"
+    },
+    {
+      "id": "icon.module.shock_lining",
+      "path": "assets/art/icons/modules/shock_lining.png",
+      "size": [
+        256,
+        256
+      ],
+      "sha256": "01596e1c84627f0e5bdefa02b7da27a473f78eed56aca51a1fb4e9307f15c6e9"
+    },
+    {
+      "id": "icon.module.cell_matrix",
+      "path": "assets/art/icons/modules/cell_matrix.png",
+      "size": [
+        256,
+        256
+      ],
+      "sha256": "5821c1206a0987dda539c63b77a8da314ec832da9e572e7a574184318c8c3469"
+    },
+    {
+      "id": "icon.module.servos",
+      "path": "assets/art/icons/modules/servos.png",
+      "size": [
+        256,
+        256
+      ],
+      "sha256": "fe99728664205ea7b8556f79594b1071e52a5a82b6a625505bfd90c9f0664184"
+    },
+    {
+      "id": "icon.module.rangefinder",
+      "path": "assets/art/icons/modules/rangefinder.png",
+      "size": [
+        256,
+        256
+      ],
+      "sha256": "cce7088fa6132501b167f9a77ff17d80802e7c5aedd726c500af82f882edde14"
+    },
+    {
+      "id": "icon.module.extended_mag",
+      "path": "assets/art/icons/modules/extended_mag.png",
+      "size": [
+        256,
+        256
+      ],
+      "sha256": "4cd94183de3ca7ec5d7c04f3c43ce40edb15c32eebea2c73bced47d49efc63c0"
+    },
+    {
+      "id": "icon.parts",
+      "path": "assets/art/icons/parts.png",
+      "size": [
+        256,
+        256
+      ],
+      "sha256": "37e6cbfb8498f4fec591c09378cb1475ff67f06805582645c2f11d50de3647b6"
+    },
+    {
+      "id": "floor.sawmill",
+      "path": "assets/art/floors/sawmill.png",
+      "size": [
+        512,
+        512
+      ],
+      "sha256": "f457aad4674323506da63747bd73df51947fbc46a6238f079faa9c93ce74db1b"
+    },
+    {
+      "id": "floor.pumping",
+      "path": "assets/art/floors/pumping.png",
+      "size": [
+        512,
+        512
+      ],
+      "sha256": "64c5f2fea5cc27587868618ae9043f046d5cdb5a8492fe5e3ddd729501573b4d"
+    },
+    {
+      "id": "floor.flooded",
+      "path": "assets/art/floors/flooded.png",
+      "size": [
+        512,
+        512
+      ],
+      "sha256": "f8c369f877e476aea83d24341168c3cdc0a5da30d419df1d393994753d61c9e8"
+    },
+    {
+      "id": "hero.body",
+      "path": "assets/art/characters/hero/body.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "95905b5ff580862e84b4e39521dd50f16d7d92df7d65dc0681cc4cb04ac33270"
+    }
+  ]
+}
