@@ -84,6 +84,10 @@ func step(dt: float) -> void:
 		var h: Dictionary = items[i]
 		h.t += dt
 		if h.t >= h.delay:
+			if not h.get("started", false):
+				h["started"] = true                 # момент активации зоны
+				if h.palette == "fire":
+					game.fx.anim_once("fx.fire_burst", h.pos + Vector2(0, -20), float(h.radius) * 2.2 / 256.0, 10.0)
 			if h.once:
 				if not h.fired:
 					h.fired = true
@@ -102,6 +106,8 @@ func step(dt: float) -> void:
 func _apply(h: Dictionary, pl) -> void:
 	if h.once and str(h.get("tag", "")) == "explosion":
 		Sfx.play("explosion")
+		game.fx.anim_once("fx.explosion", h.pos + Vector2(0, -20), float(h.radius) * 2.6 / 256.0, 14.0)
+
 	if h.hits_player and pl != null and not pl.dead and contains(h, pl.position):
 		pl.take_damage(h.damage, h.source, false)
 		if h.knock > 0.0:
@@ -145,9 +151,30 @@ func _draw() -> void:
 			draw_polyline(pts, edge, 3.0)
 		else:
 			var a := 0.5
+			if not h.once and (h.palette == "fire" or h.palette == "steam") and AssetRegistry.file_exists("fx.fire_loop"):
+				a = 0.22   # зона читается по контуру и анимации огня/пара, а не по плоской заливке
 			if h.once:
 				a = 0.7 * (1.0 - clampf((h.t - h.delay) / maxf(h.life, 0.01), 0.0, 1.0))
 			draw_colored_polygon(_poly_for(h), Color(fill.r, fill.g, fill.b, a))
 			var pts2 := _poly_for(h)
 			pts2.append(pts2[0])
 			draw_polyline(pts2, edge, 3.0)
+			if not h.once and (h.palette == "fire" or h.palette == "steam"):
+				_draw_loop_fx(h)
+
+
+## Зацикленные спрайты огня/пара поверх зоны (8 точек по кругу, разные фазы кадров).
+func _draw_loop_fx(h: Dictionary) -> void:
+	var id := "fx.fire_loop" if h.palette == "fire" else "fx.steam_puff"
+	if not AssetRegistry.file_exists(id):
+		return
+	var n := 7
+	var sc: float = clampf(float(h.radius) / 60.0, 0.8, 1.6) * (1.0 if h.palette == "fire" else 1.2)
+	for i in n:
+		var a := TAU * i / n + float(hash(h.pos)) * 0.001
+		var r: float = float(h.radius) * (0.0 if i == 0 else 0.55)
+		var p: Vector2 = h.pos + Vector2(cos(a), sin(a) * 0.7) * r
+		var idx := int(Time.get_ticks_msec() / 90.0 + i * 2) % 6
+		var fr := AssetRegistry.strip_frame(id, idx)
+		var fp: Vector2 = fr.frame_px
+		draw_texture_rect_region(fr.texture, Rect2(p - Vector2(fp.x * 0.5, fp.y * 0.85) * sc, fp * sc), fr.region, Color(1, 1, 1, 0.9 if h.palette == "fire" else 0.55))

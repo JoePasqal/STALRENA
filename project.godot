@@ -9,7 +9,7 @@ run/main_scene="res://scenes/main_menu.tscn"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 run/max_fps=0
 boot_splash/show_image=false
-config/icon="res://icon.svg"
+config/icon="res://assets/art/ui/app_icon.png"
 
 [autoload]
 

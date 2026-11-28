@@ -18,6 +18,8 @@ var modifier := ModifierController.new()
 var entities: Node2D
 var cam: Camera2D
 var enemies: Array = []
+var corpses: Array = []
+const CORPSE_CAP := 24
 var walls_nodes: Array = []
 var gw := 1
 var plan: Dictionary = {}
@@ -164,7 +166,99 @@ func _build_ui() -> void:
 	results_ui.visible = false
 
 
+const DECOR := {
+	"sawmill": ["sawdust_pile", "stump", "planks", "barrel", "chain", "tire", "forklift", "saw_machine", "fire_barrel", "oil_stain"],
+	"pumping": ["cable_reel", "rust_barrel", "oil_puddle", "panel_a", "panel_b", "barrier", "grate", "lamp_post"],
+	"flooded": ["driftwood", "dead_tree", "sandbags", "rocks", "algae", "float_debris", "fence_broken", "grass_island"],
+}
+const DECOR_COMMON := ["bones", "blood_stain", "shells", "rags", "weeds", "backpack"]
+const DECOR_FLAT := ["oil_stain", "oil_puddle", "blood_stain", "shells", "grate", "bones", "rags", "weeds", "sawdust_pile", "algae", "float_debris", "grass_island"]
+const DECOR_RARE := ["forklift", "saw_machine", "lamp_post", "dead_tree", "fire_barrel"]
+
+
+## Декор без коллизии (спрайты партии 5): детерминированно от seed забега и сектора, вне стен, воды и стартовой зоны.
+func _place_decor(info: Dictionary) -> void:
+	var loc := str(info.location_id)
+	var ids: Array = []
+	for n in DECOR.get(loc, []):
+		ids.append("decor.%s.%s" % [loc, n])
+	for n in DECOR_COMMON:
+		ids.append("decor.common." + n)
+	var avail: Array = []
+	for id in ids:
+		if AssetRegistry.file_exists(id):
+			avail.append(id)
+	if avail.is_empty():
+		return
+	var rng := RandomNumberGenerator.new()
+	rng.seed = hash([run.seed_value, info.sector, "decor"])
+	var count := int(arena.size.x * arena.size.y / 85000.0)
+	var placed: Array = []
+	var guard := 0
+	var rare := 0
+	while placed.size() < count and guard < count * 25:
+		guard += 1
+		var id: String = avail[rng.randi() % avail.size()]
+		var short := id.get_slice(".", 2)
+		if short in DECOR_RARE:
+			if rare >= 5 or rng.randf() < 0.55:
+				continue
+		var p := Vector2(rng.randf_range(80, arena.size.x - 80), rng.randf_range(80, arena.size.y - 80))
+		if p.distance_to(arena.start) < 170.0 or not arena.is_point_free(p, 50.0):
+			continue
+		if arena.in_water(p) and short not in ["algae", "float_debris", "driftwood"]:
+			continue
+		var ok := true
+		for q in placed:
+			if q.distance_to(p) < 110.0:
+				ok = false
+				break
+		if not ok:
+			continue
+		placed.append(p)
+		if short in DECOR_RARE:
+			rare += 1
+		var sp := Sprite2D.new()
+		sp.texture = AssetRegistry.get_texture(id)
+		sp.centered = false
+		sp.offset = -AssetRegistry.get_pivot(id)
+		var sc := AssetRegistry.get_scale(id) * rng.randf_range(0.92, 1.08)
+		sp.scale = Vector2(sc * (-1.0 if rng.randf() < 0.5 else 1.0), sc)
+		sp.position = p
+		if short in DECOR_FLAT:
+			sp.z_index = -2                          # плоский декор лежит на земле, под актёрами
+		entities.add_child(sp)
+		walls_nodes.append(sp)
+
+
+func _spawn_corpse(e: Enemy) -> void:
+	var c := Corpse.new()
+	entities.add_child(c)
+	c.setup(self, e)
+	corpses.append(c)
+	while corpses.size() > CORPSE_CAP:
+		var old = corpses.pop_front()
+		if is_instance_valid(old):
+			old.queue_free()
+
+
+func _corpses_tick(dt: float) -> void:
+	var keep: Array = []
+	for c in corpses:
+		if not is_instance_valid(c):
+			continue
+		if c.tick(dt):
+			keep.append(c)
+		else:
+			c.queue_free()
+	corpses = keep
+
+
 func _clear_arena_nodes() -> void:
+	for c in corpses:
+		if is_instance_valid(c):
+			c.queue_free()
+	corpses.clear()
 	for w in walls_nodes:
 		if is_instance_valid(w):
 			w.queue_free()
@@ -185,6 +279,7 @@ func _build_arena(info: Dictionary) -> void:
 		wp.setup(arena.walls[i], arena.wall_kinds[i], tint)
 		entities.add_child(wp)
 		walls_nodes.append(wp)
+	_place_decor(info)
 	grade.color = GRADES.get(str(info.location_id), Color(1, 1, 1))
 	fx.ambient_kind = str(info.location_id)
 	fx.motes.clear()
@@ -374,6 +469,7 @@ func _physics_process(delta: float) -> void:
 		St.WAVE_COMPLETE:
 			complete_t -= delta
 			fx.step(delta)
+			_corpses_tick(delta)
 			if complete_t <= 0.0:
 				_enter_shop()
 
@@ -397,6 +493,7 @@ func sim_step(dt: float) -> void:
 	hazards.step(dt)
 	modifier.tick(dt)
 	_molotov_tick(dt)
+	_corpses_tick(dt)
 	fx.step(dt)
 	_update_camera()
 	_update_walls(dt)
@@ -421,7 +518,8 @@ func _update_walls(dt: float) -> void:
 		if e.targetable():
 			pts.append(e.position)
 	for w in walls_nodes:
-		w.update_fade(pts, dt)
+		if w is WallProp:
+			w.update_fade(pts, dt)
 
 
 func camera_rect() -> Rect2:
@@ -593,6 +691,7 @@ func on_player_hurt(amount: float, source: String) -> void:
 
 func on_enemy_died(e: Enemy) -> void:
 	enemies.erase(e)
+	_spawn_corpse(e)
 	_kill_count_wave += 1
 	run.stats["kills"] = int(run.stats.get("kills", 0)) + 1
 	fx.flash(e.position, Color(1.0, 0.7, 0.4), e.radius + 6.0)

@@ -8,6 +8,7 @@ var tint := Color(1, 1, 1)
 var _tex: Texture2D
 var _marks: Array = []
 var _decals: Array = []
+var _water_nodes: Array = []
 
 
 func setup(m: ArenaModel, location_id: String, p_tint: Color, seed_v: int) -> void:
@@ -35,6 +36,20 @@ func setup(m: ArenaModel, location_id: String, p_tint: Color, seed_v: int) -> vo
 			"pumping": col = [Color(0.05, 0.05, 0.07, 0.25), Color(0.4, 0.3, 0.2, 0.14), Color(0.02, 0.02, 0.03, 0.22), Color(0.55, 0.55, 0.55, 0.12)][kind]
 			"flooded": col = [Color(0.12, 0.16, 0.08, 0.28), Color(0.2, 0.25, 0.12, 0.2), Color(0.05, 0.08, 0.05, 0.25), Color(0.3, 0.32, 0.2, 0.14)][kind]
 		_decals.append({"p": p, "rx": rng.randf_range(14, 60), "ry": rng.randf_range(8, 34), "a": rng.randf() * PI, "col": col, "crack": kind == 3 and rng.randf() < 0.6, "seed": rng.randi()})
+	for c in _water_nodes:
+		c.queue_free()
+	_water_nodes.clear()
+	if floor_id == "floor.flooded" and AssetRegistry.file_exists("water.flooded"):
+		for i in m.water.size():
+			var wp := WaterPatch.new()
+			add_child(wp)
+			wp.setup(m.water[i], seed_v + i * 31)
+			_water_nodes.append(wp)
+		if AssetRegistry.file_exists("prop.reeds"):
+			var rd := ReedsDecor.new()
+			add_child(rd)
+			rd.setup(m.water, seed_v)
+			_water_nodes.append(rd)
 	queue_redraw()
 
 
@@ -73,7 +88,10 @@ func _draw() -> void:
 				var np: Vector2 = pos + Vector2.from_angle(cr.randf() * TAU) * cr.randf_range(10, 26)
 				draw_line(pos, np, Color(0, 0, 0, 0.3), 1.5)
 				pos = np
+	var water_art := AssetRegistry.file_exists("water.flooded")
 	for w in model.water:
+		if water_art:
+			continue
 		draw_rect(w, Color(0.16, 0.3, 0.34, 0.62))
 		draw_rect(w, Color(0.45, 0.65, 0.7, 0.55), false, 3.0)
 		var yy := w.position.y + 18.0
@@ -81,24 +99,15 @@ func _draw() -> void:
 			draw_line(Vector2(w.position.x + 14, yy), Vector2(w.end.x - 14, yy), Color(0.6, 0.8, 0.85, 0.16), 2.0)
 			yy += 26.0
 	# декор без коллизии: паровые клапаны у слотов опасностей (Насосная), камыш по краям воды (Двор)
-	if floor_id == "floor.pumping" and AssetRegistry.file_exists("prop.steam_valve"):
-		var vt := AssetRegistry.get_texture("prop.steam_valve")
-		var vp := AssetRegistry.get_pivot("prop.steam_valve")
-		var vs := AssetRegistry.get_scale("prop.steam_valve")
-		for s in model.hazard_slots:
-			draw_set_transform(Vector2(s.x, s.y), 0.0, Vector2(vs, vs))
-			draw_texture(vt, -vp, Color(1, 1, 1, 0.95))
-		draw_set_transform(Vector2.ZERO, 0.0, Vector2.ONE)
-	if floor_id == "floor.flooded" and AssetRegistry.file_exists("prop.reeds"):
-		var rt := AssetRegistry.get_texture("prop.reeds")
-		var rp := AssetRegistry.get_pivot("prop.reeds")
-		var rs := AssetRegistry.get_scale("prop.reeds") * 0.7
-		for w in model.water:
-			var n := int(w.size.x / 150.0)
-			for i in n:
-				draw_set_transform(Vector2(w.position.x + 40.0 + i * 150.0, w.position.y + 6.0), 0.0, Vector2(rs, rs))
-				draw_texture(rt, -rp)
-		draw_set_transform(Vector2.ZERO, 0.0, Vector2.ONE)
+	if floor_id == "floor.pumping":
+		# паровые выходы: решётка в полу (вместо одиноко стоящего клапана, который «висел в воздухе»)
+		for sl in model.hazard_slots:
+			var c := Vector2(sl.x, sl.y)
+			draw_circle(c, 30.0, Color(0.03, 0.03, 0.04, 0.55))
+			draw_arc(c, 30.0, 0.0, TAU, 28, Color(0.35, 0.3, 0.25, 0.8), 3.0)
+			for k in range(-2, 3):
+				var hw := 24.0 * cos(asin(k * 0.18))
+				draw_line(c + Vector2(-hw, k * 9.0), c + Vector2(hw, k * 9.0), Color(0.3, 0.27, 0.24, 0.8), 2.0)
 	# граница арены
 	var b := 60.0
 	var dark := Color(0.04, 0.045, 0.04, 1)

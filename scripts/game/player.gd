@@ -365,6 +365,12 @@ func _update_visuals(dt: float) -> void:
 		if armor_sprite.visible:
 			var armor_id: String = "armor." + str(game.run.equipped_armor)
 			var af := AssetRegistry.get_armor_frame(armor_id, _facing)
+			if (anim == "walk" or anim == "hit") and AssetRegistry.file_exists(armor_id + ".anim"):
+				# колонки накладки: 0..3 walk0..walk3, 4 hit (колонка тела 1..5 ↔ накладка 0..4)
+				var ac := idx if anim == "walk" else 4
+				var anf := AssetRegistry.anim_frame(armor_id + ".anim", _facing, ac)
+				if not anf.is_empty():
+					af = {"texture": anf.texture, "region": anf.region, "flip_h": anf.flip_h, "pivot": AssetRegistry.get_pivot(armor_id + ".anim"), "placeholder": false}
 			_apply_frame(armor_sprite, af, armor_id)
 		hands_sprite.visible = armor_sprite.visible and not placeholder
 		if hands_sprite.visible:
@@ -427,6 +433,10 @@ func _draw() -> void:
 	draw_colored_polygon(pts, Color(0, 0, 0, 0.3))
 	if contact_guard_left > 0.0 and not dead:
 		draw_arc(Vector2.ZERO, radius + 4.0, 0.0, TAU, 20, Color(0.7, 0.9, 1.0, 0.5), 2.0)
+	if medkit.active and not dead:
+		var hf := AssetRegistry.strip_frame("fx.heal", int(Time.get_ticks_msec() / 110.0) % 6)
+		if not hf.is_empty():
+			draw_texture_rect_region(hf.texture, Rect2(-60, -102, 120, 120), hf.region, Color(1, 1, 1, 0.85))
 	if debug_muzzle and not dead:
 		var mp := muzzle_point() - position + Vector2(0, -ProjectileManager.HEIGHT)
 		draw_line(mp + Vector2(-6, 0), mp + Vector2(6, 0), Color(1, 0, 1), 2.0)

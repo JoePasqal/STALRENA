@@ -54,6 +54,13 @@ func _ready() -> void:
 	_top_label.clip_text = true
 	_top_label.custom_minimum_size = Vector2(100, 0)
 	top.add_child(_top_label)
+	if AssetRegistry.file_exists("ui.coin"):
+		var coin := TextureRect.new()
+		coin.texture = AssetRegistry.get_texture("ui.coin")
+		coin.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+		coin.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+		coin.custom_minimum_size = Vector2(34, 34)
+		top.add_child(coin)
 	_coins_label = UiKit.label("", 28, Color(1.0, 0.9, 0.5))
 	top.add_child(_coins_label)
 	_level_label = UiKit.label("", 20, UiKit.FRIENDLY)

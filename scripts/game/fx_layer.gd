@@ -11,6 +11,7 @@ var sparks: Array = []            # {pos, t}
 var flames: Array = []            # {pos, vel, t, life}
 var flashes: Array = []           # {pos, t, color, r}
 var heals: Array = []
+var anims: Array = []             # однократные покадровые эффекты: {id, pos, t, fps, scale, frames}
 var motes: Array = []            # пыль/туман у камеры: {pos, vel, r, a, kind}
 var muzzles: Array = []
 var ambient_kind := "sawmill"           # {pos, ang, flip, t}
@@ -47,7 +48,24 @@ func damage_number(pos: Vector2, value: float, key: int, crit: bool) -> void:
 	numbers.append({"pos": pos + Vector2(randf_range(-6, 6), -50), "value": value, "t": 0.0, "key": key, "crit": crit})
 
 
+## Покадровый одноразовый эффект из листа-полосы (взрыв, вспышка огня, искры).
+func anim_once(id: String, pos: Vector2, scale_f: float, fps: float = 14.0) -> void:
+	if not AssetRegistry.file_exists(id) or anims.size() >= 24:
+		return
+	var f := AssetRegistry.strip_frame(id, 0)
+	anims.append({"id": id, "pos": pos, "t": 0.0, "fps": fps, "scale": scale_f, "frames": int(f.frames)})
+
+
+func hit_spark(pos: Vector2) -> void:
+	if low_quality and anims.size() > 6:
+		return
+	anim_once("fx.hit_spark", pos + Vector2(0, -ProjectileManager.HEIGHT), 0.55, 22.0)
+
+
 func spark(pos: Vector2) -> void:
+	if AssetRegistry.file_exists("fx.hit_spark"):
+		anim_once("fx.hit_spark", pos + Vector2(0, -ProjectileManager.HEIGHT), 0.45, 22.0)
+		return
 	if low_quality and sparks.size() > 12:
 		return
 	if sparks.size() < 40:
@@ -88,6 +106,9 @@ func step(dt: float) -> void:
 	for fl in flashes:
 		fl.t += dt
 	flashes = flashes.filter(func(fl): return fl.t < 0.12)
+	for a in anims:
+		a.t += dt
+	anims = anims.filter(func(a): return int(a.t * a.fps) < a.frames)
 	for m in muzzles:
 		m.t += dt
 	muzzles = muzzles.filter(func(m): return m.t < MUZZLE_LIFE)
@@ -96,6 +117,11 @@ func step(dt: float) -> void:
 
 func _draw() -> void:
 	_draw_ambient()
+	for a in anims:
+		var fr := AssetRegistry.strip_frame(a.id, int(a.t * a.fps))
+		var fp: Vector2 = fr.frame_px
+		var s: float = a.scale
+		draw_texture_rect_region(fr.texture, Rect2(a.pos - fp * s * 0.5, fp * s), fr.region)
 	for f in flames:
 		var k: float = f.t / f.life
 		var col := Color(1.0, 0.75 - 0.5 * k, 0.2, 0.75 * (1.0 - k))

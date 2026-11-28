@@ -33,6 +33,11 @@ func _ready() -> void:
 	if mode in ["walk", "all"]: await walk_frames()
 	if mode in ["death", "all"]: await death_frames()
 	if mode == "locations": await locations_shots()
+	if mode == "pipes": await pipes_shots()
+	if mode == "enemyanim": await enemy_anim_sheet()
+	if mode == "corpses": await corpse_frames()
+	if mode == "fxsheet": await fx_shot()
+	if mode == "cards": await cards_frames()
 	if mode in ["bosses", "all"]: await bosses_sheet()
 	if mode in ["flash", "all"]: await flash_sheet()
 	if mode in ["walkn", "all"]: await walk_n_weapons()
@@ -331,3 +336,157 @@ func locations_shots() -> void:
 				e.face = Vector2.DOWN
 		await _f(5)
 		get_viewport().get_texture().get_image().save_png("%s/loc_%s.png" % [out, it[0]])
+
+
+## Листы анимаций врагов в игре: idle S, ходьба E×4, замах E×3, смерть×4 — для каждого из восьми врагов и боссов.
+func enemy_anim_sheet() -> void:
+	game.player.visible = false
+	game.cam.zoom = Vector2(1.5, 1.5)
+	var cols := 12
+	for group in [["drifter", "runner", "charger", "spitter"], ["gunner", "brute", "flanker", "carrier"], ["cleaver", "boilermaster", "broodmother"]]:
+		var crops: Array = []
+		for id in group:
+			var e: Enemy
+			if id in ["cleaver", "boilermaster", "broodmother"]:
+				e = Boss.new()
+				e.setup_boss(game, id, 1, game.arena.start)
+				game.entities.add_child(e)
+				game.enemies.append(e)
+			else:
+				e = game._spawn_enemy(id, "", game.arena.start, false)
+			e.state = Enemy.S.MOVE
+			e.sprite.visible = true
+			var seq: Array = [["idle", "S", 0], ["walk", "E", 0], ["walk", "E", 1], ["walk", "E", 2], ["walk", "E", 3], ["attack", "E", 0], ["attack", "E", 1], ["attack", "E", 2], ["death", "E", 0], ["death", "E", 1], ["death", "E", 2], ["death", "E", 3]]
+			var boss: bool = id in ["cleaver", "boilermaster", "broodmother"]
+			for sq in seq:
+				if boss and sq[0] == "attack":
+					crops.append(Image.create(200, 240, false, Image.FORMAT_RGBA8))
+					continue
+				e._frame_key = ""
+				if sq[0] == "death":
+					var fr := AssetRegistry.strip_frame(str(e.def.visual_id) + ".death", sq[2])
+					e.sprite.texture = fr.texture
+					e.sprite.region_enabled = true
+					e.sprite.region_rect = fr.region
+					e.sprite.offset = -AssetRegistry.get_pivot(str(e.def.visual_id) + ".death")
+				else:
+					e._set_dir_frame(sq[1], sq[0], sq[2])
+				await _f(2)
+				var img := get_viewport().get_texture().get_image()
+				var c := img.get_size() / 2
+				crops.append(img.get_region(Rect2i(c.x - 100, c.y - 170 if not boss else c.y - 200, 200, 240)))
+			game.enemies.erase(e)
+			e.queue_free()
+		var sheet := Image.create(200 * cols, 240 * group.size(), false, Image.FORMAT_RGBA8)
+		for i in crops.size():
+			sheet.blit_rect(crops[i], Rect2i(0, 0, 200, 240), Vector2i((i % cols) * 200, (i / cols) * 240))
+		sheet.save_png("%s/enemy_anim_%s.png" % [out, group[0]])
+	game.cam.zoom = Vector2(2, 2)
+	game.player.visible = true
+
+
+## Смерть → лежащий труп (кадры по 0,1 с) для обычного врага и босса.
+func corpse_frames() -> void:
+	game.player.visible = false
+	game.cam.zoom = Vector2(1.3, 1.3)
+	for id in ["drifter", "brute", "carrier", "gunner"]:
+		var e: Enemy = game._spawn_enemy(id, "", game.arena.start, false)
+		e.state = Enemy.S.MOVE
+		e.sprite.visible = true
+		e.face = Vector2.RIGHT
+		e._update_visual(0.0)
+		await _f(2)
+		_crop().save_png("%s/corpse_%s_00.png" % [out, id])
+		e.take_damage(1e12, false, "player")
+		for i in range(1, 22):
+			game.sim_step(0.1)
+			await _f(2)
+			var img := get_viewport().get_texture().get_image()
+			var c := img.get_size() / 2
+			img.get_region(Rect2i(c.x - 150, c.y - 190, 300, 300)).save_png("%s/corpse_%s_%02d.png" % [out, id, i])
+		game.corpses.clear()
+	game.cam.zoom = Vector2(2, 2)
+	game.player.visible = true
+
+
+## Эффекты: огонь, пар, взрыв, искры, исцеление героя.
+func fx_shot() -> void:
+	game.cam.zoom = Vector2(1.2, 1.2)
+	var s: Vector2 = game.arena.start
+	game.player.position = s
+	game.player.hp = 50.0
+	game.player.use_medkit()
+	game.hazards.add({"shape": "circle", "pos": s + Vector2(-260, 0), "radius": 95.0, "delay": 0.1, "life": 8.0, "damage": 0.0, "tick": 1.0, "palette": "fire", "tag": "molotov"})
+	game.hazards.add({"shape": "circle", "pos": s + Vector2(260, 0), "radius": 80.0, "delay": 0.1, "life": 8.0, "damage": 0.0, "tick": 1.0, "palette": "steam", "tag": "boss_steam"})
+	game.hazards.add({"shape": "circle", "pos": s + Vector2(0, 200), "radius": 90.0, "delay": 0.1, "life": 0.2, "damage": 0.0, "once": true, "tag": "explosion", "palette": "enemy"})
+	for i in 30:
+		game.hazards.step(1.0 / 60.0)
+		game.fx.step(1.0 / 60.0)
+	game.fx.spark(s + Vector2(60, -40))
+	game.fx.spark(s + Vector2(-80, -60))
+	await _f(3)
+	get_viewport().get_texture().get_image().save_png("%s/fx_all.png" % out)
+	game.cam.zoom = Vector2(2, 2)
+
+
+## Переворот карточек и открытие ящика в реальном времени (кадры для GIF).
+func cards_frames() -> void:
+	for kind in ["buff", "debuff"]:
+		var rn: RunState = Session.run
+		rn.waves_completed = 9 if kind == "buff" else 11
+		rn.phase = "combat"
+		rn.coins_at_wave_start = rn.coins
+		Economy.complete_wave(rn)
+		game._enter_shop()
+		await _f(4)
+		var ui: BonusCaseScreen = game.bonus_ui
+		var cnt := [0]
+		var shot := func():
+			get_viewport().get_texture().get_image().save_png("%s/case_%s_%03d.png" % [out, kind, cnt[0]])
+			cnt[0] += 1
+		await _f(2)
+		shot.call()
+		ui._on_btn()
+		var t := 0.0
+		while ui.state != "choosing" and t < 3.0:
+			await get_tree().create_timer(0.1).timeout
+			t += 0.1
+			shot.call()
+		await get_tree().create_timer(0.6).timeout
+		shot.call()
+		ui._on_card(ui.cards[1])
+		t = 0.0
+		while ui.state != "done" and t < 9.0:
+			await get_tree().create_timer(0.12).timeout
+			t += 0.12
+			shot.call()
+		await get_tree().create_timer(0.5).timeout
+		shot.call()
+		ui._on_btn()
+		await _f(3)
+
+
+## Крупный план труб и воды на каждой локации, где они есть (проверка «висят в воздухе» и стыков воды).
+func pipes_shots() -> void:
+	for lid in ["pumping_a", "pumping_b", "flooded_a", "flooded_b"]:
+		var loc: String = lid.split("_")[0]
+		await _begin({}, 0)
+		game._build_arena({"layout_id": lid, "location_id": loc, "tint_index": 0, "sector": 1})
+		game.arena = ArenaModel.from_layout(lid)
+		game.player.visible = false
+		var pipes: Array = []
+		for i in game.arena.walls.size():
+			if game.arena.wall_kinds[i] == "pipe":
+				pipes.append(game.arena.walls[i])
+		if pipes.size() > 0:
+			var r: Rect2 = pipes[0]
+			game.cam.zoom = Vector2(1.6, 1.6)
+			game.cam.position = r.get_center()
+			await _f(4)
+			get_viewport().get_texture().get_image().save_png("%s/pipe_%s.png" % [out, lid])
+		if game.arena.water.size() > 0:
+			var wr: Rect2 = game.arena.water[0]
+			game.cam.zoom = Vector2(0.9, 0.9)
+			game.cam.position = wr.get_center()
+			await _f(4)
+			get_viewport().get_texture().get_image().save_png("%s/water_%s.png" % [out, lid])

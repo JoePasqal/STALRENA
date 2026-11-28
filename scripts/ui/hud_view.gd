@@ -138,6 +138,9 @@ func _draw() -> void:
 	var gwv: int = game.gw
 	var top := "Сектор %d · Волна %d/%d  (№%d)" % [run.sector_of(gwv), run.local_wave_of(gwv), int(GameData.B.waves.sector_length), gwv]
 	draw_string(f, Vector2(0, m.y + 24), top, HORIZONTAL_ALIGNMENT_CENTER, size.x, 22, Color.WHITE)
+	var coin_x := size.x * 0.5 - 14.0 - f.get_string_size("Монеты: %d" % run.coins, HORIZONTAL_ALIGNMENT_LEFT, -1, 18).x - 26.0
+	if AssetRegistry.file_exists("ui.coin"):
+		draw_texture_rect(AssetRegistry.get_texture("ui.coin"), Rect2(coin_x, m.y + 34, 22, 22), false)
 	draw_string(f, Vector2(0, m.y + 50), "Монеты: %d" % run.coins, HORIZONTAL_ALIGNMENT_RIGHT, size.x * 0.5 - 14.0, 18, Color(1.0, 0.9, 0.5))
 	var left_s: float = maxf(float(game.round_limit) - float(game.wave_time), 0.0)
 	if game.state == game.St.WAVE_INTRO:

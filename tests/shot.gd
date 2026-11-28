@@ -93,6 +93,11 @@ func _ready() -> void:
 		game.sim_step(1.0 / 60.0)
 		if game.state != game.St.COMBAT:
 			break
+	if args.has("px"):
+		game.player.position = Vector2(float(args.px), float(args.py))
+		game.cam.position = game.player.position
+		game.state = game.St.SHOP
+		await _frames(2)
 	if args.has("intro"):
 		game.state = game.St.WAVE_INTRO
 		game.intro_t = 5.0

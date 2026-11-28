@@ -39,15 +39,15 @@
 | `icon.module.extended_mag` | icon | 256x256 | RGBA | ок |
 | `enemy.drifter` | actor_atlas | strip3 768x256 | RGBA | ок |
 | `enemy.runner` | actor_atlas | strip3 768x256 | RGBA | ок |
-| `enemy.charger` | actor_atlas | strip3 768x256 | RGBA | ок |
+| `enemy.charger` | actor_atlas | 3x1_S_E_N 768x256 | RGBA | ок |
 | `enemy.spitter` | actor_atlas | strip3 768x256 | RGBA | ок |
-| `enemy.gunner` | actor_atlas | strip3 768x256 | RGBA | ок |
-| `enemy.brute` | actor_atlas | strip3 768x256 | RGBA | ок |
-| `enemy.flanker` | actor_atlas | strip3 768x256 | RGBA | ок |
-| `enemy.carrier` | actor_atlas | strip3 768x256 | RGBA | ок |
-| `boss.cleaver` | boss_atlas | strip3 1536x512 | RGBA | ок |
-| `boss.boilermaster` | boss_atlas | strip3 1536x512 | RGBA | ок |
-| `boss.broodmother` | boss_atlas | strip3 1536x512 | RGBA | ок |
+| `enemy.gunner` | actor_atlas | 3x1_S_E_N 768x256 | RGBA | ок |
+| `enemy.brute` | actor_atlas | 3x1_S_E_N 768x256 | RGBA | ок |
+| `enemy.flanker` | actor_atlas | 3x1_S_E_N 768x256 | RGBA | ок |
+| `enemy.carrier` | actor_atlas | 3x1_S_E_N 768x256 | RGBA | ок |
+| `boss.cleaver` | boss_atlas | 3x1_S_E_N 1536x512 | RGBA | ок |
+| `boss.boilermaster` | boss_atlas | 3x1_S_E_N 1536x512 | RGBA | ок |
+| `boss.broodmother` | boss_atlas | 3x1_S_E_N 1536x512 | RGBA | ок |
 | `floor.sawmill` | floor_texture | 512x512 | RGBA | ок |
 | `floor.pumping` | floor_texture | 512x512 | RGBA | ок |
 | `floor.flooded` | floor_texture | 512x512 | RGBA | ок |
@@ -124,50 +124,50 @@
 | `decor.common.rags` | prop | 256x256 | RGBA | ок |
 | `decor.common.weeds` | prop | 256x256 | RGBA | ок |
 | `decor.common.backpack` | prop | 256x256 | RGBA | ок |
-| `corpse.drifter` | prop | 256x256 | RGBA | низ y=194, pivot 160 |
-| `corpse.runner` | prop | 256x256 | RGBA | низ y=204, pivot 160 |
-| `corpse.charger` | prop | 256x256 | RGBA | низ y=206, pivot 160 |
-| `corpse.spitter` | prop | 256x256 | RGBA | низ y=201, pivot 160 |
-| `corpse.gunner` | prop | 256x256 | RGBA | низ y=198, pivot 160 |
-| `corpse.brute` | prop | 256x256 | RGBA | низ y=205, pivot 160 |
-| `corpse.flanker` | prop | 256x256 | RGBA | низ y=187, pivot 160 |
-| `corpse.carrier` | prop | 256x256 | RGBA | низ y=203, pivot 160 |
-| `corpse.boss.cleaver` | prop | 512x512 | RGBA | низ y=415, pivot 320 |
-| `corpse.boss.boilermaster` | prop | 512x512 | RGBA | низ y=402, pivot 320 |
-| `corpse.boss.broodmother` | prop | 512x512 | RGBA | низ y=405, pivot 320 |
-| `enemy.drifter.walk` | actor_atlas | ? 1024x768 | RGBA | неизвестная раскладка |
-| `enemy.drifter.attack` | actor_atlas | ? 768x768 | RGBA | неизвестная раскладка |
-| `enemy.drifter.death` | actor_atlas | ? 1024x256 | RGBA | неизвестная раскладка |
-| `enemy.runner.walk` | actor_atlas | ? 1024x768 | RGBA | неизвестная раскладка |
-| `enemy.runner.attack` | actor_atlas | ? 768x768 | RGBA | неизвестная раскладка |
-| `enemy.runner.death` | actor_atlas | ? 1024x256 | RGBA | неизвестная раскладка |
-| `enemy.charger.walk` | actor_atlas | ? 1024x768 | RGBA | неизвестная раскладка |
-| `enemy.charger.attack` | actor_atlas | ? 768x768 | RGBA | неизвестная раскладка |
-| `enemy.charger.death` | actor_atlas | ? 1024x256 | RGBA | неизвестная раскладка |
-| `enemy.spitter.walk` | actor_atlas | ? 1024x768 | RGBA | неизвестная раскладка |
-| `enemy.spitter.attack` | actor_atlas | ? 768x768 | RGBA | неизвестная раскладка |
-| `enemy.spitter.death` | actor_atlas | ? 1024x256 | RGBA | неизвестная раскладка |
-| `enemy.gunner.walk` | actor_atlas | ? 1024x768 | RGBA | неизвестная раскладка |
-| `enemy.gunner.attack` | actor_atlas | ? 768x768 | RGBA | неизвестная раскладка |
-| `enemy.gunner.death` | actor_atlas | ? 1024x256 | RGBA | неизвестная раскладка |
-| `enemy.brute.walk` | actor_atlas | ? 1024x768 | RGBA | неизвестная раскладка |
-| `enemy.brute.attack` | actor_atlas | ? 768x768 | RGBA | неизвестная раскладка |
-| `enemy.brute.death` | actor_atlas | ? 1024x256 | RGBA | неизвестная раскладка |
-| `enemy.flanker.walk` | actor_atlas | ? 1024x768 | RGBA | неизвестная раскладка |
-| `enemy.flanker.attack` | actor_atlas | ? 768x768 | RGBA | неизвестная раскладка |
-| `enemy.flanker.death` | actor_atlas | ? 1024x256 | RGBA | неизвестная раскладка |
-| `enemy.carrier.walk` | actor_atlas | ? 1024x768 | RGBA | неизвестная раскладка |
-| `enemy.carrier.attack` | actor_atlas | ? 768x768 | RGBA | неизвестная раскладка |
-| `enemy.carrier.death` | actor_atlas | ? 1024x256 | RGBA | неизвестная раскладка |
-| `boss.cleaver.walk` | boss_atlas | ? 2048x1536 | RGBA | неизвестная раскладка |
-| `boss.cleaver.death` | boss_atlas | ? 2048x512 | RGBA | неизвестная раскладка |
-| `boss.boilermaster.walk` | boss_atlas | ? 2048x1536 | RGBA | неизвестная раскладка |
-| `boss.boilermaster.death` | boss_atlas | ? 2048x512 | RGBA | неизвестная раскладка |
-| `boss.broodmother.walk` | boss_atlas | ? 2048x1536 | RGBA | неизвестная раскладка |
-| `boss.broodmother.death` | boss_atlas | ? 2048x512 | RGBA | неизвестная раскладка |
-| `armor.light.anim` | armor_overlay | 1536x768 | RGBA | ожидалось 768x256 |
-| `armor.field.anim` | armor_overlay | 1536x768 | RGBA | ожидалось 768x256 |
-| `armor.heavy.anim` | armor_overlay | 1536x768 | RGBA | ожидалось 768x256 |
+| `corpse.drifter` | prop | 256x256 | RGBA | ок |
+| `corpse.runner` | prop | 256x256 | RGBA | ок |
+| `corpse.charger` | prop | 256x256 | RGBA | ок |
+| `corpse.spitter` | prop | 256x256 | RGBA | ок |
+| `corpse.gunner` | prop | 256x256 | RGBA | ок |
+| `corpse.brute` | prop | 256x256 | RGBA | ок |
+| `corpse.flanker` | prop | 256x256 | RGBA | ок |
+| `corpse.carrier` | prop | 256x256 | RGBA | ок |
+| `corpse.boss.cleaver` | prop | 512x512 | RGBA | ок |
+| `corpse.boss.boilermaster` | prop | 512x512 | RGBA | ок |
+| `corpse.boss.broodmother` | prop | 512x512 | RGBA | ок |
+| `enemy.drifter.walk` | actor_atlas | 4x3_S_E_N 1024x768 | RGBA | ок |
+| `enemy.drifter.attack` | actor_atlas | 3x3_S_E_N 768x768 | RGBA | ок |
+| `enemy.drifter.death` | actor_atlas | 4x1_shared 1024x256 | RGBA | ок |
+| `enemy.runner.walk` | actor_atlas | 4x3_S_E_N 1024x768 | RGBA | ок |
+| `enemy.runner.attack` | actor_atlas | 3x3_S_E_N 768x768 | RGBA | ок |
+| `enemy.runner.death` | actor_atlas | 4x1_shared 1024x256 | RGBA | ок |
+| `enemy.charger.walk` | actor_atlas | 4x3_S_E_N 1024x768 | RGBA | ок |
+| `enemy.charger.attack` | actor_atlas | 3x3_S_E_N 768x768 | RGBA | ок |
+| `enemy.charger.death` | actor_atlas | 4x1_shared 1024x256 | RGBA | ок |
+| `enemy.spitter.walk` | actor_atlas | 4x3_S_E_N 1024x768 | RGBA | ок |
+| `enemy.spitter.attack` | actor_atlas | 3x3_S_E_N 768x768 | RGBA | ок |
+| `enemy.spitter.death` | actor_atlas | 4x1_shared 1024x256 | RGBA | ок |
+| `enemy.gunner.walk` | actor_atlas | 4x3_S_E_N 1024x768 | RGBA | ок |
+| `enemy.gunner.attack` | actor_atlas | 3x3_S_E_N 768x768 | RGBA | ок |
+| `enemy.gunner.death` | actor_atlas | 4x1_shared 1024x256 | RGBA | ок |
+| `enemy.brute.walk` | actor_atlas | 4x3_S_E_N 1024x768 | RGBA | ок |
+| `enemy.brute.attack` | actor_atlas | 3x3_S_E_N 768x768 | RGBA | ок |
+| `enemy.brute.death` | actor_atlas | 4x1_shared 1024x256 | RGBA | ок |
+| `enemy.flanker.walk` | actor_atlas | 4x3_S_E_N 1024x768 | RGBA | ок |
+| `enemy.flanker.attack` | actor_atlas | 3x3_S_E_N 768x768 | RGBA | ок |
+| `enemy.flanker.death` | actor_atlas | 4x1_shared 1024x256 | RGBA | ок |
+| `enemy.carrier.walk` | actor_atlas | 4x3_S_E_N 1024x768 | RGBA | ок |
+| `enemy.carrier.attack` | actor_atlas | 3x3_S_E_N 768x768 | RGBA | ок |
+| `enemy.carrier.death` | actor_atlas | 4x1_shared 1024x256 | RGBA | ок |
+| `boss.cleaver.walk` | boss_atlas | 4x3_S_E_N 2048x1536 | RGBA | ок |
+| `boss.cleaver.death` | boss_atlas | 4x1_shared 2048x512 | RGBA | ок |
+| `boss.boilermaster.walk` | boss_atlas | 4x3_S_E_N 2048x1536 | RGBA | ок |
+| `boss.boilermaster.death` | boss_atlas | 4x1_shared 2048x512 | RGBA | ок |
+| `boss.broodmother.walk` | boss_atlas | 4x3_S_E_N 2048x1536 | RGBA | ок |
+| `boss.broodmother.death` | boss_atlas | 4x1_shared 2048x512 | RGBA | ок |
+| `armor.light.anim` | armor_overlay | 1536x768 | RGBA | ок |
+| `armor.field.anim` | armor_overlay | 1536x768 | RGBA | ок |
+| `armor.heavy.anim` | armor_overlay | 1536x768 | RGBA | ок |
 | `ui.card_flip_buff` | ui | 2048x384 | RGBA | ок |
 | `ui.card_flip_curse` | ui | 2048x384 | RGBA | ок |
 | `ui.card_face_buff` | ui | 256x384 | RGBA | ок |
@@ -189,8 +189,4 @@
 | `water.flooded_edge` | water_edge | 512x256 | RGBA | ок |
 | `app.icon.foreground` | ui | 432x432 | RGBA | ок |
 
-Итого записей: 184; файлов найдено: 184; с замечаниями: 44.
-
-## Партия 5: разбор 44 замечаний
-
-30 — новые walk/attack/death раскладки, не распознаваемые старой эвристикой; 11 — трупы с pivot в центре тела, которые аудитор проверяет как стоячие props; 3 — заказанные накладки 1536×768 вместо старого формата. Код аудитора не менялся. Дополнительная проверка фактических размеров, каждой клетки, padding, bbox, pivot и scale выполнена: docs/art_review/batch_05/batch_05_validation.json. Это не проверка в игре.
+Итого записей: 184; файлов найдено: 184; с замечаниями: 0.

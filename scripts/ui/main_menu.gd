@@ -13,6 +13,17 @@ func _ready() -> void:
 	bg.color = UiKit.BG
 	bg.set_anchors_preset(Control.PRESET_FULL_RECT)
 	add_child(bg)
+	if AssetRegistry.file_exists("ui.menu_bg"):
+		var bgt := TextureRect.new()
+		bgt.texture = AssetRegistry.get_texture("ui.menu_bg")
+		bgt.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+		bgt.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
+		bgt.set_anchors_preset(Control.PRESET_FULL_RECT)
+		add_child(bgt)
+		var shade := ColorRect.new()
+		shade.color = Color(0, 0, 0, 0.45)
+		shade.set_anchors_preset(Control.PRESET_FULL_RECT)
+		add_child(shade)
 	var center := CenterContainer.new()
 	center.set_anchors_preset(Control.PRESET_FULL_RECT)
 	add_child(center)
@@ -20,7 +31,15 @@ func _ready() -> void:
 	vb.add_theme_constant_override("separation", 14)
 	vb.custom_minimum_size = Vector2(420, 0)
 	center.add_child(vb)
-	vb.add_child(UiKit.label("STALRENA", 72, UiKit.ACCENT, HORIZONTAL_ALIGNMENT_CENTER))
+	if AssetRegistry.file_exists("ui.logo"):
+		var logo := TextureRect.new()
+		logo.texture = AssetRegistry.get_texture("ui.logo")
+		logo.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+		logo.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+		logo.custom_minimum_size = Vector2(420, 131)
+		vb.add_child(logo)
+	else:
+		vb.add_child(UiKit.label("STALRENA", 72, UiKit.ACCENT, HORIZONTAL_ALIGNMENT_CENTER))
 	vb.add_child(UiKit.label("Выживание в аренах · магазин между волнами", 22, UiKit.MUTED, HORIZONTAL_ALIGNMENT_CENTER))
 	vb.add_child(Control.new())
 	_continue_btn = UiKit.button("Продолжить", Vector2(0, 60), 26)

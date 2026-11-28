@@ -59,6 +59,8 @@ var telegraph_total := 0.5
 
 var sprite: Sprite2D
 var _frame_dir := ""
+var _frame_key := ""
+var strike_t := 0.0                # короткий показ пика замаха (поза 1) после мгновенного удара
 var _anim_t := 0.0
 var _dirty := true            # перерисовка _draw только при изменениях (экономия CPU на телефоне)
 
@@ -107,12 +109,21 @@ func _build_sprite() -> void:
 	_set_dir_frame("S")
 
 
-func _set_dir_frame(dname: String) -> void:
-	if dname == _frame_dir:
+func _set_dir_frame(dname: String, kind: String = "idle", idx: int = 0) -> void:
+	var key := "%s|%s|%d" % [kind, dname, idx]
+	if key == _frame_key:
 		return
+	_frame_key = key
 	_frame_dir = dname
 	var vid := str(def.visual_id)
-	var fr := AssetRegistry.get_actor_frame(vid, "idle", dname, 0)
+	var fr: Dictionary = {}
+	if kind != "idle":
+		fr = AssetRegistry.anim_frame(vid + "." + kind, dname, idx)
+		if not fr.is_empty():
+			fr["pivot"] = AssetRegistry.get_pivot(vid + "." + kind)
+	var sc := AssetRegistry.get_scale(vid)
+	if fr.is_empty():
+		fr = AssetRegistry.get_actor_frame(vid, "idle", dname, 0)
 	sprite.texture = fr.texture
 	if fr.region.size != fr.texture.get_size():
 		sprite.region_enabled = true
@@ -120,8 +131,24 @@ func _set_dir_frame(dname: String) -> void:
 	else:
 		sprite.region_enabled = false
 	sprite.offset = -fr.pivot
-	var sc := AssetRegistry.get_scale(vid)
 	sprite.scale = Vector2(sc * (-1.0 if fr.flip_h else 1.0), sc)
+
+
+## Какую анимацию показывать: замах (поза 0 → 1 → 2), ходьба (4 кадра, 8 кадр/с) или статичный idle.
+func _pick_anim() -> Array:
+	var vid := str(def.visual_id)
+	var has_attack := AssetRegistry.file_exists(vid + ".attack") and not is_boss
+	if has_attack:
+		if state == S.TELEGRAPH:
+			var k := t_state / maxf(telegraph_total, 0.01)
+			return ["attack", 1 if k > 0.88 else 0]
+		if state == S.ATTACK or strike_t > 0.0:
+			return ["attack", 1]
+		if state == S.RECOVERY and t_state < recovery_total * 0.6:
+			return ["attack", 2]
+	if vel.length() > 5.0 and AssetRegistry.file_exists(vid + ".walk"):
+		return ["walk", int(_anim_t * 8.0) % 4]
+	return ["idle", 0]
 
 
 func targetable() -> bool:
@@ -146,6 +173,7 @@ func take_damage(amount: float, crit: bool, source: String) -> void:
 	game.run.stats["damage"] = float(game.run.stats.get("damage", 0.0)) + amount
 	if source == "player":
 		game.fx.damage_number(position, amount, get_instance_id(), crit)
+		game.fx.hit_spark(position)
 		Sfx.play("hit_crit" if crit else "hit")
 	elif source == "burn" or source == "hazard":
 		game.fx.damage_number(position, amount, get_instance_id(), false)
@@ -544,6 +572,7 @@ func _tick_telegraph(dt: float) -> void:
 
 
 func _melee_strike() -> void:
+	strike_t = 0.18
 	var pl = game.player
 	# дистанция проверяется в момент нанесения, а не в начале замаха
 	var reach: float = float(def.melee_range) + pl.radius
@@ -635,11 +664,14 @@ func _update_visual(dt: float) -> void:
 	if sprite == null:
 		return
 	if sprite.visible:
-		_set_dir_frame(_dir_name())
+		strike_t = maxf(strike_t - dt, 0.0)
+		var anim := _pick_anim()
+		_set_dir_frame(_dir_name(), anim[0], anim[1])
 		var moving := vel.length() > 5.0
-		var bob := sin(_anim_t * 14.0) * 1.6 if moving else 0.0
+		var animated: bool = anim[0] != "idle" or AssetRegistry.file_exists(str(def.visual_id) + ".walk")
+		var bob := sin(_anim_t * 14.0) * 1.6 if (moving and not animated) else 0.0
 		var squash := 1.0
-		if state == S.TELEGRAPH:
+		if state == S.TELEGRAPH and not AssetRegistry.file_exists(str(def.visual_id) + ".attack"):
 			squash = 0.92 + 0.06 * sin(_anim_t * 30.0)
 		sprite.position = Vector2(0, bob)
 		var sc := AssetRegistry.get_scale(str(def.visual_id))
@@ -656,6 +688,12 @@ func _draw() -> void:
 	if state == S.SPAWN_WARNING:
 		var k := clampf(t_state / warn_total, 0.0, 1.0)
 		var r := radius + 14.0
+		var sr := AssetRegistry.strip_frame("fx.spawn_ring", int(_anim_t * 8.0) % 4)
+		if not sr.is_empty():
+			var ss := (r * 2.6) / 128.0
+			draw_set_transform(Vector2.ZERO, 0.0, Vector2(ss, ss * 0.6))
+			draw_texture_rect_region(sr.texture, Rect2(-64, -64, 128, 128), sr.region, Color(1, 1, 1, 0.5 + 0.5 * k))
+			draw_set_transform(Vector2.ZERO, 0.0, Vector2.ONE)
 		draw_circle(Vector2.ZERO, r, Color(1.0, 0.4, 0.1, 0.12 + 0.2 * k))
 		draw_arc(Vector2.ZERO, r, 0.0, TAU * k, 28, Color(1.0, 0.55, 0.15, 0.95), 4.0)
 		draw_arc(Vector2.ZERO, r, 0.0, TAU, 28, Color(1.0, 0.55, 0.15, 0.4), 2.0)

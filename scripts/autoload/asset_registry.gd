@@ -28,6 +28,7 @@ func _ready() -> void:
 		var so = JSON.parse_string(FileAccess.get_file_as_string(STATUS_OVERRIDE))
 		if typeof(so) == TYPE_DICTIONARY:
 			_status_override = so
+	warm_up(["fx.", "ui.", "icon."])
 
 
 func has_entry(id: String) -> bool:
@@ -50,7 +51,12 @@ func status(id: String) -> String:
 	return "source_received" if file_exists(id) else "placeholder"
 
 
+var _load_cache: Dictionary = {}
+
+
 func _load_or_null(id: String) -> Texture2D:
+	if _load_cache.has(id):
+		return _load_cache[id]
 	var e := entry(id)
 	if e.is_empty():
 		return null
@@ -58,8 +64,22 @@ func _load_or_null(id: String) -> Texture2D:
 	if ResourceLoader.exists(path):
 		var t = load(path)
 		if t is Texture2D:
+			_load_cache[id] = t
 			return t
 	return null
+
+
+## Загружает текстуры с префиксом заранее (до первой отрисовки), чтобы эффекты не мигали белым квадратом
+## в первом кадре использования, и держит ссылки на них.
+func warm_up(prefixes: Array) -> int:
+	var n := 0
+	for id in entries.keys():
+		for pf in prefixes:
+			if str(id).begins_with(str(pf)):
+				if _load_or_null(str(id)) != null:
+					n += 1
+				break
+	return n
 
 
 func _note_placeholder(id: String) -> void:
@@ -155,7 +175,7 @@ func get_armor_frame(id: String, dir: String) -> Dictionary:
 
 ## Метаданные поставок арта (assets/art_meta/*.json): сокеты героя, хват/дуло оружия.
 var meta := {}
-const META_FILES := ["res://assets/art_meta/batch_02.json", "res://assets/art_meta/batch_04.json", "res://assets/art_meta/weapons.json"]
+const META_FILES := ["res://assets/art_meta/batch_02.json", "res://assets/art_meta/batch_04.json", "res://assets/art_meta/batch_05.json", "res://assets/art_meta/weapons.json"]
 
 
 func _load_meta() -> void:
@@ -164,7 +184,10 @@ func _load_meta() -> void:
 			var m = JSON.parse_string(FileAccess.get_file_as_string(f))
 			if typeof(m) == TYPE_DICTIONARY:
 				for k in m:
-					meta[k] = m[k]
+					if k == "assets" and meta.has("assets"):
+						meta["assets"].merge(m[k], true)        # метаданные нескольких партий объединяются по ID
+					else:
+						meta[k] = m[k]
 
 
 func get_pivot(id: String) -> Vector2:
@@ -230,3 +253,43 @@ func report() -> Dictionary:
 	for id in entries:
 		out[id] = status(id)
 	return out
+
+
+# ---- покадровые листы (анимации, эффекты, UI) ------------------------------------------------
+## Лист «кадр в колонке, направление в строке» (ходьба/замах врагов: строки S,E,N; W — зеркало E).
+func anim_frame(id: String, dir: String, idx: int) -> Dictionary:
+	var tex: Texture2D = _load_or_null(id)
+	if tex == null:
+		return {}
+	var fp := _frame_px(id)
+	var cols := maxi(int(round(tex.get_size().x / fp.x)), 1)
+	var rows := maxi(int(round(tex.get_size().y / fp.y)), 1)
+	var d := "E" if dir == "W" else dir
+	var row := mini(maxi(ACTOR_DIRS.find(d), 0), rows - 1)
+	return {"texture": tex, "region": Rect2(Vector2(idx % cols, row) * fp, fp), "flip_h": dir == "W", "pivot": get_pivot(id), "frames": cols}
+
+
+## Горизонтальная полоса кадров (эффекты, переворот карточки, открытие ящика).
+func strip_frame(id: String, idx: int) -> Dictionary:
+	var tex: Texture2D = _load_or_null(id)
+	if tex == null:
+		return {}
+	var fp := _frame_px(id)
+	var cols := maxi(int(round(tex.get_size().x / fp.x)), 1)
+	return {"texture": tex, "region": Rect2(Vector2(clampi(idx, 0, cols - 1), 0) * fp, fp), "frames": cols, "frame_px": fp}
+
+
+## Смещение трупа относительно позиции актёра (мировые единицы) из метаданных партии 5.
+func corpse_offset(corpse_id: String) -> Vector2:
+	if meta.has("assets") and meta.assets.has(corpse_id):
+		var o: Array = meta.assets[corpse_id].get("spawn_offset_from_actor_world_px", [0, 0])
+		return Vector2(o[0], o[1])
+	return Vector2.ZERO
+
+
+## Точка ограничивающей рамки видимого рисунка (px) из метаданных — для подгонки спрайтов укрытий.
+func bbox_px(id: String) -> Rect2:
+	if meta.has("assets") and meta.assets.has(id) and meta.assets[id].has("bbox_px"):
+		var b: Array = meta.assets[id].bbox_px
+		return Rect2(b[0], b[1], b[2] - b[0], b[3] - b[1])
+	return Rect2(Vector2.ZERO, _frame_px(id))

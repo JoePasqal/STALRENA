@@ -79,17 +79,17 @@ func _layout() -> void:
 	_sub.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	_btn.position = Vector2((vs.x - _btn.size.x) * 0.5, vs.y - 100)
 	var cw := minf(250.0, (vs.x - 200.0) / 3.0)
-	var ch := minf(cw * 1.5, vs.y - 230.0)
+	var ch := minf(cw * 1.5, vs.y - 260.0)
 	cw = ch / 1.5
 	for i in cards.size():
 		var x := vs.x * 0.5 + (i - 1) * (cw + 40.0) - cw * 0.5
 		cards[i].size = Vector2(cw, ch)
-		cards[i].position = Vector2(x, 140.0)
+		cards[i].position = Vector2(x, 158.0)
 		cards[i].pivot_offset = cards[i].size * 0.5
 
 
 func _draw() -> void:
-	draw_rect(Rect2(Vector2.ZERO, size), Color(0.03, 0.04, 0.03, 0.97))
+	draw_rect(Rect2(Vector2.ZERO, size), Color(0.03, 0.04, 0.03, 1.0))
 	if state == "closed":
 		_draw_case()
 
@@ -99,10 +99,18 @@ func _draw_case() -> void:
 	var pulse := 0.5 + 0.5 * sin(Time.get_ticks_msec() / 300.0)
 	draw_circle(c, 150.0 + 14.0 * pulse, Color(1.0, 0.25, 0.15, 0.10 + 0.08 * pulse) if _kind == "debuff" else Color(1.0, 0.8, 0.3, 0.10 + 0.08 * pulse))
 	var pre := "ui.curse_case_" if _kind == "debuff" else "ui.bonus_case_"
+	var anim_id := pre + "anim"
+	if _lid > 0.0 and AssetRegistry.file_exists(anim_id):
+		var fr := AssetRegistry.strip_frame(anim_id, clampi(int(_lid * 7.99), 0, 7))
+		var k := minf(1.0, (size.y * 0.55) / 384.0)
+		var sz := Vector2(512, 384) * k
+		draw_texture_rect_region(fr.texture, Rect2(c - sz * 0.5, sz), fr.region)
+		return
 	var key := pre + ("open" if _lid > 0.5 else "closed")
 	if AssetRegistry.file_exists(key):
 		var tex := AssetRegistry.get_texture(key)
-		draw_texture_rect(tex, Rect2(c - Vector2(256, 192), Vector2(512, 384)), false)
+		var k2 := minf(1.0, (size.y * 0.55) / 384.0)
+		draw_texture_rect(tex, Rect2(c - Vector2(256, 192) * k2, Vector2(512, 384) * k2), false)
 		return
 	# процедурный кейс (заглушка): корпус, крышка с подъёмом, полосы, замок; ящик проклятия — дерево с красной окантовкой
 	var curse := _kind == "debuff"
@@ -129,7 +137,7 @@ func _on_btn() -> void:
 	if state == "closed":
 		state = "opening"
 		_btn.visible = false
-		Sfx.play("case_open")
+		Sfx.play("curse_open" if _kind == "debuff" else "case_open")
 		var tw := create_tween()
 		tw.tween_property(self, "_lid", 1.0, 0.55 / _anim_speed)
 		tw.tween_callback(_spawn_cards)
@@ -172,7 +180,7 @@ func _on_card(card: BonusCard) -> void:
 		c.enabled = false
 	_result = BonusService.pick(game.run, _chosen)          # применяется и сохраняется немедленно
 	Session.save()
-	Sfx.play("click")
+	Sfx.play("pick_debuff" if _kind == "debuff" else "pick_buff")       # выбор: бафф — мажорный звук, дебафф — минорный
 	_title.text = "Вы выбрали карточку %d" % (_chosen + 1)
 	_sub.text = "Смотрим, что было в остальных…"
 	var order: Array = []
@@ -182,12 +190,15 @@ func _on_card(card: BonusCard) -> void:
 	var tw := create_tween()
 	tw.tween_interval(0.4 / _anim_speed)
 	for i in order:
-		tw.tween_callback(func(): Sfx.play("flip"))
+		tw.tween_callback(func():
+			Sfx.play("flip")
+			Sfx.play("reveal_minor" if _kind == "debuff" else "reveal_major"))
 		tw.tween_property(cards[i], "flip", 1.0, 0.6 / _anim_speed).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
 		tw.parallel().tween_property(cards[i], "dim", 1.0, 0.8 / _anim_speed)
 		tw.tween_interval(0.35 / _anim_speed)
 	tw.tween_callback(func():
 		Sfx.play("flip")
+		Sfx.play("reveal_minor" if _kind == "debuff" else "reveal_major")
 		_sub.text = "…и ваша карточка!")
 	tw.tween_property(cards[_chosen], "flip", 1.0, 0.8 / _anim_speed).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
 	tw.tween_callback(_finish)
@@ -196,7 +207,7 @@ func _on_card(card: BonusCard) -> void:
 
 func _finish() -> void:
 	state = "done"
-	Sfx.play("levelup")
+	Sfx.play("curse_done" if _kind == "debuff" else "buff_done")
 	var def: Dictionary = BonusService.def_of(_kind, str(_result.id))
 	if _kind == "debuff":
 		_title.text = "Дебафф: %s" % def.name

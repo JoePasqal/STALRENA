@@ -32,7 +32,24 @@ func _colors() -> Array:
 	return [Color(0.52, 0.52, 0.5), Color(0.34, 0.34, 0.33)]
 
 
-const PROP_FOR_KIND := {"logs": "prop.log_stack", "crate": "prop.crate", "fence": "prop.fence", "concrete": "prop.concrete_block", "pipe": "prop.pipe", "debris": "prop.wrecked_car"}
+const PROP_FOR_KIND := {"logs": "prop.log_stack", "crate": "prop.crate", "fence": "prop.fence"}
+## Несколько вариантов одного вида укрытия — чтобы мозаика не выглядела копипастой.
+const VARIANTS := {
+	"concrete": ["prop.concrete_block", "prop.concrete_block_b", "prop.concrete_block_c"],
+	"debris": ["prop.wrecked_car", "prop.wrecked_car_b", "prop.wrecked_car_c"],
+	"machine": ["prop.machine_a", "prop.machine_b"],
+	"pipe": ["prop.pipe_long", "prop.pipe_long", "prop.pipe_tee"],
+}
+const DEPTH := {"concrete": 0.55, "debris": 0.6, "machine": 0.95, "pipe": 0.6}
+
+
+func _variants_ready(k: String) -> bool:
+	if not VARIANTS.has(k):
+		return false
+	for v in VARIANTS[k]:
+		if not AssetRegistry.file_exists(v):
+			return false
+	return true
 
 
 ## Настоящий спрайт препятствия (если файл есть): только вид; коллизия остаётся прямоугольником данных.
@@ -40,7 +57,6 @@ func _draw_sprite(pid: String) -> void:
 	var tex := AssetRegistry.get_texture(pid)
 	var piv := AssetRegistry.get_pivot(pid)
 	var base_scale := AssetRegistry.get_scale(pid)
-	# видимая ширина по manifest-холсту ~ 0.8 клетки; подгоняем по ширине прямоугольника, не увеличивая сверх масштаба manifest
 	var cell := float(tex.get_size().x)
 	var vis := cell * 0.8 * base_scale
 	var n := maxi(int(ceil(rect.size.x / maxf(vis, 1.0))), 1)
@@ -52,23 +68,64 @@ func _draw_sprite(pid: String) -> void:
 	draw_set_transform(Vector2.ZERO, 0.0, Vector2.ONE)
 
 
-## Мозаика спрайтов, покрывающая весь прямоугольник коллизии (высокие/широкие блоки, трубы, обломки).
-func _draw_tiled(pid: String) -> void:
-	var tex := AssetRegistry.get_texture(pid)
-	var piv := AssetRegistry.get_pivot(pid)
-	var cell := float(tex.get_size().x)
-	var vis_w := cell * 0.8
-	var base := AssetRegistry.get_scale(pid)
-	var minor := minf(rect.size.x, maxf(rect.size.y * 1.4, 60.0))
-	var s := clampf(minor / vis_w, 0.3, base * 1.4)
-	var step_x := vis_w * s
-	var step_y := maxf(step_x * 0.5, 20.0)
+## Мозаика из ВАРИАНТОВ вида, покрывающая прямоугольник коллизии. Размер плитки берётся по реальной видимой рамке
+## спрайта (bbox из метаданных), чтобы предмет стоял основанием на земле, а не «висел».
+func _draw_pipes(vlist: Array) -> void:
+	var long_id: String = vlist[0]
+	var bb := AssetRegistry.bbox_px(long_id)
+	var s_h := rect.size.y * 0.95 / maxf(bb.size.y, 1.0)
+	var tile_w := bb.size.x * s_h
+	var n := maxi(int(round(rect.size.x / tile_w)), 1)
+	var fit_x := rect.size.x / n
+	var seed_v := int(abs(hash(Vector2i(int(rect.position.x), int(rect.position.y)))))
+	if rect.size.x < rect.size.y * 1.6:
+		# короткий отрезок = тройник/стояк, стоит основанием на земле по центру
+		var tid: String = vlist[vlist.size() - 1]
+		var tbb := AssetRegistry.bbox_px(tid)
+		var st := clampf(rect.size.x * 1.6 / maxf(tbb.size.x, 1.0), 0.3, 0.5)
+		draw_set_transform(Vector2(0.0, -2.0), 0.0, Vector2(st, st))
+		draw_texture(AssetRegistry.get_texture(tid), -AssetRegistry.get_pivot(tid))
+		draw_set_transform(Vector2.ZERO, 0.0, Vector2.ONE)
+		return
+	for i in n:
+		var cx := -rect.size.x * 0.5 + (i + 0.5) * fit_x
+		var use_tee := n >= 3 and i == (seed_v % n) and i != 0 and i != n - 1
+		var vid: String = vlist[vlist.size() - 1] if use_tee else long_id
+		var piv := AssetRegistry.get_pivot(vid)
+		var sx := fit_x / maxf(bb.size.x, 1.0)
+		var sy := s_h
+		if use_tee:
+			var tbb := AssetRegistry.bbox_px(vid)
+			sx = fit_x * 0.9 / maxf(tbb.size.x, 1.0)
+			sy = sx
+		draw_set_transform(Vector2(cx, -2.0), 0.0, Vector2(sx, sy))
+		draw_texture(AssetRegistry.get_texture(vid), -piv)
+	draw_set_transform(Vector2.ZERO, 0.0, Vector2.ONE)
+
+
+func _draw_variants(vlist: Array) -> void:
+	if kind == "pipe":
+		_draw_pipes(vlist)
+		return
+	var vid_first: String = vlist[0]
+	var bb := AssetRegistry.bbox_px(vid_first)
+	var seed_v := int(abs(hash(Vector2i(int(rect.position.x), int(rect.position.y)))))
+	var depth_k: float = DEPTH.get(kind, 0.55)
+	var long_kind := kind == "pipe"
+	var target_w := minf(maxf(rect.size.x, rect.size.y * 0.6), 200.0) if not long_kind else rect.size.x
+	var s := clampf((minf(target_w, 200.0) if not long_kind else (rect.size.x / maxi(int(ceil(rect.size.x / 190.0)), 1))) / maxf(bb.size.x, 1.0), 0.28, 1.0)
+	var step_x := bb.size.x * s * 0.94
+	var step_y := maxf(bb.size.y * s * depth_k, 26.0)
 	var nx := maxi(int(ceil(rect.size.x / step_x)), 1)
-	var ny := maxi(int(ceil(rect.size.y / step_y)), 1)
+	var ny := 1 if long_kind else maxi(int(ceil(rect.size.y / step_y)), 1)
+	var fit_x := rect.size.x / nx
 	for r in ny:
-		var by := -rect.size.y + (r + 1) * rect.size.y / ny
+		var by := -rect.size.y + (r + 1) * rect.size.y / ny if not long_kind else -rect.size.y * 0.15
 		for i in nx:
-			var cx := -rect.size.x * 0.5 + (i + 0.5) * rect.size.x / nx
+			var vid: String = vlist[(seed_v + r * 3 + i) % vlist.size()]
+			var tex := AssetRegistry.get_texture(vid)
+			var piv := AssetRegistry.get_pivot(vid)
+			var cx := -rect.size.x * 0.5 + (i + 0.5) * fit_x
 			draw_set_transform(Vector2(cx, by), 0.0, Vector2(s, s))
 			draw_texture(tex, -piv)
 	draw_set_transform(Vector2.ZERO, 0.0, Vector2.ONE)
@@ -76,6 +133,14 @@ func _draw_tiled(pid: String) -> void:
 
 ## Мягкая контактная тень под основанием (несколько слоёв эллипса), без длинных запечённых теней.
 func _draw_shadow() -> void:
+	if kind == "pipe":
+		for i in 3:
+			var pts_p := PackedVector2Array()
+			for a in 24:
+				var t := TAU * a / 24.0
+				pts_p.append(Vector2(cos(t) * (rect.size.x * 0.5 + 4.0 + i * 3.0), -4.0 + sin(t) * (5.0 + i * 3.0)))
+			draw_colored_polygon(pts_p, Color(0, 0, 0, 0.16))
+		return
 	var w := rect.size.x
 	var h := rect.size.y
 	for i in 4:
@@ -89,12 +154,12 @@ func _draw_shadow() -> void:
 
 func _draw() -> void:
 	_draw_shadow()
+	if _variants_ready(kind):
+		_draw_variants(VARIANTS[kind])
+		return
 	var pid: String = PROP_FOR_KIND.get(kind, "")
 	if pid != "" and AssetRegistry.file_exists(pid):
-		if kind in ["concrete", "pipe", "debris"]:
-			_draw_tiled(pid)
-		else:
-			_draw_sprite(pid)
+		_draw_sprite(pid)
 		return
 	var cols := _colors()
 	var top_c: Color = (cols[0] as Color) * tint
