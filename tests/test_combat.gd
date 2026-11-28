@@ -214,6 +214,18 @@ func t_gunner_walls() -> void:
 	step(1.0, 1.0 / 20.0)           # большой шаг: 60 u/кадр
 	check(en.hp >= hp1 - 0.001, "5: быстрая пуля не перескакивает стену (крупный шаг)")
 
+	# попадание «в голову»: пуля идёт по земле выше точки у ног врага (в пределах капсулы тела), ниже/выше — мимо
+	var empty2 := EMPTY_ARENA.duplicate(true)
+	for case in [[-16.0, true, "5h: пуля на 16 выше ног — попадание"], [-28.0, true, "5h: пуля на 28 выше ног — попадание (голова)"], [-60.0, false, "5h: пуля на 60 выше ног — мимо"], [12.0, true, "5h: пуля чуть ниже ног — попадание"], [40.0, false, "5h: пуля на 40 ниже ног — мимо"]]:
+		await new_game(0, empty2)
+		game.player.position = Vector2(300, 500)
+		var tgt := spawn("drifter", Vector2(900, 500))
+		tgt.speed = 0.0
+		var hpt := tgt.hp
+		game.projectiles.spawn(true, Vector2(500, 500 + float(case[0])), Vector2(1, 0), 1200.0, 5.0, 900.0, 3.0, "bullet")
+		step(0.8, 1.0 / 60.0)
+		check((tgt.hp < hpt - 0.001) == bool(case[1]), str(case[2]))
+
 
 func t_tokens() -> void:
 	for gwv in [1, 30]:

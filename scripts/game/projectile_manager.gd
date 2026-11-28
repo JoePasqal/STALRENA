@@ -95,6 +95,19 @@ func spawn(friendly: bool, pos: Vector2, dir: Vector2, speed: float, damage: flo
 	return true
 
 
+## Область попадания по врагу — «вертикальная капсула»: от точки у ног вверх к голове (вид сверху под углом:
+## спрайт стоит выше своей точки на земле, и прицел «в голову» проходит выше круга у ног). Берём наименьшее t.
+static func seg_body_t(a: Vector2, b: Vector2, e) -> float:
+	var up: float = clampf(float(e.radius) * 1.2, 14.0, 30.0)
+	var r: float = float(e.radius) + 3.0
+	var best := -1.0
+	for k in [0.0, 0.5, 1.0]:
+		var t := seg_circle_t(a, b, e.position + Vector2(0.0, -up * k), r)
+		if t >= 0.0 and (best < 0.0 or t < best):
+			best = t
+	return best
+
+
 static func seg_circle_t(a: Vector2, b: Vector2, c: Vector2, r: float) -> float:
 	var d := b - a
 	var f := a - c
@@ -159,7 +172,7 @@ func step(dt: float) -> void:
 			for e in game.enemies_along(p.pos, np, p.radius):
 				if p.hit_ids.has(e.get_instance_id()) or not e.targetable():
 					continue
-				var t := seg_circle_t(p.pos, np, e.position, e.radius + p.radius)
+				var t := seg_body_t(p.pos, np, e)
 				if t >= 0.0:
 					hits.append([t, e])
 			if hits.size() > 1:

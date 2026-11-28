@@ -442,7 +442,8 @@ func _poll_input() -> void:
 			ai = touch.aim_vec
 			firing = true
 	else:
-		var m := get_global_mouse_position() - player.position
+		# прицел от центра тела героя (рука выше точки у ног), иначе клик по голове врага уходит выше цели
+		var m := get_global_mouse_position() - (player.position - Vector2(0, ProjectileManager.HEIGHT))
 		if m.length() > 4.0:
 			ai = m.normalized()
 		firing = Input.is_action_pressed("fire")
