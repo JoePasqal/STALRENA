@@ -9,7 +9,8 @@ var data := {
 	"sfx_volume": 0.8,
 	"hints": true,
 	"quality": "high",           # low = меньше эффектов, 30 FPS-режим допустим
-	"autoaim": true,
+	"autoaim": false,            # по умолчанию ручной прицел: правый стик/мышь целится и стреляет
+	"settings_ver": 2,
 	"touch_ui": "auto",          # auto | on | off
 	"screen_shake": false,
 	"show_fps": false,
@@ -42,6 +43,9 @@ func load_settings() -> void:
 			for k in parsed:
 				if data.has(k):
 					data[k] = parsed[k]
+		if int(parsed.get("settings_ver", 1)) < 2:
+			data.autoaim = false                 # раньше по умолчанию была автострельба — переводим на ручную
+			data.settings_ver = 2
 
 
 func save_settings() -> void:

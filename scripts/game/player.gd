@@ -44,6 +44,9 @@ var _frame_key := ""
 var _facing := "S"
 var _anim := "idle"
 var _anim_idx := 0
+## Визуальный множитель размера оружия (только вид: хват и дуло масштабируются вместе, урон/дальность не меняются).
+## Пистолет на арте ~60% роста героя — нарисован слишком крупно; длинное оружие остаётся близко к исходному.
+const WEAPON_VISUAL := {"weapon.pistol": 0.6, "weapon.smg": 0.75, "weapon.carbine": 0.88, "weapon.shotgun": 0.88, "weapon.lmg": 0.9, "weapon.marksman": 0.9, "weapon.flamethrower": 0.85}
 var _muzzle_vec := Vector2(40, 0)   # хват→дуло в мировых единицах для вправо-направленного спрайта
 var death_t := 0.0
 var debug_muzzle := false      # крестик в точке выхода пули (проверка хвата/дула)
@@ -69,7 +72,7 @@ func setup(g, run: RunState) -> void:
 	dead = false
 	death_t = 0.0
 	var wp := AssetRegistry.get_weapon_points(str(weapon_def.world_sprite_id))
-	_muzzle_vec = (wp.muzzle - wp.grip) * AssetRegistry.get_scale(str(weapon_def.world_sprite_id))
+	_muzzle_vec = (wp.muzzle - wp.grip) * _wscale(str(weapon_def.world_sprite_id))
 	_build_visuals(run)
 
 
@@ -95,7 +98,7 @@ func _build_visuals(run: RunState) -> void:
 	var wid := str(weapon_def.world_sprite_id)
 	weapon_sprite.texture = AssetRegistry.get_texture(wid)
 	weapon_sprite.offset = -AssetRegistry.get_weapon_points(wid).grip
-	var ws := AssetRegistry.get_scale(wid)
+	var ws := _wscale(wid)
 	weapon_sprite.scale = Vector2(ws, ws)
 	armor_sprite.visible = run.equipped_armor != ""
 	_frame_key = ""
@@ -396,6 +399,10 @@ func _update_visuals(dt: float) -> void:
 	weapon_sprite.z_index = -1 if _facing == "N" else 0
 	weapon_sprite.visible = not dead
 	queue_redraw()
+
+
+func _wscale(wid: String) -> float:
+	return AssetRegistry.get_scale(wid) * float(WEAPON_VISUAL.get(wid, 1.0))
 
 
 func _frame_is_placeholder() -> bool:

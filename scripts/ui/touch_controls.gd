@@ -103,7 +103,7 @@ func _touch(idx: int, pos: Vector2, pressed: bool) -> void:
 			move_vec = Vector2.ZERO
 		if idx == _right:
 			_right = -1
-			aim_active = false        # после отпускания — возврат к автонаведению
+			aim_active = false        # отпустили правый стик — стрельба прекращается (если автонаведение выключено)
 
 
 func _drag(idx: int, pos: Vector2) -> void:
